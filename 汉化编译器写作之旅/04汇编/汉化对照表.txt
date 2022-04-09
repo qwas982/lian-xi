@@ -1,0 +1,57 @@
+汉化对照表;
+
+chrpos - 印刻位置
+character c - 印刻 印名
+string s - 串 串名
+Lexical - 词汇
+scan - 扫描
+defs - 定义
+data - 数据
+decl - 声明
+extern_ - 外部_
+Line - 行
+Putback - 放回去
+Infile - 文件内
+token t - 牌 牌名
+intvalue - 整型值
+next - 下一个
+skip - 跳过
+scanint - 扫描整型
+init - 初始
+intlit INTLIT - 整型字面
+tokstr - 牌串
+scanfile - 扫描文件
+usage - 用法
+ASTnode - 抽象句法树节点
+mkastnode - 制作抽象句法树节点
+mkastleaf - 制作抽象句法树叶
+mkastunary - 制作抽象句法树一元
+binexpr - 二元表达式
+interpretAST - 解释抽象句法树
+op - 操作
+T_EOF - 牌名_文件终
+arithop - 算术操作
+primary - 基元
+factor - 因子
+nodetype - 节点类型
+ASTop - 抽象句法树操作
+ptp previous token's precedence - 上牌优
+OpPrec - 操作优先级
+op_precedence - 操作_优先级
+tokentype - 牌类型
+Outfile - 文件外
+generatecode - 生成代码
+freeall_registers - 自由全部_寄存器
+cgpreamble - 代码生成器前文
+cgpostamble - 代码生成器后文
+cgload - 代码生成器载入
+cgadd - 代码生成器加
+cgsub - 代码生成器减
+cgmul - 代码生成器乘
+cgdiv - 代码生成器除
+cgprintint - 代码生成器打印整型
+genAST - 生成抽象句法树
+freereg - 自由寄存
+reglist - 寄存列表
+alloc_register - 分配_寄存器
+free_register - 自由_寄存器
