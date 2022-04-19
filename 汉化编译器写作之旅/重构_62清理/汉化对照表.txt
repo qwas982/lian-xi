@@ -1,0 +1,547 @@
+汉化对照表;
+
+chrpos - 印刻位置
+character c - 印刻 印名
+string s - 串 串名
+Lexical - 词汇
+scan - 扫描
+defs - 定义
+data - 数据
+decl - 声明
+extern_ - 外部_
+Line - 行
+Putback - 放回去
+Infile - 文件内 | 入文件
+token t - 牌 牌名
+intvalue - 整型值
+next - 下一个
+skip - 跳过 √
+scanint - 扫描整型
+init - 初始
+intlit INTLIT - 整型字面
+tokstr - 牌串
+scanfile - 扫描文件
+usage - 用法
+ASTnode - 抽象句法树节点
+mkastnode - 制作抽象句法树节点
+mkastleaf - 制作抽象句法树叶
+mkastunary - 制作抽象句法树一元
+binexpr - 二元表达式
+interpretAST - 解释抽象句法树
+op - 操作
+T_EOF - 牌名_文件终
+arithop - 算术操作
+primary - 基元
+factor - 因子
+nodetype - 节点类型
+ASTop - 抽象句法树操作
+ptp previous token's precedence - 上牌优
+OpPrec - 操作优先级
+op_precedence - 操作_优先级
+tokentype - 牌类型
+Outfile - 文件外 | 出文件
+generatecode - 生成代码
+freeall_registers - 自由全部_寄存器
+cgpreamble - 代码生成器前文
+cgpostamble - 代码生成器后文
+cgload - 代码生成器载入
+cgadd - 代码生成器加
+cgsub - 代码生成器减
+cgmul - 代码生成器乘
+cgdiv - 代码生成器除
+cgprintint - 代码生成器打印整型
+genAST - 生成抽象句法树
+freereg - 自由寄存
+reglist - 寄存列表
+alloc_register - 分配_寄存器
+free_register - 自由_寄存器
+TEXTLEN - 文本长
+genpreamble - 生成前文
+genpostamble - 生成后文
+genfreeregs - 生成自由寄存
+genprintint - 生成打印整型
+statements - 语句
+match - 匹配
+semi - 分号
+scanident - 扫描标识
+keyword - 关键字
+symtable - 符号表
+Gsym - 全局符号
+NSYMBOLS - 符号表条目号
+cgloadint - 代码生成器载入整型
+cgloadglob - 代码生成器载入全局
+cgstorglob - 代码生成器存全局
+cgglobsym - 代码生成器全局符号
+fatal - 致命
+fatals - 致命符
+fatald - 致命数
+fatalc - 致命印名
+findglob - 找全局
+addglob - 添加全局
+var_declaration - 变量_声明
+genglobsym - 生成全局符号
+Globs - 全局
+newglob - 新全局
+
+==============================
+Linestart - 行开始
+Functionid - 函数身份
+Infilename - 入文件名
+Outfilename - 出文件名
+Peektoken - 窥牌
+Text - 文本
+Looplevel - 环级
+Switchlevel - 切换级
+Tstring - 牌名串
+*Globhead, *Globtail - 全局头 全局尾
+*Loclhead, *Locltail - 本地头 本地尾
+*Parmhead, *Parmtail - 形参头 形参尾
+*Membhead, *Membtail - 成员头 成员尾
+*Structhead, *Structtail - 结构头 结构尾
+*Unionhead, *Uniontail - 联合头 联合尾
+*Enumhead,  *Enumtail - 枚举头 枚举尾
+*Typehead,  *Typetail - 类型定义头 类型定义尾
+
+O_dumpAST - 对象_转储抽象句法树
+O_dumpsym - 对象_转储符号表
+O_keepasm - 对象_保留汇编
+O_assemble - 对象_汇编
+O_dolink - 对象_做链接
+O_verbose - 对象_啰嗦
+
+reject_token - 拒绝_牌
+dumpAST - 转储抽象句法树
+genlabel - 生成标号
+genglobstr - 生成全局串
+genglobstrend - 生成全局串终
+genprimsize - 生成基元大小
+genalign - 生成对齐
+genreturn - 生成返回
+
+cgprimsize - 代码生成器基元大小
+cgalign - 代码生成器对齐
+cgtextseg - 代码生成器文本段
+cgdataseg - 代码生成器数据段
+cgallocreg - 代码生成器分配寄存
+cgfreeallregs - 代码生成器自由全部寄存
+cgfreereg - 代码生成器自由寄存
+cgspillregs - 代码生成器溢出寄存
+cgfuncpreamble - 代码生成器函前文
+cgfuncpostamble - 代码生成器后文
+cgloadvar - 代码生成器载入变量
+cgloadglobstr - 代码生成器载入全局串
+cgdivmod - 代码生成器除法取余
+cgshlconst - 代码生成器左移常量
+cgcall - 代码生成器调用
+cgcopyarg - 代码生成器复制实参
+cgstorlocal - 代码生成器存本地
+cgglobstr - 代码生成器全局串
+cgglobstrend - 代码生成器全局串终
+cgcompare_and_set - 代码生成器对比与设置
+cgcompare_and_jump - 代码生成器对比与跳
+cglabel - 代码生成器标号
+cgjump - 代码生成器跳
+cgwiden - 代码生成器加宽
+cgreturn - 代码生成器返回
+cgaddress - 代码生成器地址
+cgderef - 代码生成器解引用
+cgstorderef - 代码生成器存解引用
+cgnegate - 代码生成器否定
+cginvert - 代码生成器颠倒
+cglognot - 代码生成器逻辑非
+cgloadboolean - 代码生成器载入布尔
+cgboolean - 代码生成器布尔
+cgand - 代码生成器与
+cgor - 代码生成器或
+cgxor - 代码生成器异或
+cgshl - 代码生成器左移
+cgshr - 代码生成器右移
+cgswitch - 代码生成器切换
+cgmove - 代码生成器移
+cglinenum - 代码生成器行号
+
+expression_list - 表达式_列表
+compound_statement - 复合_语句
+lbrace - 左大括号
+rbrace - 右大括号
+lparen - 左小括号
+rparen - 右小括号
+ident - 标识
+comma - 逗号
+
+
+appendsym - 追加符号
+newsym - 新符号
+addlocl - 添加本地
+addparm - 添加形参
+addstruct - 添加结构
+addunion - 添加联合
+addmemb - 添加成员
+addenum - 添加枚举
+addtypedef - 添加类型定义
+findlocl - 找本地
+findsymbol - 找符号
+findmember - 找成员
+findstruct - 找结构
+findunion - 找联合
+findenumtype - 找枚举类型
+findenumval - 找枚举值
+findtypedef - 找类型定义
+clear_symtable - 清除_符号表
+freeloclsyms - 自由本地符号
+freestaticsyms - 自由静态符号
+dumptable - 转储表
+dumpsymtables - 转储符号表
+
+parse_type - 解析_类型
+parse_stars - 解析_星号
+parse_cast - 解析_投射
+declaration_list - 声明_列表
+global_declarations - 全局_声明
+
+inttype - 整型类型
+ptrtype - 指针类型
+pointer_to - 指针_到
+value_at - 值_位置
+typesize - 类型大小
+modify_type - 修改_类型
+optimise - 优化
+
+
+AOUT - 甲出
+ASCMD - 汇编命令
+LDCMD - 链接命令
+CPPCMD - c预处理器命令
+
+
+//牌类型
+//二元操作
+  T_ASSIGN, T_ASPLUS, T_ASMINUS, - 
+  牌名_赋值, 牌名_赋值加, 牌名_赋值减,
+  T_ASSTAR, T_ASSLASH, T_ASMOD, - 
+  牌名_赋值星号, 牌名_赋值斜杠, 牌名_赋值余数, 
+  T_QUESTION, T_LOGOR, T_LOGAND, - 
+  牌名_问号, 牌名_逻辑或, 牌名_逻辑与, 
+  T_OR, T_XOR, T_AMPER, - 
+  牌名_或, 牌名_异或, 牌名_与, 
+  T_EQ, T_NE, - 
+  牌名_等于, 牌名_不等, 
+  T_LT, T_GT, T_LE, T_GE, - 
+  牌名_小于, 牌名_大于, 牌名_小等, 牌名_大等, 
+  T_LSHIFT, T_RSHIFT, - 
+  牌名_左移, 牌名_右移, 
+  T_PLUS, T_MINUS, T_STAR, - 
+  牌名_加, 牌名_减, 牌名_星号, 
+  T_SLASH, T_MOD, - 
+  牌名_斜杠, 牌名_余数, 
+  
+//其它操作
+ T_INC, T_DEC, T_INVERT, T_LOGNOT, - 
+ 牌名_自增, 牌名_自减, 牌名_颠倒, 牌名_逻辑非, 
+ 
+//类型关键字
+ T_VOID, T_CHAR, T_INT, T_LONG, - 
+ 牌名_空的, 牌名_印刻, 牌名_整型, 牌名_长型, 
+ 
+//其它关键字
+  T_IF, T_ELSE, T_WHILE, T_FOR, T_RETURN, - 
+  牌名_若, 牌名_否则, 牌名_一会儿, 牌名_为, 牌名_返回, 
+  T_STRUCT, T_UNION, T_ENUM, T_TYPEDEF, - 
+  牌名_结构, 牌名_联合, 牌名_枚举, 牌名_类型定义, 
+  T_EXTERN, T_BREAK, T_CONTINUE, T_SWITCH, - 
+  牌名_外部, 牌名_断, 牌名_继续, 牌名_切换, 
+  T_CASE, T_DEFAULT, T_SIZEOF, T_STATIC, - 
+  牌名_情况, 牌名_默认, 牌名_求大小, 牌名_静态, 
+  
+//结构化的牌
+  T_INTLIT, T_STRLIT, T_SEMI, T_IDENT, - 
+  牌名_整型字面, 牌名_串字面, 牌名_分号, 牌名_标识, 
+  T_LBRACE, T_RBRACE, T_LPAREN, T_RPAREN, - 
+  牌名_左大括号, 牌名_右大括号, 牌名_左小括号, 牌名_右小括号, 
+  T_LBRACKET, T_RBRACKET, T_COMMA, T_DOT, - 
+  牌名_左中括号, 牌名_右中括号, 牌名_逗号, 牌名_句号, 
+  T_ARROW, T_COLON - 
+  牌名_箭头, 牌名_冒号, 
+  
+//抽象句法树节点类型
+  A_ASSIGN = 1, A_ASPLUS, A_ASMINUS, A_ASSTAR, - 
+  抽象_赋值, 抽象_赋值加, 抽象_赋值减, 抽象_赋值星号, 			
+  A_ASSLASH, A_ASMOD, A_TERNARY, A_LOGOR, - 
+  抽象_赋值斜杠, 抽象_赋值余数, 抽象_三元运算符, 抽象_逻辑或, 			
+  A_LOGAND, A_OR, A_XOR, A_AND, A_EQ, A_NE, A_LT, - 	
+  抽象_逻辑与, 抽象_或, 抽象_异或, 抽象_与, 抽象_等于, 抽象_不等, 抽象_小于, 	
+  A_GT, A_LE, A_GE, A_LSHIFT, A_RSHIFT, - 
+  抽象_大于, 抽象_小等, 抽象_大等, 抽象_左移, 抽象_右移, 				
+  A_ADD, A_SUBTRACT, A_MULTIPLY, A_DIVIDE, A_MOD, - 
+  抽象_加法, 抽象_减法, 抽象_乘法, 抽象_除法, 抽象_余数, 		
+  A_INTLIT, A_STRLIT, A_IDENT, A_GLUE, - 	
+  抽象_整型字面, 抽象_串字面, 抽象_标识, 抽象_胶水, 			
+  A_IF, A_WHILE, A_FUNCTION, A_WIDEN, A_RETURN, - 	
+  抽象_若, 抽象_一会儿, 抽象_函数, 抽象_加宽, 抽象_返回, 		
+  A_FUNCCALL, A_DEREF, A_ADDR, A_SCALE, - 	
+  抽象_函数调用, 抽象_解引用, 抽象_地址, 抽象_比例尺, 			
+  A_PREINC, A_PREDEC, A_POSTINC, A_POSTDEC, - 	
+  抽象_前置自增, 抽象_前置自减, 抽象_后置自增, 抽象_后置自减, 		
+  A_NEGATE, A_INVERT, A_LOGNOT, A_TOBOOL, A_BREAK, - 	
+  抽象_否定, 抽象_颠倒, 抽象_逻辑非, 抽象_到布尔, 抽象_断, 	
+  A_CONTINUE, A_SWITCH, A_CASE, A_DEFAULT, A_CAST - 
+  抽象_继续, 抽象_切换, 抽象_情况, 抽象_默认, 抽象_投射, 
+  
+//原语类型
+  P_NONE, P_VOID = 16, P_CHAR = 32, P_INT = 48, P_LONG = 64, - 
+  原语_全无, 原语_空的, 原语_印刻, 原语_整型, 原语_长型, 
+  P_STRUCT=80, P_UNION=96 - 
+  原语_结构, 原语_联合, 
+  
+//结构化类型
+  S_VARIABLE, S_FUNCTION, S_ARRAY - 
+  结构化_可变的, 结构化_函数, 结构化_数组, 
+  
+//存储类别
+  C_GLOBAL = 1, - 类别_全局
+  C_LOCAL, - 类别_本地
+  C_PARAM, - 类别_形参
+  C_EXTERN, - 类别_外部
+  C_STATIC, - 类别_静态
+  C_STRUCT, - 类别_结构
+  C_UNION, - 类别_联合
+  C_MEMBER, - 类别_成员
+  C_ENUMTYPE, - 类别_枚举类型
+  C_ENUMVAL, - 类别_枚举值
+  C_TYPEDEF - 类别_类型定义
+  
+//符号表结构
+name - 名字
+type - 类型
+ctype - 复合类型
+stype - 结构化类型
+class - 类别
+size - 大小
+nelems - 元素个数
+st_posn - 符号表_本地符号位置信息
+initlist - 初始列表
+member - 成员
+
+//抽象句法树结构
+rvalue - 右值
+left - 左
+mid - 中
+right - 右
+sym - 符号
+a_size - 小抽象_大小
+linenum - 行号
+
+  NOREG = -1, - 无寄存
+  NOLABEL = 0 - 无标号
+  
+=======================
+head - 头部
+tail - 尾部
+node - 节点
+list - 列表
+prev - 上一个
+
+i - 甲
+hexchar - 十六进制印刻
+scanch - 扫描印刻
+escape sequence - 转义序列
+val - 小值
+buf - 小缓冲
+lim - 小极限
+identifier - 标识符
+findsyminlist - 列表内找符号
+indent - 缩进
+dumpsym - 转储单个符号
+composite_declaration - 复合_声明
+typedef_declaration - 类型定义_声明
+type_of_typedef - 类型定义_的_类型
+enum_declaration - 枚举_声明
+exstatic - 外部或静态
+parse_literal - 解析_字面
+tree - 树
+a_intvalue - 小抽象_整型值
+is_new_symbol - 是否_新_符号
+scalar_declaration - 标量_声明
+varnode - 变量节点
+exprnode - 表达式节点
+varname - 变量名字
+array_declaration - 数组_声明
+maxelems - 最大元素
+TABLE_INCREMENT - 表_自增
+j = 乙
+param_declaration_list - 形参_声明_列表
+oldfuncsym - 旧函数符号
+paramcnt - 形参计数
+protoptr - 原型指针
+unused - 未用的
+newfuncsym - 新函数符号
+function_declaration - 函数_声明
+finalstmt - 最终语句
+endlabel - 终标号
+funcname - 函数名字
+offset - 偏移
+intval - 小整型值
+etype - 小枚举类型
+symbol_declaration - 符号_声明
+inittype - 初始类型
+gluetree - 胶水树
+
+
+rtype - 右类型
+rctype - 右类别类型
+ltype - 左类型
+lsize - 左大小
+rsize - 右大小
+n - 小节点
+dumpid - 转储身份
+gendumplabel - 生成转储标号
+Lfalse - 标号假
+Lstart - 标号开始
+Lend - 标号终
+label - 标号
+level - 等级
+
+single_statement - 单个_语句
+if_statement - 若_语句
+condAST - 抽象句法树条件
+trueAST - 抽象句法树真
+falseAST - 抽象句法树假
+while_statement - 一会儿_语句
+bodyAST - 抽象句法树身体
+for_statement - 为_语句
+preopAST - 抽象句法树前置操作
+postopAST - 抽象句法树后置操作
+return_statement - 返回_语句
+break_statement - 断_语句
+continue_statement - 继续_语句
+switch_statement - 切换_语句
+body - 身体
+casetree - 情况树
+casetail - 情况尾部
+inloop - 在环内
+casecount - 情况计数
+seendefault - 看到默认
+casevalue - 情况值
+stmt - 小语句
+inswitch - 在切换内
+
+endtoken - 终牌
+child - 孩子
+exprcount - 表达式计数
+funccall - 函数调用
+funcptr - 函数指针
+array_access - 数组_访问
+member_access - 成员_访问
+typeptr - 类型指针
+withpointer - 和指针一起
+paren_expression - 小括号_表达式
+enumptr - 枚举指针
+varptr - 变量指针
+id - 身份
+m - 小成员
+postfix - 后缀
+binastop - 二元抽象句法树操作
+rightassoc - 右关联
+prec - 小优先级
+prefix - 前缀
+ltemp - 左临时
+rtemp - 右临时
+fold2 - 折叠2
+leftval - 左值
+rightval - 右值
+fold1 - 折叠1
+fold - 折叠
+
+l - 小标号
+h - 小十六进制
+f - 小旗
+radix - 基数
+k - 小键
+scanstr - 扫描串
+g - 小全局
+
+labelid - 标号身份
+update_line - 更新_行
+genIF - 生成若
+looptoplabel - 环顶部标号
+loopendlabel - 环终标号
+genWHILE - 生成一会儿
+genSWITCH - 生成切换
+caseval - 小情况值
+caselabel - 情况标号
+Ljumptop - 标号跳顶部
+reg - 寄存
+defaultlabel - 默认标号
+gen_logandor - 生成_逻辑与_或
+numargs - 实参数目
+gen_ternary - 生成_三元运算符
+expreg - 表达式寄存
+iflabel - 若标号
+parentASTop - 父节点抽象句法树操作
+leftreg - 左寄存
+rightreg - 右寄存
+gen_funccall - 生成_函数调用
+filename - 文件名
+keepreg - 保留寄存
+strvalue - 串值
+append - 追加
+direction - 指向
+
+no_seg - 无_段
+text_seg - 文本_段
+data_seg - 数据_段
+currSeg - 当前段
+alignment - 对齐
+localOffset - 本地偏移
+stackOffset - 栈偏移
+newlocaloffset - 新本地偏移
+NUMFREEREGS - 自由寄存器数目
+FIRSTPARAMREG - 第一个形参寄存器
+pushreg - 推寄存
+popreg - 弹寄存
+spillreg - 溢出寄存
+cgunspillregs - 代码生成器未溢出寄存
+parm - 小形参
+paramOffset - 形参偏移
+locvar - 小本地变量
+cnt - 小计数
+paramReg - 形参寄存
+st_endlabel - 符号表_终标号
+value - 值
+postreg - 后置寄存
+breglist - 二号寄存器列表
+outr - 出寄存
+argposn - 实参本地符号位置信息
+dreglist - 三号寄存器列表
+initvalue - 初始值
+
+cptr - 类别指针
+cmplist - 对比列表
+invcmplist - 颠倒对比列表
+oldtype - 旧类型
+newtype - 新类型
+toplabel - 顶部标号
+r - 小寄存
+r1 - 寄存1
+r2 - 寄存2
+
+
+alter_suffix - 更改_下标
+str - 小串
+suffix - 下标
+newstr - 新串
+do_compile - 做_编译
+cmd - 命令
+do_assemble - 做_汇编
+err - 小错误
+outfilename - 出文件名
+do_link - 做_链接
+objlist - 对象列表
+prog - 小程序
+MAXOBJ - 最大对象
+argc - 实参计数
+argv - 实参值
+asmfile - 汇编文件
+objfile - 对象文件
+objcnt - 对象计数
+unlink - 不链接
