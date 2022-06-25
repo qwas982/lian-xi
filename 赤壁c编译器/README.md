@@ -1,4 +1,7 @@
-# chibicc: A Small C Compiler
+#因为用拼音打chibi 得到 赤壁, 所以我就把汉化后的版本取名赤壁编译器,
+#因为是转载, 所以一切方法和授权继承自原项目,
+
+###### chibicc: A Small C Compiler
 
 (The 旧的 master has moved to
 [historical/旧的](https://github.com/rui314/chibicc/tree/historical/旧的)
