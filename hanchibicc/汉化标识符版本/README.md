@@ -1,209 +1,554 @@
-# chibicc: A Small C Compiler
+这次的尝试再度失败,只成功了25%,汉化了编译器的词法分析(牌化,化为牌),语法分析(解析器,生成抽象句法树),
 
-(The old master has moved to
-[historical/old](https://github.com/rui314/chibicc/tree/historical/old)
-branch. This is a new one uploaded in September 2020.)
+后面的我眼看不能成功,索性就没有再汉化了.
 
-chibicc is yet another small C compiler that implements most C11
-features. Even though it still probably falls into the "toy compilers"
-category just like other small compilers do, chibicc can compile
-several real-world programs, including [Git](https://git-scm.com/),
-[SQLite](https://sqlite.org),
-[libpng](http://www.libpng.org/pub/png/libpng.html) and chibicc
-itself, without making modifications to the compiled programs.
-Generated executables of these programs pass their corresponding test
-suites. So, chibicc actually supports a wide variety of C11 features
-and is able to compile hundreds of thousands of lines of real-world C
-code correctly.
+现在把词法分析和语法分析当教材看就是了.
 
-chibicc is developed as the reference implementation for a book I'm
-currently writing about the C compiler and the low-level programming.
-The book covers the vast topic with an incremental approach; in the first
-chapter, readers will implement a "compiler" that accepts just a single
-number as a "language", which will then gain one feature at a time in each
-section of the book until the language that the compiler accepts matches
-what the C11 spec specifies. I took this incremental approach from [the
-paper](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf) by Abdulaziz
-Ghuloum.
+Unicode与hash也挺重要,也汉化了一些部分.
 
-Each commit of this project corresponds to a section of the book. For this
-purpose, not only the final state of the project but each commit was
-carefully written with readability in mind. Readers should be able to learn
-how a C language feature can be implemented just by reading one or a few
-commits of this project. For example, this is how
-[while](https://github.com/rui314/chibicc/commit/773115ab2a9c4b96f804311b95b20e9771f0190a),
-[[]](https://github.com/rui314/chibicc/commit/75fbd3dd6efde12eac8225d8b5723093836170a5),
-[?:](https://github.com/rui314/chibicc/commit/1d0e942fd567a35d296d0f10b7693e98b3dd037c),
-and [thread-local
-variable](https://github.com/rui314/chibicc/commit/79644e54cc1805e54428cde68b20d6d493b76d34)
-are implemented. If you have plenty of spare time, it might be fun to read
-it from the [first
-commit](https://github.com/rui314/chibicc/commit/0522e2d77e3ab82d3b80a5be8dbbdc8d4180561c).
+Unicode可以让C编译器识别中文汉字,hash几乎全用来存储符号表,作用域.
 
-If you like this project, please consider purchasing a copy of the book
-when it becomes available! 😀 I publish the source code here to give people
-early access to it, because I was planing to do that anyway with a
-permissive open-source license after publishing the book. If I don't charge
-for the source code, it doesn't make much sense to me to keep it private. I
-hope to publish the book in 2021.
-You can sign up [here](https://forms.gle/sgrMWHGeGjeeEJcX7) to receive a
-notification when a free chapter is available online or the book is published.
+都是作者手工实现的.
 
-I pronounce chibicc as _chee bee cee cee_. "chibi" means "mini" or
-"small" in Japanese. "cc" stands for C compiler.
+词法分析用了链表数据结构,语法分析也用链表生成的树数据结构,
 
-## Status
+总的来说,用链表一种数据结构就能通吃编译器所需,
 
-chibicc supports almost all mandatory features and most optional
-features of C11 as well as a few GCC language extensions.
+目前也就知道这么多.
 
-Features that are often missing in a small compiler but supported by
-chibicc include (but not limited to):
+```
+by@bycc:~/chibicc-main$ ll
+total 400
+drwxrwxr-x 4 by by   4096  8月 22 06:02 ./
+drwxr-x--- 7 by by   4096  8月 22 06:02 ../
+-rw-rw-r-- 1 by by  13750  8月 22 06:02 chibicc.h
+-rw-rw-r-- 1 by by  56591  8月 22 06:02 codegen.c
+-rw-rw-r-- 1 by by     83  8月 22 06:02 .gitignore
+-rw-rw-r-- 1 by by   6524  8月 22 06:02 hashmap.c
+drwxrwxr-x 2 by by   4096  8月 22 06:02 include/
+-rw-rw-r-- 1 by by   1083  8月 22 06:02 LICENSE
+-rw-rw-r-- 1 by by  20882  8月 22 06:02 main.c
+-rw-rw-r-- 1 by by   1149  8月 22 06:02 Makefile
+-rw-rw-r-- 1 by by 153074  8月 22 06:02 parse.c
+-rw-rw-r-- 1 by by  46477  8月 22 06:02 preprocess.c
+-rw-rw-r-- 1 by by   9766  8月 22 06:02 README.md
+-rw-rw-r-- 1 by by    939  8月 22 06:02 strings.c
+drwxrwxr-x 3 by by   4096  8月 22 06:02 test/
+-rw-rw-r-- 1 by by  25523  8月 22 06:02 tokenize.c
+-rw-rw-r-- 1 by by  12606  8月 22 06:02 type.c
+-rw-rw-r-- 1 by by   7344  8月 22 06:02 unicode.c
+by@bycc:~/chibicc-main$ make
+cc -std=c11 -g -fno-common -Wall -Wno-switch   -c -o codegen.o codegen.c
+In file included from codegen.c:1:
+./chibicc.h:45:62: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+char *格式化_函(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:94:70: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_小写(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:95:99: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_在_小写(char *定位_小写_短, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:96:95: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_牌_小写(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:97:83: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+void 警告_牌_短(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+codegen.c:17:16: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+__attribute__((格式化_函(printf, 1, 2)))
+               ^~~~~~~~~~~~~~~~~~~~~~~
+6 warnings generated.
+cc -std=c11 -g -fno-common -Wall -Wno-switch   -c -o hashmap.o hashmap.c
+In file included from hashmap.c:3:
+./chibicc.h:45:62: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+char *格式化_函(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:94:70: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_小写(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:95:99: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_在_小写(char *定位_小写_短, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:96:95: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_牌_小写(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:97:83: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+void 警告_牌_短(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+cc -std=c11 -g -fno-common -Wall -Wno-switch   -c -o main.o main.c
+In file included from main.c:1:
+./chibicc.h:45:62: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+char *格式化_函(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:94:70: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_小写(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:95:99: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_在_小写(char *定位_小写_短, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:96:95: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_牌_小写(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:97:83: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+void 警告_牌_短(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+cc -std=c11 -g -fno-common -Wall -Wno-switch   -c -o parse.o parse.c
+In file included from parse.c:19:
+./chibicc.h:45:62: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+char *格式化_函(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:94:70: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_小写(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:95:99: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_在_小写(char *定位_小写_短, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:96:95: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_牌_小写(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:97:83: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+void 警告_牌_短(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+cc -std=c11 -g -fno-common -Wall -Wno-switch   -c -o preprocess.o preprocess.c
+In file included from preprocess.c:25:
+./chibicc.h:45:62: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+char *格式化_函(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:94:70: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_小写(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:95:99: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_在_小写(char *定位_小写_短, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:96:95: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_牌_小写(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:97:83: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+void 警告_牌_短(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+cc -std=c11 -g -fno-common -Wall -Wno-switch   -c -o strings.o strings.c
+In file included from strings.c:1:
+./chibicc.h:45:62: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+char *格式化_函(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:94:70: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_小写(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:95:99: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_在_小写(char *定位_小写_短, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:96:95: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_牌_小写(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:97:83: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+void 警告_牌_短(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+cc -std=c11 -g -fno-common -Wall -Wno-switch   -c -o tokenize.o tokenize.c
+In file included from tokenize.c:1:
+./chibicc.h:45:62: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+char *格式化_函(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:94:70: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_小写(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:95:99: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_在_小写(char *定位_小写_短, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:96:95: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_牌_小写(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:97:83: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+void 警告_牌_短(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+cc -std=c11 -g -fno-common -Wall -Wno-switch   -c -o type.o type.c
+In file included from type.c:1:
+./chibicc.h:45:62: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+char *格式化_函(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:94:70: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_小写(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:95:99: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_在_小写(char *定位_小写_短, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:96:95: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_牌_小写(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:97:83: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+void 警告_牌_短(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+cc -std=c11 -g -fno-common -Wall -Wno-switch   -c -o unicode.o unicode.c
+In file included from unicode.c:1:
+./chibicc.h:45:62: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+char *格式化_函(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:94:70: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_小写(char *格式_缩写, ...) __attribute__((格式化_函(printf, 1, 2)));
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:95:99: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_在_小写(char *定位_小写_短, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:96:95: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+noreturn void 错误_牌_小写(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                                ^~~~~~~~~~~~~~~~~~~~~~~
+./chibicc.h:97:83: warning: unknown attribute '格式化_函' ignored [-Wunknown-attributes]
+void 警告_牌_短(牌 *牌_短_小写, char *格式_缩写, ...) __attribute__((格式化_函(printf, 2, 3)));
+                                                                     ^~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+cc -std=c11 -g -fno-common -Wall -Wno-switch -o chibicc codegen.o hashmap.o main.o parse.o preprocess.o strings.o tokenize.o type.o unicode.o
+by@bycc:~/chibicc-main$ ll
+total 1276
+drwxrwxr-x 4 by by   4096  8月 22 06:02 ./
+drwxr-x--- 7 by by   4096  8月 22 06:02 ../
+-rwxrwxr-x 1 by by 324296  8月 22 06:02 chibicc*
+-rw-rw-r-- 1 by by  13750  8月 22 06:02 chibicc.h
+-rw-rw-r-- 1 by by  56591  8月 22 06:02 codegen.c
+-rw-rw-r-- 1 by by 111064  8月 22 06:02 codegen.o
+-rw-rw-r-- 1 by by     83  8月 22 06:02 .gitignore
+-rw-rw-r-- 1 by by   6524  8月 22 06:02 hashmap.c
+-rw-rw-r-- 1 by by  15928  8月 22 06:02 hashmap.o
+drwxrwxr-x 2 by by   4096  8月 22 06:02 include/
+-rw-rw-r-- 1 by by   1083  8月 22 06:02 LICENSE
+-rw-rw-r-- 1 by by  20882  8月 22 06:02 main.c
+-rw-rw-r-- 1 by by  70896  8月 22 06:02 main.o
+-rw-rw-r-- 1 by by   1149  8月 22 06:02 Makefile
+-rw-rw-r-- 1 by by 153074  8月 22 06:02 parse.c
+-rw-rw-r-- 1 by by 166464  8月 22 06:02 parse.o
+-rw-rw-r-- 1 by by  46477  8月 22 06:02 preprocess.c
+-rw-rw-r-- 1 by by  80288  8月 22 06:02 preprocess.o
+-rw-rw-r-- 1 by by   9766  8月 22 06:02 README.md
+-rw-rw-r-- 1 by by    939  8月 22 06:02 strings.c
+-rw-rw-r-- 1 by by   7664  8月 22 06:02 strings.o
+drwxrwxr-x 3 by by   4096  8月 22 06:02 test/
+-rw-rw-r-- 1 by by  25523  8月 22 06:02 tokenize.c
+-rw-rw-r-- 1 by by  60312  8月 22 06:02 tokenize.o
+-rw-rw-r-- 1 by by  12606  8月 22 06:02 type.c
+-rw-rw-r-- 1 by by  30368  8月 22 06:02 type.o
+-rw-rw-r-- 1 by by   7344  8月 22 06:02 unicode.c
+-rw-rw-r-- 1 by by   9816  8月 22 06:02 unicode.o
+```
 
-- Preprocessor
-- float, double and long double (x87 80-bit floating point numbers)
-- Bit-fields
-- alloca()
-- Variable-length arrays
-- Compound literals
-- Thread-local variables
-- Atomic variables
-- Common symbols
-- Designated initializers
-- L, u, U and u8 string literals
-- Functions that take or return structs as values, as specified by the
-  x86-64 SystemV ABI
+到这里用clang或gcc编译汉化了源码的chibicc这个项目是通过的.
 
-chibicc does not support complex numbers, K&R-style function prototypes
-and GCC-style inline assembly. Digraphs and trigraphs are intentionally
-left out.
+```
+by@bycc:~/chibicc-main$ ./chibicc
+no input files
+```
 
-chibicc outputs a simple but nice error message when it finds an error in
-source code.
+甚至于说执行已编译后的chibicc.exe程序都没问题.
 
-There's no optimization pass. chibicc emits terrible code which is probably
-twice or more slower than GCC's output. I have a plan to add an
-optimization pass once the frontend is done.
+但是用chibicc.exe编译新的.c源程序就会出问题了.
 
-I'm using Ubuntu 20.04 for x86-64 as a development platform. I made a
-few small changes so that chibicc works on Ubuntu 18.04, Fedora 32 and
-Gentoo 2.6, but portability is not my goal at this moment. It may or
-may not work on systems other than Ubuntu 20.04.
+```
+by@bycc:~/chibicc-main$ touch 1.c
+by@bycc:~/chibicc-main$ nano 1.c
+by@bycc:~/chibicc-main$ ./chibicc 1.c
+1.c:2:  printf("你好世界");
+       ^ implicit 声明整体_小写 of a 函数_全_小写
+by@bycc:~/chibicc-main$
+by@bycc:~/chibicc-main$ nano 1.c
 
-## Internals
+#include <stdio.h>
 
-chibicc consists of the following stages:
+int main() {
+    printf("你好世界");
+    return 0;
+}
+```
+```
+by@bycc:~/chibicc-main$ ./chibicc 1.c
+/tmp/chibicc-IDTobX: Assembler messages:
+/tmp/chibicc-IDTobX:1: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:2: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:3: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:4: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:5: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:6: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:7: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:8: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:9: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:10: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:11: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:12: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:13: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:14: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:15: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:16: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:17: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:18: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:19: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:20: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:21: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:22: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:23: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:24: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:25: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:26: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:27: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:28: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:29: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:30: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:31: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:32: Error: unknown pseudo-op: `.文件_小写'
+/tmp/chibicc-IDTobX:34: Error: unknown pseudo-op: `.数据_小写'
+/tmp/chibicc-IDTobX:36: Error: unknown pseudo-op: `.大小_小写'
+/tmp/chibicc-IDTobX:37: Error: unknown pseudo-op: `.对齐_短_小写'
+/tmp/chibicc-IDTobX:53: Error: unknown pseudo-op: `.数据_小写'
+/tmp/chibicc-IDTobX:55: Error: unknown pseudo-op: `.大小_小写'
+/tmp/chibicc-IDTobX:56: Error: unknown pseudo-op: `.对齐_短_小写'
+/tmp/chibicc-IDTobX:64: Error: unknown pseudo-op: `.数据_小写'
+/tmp/chibicc-IDTobX:66: Error: unknown pseudo-op: `.大小_小写'
+/tmp/chibicc-IDTobX:67: Error: unknown pseudo-op: `.对齐_短_小写'
+/tmp/chibicc-IDTobX:75: Error: unknown pseudo-op: `.数据_小写'
+/tmp/chibicc-IDTobX:77: Error: unknown pseudo-op: `.大小_小写'
+/tmp/chibicc-IDTobX:78: Error: unknown pseudo-op: `.对齐_短_小写'
+/tmp/chibicc-IDTobX:93: Error: unknown pseudo-op: `.数据_小写'
+/tmp/chibicc-IDTobX:95: Error: unknown pseudo-op: `.大小_小写'
+/tmp/chibicc-IDTobX:96: Error: unknown pseudo-op: `.对齐_短_小写'
+/tmp/chibicc-IDTobX:111: Error: unknown pseudo-op: `.数据_小写'
+/tmp/chibicc-IDTobX:113: Error: unknown pseudo-op: `.大小_小写'
+/tmp/chibicc-IDTobX:114: Error: unknown pseudo-op: `.对齐_短_小写'
+/tmp/chibicc-IDTobX:129: Error: unknown pseudo-op: `.数据_小写'
+/tmp/chibicc-IDTobX:131: Error: unknown pseudo-op: `.大小_小写'
+/tmp/chibicc-IDTobX:132: Error: unknown pseudo-op: `.对齐_短_小写'
+/tmp/chibicc-IDTobX:147: Error: unknown pseudo-op: `.数据_小写'
+/tmp/chibicc-IDTobX:149: Error: unknown pseudo-op: `.大小_小写'
+/tmp/chibicc-IDTobX:150: Error: unknown pseudo-op: `.对齐_短_小写'
+/tmp/chibicc-IDTobX:166: Error: unknown pseudo-op: `.数据_小写'
+/tmp/chibicc-IDTobX:168: Error: unknown pseudo-op: `.大小_小写'
+/tmp/chibicc-IDTobX:169: Error: unknown pseudo-op: `.对齐_短_小写'
+/tmp/chibicc-IDTobX:186: Error: unrecognized symbol type "函数_全_小写"
+/tmp/chibicc-IDTobX:212: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:213: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:214: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:215: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:216: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:219: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:225: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:226: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:227: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:228: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:238: Error: unrecognized symbol type "函数_全_小写"
+/tmp/chibicc-IDTobX:247: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:248: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:249: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:250: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:251: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:252: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:255: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:258: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:259: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:267: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:268: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:269: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:270: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:271: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:275: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:276: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:280: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:281: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:285: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:293: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:298: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:299: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:300: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:301: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:302: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:303: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:304: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:305: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:310: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:313: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:314: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:315: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:316: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:317: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:318: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:321: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:322: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:323: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:326: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:332: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:333: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:334: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:337: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:340: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:343: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:344: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:345: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:348: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:349: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:350: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:355: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:356: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:359: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:361: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:362: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:363: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:364: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:367: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:368: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:369: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:372: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:375: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:378: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:379: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:380: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:390: Error: unrecognized symbol type "函数_全_小写"
+/tmp/chibicc-IDTobX:399: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:400: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:401: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:402: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:403: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:404: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:407: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:410: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:411: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:419: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:420: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:421: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:422: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:423: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:427: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:428: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:432: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:433: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:437: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:445: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:450: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:451: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:452: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:453: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:454: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:455: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:456: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:457: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:462: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:465: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:466: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:467: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:468: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:469: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:470: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:473: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:474: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:475: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:478: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:484: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:485: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:486: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:489: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:492: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:495: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:496: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:497: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:500: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:501: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:502: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:507: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:508: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:511: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:513: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:514: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:515: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:516: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:519: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:520: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:521: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:524: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:527: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:530: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:531: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:532: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:542: Error: unrecognized symbol type "函数_全_小写"
+/tmp/chibicc-IDTobX:551: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:552: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:553: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:554: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:555: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:556: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:557: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:558: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:559: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:564: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:567: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:568: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:569: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:572: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:576: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:577: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:578: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:579: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:583: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:584: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:592: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:593: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:596: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:597: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:598: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:599: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:603: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:604: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:605: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:606: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:610: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:611: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:612: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:613: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:614: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:615: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:618: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:619: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:625: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:626: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:630: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:641: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:642: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:643: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:646: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:648: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:649: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:650: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:651: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:655: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:656: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:657: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:658: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:662: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:663: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:664: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:665: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:669: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:670: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:671: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:672: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:677: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:678: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:679: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:683: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:685: Error: invalid character (0xe5) in mnemonic
+/tmp/chibicc-IDTobX:693: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:694: Error: unknown pseudo-op: `.定位_小写_短'
+/tmp/chibicc-IDTobX:695: Error: unknown pseudo-op: `.定位_小写_短'
+```
 
-- Tokenize: A tokenizer takes a string as an input, breaks it into a list
-  of tokens and returns them.
+为什么呢?
 
-- Preprocess: A preprocessor takes as an input a list of tokens and output
-  a new list of macro-expanded tokens. It interprets preprocessor
-  directives while expanding macros.
+你可以看出这里是汇编器相关的问题,
 
-- Parse: A recursive descendent parser constructs abstract syntax trees
-  from the output of the preprocessor. It also adds a type to each AST
-  节点_小写.
+因为汇编器还不支持utf8编码.
 
-- Codegen: A code generator emits an assembly text for given AST nodes.
+虽然在chibicc项目的```[代码生成.c]```文件里可以使用中文汉字标识符编写,
 
-## Contributing
+但是chibicc并没实现自己的汇编器,也不是直接生成机器码,而是调用外部的汇编器来编译chibicc生成的汇编代码,
 
-When I find a bug in this compiler, I go back to the original commit that
-introduced the bug and rewrite the commit history as if there were no such
-bug from the beginning. This is an unusual way of fixing bugs, but as a
-part of a book, it is important to keep every commit bug-free.
-
-Thus, I do not take pull requests in this repo. You can send me a pull
-request if you find a bug, but it is very likely that I will read your
-patch and then apply that to my previous commits by rewriting history. I'll
-credit your 名称_小写 somewhere, but your changes will be rewritten by me before
-submitted to this repository.
-
-Also, please assume that I will occasionally force-push my local repository
-to this public one to rewrite history. If you clone this project and make
-local commits on top of it, your changes will have to be rebased by hand
-when I force-push new commits.
-
-## Design principles
-
-chibicc's core value is its simplicity and the reability of its source
-code. To achieve this goal, I was careful not to be too clever when
-writing code. Let me explain what that means.
-
-Oftentimes, as you get used to the code base, you are tempted to
-_improve_ the code using more abstractions and clever tricks.
-But that 种类_小写 of _improvements_ don't always improve readability for
-first-time readers and can actually hurts it. I tried to avoid the
-pitfall as much as possible. I wrote this code not for me but for
-first-time readers.
-
-If you take a look at the source code, you'll find a couple of
-dumb-looking pieces of code. These are written intentionally that way
-(but at some places I might be actually missing something,
-though). Here is a few notable examples:
-
-- The recursive descendent parser contains many similar-looking functions
-  for similar-looking generative grammar rules. You might be tempted
-  to _improve_ it to reduce the duplication using higher-order functions
-  or macros, but I thought that that's too complicated. It's better to
-  allow small duplications instead.
-
-- chibicc doesn't try too hard to save memory. An entire input source
-  文件_小写 is read to memory first before the tokenizer kicks in, for example.
-
-- Slow algorithms are fine if we know that n isn't too big.
-  For example, we use a linked list as a set in the preprocessor, so
-  the membership check takes O(n) where n is the size of the set.  But
-  that's fine because we know n is usually very small.
-  And even if n can be very big, I stick with a simple slow algorithm
-  until it is proved by benchmarks that that's a bottleneck.
-
-- Each AST 节点_小写 type uses only a few members of the `节点` struct members.
-  Other unused `节点` members are just a waste of memory at runtime.
-  We could save memory using unions, but I decided to simply put everything
-  in the same struct instead. I believe the inefficiency is negligible.
-  Even if it matters, we can always change the code to use unions
-  at any time. I wanted to avoid premature optimization.
-
-- chibicc always allocates heap memory using `calloc`, which is a
-  variant of `malloc` that clears memory with zero. `calloc` is
-  slightly slower than `malloc`, but that should be neligible.
-
-- Last but not least, chibicc allocates memory using `calloc` but never
-  calls `free`. Allocated heap memory is not freed until the process exits.
-  I'm sure that this memory management policy (or lack thereof) looks
-  very odd, but it makes sense for short-lived programs such as compilers.
-  DMD, a compiler for the D programming language, uses the same memory
-  management scheme for the same reason, for example [1].
-
-## About the Author
-
-I'm Rui Ueyama. I'm the creator of [8cc](https://github.com/rui314/8cc),
-which is a hobby C compiler, and also the original creator of the current
-version of [LLVM lld](https://lld.llvm.org) linker, which is a
-production-quality linker used by various operating systems and large-scale
-build systems.
-
-## References
-
-- [tcc](https://bellard.org/tcc/): A small C compiler written by Fabrice
-  Bellard. I learned a lot from this compiler, but the design of tcc and
-  chibicc are different. In particular, tcc is a one-pass compiler, while
-  chibicc is a multi-pass one.
-
-- [lcc](https://github.com/drh/lcc): Another small C compiler. The creators
-  wrote a [book](https://sites.google.com/site/lccretargetablecompiler/)
-  about the internals of lcc, which I found a good resource to see how a
-  compiler is implemented.
-
-- [An Incremental Approach to Compiler
-  Construction](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf)
-
-- [Rob Pike's 5 Rules of Programming](https://users.ece.utexas.edu/~adnan/pike.html)
-
-[1] https://www.drdobbs.com/cpp/increasing-compiler-speed-by-over-75/240158941
-
-> DMD does memory allocation in a bit of a sneaky way. Since compilers
-> are short-lived programs, and speed is of the essence, DMD just
-> mallocs away, and never frees.
+而外部的汇编器是西方人写的那是很久都没更新过了,完全不支持中文汉字的.
+所以到这一步,又卡死了.
