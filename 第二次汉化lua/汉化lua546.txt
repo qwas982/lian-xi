@@ -1,1 +1,4104 @@
+{
+    "lua_newstate": "月亮_新状态机_函",
+    "lua_close": "月亮_关闭_函",
+    "lua_newthread": "月亮_新线程_函",
+    "lua_closethread": "月亮_关闭线程_函",
+    "lua_resetthread": "月亮_重置线程_函",
+    "lua_atpanic": "月亮_设置恐慌函数_函",
+    "lua_version": "月亮_版本_函",
+    "lua_absindex": "月亮_绝对索引_函",
+    "lua_gettop": "月亮_获取顶_函",
+    "lua_settop": "月亮_设置顶_函",
+    "lua_pushvalue": "月亮_推入值_函",
+    "lua_rotate": "月亮_旋转_函",
+    "lua_copy": "月亮_复制_函",
+    "lua_checkstack": "月亮_检查栈空间_函",
+    "lua_xmove": "月亮_传递数据_函",
+    "lua_isnumber": "月亮_是否数目_函",
+    "lua_isstring": "月亮_是否字符串_函",
+    "lua_iscfunction": "月亮_是否C函数_函",
+    "lua_isinteger": "月亮_是否整数_函",
+    "lua_isuserdata": "月亮_是否用户数据_函",
+    "lua_type": "月亮_类型_函",
+    "lua_typename": "月亮_类型名称_函",
+    "lua_tonumberx": "月亮_到数目x_函",
+    "lua_tointegerx": "月亮_到整数x_函",
+    "lua_toboolean": "月亮_到布尔值_函",
+    "lua_tolstring": "月亮_到长字符串_函",
+    "lua_rawlen": "月亮_原始长度_函",
+    "lua_tocfunction": "月亮_到C函数_函",
+    "lua_touserdata": "月亮_到用户数据_函",
+    "lua_tothread": "月亮到线程_函",
+    "lua_topointer": "月亮到指针_函",
+    "lua_arith": "月亮算术_函",
+    "lua_rawequal": "月亮原始相等_函",
+    "lua_compare": "月亮对比_函",
+    "lua_pushnil": "月亮推入空值_函",
+    "lua_pushnumber": "月亮推入数目_函",
+    "lua_pushinteger": "月亮推入整数_函",
+    "lua_pushlstring": "月亮推入长字符串_函",
+    "lua_pushstring": "月亮推入字符串_函",
+    "lua_pushvfstring": "月亮推入可变格式字符串_函",
+    "lua_pushfstring": "月亮推入格式化字符串_函",
+    "lua_pushcclosure": "月亮推入C闭包_函",
+    "lua_pushboolean": "月亮推入布尔值_函",
+    "lua_pushlightuserdata": "月亮推入轻量用户数据_函",
+    "lua_pushthread": "月亮推入线程_函",
+    "lua_getglobal": "月亮获取全局变量_函",
+    "lua_gettable": "月亮获取表_函",
+    "lua_getfield": "月亮获取字段_函",
+    "lua_geti": "月亮获取索引_函",
+    "lua_rawget": "月亮获取原始_函",
+    "lua_rawgeti": "月亮获取原始索引_函",
+    "lua_rawgetp": "月亮获取原始指针_函",
+    "lua_createtable": "月亮创建表_函",
+    "lua_newuserdatauv": "月亮创建新的用户数据uv_函",
+    "lua_getmetatable": "月亮获取元表_函",
+    "lua_getiuservalue": "月亮获取索引用户值_函",
+    "lua_setglobal": "月亮设置全局变量_函",
+    "lua_settable": "月亮设置表_函",
+    "lua_setfield": "月亮设置字段_函"
+    "lua_seti": "月亮_设置索引_函",
+    "lua_rawset": "月亮_设置原始_函",
+    "lua_rawseti": "月亮_设置原始索引_函",
+    "lua_rawsetp": "月亮_设置原始指针_函",
+    "lua_setmetatable": "月亮_设置元表_函",
+    "lua_setiuservalue": "月亮_设置索引用户值_函",
+    "lua_callk": "月亮_调用常量_函",
+    "lua_pcallk": "月亮_保护调用常量_函",
+    "lua_load": "月亮_加载_函",
+    "lua_dump": "月亮_转储_函",
+    "lua_yieldk": "月亮_让出常量_函",
+    "lua_resume": "月亮_恢复_函",
+    "lua_status": "月亮_状态码_函",
+    "lua_isyieldable": "月亮_是否可让出_函",
+    "lua_setwarnf": "月亮_设置警告函数_函",
+    "lua_warning": "月亮_警告_函",
+    "lua_gc": "月亮_垃圾回收_函",
+    "lua_error": "月亮_错误_函",
+    "lua_next": "月亮_下一个_函",
+    "lua_concat": "月亮_拼接_函",
+    "lua_len": "月亮_长度_函",
+    "lua_stringtonumber": "月亮_字符串到数目_函",
+    "lua_getallocf": "月亮_获取分配函数_函",
+    "lua_setallocf": "月亮_设置分配函数_函",
+    "lua_toclose": "月亮_到关闭_函",
+    "lua_closeslot": "月亮_关闭槽_函",
+    "lua_getstack": "月亮_获取栈_函",
+    "lua_getinfo": "月亮_获取信息_函",
+    "lua_getlocal": "月亮_获取本地变量_函",
+    "lua_setlocal": "月亮_设置本地变量_函",
+    "lua_getupvalue": "月亮_获取上值_函",
+    "lua_setupvalue": "月亮_设置上值_函",
+    "lua_upvalueid": "月亮_上值ID_函",
+    "lua_upvaluejoin": "月亮_上值加入_函",
+    "lua_sethook": "月亮_设置钩子_函",
+    "lua_gethook": "月亮_获取钩子_函",
+    "lua_gethookmask": "月亮_获取钩子掩码_函",
+    "lua_gethookcount": "月亮_获取钩子计数_函",
+    "lua_setcstacklimit": "月亮_设置C栈限制_函",
+    "luaY_nvarstack": "月亮解析_n变量栈_函",
+    "luaY_parser": "月亮解析_解析器_函"
+        "luaG_getfuncline": "月亮全局_获取函数行号_函",
+    "luaG_findlocal": "月亮全局_查找本地变量_函",
+    "luaG_typeerror": "月亮全局_类型错误_函",
+    "luaG_callerror": "月亮全局_调用错误_函",
+    "luaG_forerror": "月亮全局_for循环错误_函",
+    "luaG_concaterror": "月亮全局_拼接错误_函",
+    "luaG_opinterror": "月亮全局_操作整型错误_函",
+    "luaG_tointerror": "月亮全局_到整型错误_函",
+    "luaG_ordererror": "月亮全局_秩序错误_函",
+    "luaG_runerror": "月亮全局_跑错误_函",
+    "luaG_addinfo": "月亮全局_添加信息_函",
+    "luaG_errormsg": "月亮全局_错误消息_函",
+    "luaG_traceexec": "月亮全局_跟踪执行_函",
+    "luaF_newproto": "月亮函数_新原型_函",
+    "luaF_newCclosure": "月亮函数_新C闭包_函",
+    "luaF_newLclosure": "月亮函数_新L闭包_函",
+    "luaF_initupvals": "月亮函数_初始的上值_函",
+    "luaF_findupval": "月亮函数_查找上值_函",
+    "luaF_newtbcupval": "月亮函数_新待关闭上值_函",
+    "luaF_closeupval": "月亮函数_关闭上值_函",
+    "luaF_close": "月亮函数_关闭_函",
+    "luaF_unlinkupval": "月亮函数_解除链上值_函",
+    "luaF_freeproto": "月亮函数_释放原型_函",
+    "luaF_getlocalname": "月亮函数_获取本地名_函",
+    "luaS_hash": "月亮字符串_哈希_函",
+    "luaS_hashlongstr": "月亮字符串_哈希长的串_函",
+    "luaS_eqlngstr": "月亮字符串_相等长型串_函",
+    "luaS_resize": "月亮字符串_调整大小_函",
+    "luaS_clearcache": "月亮字符串_清除缓存_函",
+    "luaS_init": "月亮字符串_初始的_函",
+    "luaS_remove": "月亮字符串_移除_函",
+    "luaS_newudata": "月亮字符串_新用户数据_函",
+    "luaS_newlstr": "月亮字符串_新长串_函",
+    "luaS_new": "月亮字符串_新_函",
+    "luaS_createlngstrobj": "月亮字符串_创建长型串对象_函",
+    "luaH_getint": "月亮哈希表_获取整型键_函",
+    "luaH_setint": "月亮哈希表_设置整型键_函",
+    "luaH_getshortstr": "月亮哈希表_获取短串键_函",
+    "luaH_getstr": "月亮哈希表_获取串键_函",
+    "luaH_get": "月亮哈希表_获取键_函",
+    "luaH_newkey": "月亮哈希表_新的键_函",
+    "luaH_set": "月亮哈希表_设置键_函",
+    "luaH_finishset": "月亮哈希表_完成设置_函",
+    "luaH_new": "月亮哈希表_新_函",
+    "luaH_resize": "月亮哈希表_调整大小_函",
+    "luaH_resizearray": "月亮哈希表_调整数组大小_函",
+    "luaH_free": "月亮哈希表_释放_函",
+    "luaH_next": "月亮哈希表_下一个_函",
+    "luaH_getn": "月亮哈希表_获取n_函",
+    "luaH_realasize": "月亮哈希表_真实a大小_函",
+    "luaU_undump": "月亮实用工具_解除转储_函",
+    "luaU_dump": "月亮实用工具_转储_函"
+}
 
+{
+    "luaL_checkversion_": "月亮状态_检查版本_函",
+    "luaL_getmetafield": "月亮状态_获取元字段_函",
+    "luaL_callmeta": "月亮状态_调用元_函",
+    "luaL_tolstring": "月亮状态_到字符串_函",
+    "luaL_argerror": "月亮状态_实参错误_函",
+    "luaL_typeerror": "月亮状态_类型错误_函",
+    "luaL_checklstring": "月亮状态_检查状态字符串_函",
+    "luaL_optlstring": "月亮状态_可选状态字符串_函",
+    "luaL_checknumber": "月亮状态_检查数目_函",
+    "luaL_optnumber": "月亮状态_可选数目_函",
+    "luaL_checkinteger": "月亮状态_检查整数_函",
+    "luaL_optinteger": "月亮状态_可选整数_函",
+    "luaL_checkstack": "月亮状态_检查栈_函",
+    "luaL_checktype": "月亮状态_检查类型_函",
+    "luaL_checkany": "月亮状态_检查任意_函",
+    "luaL_newmetatable": "月亮状态_新元表_函",
+    "luaL_setmetatable": "月亮状态_设置元表_函",
+    "luaL_testudata": "月亮状态_测试用户数据_函",
+    "luaL_checkudata": "月亮状态_检查用户数据_函",
+    "luaL_where": "月亮状态_哪里_函",
+    "luaL_error": "月亮状态_错误_函",
+    "luaL_checkoption": "月亮状态_检查选项_函",
+    "luaL_fileresult": "月亮状态_文件结果_函",
+    "luaL_execresult": "月亮状态_执行结果_函",
+    "luaL_ref": "月亮状态_引用_函",
+    "luaL_unref": "月亮状态_取消引用_函",
+    "luaL_loadfilex": "月亮状态_加载文件x_函",
+    "luaL_loadbufferx": "月亮状态_加载缓冲区x_函",
+    "luaL_loadstring": "月亮状态_加载字符串_函",
+    "luaL_newstate": "月亮状态_新状态_函",
+    "luaL_len": "月亮状态_长度_函",
+    "luaL_addgsub": "月亮状态_添加全局替换_函",
+    "luaL_gsub": "月亮状态_全局替换_函",
+    "luaL_setfuncs": "月亮状态_设置函们_函",
+    "luaL_getsubtable": "月亮状态_获取子表_函",
+    "luaL_traceback": "月亮状态_跟踪回溯_函",
+    "luaL_requiref": "月亮状态_要求引用_函",
+    "luaL_buffinit": "月亮状态_缓冲初始的_函",
+    "luaL_prepbuffsize": "月亮状态_预备缓冲区大小_函",
+    "luaL_addlstring": "月亮状态_添加状态字符串_函",
+    "luaL_addstring": "月亮状态_添加字符串_函",
+    "luaL_addvalue": "月亮状态_添加值_函",
+    "luaL_pushresult": "月亮状态_推入结果_函",
+    "luaL_pushresultsize": "月亮状态_推入结果大小_函",
+    "luaL_buffinitsize": "月亮状态_缓冲初始的大小_函"
+}
+
+{
+    "luaX_init": "月亮分析_初始的_函",
+    "luaX_setinput": "月亮分析_设置输入_函",
+    "luaX_newstring": "月亮分析_新字符串_函",
+    "luaX_next": "月亮分析_下一个_函",
+    "luaX_lookahead": "月亮分析_看向前_函",
+    "luaX_syntaxerror": "月亮分析_句法错误_函",
+    "luaX_token2str": "月亮分析_牌到串_函",
+    "luaK_code": "月亮常量_代码_函",
+    "luaK_codeABx": "月亮常量_代码ABx_函",
+    "luaK_codeAsBx": "月亮常量_代码AsBx_函",
+    "luaK_codeABCk": "月亮常量_代码ABCk_函",
+    "luaK_isKint": "月亮常量_是否为整数常量_函",
+    "luaK_exp2const": "月亮常量_表达式到常量_函",
+    "luaK_fixline": "月亮常量_修正行号_函",
+    "luaK_nil": "月亮常量_空值_函",
+    "luaK_reserveregs": "月亮常量_保留寄存器们_函",
+    "luaK_checkstack": "月亮常量_检查栈_函",
+    "luaK_int": "月亮常量_整型_函",
+    "luaK_dischargevars": "月亮常量_卸货变量们_函",
+    "luaK_exp2anyreg": "月亮常量_表达式到任意寄存器_函",
+    "luaK_exp2anyregup": "月亮常量_表达式到任意寄存器更新_函",
+    "luaK_exp2nextreg": "月亮常量_表达式到下一个寄存器_函",
+    "luaK_exp2val": "月亮常量_表达式到值_函",
+    "luaK_exp2RK": "月亮常量_表达式到RK_函",
+    "luaK_self": "月亮常量_自身_函",
+    "luaK_indexed": "月亮常量_已索引_函",
+    "luaK_goiftrue": "月亮常量_去若真_函",
+    "luaK_goiffalse": "月亮常量_去若假_函",
+    "luaK_storevar": "月亮常量_存储变量_函",
+    "luaK_setreturns": "月亮常量_设置返回值_函",
+    "luaK_setoneret": "月亮常量_设置一个返回_函",
+    "luaK_jump": "月亮常量_跳转_函",
+    "luaK_ret": "月亮常量_返回_函",
+    "luaK_patchlist": "月亮常量_补丁列表_函",
+    "luaK_patchtohere": "月亮常量_补丁到这里_函",
+    "luaK_concat": "月亮常量_拼接_函",
+    "luaK_getlabel": "月亮常量_获取标号_函",
+    "luaK_prefix": "月亮常量_前缀_函",
+    "luaK_infix": "月亮常量_中缀_函",
+    "luaK_posfix": "月亮常量_后缀_函",
+    "luaK_settablesize": "月亮常量_设置表大小_函",
+    "luaK_setlist": "月亮常量_设置列表_函",
+    "luaK_finish": "月亮常量_完成_函",
+    "luaK_semerror": "月亮常量_语义错误_函"
+}
+
+{
+    "luaC_fix": "月亮编译_修复_函",
+    "luaC_freeallobjects": "月亮编译_释放所有对象们_函",
+    "luaC_step": "月亮编译_步进_函",
+    "luaC_runtilstate": "月亮编译_跑直到状态_函",
+    "luaC_fullgc": "月亮编译_完全垃圾回收_函",
+    "luaC_newobj": "月亮编译_新对象_函",
+    "luaC_newobjdt": "月亮编译_新对象dt_函",
+    "luaC_barrier_": "月亮编译_屏障_函",
+    "luaC_barrierback_": "月亮编译_屏障回退_函",
+    "luaC_checkfinalizer": "月亮编译_检查终结器_函",
+    "luaC_changemode": "月亮编译_改变模式_函"
+}
+
+{
+    "luaopen_base": "月亮打开基本_函",
+    "luaopen_coroutine": "月亮打开协程_函",
+    "luaopen_table": "月亮打开表_函",
+    "luaopen_io": "月亮打开输入输出_函",
+    "luaopen_os": "月亮打开操作系统_函",
+    "luaopen_string": "月亮打开字符串_函",
+    "luaopen_utf8": "月亮打开UTF8_函",
+    "luaopen_math": "月亮打开数学_函",
+    "luaopen_debug": "月亮打开调试_函",
+    "luaopen_package": "月亮打开包_函",
+    "luaL_openlibs": "月亮库打开库们_函"
+}
+
+{
+    "luaD_seterrorobj": "月亮调度_设置错误对象_函",
+    "luaD_protectedparser": "月亮调度_受保护解析器_函",
+    "luaD_hook": "月亮调度_钩子_函",
+    "luaD_hookcall": "月亮调度_钩子调用_函",
+    "luaD_pretailcall": "月亮调度_预备尾调用_函",
+    "luaD_precall": "月亮调度_预备调用_函",
+    "luaD_call": "月亮调度_调用_函",
+    "luaD_callnoyield": "月亮调度_调用无产出_函",
+    "luaD_tryfuncTM": "月亮调度_尝试函标签方法_函",
+    "luaD_closeprotected": "月亮调度_关闭受保护_函",
+    "luaD_pcall": "月亮调度_预处理调用_函",
+    "luaD_poscall": "月亮调度_后处理调用_函",
+    "luaD_reallocstack": "月亮调度_重新分配栈_函",
+    "luaD_growstack": "月亮调度_增长栈_函",
+    "luaD_shrinkstack": "月亮调度_收缩栈_函",
+    "luaD_inctop": "月亮调度_递增顶_函",
+    "luaD_throw": "月亮调度_抛出_函",
+    "luaD_rawrunprotected": "月亮调度_原始跑受保护_函",
+    "luaV_equalobj": "月亮虚拟机_相等对象_函",
+    "luaV_lessthan": "月亮虚拟机_小于_函",
+    "luaV_lessequal": "月亮虚拟机_小于等于_函",
+    "luaV_tonumber_": "月亮虚拟机_到数目__函",
+    "luaV_tointeger": "月亮虚拟机_到整数_函",
+    "luaV_tointegerns": "月亮虚拟机_非安全到整数_函",
+    "luaV_flttointeger": "月亮虚拟机_浮点数到整数_函",
+    "luaV_finishget": "月亮虚拟机_完成获取_函",
+    "luaV_finishset": "月亮虚拟机_完成设置_函",
+    "luaV_finishOp": "月亮虚拟机_完成操作_函",
+    "luaV_execute": "月亮虚拟机_执行_函",
+    "luaV_concat": "月亮虚拟机_拼接_函",
+    "luaV_idiv": "月亮虚拟机_整数除法_函",
+    "luaV_mod": "月亮虚拟机_取模_函",
+    "luaV_modf": "月亮虚拟机_浮点数取整_函",
+    "luaV_shiftl": "月亮虚拟机_左移_函",
+    "luaV_objlen": "月亮虚拟机_对象长度_函"
+}
+
+{
+    "luaO_utf8esc": "月亮对象_utf8转义_函",
+    "luaO_ceillog2": "月亮对象_向上取整对数2_函",
+    "luaO_rawarith": "月亮对象_原始算术_函",
+    "luaO_arith": "月亮对象_算术_函",
+    "luaO_str2num": "月亮对象_字符串到数目_函",
+    "luaO_hexavalue": "月亮对象_十六进制值_函",
+    "luaO_tostring": "月亮对象_到字符串_函",
+    "luaO_pushvfstring": "月亮对象_推入可变格式化字符串_函",
+    "luaO_pushfstring": "月亮对象_推入格式化字符串_函",
+    "luaO_chunkid": "月亮对象_大块id_函",
+    "luaT_objtypename": "月亮类型_对象类型名_函",
+    "luaT_gettm": "月亮类型_获取标签方法_函",
+    "luaT_gettmbyobj": "月亮类型_通过对象获取标签方法_函",
+    "luaT_init": "月亮类型_初始化_函",
+    "luaT_callTM": "月亮类型_调用标签方法_函",
+    "luaT_callTMres": "月亮类型_调用标签方法并返回结果_函",
+    "luaT_trybinTM": "月亮类型_尝试二元标签方法_函",
+    "luaT_tryconcatTM": "月亮类型_尝试拼接标签方法_函",
+    "luaT_trybinassocTM": "月亮类型_尝试关联二元标签方法_函",
+    "luaT_trybiniTM": "月亮类型_尝试索引二元标签方法_函",
+    "luaT_callorderTM": "月亮类型_调用秩序标签方法_函",
+    "luaT_callorderiTM": "月亮类型_调用秩序索引标签方法_函",
+    "luaT_adjustvarargs": "月亮类型_调整可变实参们_函",
+    "luaT_getvarargs": "月亮类型_获取可变实参们_函",
+    "luaM_toobig": "月亮内存_太大_函",
+    "luaM_realloc_": "月亮内存_重新分配_函",
+    "luaM_saferealloc_": "月亮内存_安全重新分配_函",
+    "luaM_free_": "月亮内存_释放_函",
+    "luaM_growaux_": "月亮内存_增长辅助_函",
+    "luaM_shrinkvector_": "月亮内存_收缩向量_函",
+    "luaM_malloc_": "月亮内存_内存分配_函",
+    "luaZ_init": "月亮流_初始的_函",
+    "luaZ_read": "月亮流_读取_函",
+    "luaZ_fill": "月亮流_填充_函",
+    "luaE_setdebt": "月亮错误_设置债务_函",
+    "luaE_freethread": "月亮错误_释放线程_函",
+    "luaE_extendCI": "月亮错误_扩展调用信息_函",
+    "luaE_freeCI": "月亮错误_释放调用信息_函",
+    "luaE_shrinkCI": "月亮错误_收缩调用信息_函",
+    "luaE_checkcstack": "月亮错误_检查C栈_函",
+    "luaE_incCstack": "月亮错误_递增C栈_函",
+    "luaE_warning": "月亮错误_警告_函",
+    "luaE_warnerror": "月亮错误_警告错误_函",
+    "luaE_resetthread": "月亮错误_重置线程_函"
+}
+
+/*
+根据您提供的文件列表，以下是Lua的头文件及其简要描述：
+
+lapi.h：定义了Lua的API函数，用于与Lua解释器进行交互。
+lauxlib.h：提供了辅助函数和宏，用于编写Lua扩展模块。
+lcode.h：定义了Lua的字节码生成和加载相关的函数和结构。
+lctype.h：定义了Lua的字符类型判断宏。
+ldebug.h：定义了Lua的调试功能相关的函数和结构。
+ldo.h：定义了Lua的执行器相关的函数和结构。
+lfunc.h：定义了Lua的函数相关的结构和宏。
+lgc.h：定义了Lua的垃圾回收相关的函数和结构。
+ljumptab.h：定义了Lua的跳转指令表。
+llex.h：定义了Lua的词法分析器相关的函数和结构。
+llimits.h：定义了Lua的一些限制和常量。
+lmem.h：定义了Lua的内存管理相关的函数和宏。
+lobject.h：定义了Lua的对象类型和相关的函数和宏。
+lopcodes.h：定义了Lua的操作码和指令相关的宏和结构。
+lopnames.h：定义了Lua的操作码名称宏。
+lparser.h：定义了Lua的语法分析器相关的函数和结构。
+lprefix.h：定义了Lua的前缀配置选项。
+lstate.h：定义了Lua的状态管理相关的函数和结构。
+lstring.h：定义了Lua的字符串相关的函数和结构。
+ltable.h：定义了Lua的表相关的函数和结构。
+ltm.h：定义了Lua的元方法相关的函数和宏。
+lua.h：包含了Lua的核心API，用于与Lua进行交互。
+luaconf.h：包含了Lua的配置选项和宏定义。
+lualib.h：包含了一些用于加载标准Lua库的函数原型。
+lundump.h：定义了Lua的二进制数据加载和转储相关的函数和结构。
+lvm.h：定义了Lua的虚拟机相关的函数和结构。
+lzio.h：定义了Lua的输入和输出缓冲区相关的函数和结构。
+lua.hpp：C++风格的Lua头文件，用于在C++代码中与Lua进行交互。
+
+  1427  lapi.h
+  9314  lauxlib.h
+  3801  lcode.h
+  2115  lctype.h
+  2170  ldebug.h
+  3262  ldo.h
+  1708  lfunc.h
+  6431  lgc.h
+  1663  ljumptab.h
+  2402  llex.h
+  9294  llimits.h
+  3368  lmem.h
+ 22720  lobject.h
+ 13348  lopcodes.h
+  1143  lopnames.h
+  5927  lparser.h
+   828  lprefix.h
+ 15305  lstate.h
+  1603  lstring.h
+  2191  ltable.h
+  2913  ltm.h
+ 15949  lua.h
+ 21494  luaconf.h
+  1116  lualib.h
+   863  lundump.h
+  4552  lvm.h
+  1438  lzio.h
+   191  lua.hpp
+   
+以下是对每个文件的内容和主要功能的简要描述：
+
+lapi.h：包含了 Lua C API 的函数和数据结构，用于与 Lua 解释器进行交互。它提供了一系列的函数，允许从 C 代码中调用 Lua 函数、操作 Lua 堆栈、读取和设置 Lua 变量等。
+
+lauxlib.h：提供了一些辅助函数，用于扩展 Lua 解释器的功能。这些函数包括注册新的库、创建新的 Lua 类型、获取和设置全局变量、处理 Lua 错误等。
+
+lcode.h：定义了与 Lua 字节码生成和优化相关的函数和数据结构。它包含了将抽象语法树编译为字节码的函数、优化字节码的函数以及生成和操作常量表的函数。
+
+lctype.h：包含字符处理相关的函数和宏定义，用于在解析 Lua 代码时进行字符分类和判断。它提供了一些用于判断字符类型（如字母、数字、空白字符等）的宏定义和函数。
+
+ldebug.h：定义了与调试相关的函数和数据结构，用于在调试 Lua 程序时获取调用栈和变量信息。它包含了一些函数，例如获取当前调用栈信息、获取局部变量和上值的值以及设置断点等。
+
+ldo.h：包含了与 Lua 解释器执行相关的函数和数据结构。它定义了执行 Lua 函数的函数、处理异常的函数以及执行垃圾回收的函数等。
+
+lfunc.h：定义了与 Lua 函数和闭包相关的函数和数据结构。它包含了创建 Lua 函数和闭包的函数、获取函数参数和上值的函数以及调用 Lua 函数的函数等。
+
+lgc.h：包含了与 Lua 垃圾回收相关的函数和数据结构，用于管理和清理不再使用的内存。它定义了垃圾回收器的函数、内存分配和释放函数以及对象标记和清理的函数等。
+
+ljumptab.h：定义了与 Lua 字节码跳转表相关的数据结构。它包含了一个静态数组，用于存储 Lua 字节码指令的跳转目标地址。
+
+llex.h：包含了与词法分析相关的函数和数据结构，用于将源代码解析为词法单元。它定义了词法分析器的函数，用于从源代码中读取词法单元并返回其类型和内容。
+
+llimits.h：定义了与 Lua 解释器中限制和常量相关的宏和常量。它包含了一些用于表示最小值、最大值和限制的宏定义，以及一些常量的定义。
+
+lmem.h：定义了内存管理函数和数据结构，用于分配和释放内存。它包含了一些用于内存管理的函数，例如分配、释放、重分配内存块的函数。
+
+lobject.h：包含了与 Lua 对象模型相关的函数和数据结构，用于表示和操作 Lua 值。它定义了 Lua 值的类型、值的表示方法以及与值相关的操作和函数。
+
+lopcodes.h：定义了 Lua 字节码的操作码和相关的宏定义。它包含了一系列的宏定义，用于表示不同类型的 Lua 字节码指令。
+
+lopnames.h：包含了 Lua 字节码操作码的名称和相关的宏定义。它定义了与 Lua 字节码操作码名称对应的宏定义，方便在调试和分析时使用。
+
+lparser.h：包含了与语法解析相关的函数和数据结构，用于将词法单元解析为抽象语树。它定义了语法解析器的函数，用于从词法单元流中生成抽象语法树。
+
+lprefix.h：是一个前缀文件，用于定义 Lua 解释器的一些基本设置和配置。它包含了一些宏定义和条件编译指令，用于配置 Lua 解释器的行为。
+
+lstate.h：定义了与 Lua 解释器状态相关的函数和数据结构，用于管理全局状态和协程。它定义了全局状态的结构体、协程的数据结构以及与状态管理相关的函数。
+
+lstring.h：包含了与字符串处理相关的函数和数据结构，用于操作 Lua 字符串。它定义了字符串对象的结构体、字符串的操作函数以及字符串的表示方法。
+
+ltable.h：定义了与 Lua 表（table）相关的函数和数据结构，用于创建和操作 Lua 表。它定义了表对象的结构体、表的操作函数以及表的表示方法。
+
+ltm.h：包含了与元方法（metamethod）相关的函数和数据结构，用于重载 Lua 对象的行为。它定义了元方法的结构体、元方法的操作函数以及元方法的使用方法。
+
+lua.h：是 Lua C API 的主头文件，包含了所有必要的函数和类型定义，用于在 C/C++ 代码中调用 Lua 解释器。它提供了 Lua C API 的所有功能，包括栈操作、函数调用、Lua 值操作等。
+
+luaconf.h：是生成 Lua 解释器的配置文件，定义了 Lua 解释器的一些行为和特性。它包含了一些宏定义和条件编译指令，用于配置 Lua 解释器的功能和行为。
+
+lualib.h：定义了一些常用的 Lua 库函数，用于在 C/C++ 代码中注册和使用 Lua 库。它包含了一系列的函数声明，用于注册和调用 Lua 标准库和自定义库。
+
+lundump.h：定义了与 Lua 字节码反汇编和反序列化相关的函数和数据结构。它包含了将 Lua 字节码反汇编为文本表示的函数、将字节码序列化为二进制的函数，以及相关的数据结构。
+
+lvm.h：定义了与 Lua 虚拟机相关的函数和数据结构，用于执行 Lua 字节码指令。它定义了虚拟机的结构体、执行指令的函数以及与虚拟机相关的操作函数。
+
+lzio.h：包含了与输入/输出缓冲区相关的函数和数据结构，用于读取和写入 Lua 源代码。它定义了输入/输出缓冲区的结构体、读取和写入函数以及相关的宏定义。
+
+lua.hpp：是一个 C++ 封装的 Lua 头文件，提供了使用 C++ 的便利性和扩展，方便在 C++ 代码中调用 Lua 解释器。它包含了使用 C++ 的类和函数，以及处理异常和类型转换的功能。
+
+  39K  lapi.c
+  37K  lauxlib.c
+  18K  lbaselib.c
+  56K  lcode.c
+ 5.4K  lcorolib.c
+ 2.5K  lctype.c
+  15K  ldblib.c
+  30K  ldebug.c
+  37K  ldo.c
+ 5.1K  ldump.c
+ 9.0K  lfunc.c
+  58K  lgc.c
+ 1.9K  linit.c
+  24K  liolib.c
+  18K  llex.c
+  21K  lmathlib.c
+ 6.5K  lmem.c
+  25K  loadlib.c
+  21K  lobject.c
+ 4.2K  lopcodes.c
+  13K  loslib.c
+  60K  lparser.c
+  13K  lstate.c
+ 8.0K  lstring.c
+  60K  lstrlib.c
+  33K  ltable.c
+  15K  ltablib.c
+ 9.2K  ltm.c
+  21K  lua.c
+  16K  luac.c
+ 8.4K  lundump.c
+ 8.7K  lutf8lib.c
+  62K  lvm.c
+ 1.5K  lzio.c
+
+这些文件是 Lua 编程语言的源代码文件。每个文件都有其特定的功能和作用，用于支持 Lua 解释器的不同方面和功能模块。以下是对一些文件的功能细节的解释：
+
+lapi.c: 实现了 Lua 的 API 函数，提供了与 Lua 解释器的交互接口。
+lauxlib.c: 包含了一些辅助函数和库函数，用于扩展 Lua 的功能。
+lbaselib.c: 提供了基础库函数，例如字符串处理、数学运算等。
+lcode.c: 实现了 Lua 字节码的生成和优化。
+lcorolib.c: 提供了协程相关的库函数。
+lctype.c: 包含了字符类型判断的函数。
+ldblib.c: 提供了与调试器相关的库函数。
+ldebug.c: 实现了调试器的功能，例如断点设置、栈跟踪等。
+ldo.c: 包含了 Lua 解释器的主循环和执行相关的函数。
+ldump.c: 实现了字节码的序列化和反序列化。
+lfunc.c: 处理函数对象的创建和相关操作。
+lgc.c: 实现了 Lua 的垃圾回收机制。
+linit.c: 包含了 Lua 解释器的初始化函数。
+liolib.c: 提供了文件 I/O 相关的库函数。
+llex.c: 实现了词法分析器，用于将源代码分解为词法单元。
+lmathlib.c: 提供了数学库函数。
+lmem.c: 实现了内存管理相关的函数。
+loadlib.c: 提供了动态链接库加载的功能。
+lobject.c: 处理 Lua 对象的创建和相关操作。
+lopcodes.c: 定义了 Lua 字节码的操作码。
+loslib.c: 提供了操作系统相关的库函数。
+lparser.c: 实现了语法分析器，将词法单元转换为抽象语法树。
+lstate.c: 处理 Lua 解释器的状态和相关操作。
+lstring.c: 实现了字符串对象的创建和相关操作。
+lstrlib.c: 提供了字符串处理相关的库函数。
+ltable.c: 处理 Lua 的表（table）对象的创建和相关操作。
+ltablib.c: 提供了表操作相关的库函数。
+ltm.c: 实现了元表（metatable）相关的功能。
+lua.c: 包含了 Lua 解释器的入口点和主程序。
+luac.c: 实现了 Lua 编译器，将源代码编译为字节码。
+lundump.c: 实现了字节码的反编译。
+lutf8lib.c: 提供了 UTF-8 编码相关的库函数。
+lvm.c: 实现了 Lua 虚拟机的执行引擎。
+lzio.c: 处理输入和输出流的底层操作。
+这些文件一起构成了 Lua 解释器的核心部分，提供了语言的基本功能和扩展库函数。它们共同工作，使得 Lua 成为一种灵活、可扩展的编程语言。
+
+下面是对每个文件的更详细分析：
+
+lapi.c：该文件实现了 Lua 的 API 函数。这些函数允许其他程序与 Lua 解释器进行交互，包括执行 Lua 代码、访问和操作 Lua 的数据结构等。
+
+lauxlib.c：该文件包含了一些辅助函数和库函数，用于扩展 Lua 的功能。这些函数提供了一些常用的操作和功能，例如字符串处理、表操作、错误处理等。它们可以帮助开发人员更方便地使用 Lua 解释器。
+
+lbaselib.c：该文件实现了 Lua 的基础库函数。这些函数提供了一些基本的功能，例如字符串处理、数学运算、时间处理等。它们是 Lua 语言的核心功能之一，可以直接在 Lua 代码中使用。
+
+lcode.c：该文件实现了 Lua 字节码的生成和优化。在 Lua 解释器执行 Lua 代码之前，源代码会被编译为字节码。lcode.c 中的函数负责将源代码转换为字节码表示，并进行一些优化以提高执行效率。
+
+lcorolib.c：该文件提供了与协程相关的库函数。协程是一种轻量级的线程，允许在同一个线程内实现多个执行流。lcorolib.c 中的函数提供了创建和管理协程的功能，包括创建协程、切换协程、发送和接收消息等。
+
+lctype.c：该文件包含了字符类型判断的函数。它提供了一些函数，可以判断字符的类型，例如字母、数字、空格等。这些函数在解析和处理字符串时非常有用。
+
+ldblib.c：该文件提供了与调试器相关的库函数。调试器允许开发人员在运行时检查和调试 Lua 代码。ldbilib.c 中的函数提供了设置断点、检查变量、执行单步调试等功能。
+
+ldebug.c：该文件实现了调试器的功能。它包含了一些函数，用于管理和控制调试过程，例如断点设置、栈跟踪、变量查看等。
+
+ldo.c：该文件包含了 Lua 解释器的主循环和执行相关的函数。它负责解析和执行 Lua 代码，包括函数调用、变量赋值、控制流等。
+
+ldump.c：该文件实现了字节码的序列化和反序列化。它提供了将 Lua 字节码转换为可读的文本形式以及将文本形式的字节码转换回二进制形式的功能。
+
+lfunc.c：该文件处理函数对象的创建和相关操作。在 Lua 中，函数也是一种对象，可以被创建、赋值、调用等。lfunc.c 中的函数提供了创建函数对象、访问函数信息、执行函数等功能。
+
+lgc.c：该文件实现了 Lua 的垃圾回收机制。Lua 使用自动垃圾回收来管理内存，lpg.c 中的函数负责跟踪和回收不再使用的对象，以释放内存空间。
+
+linit.c：该文件包含了 Lua 解释器的初始化函数。在 Lua 解释器启动时，linit.c 中的函数会被调用，进行一些初始化操作，例如注册标准库、设置全局变量等。
+
+liolib.c：该文件提供了文件 I/O 相关的库函数。它包含了一些函数，用于打开、读取、写入文件，以及管理文件指针等操作。
+
+llex.c：该文件实现了词法分析器，用于将 Lua 源代码分解为词法单元。它包含了一些函数，用于识别不同的词法单元，例如标识符、关键字、运算符等。
+
+
+lmathlib.c：该文件提供了数学库函数。它包含了一些常用的数学操作，例如三角函数、指数函数、对数函数、随机数生成等。这些函数使得在 Lua 中进行数学计算更加便捷。
+
+lmem.c：该文件实现了内存管理相关的函数。它包含了一些函数，用于分配和释放内存，以及管理内存池等操作。这些函数在 Lua 解释器中负责管理对象的内存。
+
+loadlib.c：该文件提供了动态链接库加载的功能。它包含了一些函数，用于加载和使用动态链接库，以扩展 Lua 解释器的功能。
+
+lobject.c：该文件处理 Lua 对象的创建和相关操作。在 Lua 中，所有的值都是以对象的形式存在的。lobject.c 中的函数负责创建和管理这些对象，包括内存分配、类型判断等。
+
+lopcodes.c：该文件定义了 Lua 字节码的操作码。字节码是 Lua 解释器执行的中间表示形式，每个操作码对应着一条具体的指令。
+
+loslib.c：该文件提供了操作系统相关的库函数。它包含了一些函数，用于执行与操作系统交互的操作，例如文件操作、目录操作、进程管理等。
+
+lparser.c：该文件实现了语法分析器，将词法单元转换为抽象语法树。它包含了一些函数，用于解析 Lua 源代码，并生成对应的语法树表示。
+
+lstate.c：该文件处理 Lua 解释器的状态和相关操作。它包含了一些函数，用于管理 Lua 解释器的状态信息，例如全局变量、注册表等。
+
+lstring.c：该文件实现了字符串对象的创建和相关操作。在 Lua 中，字符串是一种基本的数据类型，lstring.c 中的函数提供了字符串的创建、连接、截取等操作。
+
+lstrlib.c：该文件提供了字符串处理相关的库函数。它包含了一些常用的字符串处理函数，例如字符串查找、替换、大小写转换等。
+
+ltable.c：该文件处理 Lua 的表（table）对象的创建和相关操作。在 Lua 中，表是一种重要的数据结构，ltable.c 中的函数负责表的创建、访问、操作等。
+
+ltablib.c：该文件提供了表操作相关的库函数。它包含了一些函数，用于对表进行遍历、排序、插入、删除等操作。
+
+ltm.c：该文件实现了元表（metatable）相关的功能。元表是 Lua 中用于定义对象行为的机制，ltn.c 中的函数提供了元表的创建、处理、元方法的调用等功能。
+
+lua.c：该文件包含了 Lua 解释器的入口点和主程序。它定义了解释器的启动流程，包括初始化、加载脚本文件、执行代码等。
+
+luac.c：该文件实现了 Lua 编译器，将源代码编译为字节码。它接收 Lua 源代码作为输入，并生成对应的字节码文件。
+
+lundump.c：该文件实现了字节码的反编译。它可以将字节码文件转换为可读性更好的 Lua 源代码形式。
+
+lutf8lib.c：该文件提供了 UTF-8 编码相关的库函数。它包含了一些函数，用于处理和操作 UTF-8 编码的字符串。
+
+lvm.c：该文件实现了 Lua 虚拟机的执行引擎。它包含了一些函数，用于执行 Lua 字节码指令，实现表达式求值、函数调用、控制流等功能。
+
+lzio.c：该文件处理输入和输出流的底层操作。它包含了一些函数，用于读取和写入数据流，例如从文件中读取 Lua 脚本、
+
+*/
+
+/*
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lapi.c
+函数个数： 333
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lauxlib.c
+函数个数： 213
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lbaselib.c
+函数个数： 186
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lcode.c
+函数个数： 377
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lcorolib.c
+函数个数： 167
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lctype.c
+函数个数： 98
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：ldblib.c
+函数个数： 183
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：ldebug.c
+函数个数： 333
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：ldo.c
+函数个数： 281
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：ldump.c
+函数个数： 160
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lfunc.c
+函数个数： 211
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lgc.c
+函数个数： 297
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：linit.c
+函数个数： 155
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：liolib.c
+函数个数： 201
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：llex.c
+函数个数： 244
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lmathlib.c
+函数个数： 195
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lmem.c
+函数个数： 192
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：loadlib.c
+函数个数： 186
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lobject.c
+函数个数： 235
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lopcodes.c
+函数个数： 98
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：loslib.c
+函数个数： 173
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lparser.c
+函数个数： 365
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lstate.c
+函数个数： 251
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lstring.c
+函数个数： 210
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lstrlib.c
+函数个数： 231
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：ltable.c
+函数个数： 264
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：ltablib.c
+函数个数： 171
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：ltm.c
+函数个数： 242
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lua.c
+函数个数： 182
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：luac.c
+函数个数： 219
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lundump.c
+函数个数： 229
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lutf8lib.c
+函数个数： 166
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lvm.c
+函数个数： 270
+获取完毕
+PS Z:\lua-5.4.6\src> python.exe .\hq_hsm_oop.py
+请输入要分析的源代码文件路径：lzio.c
+函数个数： 145
+获取完毕
+*/
+
+{
+    "index2value": "月应程接_索引到值_函",
+    "index2stack": "月应程接_索引到栈_函",
+    "reverse": "月应程接_逆向_函",
+    "touserdata": "月应程接_到用户数据_函",
+    "auxgetstr": "月应程接_辅助获取串_函",
+    "finishrawget": "月应程接_完成原始获取_函",
+    "gettable": "月应程接_获取表_函",
+    "auxsetstr": "月应程接_辅助设置串_函",
+    "aux_rawset": "月应程接_辅助_原始设置_函",
+    "f_call": "月应程接_函_调用_函",
+    "aux_upvalue": "月应程接_辅助_上值_函",
+    "getupvalref": "月应程接_获取上值引用_函"
+    
+}
+{
+    "findfield": "月辅助库_找字段_函",
+    "pushglobalfuncname": "月辅助库_推全局函名_函",
+    "pushfuncname": "月辅助库_推函名_函",
+    "lastlevel": "月辅助库_最后层级_函",
+    "tag_error": "月辅助库_标签_错误_函",
+    "interror": "月辅助库_整型错误_函",
+    "resizebox": "月辅助库_调整盒子大小_函",
+    "boxgc": "月辅助库_盒子垃圾回收_函",
+    "newbox": "月辅助库_新盒子_函",
+    "newbuffsize": "月辅助库_新缓冲大小_函",
+    "prepbuffsize": "月辅助库_预备缓冲大小_函",
+    "getF": "月辅助库_获取F_函",
+    "errfile": "月辅助库_错文件_函",
+    "skipBOM": "月辅助库_跳过BOM_函",
+    "skipcomment": "月辅助库_跳过注释_函",
+    "getS": "月辅助库_获取S_函",
+    "l_alloc": "月辅助库_l_分配_函",
+    "panic": "月辅助库_恐慌_函",
+    "warnfoff": "月辅助库_关闭警告格式_函",
+    "warnfon": "月辅助库_打开警告格式_函",
+    "warnfcont": "月辅助库_继续警告格式_函",
+    "checkcontrol": "月辅助库_检查控制_函"
+}
+
+{
+    "luaB_print": "月基本库_月亮B_打印_函",
+    "luaB_warn": "月基本库_月亮B_警告_函",
+    "b_str2int": "月基本库_b_串到整型_函",
+    "luaB_tonumber": "月基本库_月亮B_到数目_函",
+    "luaB_error": "月基本库_月亮B_错误_函",
+    "luaB_getmetatable": "月基本库_月亮B_获取元表_函",
+    "luaB_setmetatable": "月基本库_月亮B_设置元表_函",
+    "luaB_rawequal": "月基本库_月亮B_原始相等_函",
+    "luaB_rawlen": "月基本库_月亮B_原始长度_函",
+    "luaB_rawget": "月基本库_月亮B_原始获取_函",
+    "luaB_rawset": "月基本库_月亮B_原始设置_函",
+    "pushmode": "月基本库_推模式_函",
+    "luaB_collectgarbage": "月基本库_月亮B_回收垃圾_函",
+    "luaB_type": "月基本库_月亮B_类型_函",
+    "luaB_next": "月基本库_月亮B_下一个_函",
+    "pairscont": "月基本库_点对们继续_函",
+    "luaB_pairs": "月基本库_月亮B_点对们_函",
+    "ipairsaux": "月基本库_整数点对们辅助_函",
+    "luaB_ipairs": "月基本库_月亮B_整数点对们_函",
+    "load_aux": "月基本库_加载_辅助_函",
+    "luaB_loadfile": "月基本库_月亮B_加载文件_函",
+    "generic_reader": "月基本库_通用_读取器_函",
+    "luaB_load": "月基本库_月亮B_加载_函",
+    "dofilecont": "月基本库_做文件继续_函",
+    "luaB_dofile": "月基本库_月亮B_做文件_函",
+    "luaB_assert": "月基本库_月亮B_断言_函",
+    "luaB_select": "月基本库_月亮B_选取_函",
+    "finishpcall": "月基本库_完成保护调用_函",
+    "luaB_pcall": "月基本库_月亮B_保护调用_函",
+    "luaB_xpcall": "月基本库_月亮B_x保护调用_函",
+    "luaB_tostring": "月基本库_月亮B_到字符串_函"
+
+}
+{
+    "codesJ": "月代码_代码sJ_函",
+    "tonumeral": "月代码_到数值的_函",
+    "const2val": "月代码_常量到值_函",
+    "previousinstruction": "月代码_前一指令_函",
+    "getjump": "月代码_获取跳转_函",
+    "fixjump": "月代码_修复跳转_函",
+    "condjump": "月代码_条件跳转_函",
+    "getjumpcontrol": "月代码_获取跳转控制_函",
+    "patchtestreg": "月代码_补丁测试寄存器_函",
+    "removevalues": "月代码_移除值们_函",
+    "patchlistaux": "月代码_补丁列表辅助_函",
+    "savelineinfo": "月代码_保存行信息_函",
+    "removelastlineinfo": "月代码_移除最后行信息_函",
+    "removelastinstruction": "月代码_移除最后指令_函",
+    "codeextraarg": "月代码_代码额外实参_函",
+    "luaK_codek": "月代码_月亮常量_代码常量_函",
+    "freereg": "月代码_释放寄存器_函",
+    "freeregs": "月代码_释放寄存器们_函",
+    "freeexp": "月代码_释放表达式_函",
+    "freeexps": "月代码_释放表达式们_函",
+    "addk": "月代码_添加常量_函",
+    "stringK": "月代码_字符串常量_函",
+    "luaK_intK": "月代码_月亮常量_整型常量_函",
+    "luaK_numberK": "月代码_月亮常量_数目常量_函",
+    "boolF": "月代码_布尔假_函",
+    "boolT": "月代码_布尔真_函",
+    "nilK": "月代码_空值常量_函",
+    "fitsC": "月代码_适合sC_函",
+    "fitsBx": "月代码_适合sBx_函",
+    "luaK_float": "月代码_月亮常量_浮点_函",
+    "const2exp": "月代码_常量到表达式_函",
+    "str2K": "月代码_串到常量_函",
+    "discharge2reg": "月代码_卸货到寄存器_函",
+    "discharge2anyreg": "月代码_卸货到任意寄存器_函",
+    "code_loadbool": "月代码_代码_加载布尔_函",
+    "need_value": "月代码_需要_值_函",
+    "exp2reg": "月代码_表达式到寄存器_函",
+    "luaK_exp2K": "月代码_月亮常量_表达式到常量_函",
+    "codeABRK": "月代码_代码ABRK_函",
+    "negatecondition": "月代码_否定条件_函",
+    "jumponcond": "月代码_在条件上跳转_函",
+    "codenot": "月代码_代码非_函",
+    "isKstr": "月代码_是否常量串_函",
+    "isCint": "月代码_是否C整型_函",
+    "isSCint": "月代码_是否SC整型_函",
+    "isSCnumber": "月代码_是否SC数目_函",
+    "validop": "月代码_有效操作_函",
+    "constfolding": "月代码_常量折叠_函",
+    "binopr2op": "月代码_二元操作r到操作_函",
+    "unopr2op": "月代码_一元操作r到操作_函",
+    "binopr2TM": "月代码_二元操作r到标签方法_函",
+    "codeunexpval": "月代码_代码一元表达式值_函",
+    "finishbinexpval": "月代码_完成二元表达式值_函",
+    "codebinexpval": "月代码_代码二元表达式值_函",
+    "codebini": "月代码_代码二元索引_函",
+    "codebinK": "月代码_代码二元常量_函",
+    "finishbinexpneg": "月代码_完成二元表达式否定_函",
+    "swapexps": "月代码_交换表达式们_函",
+    "codebinNoK": "月代码_代码二元无常量_函",
+    "codearith": "月代码_代码算术_函",
+    "codecommutative": "月代码_代码交换律_函",
+    "codebitwise": "月代码_代码位运算_函",
+    "codeorder": "月代码_代码秩序_函",
+    "codeeq": "月代码_代码相等_函",
+    "codeconcat": "月代码_代码拼接_函",
+    "finaltarget": "月代码_最终目标_函"
+
+}
+{
+    "getco": "月核心库_获取协程_函",
+    "auxresume": "月核心库_辅助恢复_函",
+    "luaB_coresume": "月核心库_月亮B_协程恢复_函",
+    "luaB_auxwrap": "月核心库_月亮B_辅助包装_函",
+    "luaB_cocreate": "月核心库_月亮B_创建协程_函",
+    "luaB_cowrap": "月核心库_月亮B_协程包装_函",
+    "luaB_yield": "月核心库_月亮B_产出_函",
+    "auxstatus": "月核心库_辅助状态码_函",
+    "luaB_costatus": "月核心库_月亮B_协程状态码_函",
+    "luaB_yieldable": "月核心库_月亮B_可产出_函",
+    "luaB_corunning": "月核心库_月亮B_协程正在跑_函",
+    "luaB_close": "月核心库_月亮B_关闭_函"
+
+}
+{
+    "checkstack": "月调试库_检查栈_函",
+    "db_getregistry": "月调试库_db_获取注册表_函",
+    "db_getmetatable": "月调试库_db_获取元表_函",
+    "db_setmetatable": "月调试库_db_设置元表_函",
+    "db_getuservalue": "月调试库_db_获取用户值_函",
+    "db_setuservalue": "月调试库_db_设置用户值_函",
+    "getthread": "月调试库_获取线程_函",
+    "settabss": "月调试库_设置表串键_函",
+    "settabsi": "月调试库_设置表整数键_函",
+    "settabsb": "月调试库_设置表布尔键_函",
+    "treatstackoption": "月调试库_对待栈选项_函",
+    "db_getinfo": "月调试库_db_获取信息_函",
+    "db_getlocal": "月调试库_db_获取局部变量_函",
+    "db_setlocal": "月调试库_db_设置局部变量_函",
+    "auxupvalue": "月调试库_辅助上值_函",
+    "db_getupvalue": "月调试库_db_获取上值_函",
+    "db_setupvalue": "月调试库_db_设置上值_函",
+    "checkupval": "月调试库_检查上值_函",
+    "db_upvalueid": "月调试库_db_上值ID_函",
+    "db_upvaluejoin": "月调试库_db_上值加入_函",
+    "hookf": "月调试库_钩子函_函",
+    "makemask": "月调试库_制作掩码_函",
+    "unmakemask": "月调试库_反制作掩码_函",
+    "db_sethook": "月调试库_db_设置钩子_函",
+    "db_gethook": "月调试库_db_获取钩子_函",
+    "db_debug": "月调试库_db_调试_函",
+    "db_traceback": "月调试库_db_追溯_函",
+    "db_setcstacklimit": "月调试库_db_设置C栈限制_函"
+}
+{
+    "currentpc": "月调试_当前程序计数器_函",
+    "getbaseline": "月调试_获取基本行号_函",
+    "getcurrentline": "月调试_获取当前行号_函",
+    "settraps": "月调试_设置陷阱_函",
+    "upvalname": "月调试_上值名称_函",
+    "findvararg": "月调试_找变量实参_函",
+    "funcinfo": "月调试_函信息_函",
+    "nextline": "月调试_下一行号_函",
+    "collectvalidlines": "月调试_收集有效行号_函",
+    "getfuncname": "月调试_获取函名_函",
+    "auxgetinfo": "月调试_辅助获取信息_函",
+    "getobjname": "月调试_获取对象名称_函",
+    "kname": "月调试_k名称_函",
+    "rname": "月调试_r名称_函",
+    "rkname": "月调试_rk名称_函",
+    "filterpc": "月调试_过滤程序计数器_函",
+    "findsetreg": "月调试_找设置寄存器_函",
+    "gxf": "月调试_全局扩展函_函",
+    "funcnamefromcode": "月调试_函名来自代码_函",
+    "funcnamefromcall": "月调试_函名来自调用_函",
+    "instack": "月调试_在栈内_函",
+    "getupvalname": "月调试_获取上值名称_函",
+    "formatvarinfo": "月调试_格式化变量信息_函",
+    "varinfo": "月调试_变量信息_函",
+    "typeerror": "月调试_类型错误_函",
+    "changedline": "月调试_行号已更改_函"
+}
+{
+    "relstack": "月做_相对栈_函",
+    "correctstack": "月做_纠正栈_函",
+    "stackinuse": "月做_栈使用中_函",
+    "rethook": "月做_返回钩子_函",
+    "moveresults": "月做_移动结果_函",
+    "prepCallInfo": "月做_预备保护调用信息_函",
+    "precallC": "月做_预备调用C_函",
+    "ccall": "月做_C调用_函",
+    "finishpcallk": "月做_完成保护调用k_函",
+    "finishCcall": "月做_完成C调用_函",
+    "unroll": "月做_反滚动_函",
+    "findpcall": "月做_找保护调用_函",
+    "resume_error": "月做_恢复_错误_函",
+    "resume": "月做_恢复_函",
+    "precover": "月做_预备覆盖_函",
+    "closepaux": "月做_关闭保护辅助_函",
+    "checkmode": "月做_检查模式_函",
+    "f_parser": "月做_f_解析器_函"
+}
+{
+    "dumpBlock": "月转储_转储块_函",
+    "dumpByte": "月转储_转储字节_函",
+    "dumpSize": "月转储_转储大小_函",
+    "dumpInt": "月转储_转储整型_函",
+    "dumpNumber": "月转储_转储数目_函",
+    "dumpInteger": "月转储_转储整数_函",
+    "dumpString": "月转储_转储字符串_函",
+    "dumpCode": "月转储_转储代码_函",
+    "dumpFunction": "月转储_转储函数_函",
+    "dumpConstants": "月转储_转储常量们_函",
+    "dumpProtos": "月转储_转储原型_函",
+    "dumpUpvalues": "月转储_转储上值们_函",
+    "dumpDebug": "月转储_转储调试_函",
+    "dumpHeader": "月转储_转储头部_函"
+}
+{
+    "newupval": "月函_新上值_函",
+    "callclosemethod": "月函_调用关闭方法_函",
+    "checkclosemth": "月函_检查关闭方法_函",
+    "prepcallclosemth": "月函_预备保护调用关闭方法_函",
+    "poptbclist": "月函_弹出待关闭列表_函"
+}
+{
+    "atomic": "月垃圾回收_原子_函",
+    "entersweep": "月垃圾回收_进入扫除_函",
+    "getgclist": "月垃圾回收_获取GC列表_函",
+    "linkgclist_": "月垃圾回收_链接GC列表_函",
+    "clearkey": "月垃圾回收_清理键_函",
+    "iscleared": "月垃圾回收_是否已清理_函",
+    "reallymarkobject": "月垃圾回收_真实记号对象_函",
+    "markmt": "月垃圾回收_记号元表_函",
+    "markbeingfnz": "月垃圾回收_记号存在的fnz_函",
+    "remarkupvals": "月垃圾回收_重新记号上值们_函",
+    "cleargraylists": "月垃圾回收_清理灰色列表们_函",
+    "restartcollection": "月垃圾回收_重新开始回收_函",
+    "genlink": "月垃圾回收_生成链接_函",
+    "traverseweakvalue": "月垃圾回收_遍历弱值_函",
+    "traverseephemeron": "月垃圾回收_遍历短暂_函",
+    "traversestrongtable": "月垃圾回收_遍历强表_函",
+    "traversetable": "月垃圾回收_遍历表_函",
+    "traverseudata": "月垃圾回收_遍历用户数据_函",
+    "traverseproto": "月垃圾回收_遍历原型_函",
+    "traverseCclosure": "月垃圾回收_遍历C闭包_函",
+    "traverseLclosure": "月垃圾回收_遍历L闭包_函",
+    "traversethread": "月垃圾回收_遍历线程_函",
+    "propagatemark": "月垃圾回收_扩散记号_函",
+    "propagateall": "月垃圾回收_扩散全部_函",
+    "convergeephemerons": "月垃圾回收_收敛短暂_函",
+    "clearbykeys": "月垃圾回收_通过键清理_函",
+    "clearbyvalues": "月垃圾回收_通过值清理_函",
+    "freeupval": "月垃圾回收_释放上值_函",
+    "freeobj": "月垃圾回收_释放对象_函",
+    "sweeplist": "月垃圾回收_扫除列表_函",
+    "sweeptolive": "月垃圾回收_扫除存活_函",
+    "checkSizes": "月垃圾回收_检查大小们_函",
+    "udata2finalize": "月垃圾回收_用户数据到完善_函",
+    "dothecall": "月垃圾回收_做此调用_函",
+    "GCTM": "月垃圾回收_垃圾回收标签方法_函",
+    "runafewfinalizers": "月垃圾回收_跑几个终结器_函",
+    "callallpendingfinalizers": "月垃圾回收_调用全部没搞定的终结器_函",
+    "findlast": "月垃圾回收_找最后_函",
+    "separatetobefnz": "月垃圾回收_分离存在的fnz_函",
+    "checkpointer": "月垃圾回收_检查指针_函",
+    "correctpointers": "月垃圾回收_纠正指针们_函",
+    "setpause": "月垃圾回收_设置暂停_函",
+    "sweep2old": "月垃圾回收_扫除到旧_函",
+    "sweepgen": "月垃圾回收_扫除生成_函",
+    "whitelist": "月垃圾回收_白列表_函",
+    "correctgraylist": "月垃圾回收_纠正灰列表_函",
+    "correctgraylists": "月垃圾回收_纠正灰列表们_函",
+    "markold": "月垃圾回收_记号旧_函",
+    "finishgencycle": "月垃圾回收_完成生成轮_函",
+    "youngcollection": "月垃圾回收_年轻回收_函",
+    "atomic2gen": "月垃圾回收_原子到生成_函",
+    "setminordebt": "月垃圾回收_设置次要债务_函",
+    "entergen": "月垃圾回收_进入生成_函",
+    "enterinc": "月垃圾回收_进入递增_函",
+    "fullgen": "月垃圾回收_完全生成_函",
+    "stepgenfull": "月垃圾回收_步进生成完全_函",
+    "genstep": "月垃圾回收_生成步进_函",
+    "deletelist": "月垃圾回收_删除列表_函",
+    "sweepstep": "月垃圾回收_扫除步进_函",
+    "singlestep": "月垃圾回收_单步进_函",
+    "incstep": "月垃圾回收_递增步进_函",
+    "fullinc": "月垃圾回收_完全递增_函",
+}
+{
+    "l_checkmode": "月入出库_l_检查模式_函",
+    "io_type": "月入出库_入出_类型_函",
+    "f_tostring": "月入出库_f_到字符串_函",
+    "tofile": "月入出库_到文件_函",
+    "newprefile": "月入出库_新预备文件_函",
+    "aux_close": "月入出库_辅助_关闭_函",
+    "f_close": "月入出库_f_关闭_函",
+    "io_close": "月入出库_入出_关闭_函",
+    "f_gc": "月入出库_f_垃圾回收_函",
+    "io_fclose": "月入出库_入出_f关闭_函",
+    "newfile": "月入出库_新文件_函",
+    "opencheck": "月入出库_打开检查_函",
+    "io_open": "月入出库_入出_打开_函",
+    "io_pclose": "月入出库_入出_保护关闭_函",
+    "io_popen": "月入出库_入出_保护打开_函",
+    "io_tmpfile": "月入出库_入出_临时文件_函",
+    "getiofile": "月入出库_获取入出文件_函",
+    "g_iofile": "月入出库_g_入出文件_函",
+    "io_input": "月入出库_入出_输入_函",
+    "io_output": "月入出库_入出_输出_函",
+    "io_readline": "月入出库_入出_读行_函",
+    "aux_lines": "月入出库_辅助_行们_函",
+    "f_lines": "月入出库_f_行们_函",
+    "io_lines": "月入出库_入出_行们_函",
+    "nextc": "月入出库_下一个c_函",
+    "test2": "月入出库_测试2_函",
+    "readdigits": "月入出库_读数字_函",
+    "read_number": "月入出库_读_数目_函",
+    "test_eof": "月入出库_测试_eof_函",
+    "read_line": "月入出库_读_行_函",
+    "read_all": "月入出库_读_全部_函",
+    "read_chars": "月入出库_读_字符_函",
+    "g_read": "月入出库_g_读_函",
+    "io_read": "月入出库_入出_读_函",
+    "f_read": "月入出库_f_读_函",
+    "g_write": "月入出库_g_写_函",
+    "io_write": "月入出库_入出_写_函",
+    "f_write": "月入出库_f_写_函",
+    "f_seek": "月入出库_f_寻求_函",
+    "f_setvbuf": "月入出库_f_设置v缓冲_函",
+    "io_flush": "月入出库_入出_刷新_函",
+    "f_flush": "月入出库_f_刷新_函",
+    "createmeta": "月入出库_创建元_函",
+    "io_noclose": "月入出库_入出_不关闭_函",
+    "createstdfile": "月入出库_创建标准文件_函"
+}
+{
+    "lexerror": "月词法_词法错误_函",
+    "save": "月词法_保存_函",
+    "txtToken": "月词法_文本牌_函",
+    "inclinenumber": "月词法_递增行号_函",
+    "check_next1": "月词法_检查_下一个1_函",
+    "check_next2": "月词法_检查_下一个2_函",
+    "read_numeral": "月词法_读_数值的_函",
+    "skip_sep": "月词法_跳过_分隔符_函",
+    "read_long_string": "月词法_读_长型_字符串_函",
+    "esccheck": "月词法_转义检查_函",
+    "gethexa": "月词法_获取十六进制_函",
+    "readhexaesc": "月词法_读十六进制转义_函",
+    "readutf8esc": "月词法_读utf8转义_函",
+    "utf8esc": "月词法_utf8转义_函",
+    "readdecesc": "月词法_读十进制转义_函",
+    "read_string": "月词法_读_字符串_函",
+    "llex": "月词法_月的词法_函"
+}
+{
+    "math_abs": "月数学库_数学_绝对值_函",
+    "math_sin": "月数学库_数学_正弦_函",
+    "math_cos": "月数学库_数学_余弦_函",
+    "math_tan": "月数学库_数学_正切_函",
+    "math_asin": "月数学库_数学_反正弦_函",
+    "math_acos": "月数学库_数学_反余弦_函",
+    "math_atan": "月数学库_数学_反正切_函",
+    "math_toint": "月数学库_数学_到整型_函",
+    "pushnumint": "月数学库_推数整数值_函",
+    "math_floor": "月数学库_数学_向下取整_函",
+    "math_ceil": "月数学库_数学_向上取整_函",
+    "math_fmod": "月数学库_数学_浮点取模_函",
+    "math_modf": "月数学库_数学_浮点拆分_函",
+    "math_sqrt": "月数学库_数学_平方根_函",
+    "math_ult": "月数学库_数学_无符号小于_函",
+    "math_log": "月数学库_数学_对数_函",
+    "math_exp": "月数学库_数学_指数_函",
+    "math_deg": "月数学库_数学_角度转弧度_函",
+    "math_rad": "月数学库_数学_弧度转角度_函",
+    "math_min": "月数学库_数学_最小值_函",
+    "math_max": "月数学库_数学_最大值_函",
+    "math_type": "月数学库_数学_类型_函"
+    "packI": "月数学库_打包I_函",
+    "Ishl": "月数学库_I左移_函",
+    "Ixor": "月数学库_I异或_函",
+    "Iadd": "月数学库_I相加_函",
+    "times5": "月数学库_乘以5_函",
+    "times9": "月数学库_乘以9_函",
+    "rotl": "月数学库_旋转左_函",
+    "rotl1": "月数学库_旋转左1_函",
+    "nextrand": "月数学库_下一个随机_函",
+    "I2d": "月数学库_I到双精度_函",
+    "I2UInt": "月数学库_I到无符整型_函",
+    "Int2I": "月数学库_整型到I_函",
+    "project": "月数学库_投影_函",
+    "math_random": "月数学库_数学_随机数_函",
+    "setseed": "月数学库_设置种子_函",
+    "randseed": "月数学库_随机种子_函",
+    "math_randomseed": "月数学库_数学_随机数种子_函",
+    "setrandfunc": "月数学库_设置随机函_函",
+}
+{
+    "tryagain": "月内存_再次尝试_函",
+}
+{
+    "lsys_unloadlib": "月载入库_l系统_反载入库_函",
+    "lsys_load": "月载入库_l系统_载入_函",
+    "lsys_sym": "月载入库_l系统_符号_函",
+    "setprogdir": "月载入库_设置程序目录_函",
+    "pusherror": "月载入库_推错误_函",
+    "noenv": "月载入库_无环境_函",
+    "setpath": "月载入库_设置路径_函",
+    "checkclib": "月载入库_检查C库_函",
+    "addtoclib": "月载入库_添加到C库_函",
+    "gctm": "月载入库_垃圾回收标签方法_函",
+    "lookforfunc": "月载入库_查找函_函",
+    "ll_loadlib": "月载入库_载库_载入库_函",
+    "readable": "月载入库_可读性_函",
+    "getnextfilename": "月载入库_获取下一个文件名_函",
+    "pusherrornotfound": "月载入库_推未找到错误_函",
+    "searchpath": "月载入库_搜索路径_函",
+    "ll_searchpath": "月载入库_载库_低级搜索路径_函",
+    "findfile": "月载入库_找文件_函",
+    "checkload": "月载入库_检查载入_函",
+    "searcher_Lua": "月载入库_搜索器_月亮_函",
+    "loadfunc": "月载入库_载入函_函",
+    "searcher_C": "月载入库_C搜索器_函",
+    "searcher_Croot": "月载入库_C根搜索器_函",
+    "searcher_preload": "月载入库_预载入搜索器_函",
+    "findloader": "月载入库_找载入器_函",
+    "ll_require": "月载入库_载库_需求_函",
+    "createsearcherstable": "月载入库_创建搜索器表_函",
+    "createclibstable": "月载入库_创建C库表_函"
+}
+{
+    "intarith": "月对象_整型算术_函",
+    "numarith": "月对象_数目算术_函",
+    "isneg": "月对象_是否负数_函",
+    "lua_strx2number": "月对象_月亮_串x到数目_函",
+    "l_str2dloc": "月对象_l_串到双浮位置_函",
+    "l_str2d": "月对象_l_串到双浮_函",
+    "l_str2int": "月对象_l_串到整型_函",
+    "tostringbuff": "月对象_到字符串缓冲_函",
+    "pushstr": "月对象_推串_函",
+    "clearbuff": "月对象_清除缓冲_函",
+    "getbuff": "月对象_获取缓冲_函",
+    "addstr2buff": "月对象_添加串到缓冲_函",
+    "addnum2buff": "月对象_添加数目到缓冲_函"
+}
+{
+    "os_execute": "月操作系统库_系统_执行_函",
+    "os_remove": "月操作系统库_系统_移除_函",
+    "os_rename": "月操作系统库_系统_重命名_函",
+    "os_tmpname": "月操作系统库_系统_临时文件名_函",
+    "os_getenv": "月操作系统库_系统_获取环境_函",
+    "os_clock": "月操作系统库_系统_时钟_函",
+    "setfield": "月操作系统库_设置字段_函",
+    "setboolfield": "月操作系统库_设置布尔字段_函",
+    "setallfields": "月操作系统库_设置全部字段们_函",
+    "getboolfield": "月操作系统库_获取布尔字段_函",
+    "getfield": "月操作系统库_获取字段_函",
+    "checkoption": "月操作系统库_检查选项_函",
+    "l_checktime": "月操作系统库_l_检查时间_函",
+    "os_date": "月操作系统库_系统_日期_函",
+    "os_time": "月操作系统库_系统_时间_函",
+    "os_difftime": "月操作系统库_系统_时间差_函",
+    "os_setlocale": "月操作系统库_系统_设置本地_函",
+    "os_exit": "月操作系统库_系统_出口_函"
+}
+{
+    "statement": "月解析器_语句_函",
+    "expr": "月解析器_表达式_函",
+    "error_expected": "月解析器_错误_期望_函",
+    "errorlimit": "月解析器_错误限制_函",
+    "checklimit": "月解析器_检查限制_函",
+    "testnext": "月解析器_测试下一个_函",
+    "check": "月解析器_检查_函",
+    "checknext": "月解析器_检查下一个_函",
+    "check_match": "月解析器_检查_匹配_函",
+    "str_checkname": "月解析器_串_检查名称_函",
+    "init_exp": "月解析器_初始的_表达式_函",
+    "codestring": "月解析器_代码字符串_函",
+    "codename": "月解析器_代码名称_函",
+    "registerlocalvar": "月解析器_寄存器本地变量_函",
+    "new_localvar": "月解析器_新_本地变量_函",
+    "getlocalvardesc": "月解析器_获取本地变量描述_函",
+    "reglevel": "月解析器_寄存层级_函",
+    "localdebuginfo": "月解析器_本地调试信息_函",
+    "init_var": "月解析器_初始的_变量_函",
+    "check_readonly": "月解析器_检查_只读_函",
+    "adjustlocalvars": "月解析器_调整本地变量们_函",
+    "removevars": "月解析器_移除变量们_函",
+    "searchupvalue": "月解析器_搜索上值_函",
+    "allocupvalue": "月解析器_分配上值_函",
+    "newupvalue": "月解析器_新上值_函",
+    "searchvar": "月解析器_搜索变量_函"
+    "markupval": "月解析器_记号上值_函",
+    "marktobeclosed": "月解析器_记号待关闭_函",
+    "singlevaraux": "月解析器_单变量辅助_函",
+    "singlevar": "月解析器_单变量_函",
+    "adjust_assign": "月解析器_调整_赋值_函",
+    "jumpscopeerror": "月解析器_跳转作用域错误_函",
+    "solvegoto": "月解析器_解决去到_函",
+    "findlabel": "月解析器_找标号_函",
+    "newlabelentry": "月解析器_新标号条目_函",
+    "newgotoentry": "月解析器_新去到条目_函",
+    "solvegotos": "月解析器_解决去到们_函",
+    "createlabel": "月解析器_创建标号_函",
+    "movegotosout": "月解析器_移动去到们出_函",
+    "enterblock": "月解析器_进入块_函",
+    "undefgoto": "月解析器_未定义去到_函",
+    "leaveblock": "月解析器_离开块_函",
+    "addprototype": "月解析器_添加原型_函",
+    "codeclosure": "月解析器_代码闭包_函",
+    "open_func": "月解析器_打开_函_函",
+    "close_func": "月解析器_关闭_函_函",
+    "block_follow": "月解析器_块_跟随_函",
+    "statlist": "月解析器_语句列表_函",
+    "fieldsel": "月解析器_字段选择_函",
+    "yindex": "月解析器_y索引_函",
+    "recfield": "月解析器_记录字段_函"
+    "closelistfield": "月解析器_关闭列表字段_函",
+    "lastlistfield": "月解析器_最后列表字段_函",
+    "listfield": "月解析器_列表字段_函",
+    "field": "月解析器_字段_函",
+    "constructor": "月解析器_构造器_函",
+    "setvararg": "月解析器_设置变量实参_函",
+    "parlist": "月解析器_形参列表_函",
+    "body": "月解析器_身体_函",
+    "explist": "月解析器_表达式列表_函",
+    "funcargs": "月解析器_函实参们_函",
+    "primaryexp": "月解析器_首要表达式_函",
+    "suffixedexp": "月解析器_已下标表达式_函",
+    "simpleexp": "月解析器_简单表达式_函",
+    "getunopr": "月解析器_获取一元操作_函",
+    "getbinopr": "月解析器_获取二元操作_函",
+    "subexpr": "月解析器_子表达式_函",
+    "block": "月解析器_块_函",
+    "check_conflict": "月解析器_检查_冲突_函",
+    "restassign": "月解析器_剩余赋值_函",
+    "cond": "月解析器_条件_函",
+    "gotostat": "月解析器_去到语句_函",
+    "breakstat": "月解析器_破断语句_函",
+    "checkrepeated": "月解析器_检查已重复_函",
+    "labelstat": "月解析器_标号语句_函",
+    "whilestat": "月解析器_一会儿语句_函",
+    "repeatstat": "月解析器_重复语句_函",
+    "exp1": "月解析器_表达式1_函"
+    "fixforjump": "月解析器_修复为跳转_函",
+    "forbody": "月解析器_为身体_函",
+    "fornum": "月解析器_为数值_函",
+    "forlist": "月解析器_为列表_函",
+    "forstat": "月解析器_为语句_函",
+    "test_then_block": "月解析器_测试_那么_块_函",
+    "ifstat": "月解析器_若语句_函",
+    "localfunc": "月解析器_本地函_函",
+    "getlocalattribute": "月解析器_获取本地属性_函",
+    "checktoclose": "月解析器_检查待关闭_函",
+    "localstat": "月解析器_本地语句_函",
+    "funcname": "月解析器_函名_函",
+    "funcstat": "月解析器_函语句_函",
+    "exprstat": "月解析器_表达式语句_函",
+    "retstat": "月解析器_返回语句_函",
+    "mainfunc": "月解析器_主函_函"
+}
+{
+    "luai_makeseed": "月状态机_月亮i_制作种子_函",
+    "stack_init": "月状态机_栈_初始的_函",
+    "freestack": "月状态机_释放栈_函",
+    "init_registry": "月状态机_初始的_注册表_函",
+    "f_luaopen": "月状态机_f_月亮打开_函",
+    "preinit_thread": "月状态机_预备初始的_线程_函",
+    "close_state": "月状态机_关闭_状态机_函"
+}
+{
+    "tablerehash": "月字符串_表重新哈希_函",
+    "createstrobj": "月字符串_创建串对象_函",
+    "growstrtab": "月字符串_增长串表_函",
+    "internshrstr": "月字符串_内部短串_函"
+}
+{
+    "str_len": "月串库_串_长度_函",
+    "posrelatI": "月串库_相对位置索引_函",
+    "getendpos": "月串库_获取终位置_函",
+    "str_sub": "月串库_串_取代_函",
+    "str_reverse": "月串库_串_逆向_函",
+    "str_lower": "月串库_串_小写_函",
+    "str_upper": "月串库_串_大写_函",
+    "str_rep": "月串库_串_替换_函",
+    "str_byte": "月串库_串_字节_函",
+    "str_char": "月串库_串_印刻_函",
+    "writer": "月串库_写器_函",
+    "str_dump": "月串库_串_转储_函",
+    "tonum": "月串库_到数目_函",
+    "trymt": "月串库_尝试元表_函",
+    "arith": "月串库_算术_函",
+    "arith_add": "月串库_算术相加_函",
+    "arith_sub": "月串库_算术相减_函",
+    "arith_mul": "月串库_算术相乘_函",
+    "arith_mod": "月串库_算术取模_函",
+    "arith_pow": "月串库_算术乘方_函",
+    "arith_div": "月串库_算术相除_函",
+    "arith_idiv": "月串库_算术整数除_函",
+    "arith_unm": "月串库_算术一元负号_函"
+    "match": "月串库_匹配_函",
+    "check_capture": "月串库_检查_捕获_函",
+    "capture_to_close": "月串库_捕获_到_关闭_函",
+    "classend": "月串库_类终_函",
+    "match_class": "月串库_匹配_类_函",
+    "matchbracketclass": "月串库_匹配括号类_函",
+    "singlematch": "月串库_单个匹配_函",
+    "matchbalance": "月串库_匹配平衡_函",
+    "max_expand": "月串库_最大_扩展_函",
+    "min_expand": "月串库_最小_扩展_函",
+    "start_capture": "月串库_开始_捕获_函",
+    "end_capture": "月串库_终_捕获_函",
+    "match_capture": "月串库_匹配_捕获_函",
+    "lmemfind": "月串库_l内存找_函",
+    "get_onecapture": "月串库_获取_一个捕获_函",
+    "push_onecapture": "月串库_推_一个捕获_函",
+    "push_captures": "月串库_推_捕获们_函",
+    "nospecials": "月串库_无特殊_函",
+    "prepstate": "月串库_预备状态机_函",
+    "reprepstate": "月串库_重新预备状态机_函",
+    "str_find_aux": "月串库_串_找_辅助_函",
+    "str_find": "月串库_串_找_函",
+    "str_match": "月串库_串_匹配_函",
+    "gmatch_aux": "月串库_全局匹配_辅助_函",
+    "gmatch": "月串库_全局匹配_函",
+    "add_s": "月串库_添加_s_函",
+    "add_value": "月串库_添加_值_函",
+    "str_gsub": "月串库_串_全局取代_函"
+    "adddigit": "月串库_添加数字_函",
+    "num2straux": "月串库_数目到串辅助_函",
+    "lua_number2strx": "月串库_月亮_数目到串x_函",
+    "addquoted": "月串库_添加引号_函",
+    "quotefloat": "月串库_引号浮点_函",
+    "addliteral": "月串库_添加字面_函",
+    "get2digits": "月串库_获取两位数字_函",
+    "checkformat": "月串库_检查格式_函",
+    "getformat": "月串库_获取格式_函",
+    "addlenmod": "月串库_添加长度修改器_函",
+    "str_format": "月串库_串_格式_函",
+    "digit": "月串库_数字_函",
+    "getnum": "月串库_获取数目_函",
+    "getnumlimit": "月串库_获取数目限制_函",
+    "initheader": "月串库_初始的头部_函",
+    "getoption": "月串库_获取选项_函",
+    "getdetails": "月串库_获取细节_函",
+    "packint": "月串库_打包整型_函",
+    "copywithendian": "月串库_带字节序复制_函",
+    "str_pack": "月串库_串_打包_函",
+    "str_packsize": "月串库_串_打包大小_函",
+    "unpackint": "月串库_反打包整型_函",
+    "str_unpack": "月串库_串_反打包_函",
+    "createmetatable": "月串库_创建元表_函"
+}
+{
+    "hashint": "月表_哈希整型_函",
+    "l_hashfloat": "月表_l_哈希浮点_函",
+    "mainpositionTV": "月表_主位置TV_函",
+    "mainpositionfromnode": "月表_主位置来自节点_函",
+    "equalkey": "月表_相等键_函",
+    "ispow2realasize": "月表_是否2的幂真实数组大小_函",
+    "setlimittosize": "月表_设置限制到大小_函",
+    "getgeneric": "月表_获取通用_函",
+    "arrayindex": "月表_数组索引_函",
+    "findindex": "月表_找索引_函",
+    "freehash": "月表_释放哈希_函",
+    "computesizes": "月表_计算大小_函",
+    "countint": "月表_计数整型_函",
+    "numusearray": "月表_数目用数组_函",
+    "numusehash": "月表_数目用哈希_函",
+    "setnodevector": "月表_设置节点向量_函",
+    "reinsert": "月表_重新插入_函",
+    "exchangehashpart": "月表_互换哈希部分_函",
+    "rehash": "月表_重新哈希_函",
+    "getfreepos": "月表_获取释放位置_函",
+    "hash_search": "月表_哈希_搜索_函",
+    "binsearch": "月表_二分搜索_函"
+}
+{
+    "checkfield": "月表库_检查字段_函",
+    "checktab": "月表库_检查表_函",
+    "tinsert": "月表库_t插入_函",
+    "tremove": "月表库_t移除_函",
+    "tmove": "月表库_t移动_函",
+    "addfield": "月表库_添加字段_函",
+    "tconcat": "月表库_t拼接_函",
+    "tpack": "月表库_t打包_函",
+    "tunpack": "月表库_t反打包_函",
+    "l_randomizePivot": "月表库_l_随机化基准点_函",
+    "set2": "月表库_设置2_函",
+    "sort_comp": "月表库_排序_对比_函",
+    "partition": "月表库_分区_函",
+    "choosePivot": "月表库_选定基准点_函",
+    "auxsort": "月表库_辅助排序_函",
+    "sort": "月表库_排序_函"
+}
+{
+    "callbinTM": "月标签方法_调用二元标方_函"
+}
+{
+    "lstop": "月解释器_l停止_函",
+    "laction": "月解释器_l活动_函",
+    "print_usage": "月解释器_打印_用法_函",
+    "l_message": "月解释器_l_消息_函",
+    "report": "月解释器_报告_函",
+    "msghandler": "月解释器_消息手握_函",
+    "docall": "月解释器_做调用_函",
+    "print_version": "月解释器_打印_版本_函",
+    "createargtable": "月解释器_创建实参表_函",
+    "dochunk": "月解释器_做大块_函",
+    "dofile": "月解释器_做文件_函",
+    "dostring": "月解释器_做字符串_函",
+    "dolibrary": "月解释器_做库_函",
+    "pushargs": "月解释器_推实参们_函",
+    "handle_script": "月解释器_手握_脚本_函",
+    "collectargs": "月解释器_收集实参们_函",
+    "runargs": "月解释器_跑实参们_函",
+    "handle_luainit": "月解释器_手握_月亮初始的_函",
+    "get_prompt": "月解释器_获取_提示符_函",
+    "incomplete": "月解释器_不完整的_函",
+    "pushline": "月解释器_推行_函",
+    "addreturn": "月解释器_添加返回_函",
+    "multiline": "月解释器_多行_函",
+    "loadline": "月解释器_载入行_函",
+    "l_print": "月解释器_l_打印_函",
+    "doREPL": "月解释器_做读求值印环_函",
+    "pmain": "月解释器_保护主函_函",
+}
+{
+    "PrintFunction": "月编译器_打印函数_函",
+    "fatal": "月编译器_致命的_函",
+    "cannot": "月编译器_不能_函",
+    "usage": "月编译器_用法_函",
+    "doargs": "月编译器_做实参们_函",
+    "reader": "月编译器_读器_函",
+    "combine": "月编译器_组合_函",
+    "writer": "月编译器_写器_函",
+    "pmain": "月编译器_保护主函_函",
+    "PrintString": "月编译器_打印字符串_函",
+    "PrintType": "月编译器_打印类型_函",
+    "PrintConstant": "月编译器_打印常量_函",
+    "PrintCode": "月编译器_打印代码_函",
+    "PrintHeader": "月编译器_打印头部_函",
+    "PrintDebug": "月编译器_打印调试_函",
+}
+{
+    "error": "月反转储_错误_函",
+    "loadBlock": "月反转储_载入块_函",
+    "loadByte": "月反转储_载入字节_函",
+    "loadUnsigned": "月反转储_载入无符号数_函",
+    "loadSize": "月反转储_载入大小_函",
+    "loadInt": "月反转储_载入整型_函",
+    "loadNumber": "月反转储_载入数目_函",
+    "loadInteger": "月反转储_载入整数_函",
+    "loadStringN": "月反转储_载入字符串N_函",
+    "loadString": "月反转储_载入字符串_函",
+    "loadCode": "月反转储_载入代码_函",
+    "loadFunction": "月反转储_载入函数_函",
+    "loadConstants": "月反转储_载入常量_函",
+    "loadProtos": "月反转储_载入原型_函",
+    "loadUpvalues": "月反转储_载入上值_函",
+    "loadDebug": "月反转储_载入调试_函",
+    "checkliteral": "月反转储_检查字面_函",
+    "fchecksize": "月反转储_强制检查大小_函",
+    "checkHeader": "月反转储_检查头部_函",
+}
+{
+    "u_posrelat": "月utf8库_u_相对位置_函",
+    "utf8_decode": "月utf8库_UTF8_解码_函",
+    "utflen": "月utf8库_UTF长度_函",
+    "codepoint": "月utf8库_代码点_函",
+    "pushutfchar": "月utf8库_推UTF印刻_函",
+    "utfchar": "月utf8库_UTF印刻_函",
+    "byteoffset": "月utf8库_字节偏移_函",
+    "iter_aux": "月utf8库_迭代_辅助_函",
+    "iter_auxstrict": "月utf8库_迭代_辅助严格_函",
+    "iter_auxlax": "月utf8库_迭代_辅助宽松_函",
+    "iter_codes": "月utf8库_迭代_代码们_函",
+}
+{
+    "l_strton": "月虚拟机_l_串到n_函",
+    "forlimit": "月虚拟机_为限制_函",
+    "forprep": "月虚拟机_为预备_函",
+    "floatforloop": "月虚拟机_浮点为环_函",
+    "l_strcmp": "月虚拟机_l_串对比_函",
+    "LTintfloat": "月虚拟机_整型小于浮点_函",
+    "LEintfloat": "月虚拟机_整型小等浮点_函",
+    "LTfloatint": "月虚拟机_浮点小于整型_函",
+    "LEfloatint": "月虚拟机_浮点小等整型_函",
+    "LTnum": "月虚拟机_数目小于_函",
+    "LEnum": "月虚拟机_数目小等_函",
+    "lessthanothers": "月虚拟机_小于其他_函",
+    "lessequalothers": "月虚拟机_小等其他_函",
+    "copy2buff": "月虚拟机_复制到缓冲_函",
+    "pushclosure": "月虚拟机_推闭包_函",
+}
+
+
+"
+请输入包含多个字典的文件路径：1.txt
+发现重复键：
+warnfoff
+warnfcont
+warnfon
+codesJ
+getobjname
+funcnamefromcall
+dumpFunction
+reallymarkobject
+entersweep
+atomic
+io_readline
+lexerror
+lsys_unloadlib
+lsys_load
+lsys_sym
+expr
+statement
+match
+writer
+pmain
+main
+PrintFunction
+loadFunction
+"
+
+"找到的结构名;    可以通过此定位反向找到英文原名标识符
+src\lapi.c: 第 1030 行 - struct 受保护调用_结构 {  /* data to '月应程接_函_调用_函' */
+src\lapi.c: 第 1037 行 - struct 受保护调用_结构 *c = cast(struct 受保护调用_结构 *, ud);
+src\lapi.c: 第 1045 行 - struct 受保护调用_结构 c;
+src\lauxlib.c: 第 467 行 - typedef struct 用户数据到盒子_结构 {
+src\lauxlib.c: 第 709 行 - typedef struct 载入函数_结构 {
+src\lauxlib.c: 第 818 行 - typedef struct 载入字串_结构 {
+src\lauxlib.h: 第 23 行 - typedef struct 月亮库_缓冲区_结构 月亮库_缓冲区_结构;
+src\lauxlib.h: 第 38 行 - typedef struct 月亮库_注册_结构 {
+src\lauxlib.h: 第 191 行 - struct 月亮库_缓冲区_结构 {
+src\lauxlib.h: 第 245 行 - typedef struct 月亮库_流_结构 {
+src\ldo.c: 第 84 行 - struct 月亮_长跳_结构 {
+src\ldo.c: 第 85 行 - struct 月亮_长跳_结构 *previous;
+src\ldo.c: 第 140 行 - struct 月亮_长跳_结构 lj;
+src\ldo.c: 第 905 行 - struct 受保护关闭_结构 {
+src\ldo.c: 第 915 行 - struct 受保护关闭_结构 *pcl = cast(struct 受保护关闭_结构 *, ud);
+src\ldo.c: 第 928 行 - struct 受保护关闭_结构 pcl;
+src\ldo.c: 第 970 行 - struct 受保护解析器_结构 {  /* data to '月做_f_解析器_函' */
+src\ldo.c: 第 990 行 - struct 受保护解析器_结构 *p = cast(struct 受保护解析器_结构 *, ud);
+src\ldo.c: 第 1007 行 - struct 受保护解析器_结构 p;
+src\ldump.c: 第 23 行 - typedef struct {
+src\liolib.c: 第 427 行 - typedef struct {
+src\llex.h: 第 56 行 - typedef struct 牌_结构 {
+src\llex.h: 第 64 行 - typedef struct 词法状态机_结构 {
+src\llex.h: 第 70 行 - struct 函状态机_结构 *fs;  /* current function (parser) */
+src\llex.h: 第 71 行 - struct 月亮_状态机_结构 *L;
+src\llex.h: 第 75 行 - struct 动态数据_结构 *dyd;  /* dynamic structures used by the parser */
+src\lmathlib.c: 第 361 行 - typedef struct 范围64_结构 {
+src\lmathlib.c: 第 517 行 - typedef struct {
+src\lobject.c: 第 397 行 - typedef struct 缓冲格式字串_结构 {
+src\lobject.h: 第 50 行 - struct 垃圾回收对象_结构 *gc;    /* collectable objects */
+src\lobject.h: 第 67 行 - typedef struct 标签值_结构 {
+src\lobject.h: 第 150 行 - struct {
+src\lobject.h: 第 288 行 - #define CommonHeader   struct 垃圾回收对象_结构 *next; lu_byte tt; lu_byte marked
+src\lobject.h: 第 292 行 - typedef struct 垃圾回收对象_结构 {
+src\lobject.h: 第 386 行 - typedef struct 类型字符串_结构 {
+src\lobject.h: 第 393 行 - struct 类型字符串_结构 *hnext;  /* linked list for hash table */
+src\lobject.h: 第 461 行 - typedef struct 用户数据_结构 {
+src\lobject.h: 第 465 行 - struct 表_结构 *metatable;
+src\lobject.h: 第 480 行 - typedef struct 用户数据0_结构 {
+src\lobject.h: 第 484 行 - struct 表_结构 *metatable;
+src\lobject.h: 第 515 行 - typedef struct 上值描述_结构 {
+src\lobject.h: 第 527 行 - typedef struct 本地变量_结构 {
+src\lobject.h: 第 544 行 - typedef struct 绝对行信息_结构 {
+src\lobject.h: 第 552 行 - typedef struct 原型_结构 {
+src\lobject.h: 第 568 行 - struct 原型_结构 **p;  /* functions defined inside the function */
+src\lobject.h: 第 629 行 - typedef struct 上值_结构 {
+src\lobject.h: 第 636 行 - struct {  /* (when 打开_结构) */
+src\lobject.h: 第 637 行 - struct 上值_结构 *next;  /* linked list */
+src\lobject.h: 第 638 行 - struct 上值_结构 **previous;
+src\lobject.h: 第 649 行 - typedef struct C闭包_结构 {
+src\lobject.h: 第 656 行 - typedef struct 月闭包_结构 {
+src\lobject.h: 第 658 行 - struct 原型_结构 *p;
+src\lobject.h: 第 702 行 - struct 节点键_结构 {
+src\lobject.h: 第 739 行 - typedef struct 表_结构 {
+src\lobject.h: 第 747 行 - struct 表_结构 *metatable;
+src\loslib.c: 第 230 行 - static void 月操作系统库_设置全部字段们_函 (月亮_状态机_结构 *L, struct 标方_结构 *stm) {
+src\loslib.c: 第 307 行 - struct 标方_结构 tmr, *stm;
+src\loslib.c: 第 349 行 - struct 标方_结构 ts;
+src\lparser.c: 第 49 行 - typedef struct 块计数_结构 {
+src\lparser.c: 第 50 行 - struct 块计数_结构 *previous;  /* chain */
+src\lparser.c: 第 838 行 - typedef struct 构造控制_结构 {
+src\lparser.c: 第 1237 行 - static const struct {
+src\lparser.c: 第 1319 行 - struct 左手塞_赋值_结构 {
+src\lparser.c: 第 1320 行 - struct 左手塞_赋值_结构 *prev;
+src\lparser.c: 第 1331 行 - static void 月解析器_检查_冲突_函 (词法状态机_结构 *ls, struct 左手塞_赋值_结构 *lh, 表达式描述_结构 *v) {
+src\lparser.c: 第 1375 行 - static void 月解析器_剩余赋值_函 (词法状态机_结构 *ls, struct 左手塞_赋值_结构 *lh, int nvars) {
+src\lparser.c: 第 1380 行 - struct 左手塞_赋值_结构 nv;
+src\lparser.c: 第 1798 行 - struct 左手塞_赋值_结构 v;
+src\lparser.h: 第 68 行 - typedef struct 表达式描述_结构 {
+src\lparser.h: 第 75 行 - struct {  /* for indexed variables */
+src\lparser.h: 第 79 行 - struct {  /* for local variables */
+src\lparser.h: 第 97 行 - struct {
+src\lparser.h: 第 110 行 - typedef struct 标号描述_结构 {
+src\lparser.h: 第 120 行 - typedef struct 标号列表_结构 {
+src\lparser.h: 第 128 行 - typedef struct 动态数据_结构 {
+src\lparser.h: 第 129 行 - struct {  /* list of all active local variables */
+src\lparser.h: 第 140 行 - struct 块计数_结构;  /* defined in lparser.c */
+src\lparser.h: 第 144 行 - typedef struct 函状态机_结构 {
+src\lparser.h: 第 146 行 - struct 函状态机_结构 *prev;  /* enclosing function */
+src\lparser.h: 第 147 行 - struct 词法状态机_结构 *ls;  /* lexical state */
+src\lparser.h: 第 148 行 - struct 块计数_结构 *bl;  /* chain of current blocks */
+src\lstate.c: 第 35 行 - typedef struct 月状_结构 {
+src\lstate.c: 第 44 行 - typedef struct 月全局状_结构 {
+src\lstate.h: 第 14 行 - typedef struct 调用信息_结构 调用信息_结构;
+src\lstate.h: 第 122 行 - struct 月亮_长跳_结构;  /* defined in ldo.c */
+src\lstate.h: 第 155 行 - typedef struct 字符串表_结构 {
+src\lstate.h: 第 177 行 - struct 调用信息_结构 {
+src\lstate.h: 第 180 行 - struct 调用信息_结构 *previous, *next;  /* dynamic call link */
+src\lstate.h: 第 182 行 - struct {  /* only for Lua functions */
+src\lstate.h: 第 187 行 - struct {  /* only for C functions */
+src\lstate.h: 第 197 行 - struct {  /* info about transferred values (for call/return hooks) */
+src\lstate.h: 第 254 行 - typedef struct 全局_状态机_结构 {
+src\lstate.h: 第 294 行 - struct 月亮_状态机_结构 *twups;  /* list of threads with open upvalues */
+src\lstate.h: 第 296 行 - struct 月亮_状态机_结构 *mainthread;
+src\lstate.h: 第 299 行 - struct 表_结构 *mt[LUA_NUMTYPES];  /* metatables for basic types */
+src\lstate.h: 第 309 行 - struct 月亮_状态机_结构 {
+src\lstate.h: 第 322 行 - struct 月亮_状态机_结构 *twups;  /* list of threads with open upvalues */
+src\lstate.h: 第 323 行 - struct 月亮_长跳_结构 *errorJmp;  /* current error recover point */
+src\lstate.h: 第 355 行 - struct 类型字符串_结构 ts;
+src\lstate.h: 第 356 行 - struct 用户数据_结构 u;
+src\lstate.h: 第 358 行 - struct 表_结构 h;
+src\lstate.h: 第 359 行 - struct 原型_结构 p;
+src\lstate.h: 第 360 行 - struct 月亮_状态机_结构 th;  /* thread */
+src\lstate.h: 第 361 行 - struct 上值_结构 upv;
+src\lstrlib.c: 第 216 行 - struct 串_写器_结构 {
+src\lstrlib.c: 第 223 行 - struct 串_写器_结构 *state = (struct 串_写器_结构 *)ud;
+src\lstrlib.c: 第 234 行 - struct 串_写器_结构 state;
+src\lstrlib.c: 第 358 行 - typedef struct 匹配状态机_结构 {
+src\lstrlib.c: 第 365 行 - struct {
+src\lstrlib.c: 第 830 行 - typedef struct 全局匹配状态机_结构 {
+src\lstrlib.c: 第 1418 行 - typedef struct 头部_结构 {
+src\lstrlib.c: 第 1490 行 - struct cD { char c; union { LUAI_MAXALIGN; } u; };
+src\lstrlib.c: 第 1522 行 - const int maxalign = offsetof(struct cD, u);
+src\lua.c: 第 46 行 - struct sigaction sa;
+src\lua.h: 第 57 行 - typedef struct 月亮_状态机_结构 月亮_状态机_结构;
+src\lua.h: 第 137 行 - typedef struct 月亮_调试_结构 月亮_调试_结构;
+src\lua.h: 第 475 行 - struct 月亮_调试_结构 {
+src\lua.h: 第 493 行 - struct 调用信息_结构 *i_ci;  /* active function */
+src\lundump.c: 第 33 行 - typedef struct {
+src\lzio.h: 第 18 行 - typedef struct 流入出_结构 入出流_结构;
+src\lzio.h: 第 23 行 - typedef struct 管理缓冲区_结构 {
+src\lzio.h: 第 55 行 - struct 流入出_结构 {
+"
+
+"找到的联合名;    可以通过此定位反向找到英文原名标识符
+src\lauxlib.h: 第 196 行 - union {
+src\llex.h: 第 49 行 - typedef union {
+src\lobject.h: 第 47 行 - ** Union of all Lua values
+src\lobject.h: 第 49 行 - typedef union 值_联合 {
+src\lobject.h: 第 148 行 - typedef union 栈值_联合 {
+src\lobject.h: 第 165 行 - typedef union {
+src\lobject.h: 第 391 行 - union {
+src\lobject.h: 第 451 行 - typedef union U值_联合 {
+src\lobject.h: 第 485 行 - union {LUAI_MAXALIGN;} 二进制数据_联合;
+src\lobject.h: 第 631 行 - union {
+src\lobject.h: 第 635 行 - union {
+src\lobject.h: 第 663 行 - typedef union 闭包_联合 {
+src\lobject.h: 第 701 行 - typedef union 节点_联合 {
+src\lparser.h: 第 70 行 - union {
+src\lparser.h: 第 96 行 - typedef union 变量描述_联合 {
+src\lstate.h: 第 164 行 - ** About union 'u':
+src\lstate.h: 第 167 行 - ** About union 'u2':
+src\lstate.h: 第 181 行 - union {
+src\lstate.h: 第 193 行 - union {
+src\lstate.h: 第 345 行 - ** Union of all collectable objects (only for conversions)
+src\lstate.h: 第 347 行 - ** if a union contains several structures that share a common initial
+src\lstate.h: 第 348 行 - ** sequence [...], and if the union object currently contains one
+src\lstate.h: 第 351 行 - ** of the union is visible.
+src\lstate.h: 第 353 行 - union 垃圾回收联合_联合 {
+src\lstate.h: 第 357 行 - union 闭包_联合 cl;
+src\lstate.h: 第 367 行 - ** A pointer to a union object, suitably converted, points to each of
+src\lstate.h: 第 370 行 - #define cast_u(o)   cast(union 垃圾回收联合_联合 *, (o))
+src\lstrlib.c: 第 1408 行 - /* dummy union to get native endianness */
+src\lstrlib.c: 第 1409 行 - static const union {
+src\lstrlib.c: 第 1490 行 - struct cD { char c; union { LUAI_MAXALIGN; } u; };
+src\luaconf.h: 第 770 行 - @@ LUAI_MAXALIGN defines fields that, when used in a union, ensure
+src\luaconf.h: 第 771 行 - ** maximum alignment for the other items in that union.
+"
+
+"      枚举名
+src\lcode.h: 第 26 行 - typedef enum BinOpr {
+src\lcode.h: 第 51 行 - typedef enum UnOpr { OPR_MINUS, OPR_BNOT, OPR_NOT, OPR_LEN, OPR_NOUNOPR } UnOpr;
+src\llex.h: 第 32 行 - enum RESERVED {
+src\lopcodes.h: 第 32 行 - enum OpMode {iABC, iABx, iAsBx, iAx, isJ};  /* basic instruction formats */
+src\lopcodes.h: 第 197 行 - typedef enum {
+src\lopcodes.h: 第 383 行 - #define getOpMode(m)  (cast(enum OpMode, 月亮P_操作模式_变量[m] & 7))
+src\lparser.h: 第 25 行 - typedef enum {
+src\lstrlib.c: 第 1428 行 - typedef enum KOption {
+src\ltm.h: 第 19 行 - typedef enum {
+src\ltm.h: 第 45 行 - TM_N        /* number of elements in the enum */
+src\lvm.h: 第 43 行 - typedef enum {
+
+"
+
+"宏常量;
+
+{
+    'lapi_c': '值',
+    'LUA_CORE': '应程接_月亮_内核_宏名',
+    'isvalid': '应程接_是否有效_宏名',
+    'ispseudo': '应程接_是否伪造_宏名',
+    'isupvalue': '应程接_是否上值_宏名',
+    'getGtable': '应程接_获取全局表_宏名',
+    'checkresults': '应程接_检查结果们_宏名',
+    'api_incr_top': '应程接_API_递增_顶部_宏名',
+    'adjustresults': '应程接_调整结果们_宏名',
+    'api_checknelems': '应程接_API检查n元素们_宏名',
+    'hastocloseCfunc': '应程接_必须关闭C函数_宏名',
+    'codeNresults': '应程接_编码N结果们_宏名',
+    'decodeNresults': '应程接_解码N结果们_宏名'
+}
+
+{
+    'lauxlib_c': '值',
+    'LUA_LIB': '辅助库_月亮_库_宏名',
+    'MAX_SIZET': '辅助库_最大_大小T_宏名',  
+    'LEVELS1': '辅助库_层级1_宏名',
+    'LEVELS2': '辅助库_层级2_宏名',
+    'l_inspectstat': '辅助库_l_检验状态_宏名',
+    'buffonstack': '辅助库_在栈上缓冲_宏名',
+    'checkbufferlevel': '辅助库_检查缓冲区层级_宏名',
+    'freelist': '辅助库_自由列表_宏名',
+    'LUA_GNAME': '辅助库_月亮_全局名称_宏名',
+    'LUA_ERRFILE': '辅助库_月亮_错误文件_宏名',
+    'LUA_LOADED_TABLE': '辅助库_月亮_已载入_表_宏名',
+    'LUA_PRELOAD_TABLE': '辅助库_月亮_预载入_表_宏名', 
+    'LUAL_NUMSIZES': '辅助库_月亮L_数量大小_宏名',
+    'luaL_checkversion': '辅助库_月亮l_检查版本_宏名',
+    'LUA_NOREF': '辅助库_月亮_无引用_宏名',  
+    'LUA_REFNIL': '辅助库_月亮_引用空值_宏名'
+    'luaL_loadfile': '辅助库_月亮l_载入文件_宏名',
+    'luaL_newlibtable': '辅助库_月亮l_新库表_宏名',
+    'luaL_newlib': '辅助库_月亮l_新库_宏名',
+    'luaL_argcheck': '辅助库_月亮l_实参检查_宏名',
+    'luaL_argexpected': '辅助库_月亮l_实参期望_宏名',
+    'luaL_checkstring': '辅助库_月亮l_检查字符串_宏名',
+    'luaL_optstring': '辅助库_月亮l_可选字符串_宏名',
+    'luaL_typename': '辅助库_月亮l_类型名称_宏名',
+    'luaL_dofile': '辅助库_月亮l_做文件_宏名',
+    'luaL_dostring': '辅助库_月亮l_做字符串_宏名',
+    'luaL_getmetatable': '辅助库_月亮l_获取元表_宏名',
+    'luaL_opt': '辅助库_月亮l_可选_宏名',
+    'luaL_loadbuffer': '辅助库_月亮l_载入缓冲区_宏名',
+    'luaL_intop': '辅助库_月亮l_整型操作_宏名'
+    'luaL_pushfail': '辅助库_月亮l_推失败_宏名',
+    'lua_assert': '辅助库_月亮_断言_宏名',
+    'LUA_FILEHANDLE': '辅助库_月亮_文件手握_宏名',
+    'lua_writestring': '辅助库_月亮_写字符串_宏名',
+    'lua_writeline': '辅助库_月亮_写行_宏名',
+    'lua_writestringerror': '辅助库_月亮_写字符串错误_宏名',
+    'luaL_checkunsigned': '辅助库_月亮l_检查无符号_宏名',
+    'luaL_optunsigned': '辅助库_月亮l_可选无符号_宏名',
+    'luaL_checkint': '辅助库_月亮l_检查整型_宏名',
+    'luaL_optint': '辅助库_月亮l_可选整型_宏名',
+    'luaL_checklong': '辅助库_月亮l_检查长型_宏名',
+    'luaL_optlong': '辅助库_月亮l_可选长型_宏名'
+}
+
+{
+    'lbaselib_c': '值',
+    
+    'SPACECHARS': '基本库_空格印刻_宏名',
+    'checkvalres': '基本库_检查值结果_宏名', 
+    'RESERVEDSLOT': '基本库_保留槽_宏名'
+}
+
+{
+    'lcode_c': '值',
+    
+    'MAXREGS': '代码_最大寄存器_宏名',
+    'hasjumps': '代码_有跳转_宏名',
+    'LIMLINEDIFF': '代码_限制行差_宏名',
+    'NO_JUMP': '代码_无_跳转_宏名',
+    'foldbinop': '代码_折叠二元操作_宏名',
+    'luaK_codeABC': '代码_月亮K_编码ABC_宏名',
+    'getinstruction': '代码_获取指令_宏名', 
+    'luaK_setmultret': '代码_月亮K_设置多返回_宏名',
+    'luaK_jumpto': '代码_月亮K_跳转到_宏名'
+}
+
+{
+    'lcorolib_c': '值',
+    
+    'COS_RUN': '内核库_COS_运行_宏名',
+    'COS_DEAD': '内核库_COS_死亡_宏名',
+    'COS_YIELD': '内核库_COS_让步_宏名',
+    'COS_NORM': '内核库_COS_正常_宏名'
+}
+
+{
+    'lctype_c': '值',
+    
+    'LUA_USE_CTYPE': 'c类型_月亮_用_c类型_宏名',
+    'ALPHABIT': 'c类型_字母位_宏名',
+    'DIGITBIT': 'c类型_数字位_宏名',
+    'PRINTBIT': 'c类型_打印位_宏名',
+    'SPACEBIT': 'c类型_空格位_宏名',
+    'XDIGITBIT': 'c类型_十六进制数字位_宏名',
+    'MASK': 'c类型_掩码_宏名',
+    'testprop': 'c类型_测试属性_宏名',
+    'lislalpha': 'c类型_l是否l字母_宏名',
+    'lislalnum': 'c类型_l是否l字母或数字_宏名',
+    'lisdigit': 'c类型_l是否数字_宏名',
+    'lisspace': 'c类型_l是否空格_宏名',
+    'lisprint': 'c类型_l是否打印_宏名',
+    'lisxdigit': 'c类型_l是否十六进制数字_宏名',
+    'ltolower': 'c类型_l到小写_宏名'
+}
+
+{
+    'ldblib_c': '值',
+    
+    'ldebug_c': '值',
+    
+    'noLuaClosure': '调试_无月亮闭包_宏名',
+    'pcRel': '调试_相对指令计数器_宏名',
+    'ci_func': '调试_ci_函_宏名',
+    'resethookcount': '调试_重置钩子计数_宏名',
+    'ABSLINEINFO': '调试_绝对行信息_宏名',
+    'MAXIWTHABS': '调试_最大I宽度绝对值_宏名'
+}
+
+{
+    'ldo_c': '值',
+    
+    'errorstatus': '做_错误状态码_宏名',
+    'LUAI_THROW': '做_月亮I_抛出_宏名',
+    'LUAI_TRY': '做_月亮I_尝试_宏名',
+    'luai_jmpbuf': '做_月亮i_跳转缓冲_宏名',
+    'ERRORSTACKSIZE': '做_错误栈大小_宏名',
+    'next_ci': '做_下一个_ci_宏名',
+    'luaD_checkstackaux': '做_月亮D_检查辅助栈_宏名',
+    'luaD_checkstack': '做_月亮D_检查栈_宏名',
+    'savestack': '做_保存栈_宏名',
+    'restorestack': '做_恢复栈_宏名',
+    'checkstackp': '做_检查栈指针_宏名',
+    'checkstackGCp': '做_检查栈GC指针_宏名',
+    'checkstackGC': '做_检查栈GC_宏名'
+}
+
+{
+    'ldump_c': '值',
+    
+    'dumpVector': '转储_转储向量_宏名',
+    'dumpLiteral': '转储_转储字面量_宏名',
+    'dumpVar': '转储_转储变量_宏名',
+    'DIBS': '转储_用步进做它_宏名'
+}
+
+{
+    'lfunc_c': '值',
+    
+    'MAXDELTA': '函_最大德尔塔_宏名',
+    'sizeCclosure': '函_C闭包大小_宏名',
+    'sizeLclosure': '函_L闭包大小_宏名',
+    'isintwups': '函_是否具有内部的上值_宏名',
+    'MAXUPVAL': '函_最大上值_宏名',
+    'upisopen': '函_上是否打开_宏名',
+    'uplevel': '函_上层级_宏名',
+    'MAXMISS': '函_最大丢失_宏名',
+    'CLOSEKTOP': '函_关闭栈顶_宏名'
+}
+
+{
+    'lgc_c': '值',
+    
+    'GCSWEEPMAX': '垃圾回收_GC扫除最大_宏名',
+    'GCFINMAX': '垃圾回收_GC终结最大_宏名',
+    'GCFINALIZECOST': '垃圾回收_GC最终执行成本_宏名',
+    'WORK2MEM': '垃圾回收_工作到内存_宏名',
+    'PAUSEADJ': '垃圾回收_暂停调整_宏名',
+    'maskcolors': '垃圾回收_颜色们掩码_宏名',
+    'maskgcbits': '垃圾回收_GC位们掩码_宏名',
+    'makewhite': '垃圾回收_制作白色_宏名',
+    'set2gray': '垃圾回收_设置为灰色_宏名',
+    'set2black': '垃圾回收_设置为黑色_宏名',
+    'valiswhite': '垃圾回收_值为白色_宏名',
+    'keyiswhite': '垃圾回收_键为白色_宏名',
+    'gcvalueN': '垃圾回收_gc值N_宏名',
+    'markvalue': '垃圾回收_记号值_宏名',
+    'markkey': '垃圾回收_记号键_宏名',
+    'markobject': '垃圾回收_记号对象_宏名',
+    'markobjectN': '垃圾回收_记号对象N_宏名',
+    'gnodelast': '垃圾回收_g节点最后_宏名',
+    'linkgclist': '垃圾回收_链接GC列表_宏名',
+    'linkobjgclist': '垃圾回收_链接对象GC列表_宏名'
+
+    'GCSpropagate': '垃圾回收_GCS传播_宏名',
+    'GCSenteratomic': '垃圾回收_GCS进入原子态_宏名',
+    'GCSatomic': '垃圾回收_GCS原子态_宏名',
+    'GCSswpallgc': '垃圾回收_GCS扫除所有GC_宏名',
+    'GCSswpfinobj': '垃圾回收_GCS扫除终结对象_宏名',
+    'GCSswptobefnz': '垃圾回收_GCS扫除待fnz_宏名',
+    'GCSswpend': '垃圾回收_GCS扫除终_宏名',
+    'GCScallfin': '垃圾回收_GCS调用终结器_宏名',
+    'GCSpause': '垃圾回收_GCS暂停_宏名',
+    'issweepphase': '垃圾回收_是否扫除阶段_宏名',
+    'keepinvariant': '垃圾回收_保持不变_宏名',
+    'resetbits': '垃圾回收_重置位们_宏名',
+    'setbits': '垃圾回收_设置位们_宏名',
+    'testbits': '垃圾回收_测试位们_宏名',
+    'bitmask': '垃圾回收_位掩码_宏名',
+    'bit2mask': '垃圾回收_位到掩码_宏名',
+    'l_setbit': '垃圾回收_l_设置位_宏名',
+    'resetbit': '垃圾回收_重置位_宏名',
+    'testbit': '垃圾回收_测试位_宏名',
+    'WHITE0BIT': '垃圾回收_白色0位_宏名',
+    'WHITE1BIT': '垃圾回收_白色1位_宏名'
+    'BLACKBIT': '垃圾回收_黑色位_宏名',
+    'FINALIZEDBIT': '垃圾回收_终结位_宏名',
+    'TESTBIT': '垃圾回收_测试位_宏名',
+    'WHITEBITS': '垃圾回收_白色位_宏名',
+    'iswhite': '垃圾回收_是否白色_宏名',
+    'isblack': '垃圾回收_是否黑色_宏名',
+    'isgray': '垃圾回收_是否灰色_宏名',
+    'tofinalize': '垃圾回收_到终结_宏名',
+    'otherwhite': '垃圾回收_其他白色_宏名',
+    'isdeadm': '垃圾回收_是否死亡m_宏名',
+    'isdead': '垃圾回收_是否死亡_宏名',
+    'changewhite': '垃圾回收_改变为白色_宏名',
+    'nw2black': '垃圾回收_新白到黑_宏名',
+    'luaC_white': '垃圾回收_月亮C_白色_宏名',
+    'G_NEW': '垃圾回收_G_新_宏名',
+    'G_SURVIVAL': '垃圾回收_G_存活_宏名',
+    'G_OLD0': '垃圾回收_G_旧0_宏名',
+    'G_OLD1': '垃圾回收_G_旧1_宏名',
+    'G_OLD': '垃圾回收_G_旧_宏名',
+    'G_TOUCHED1': '垃圾回收_G_已摸1_宏名',
+    'G_TOUCHED2': '垃圾回收_G_已摸2_宏名',
+    'AGEBITS': '垃圾回收_年龄位们_宏名',
+    'getage': '垃圾回收_获取年龄_宏名',
+    'setage': '垃圾回收_设置年龄_宏名',
+    'isold': '垃圾回收_是否旧_宏名'
+    'changeage': '垃圾回收_改变年龄_宏名',
+    'LUAI_GENMAJORMUL': '垃圾回收_月亮I_生成主要乘数_宏名',
+    'LUAI_GENMINORMUL': '垃圾回收_月亮I_生成次要乘数_宏名',
+    'LUAI_GCPAUSE': '垃圾回收_月亮I_GC暂停_宏名',
+    'getgcparam': '垃圾回收_获取gc形参_宏名',
+    'setgcparam': '垃圾回收_设置gc形参_宏名',
+    'LUAI_GCMUL': '垃圾回收_月亮I_GC乘数_宏名',
+    'LUAI_GCSTEPSIZE': '垃圾回收_月亮I_GC步大小_宏名',
+    'isdecGCmodegen': '垃圾回收_是否减少GC模式生成_宏名',
+    'GCSTPUSR': '垃圾回收_GC停止用户_宏名',
+    'GCSTPGC': '垃圾回收_GC停止GC_宏名',
+    'GCSTPCLS': '垃圾回收_GC停止CLS_宏名',
+    'gcrunning': '垃圾回收_gc正在跑_宏名',
+    'luaC_condGC': '垃圾回收_月亮C_条件GC_宏名',
+    'luaC_checkGC': '垃圾回收_月亮C_检查GC_宏名',
+    'luaC_objbarrier': '垃圾回收_月亮C_对象屏障_宏名',
+    'luaC_barrier': '垃圾回收_月亮C_屏障_宏名',
+    'luaC_objbarrierback': '垃圾回收_月亮C_对象屏障后退_宏名',
+    'luaC_barrierback': '垃圾回收_月亮C_屏障后退_宏名'
+}
+
+{
+    'linit_c': '值',
+    'LUA_LIB': '值'
+}
+
+{
+    'liolib_c': '值',
+    
+    'L_MODEEXT': '入出库_L_模式扩展_宏名',
+    'l_popen': '入出库_l_保护打开_宏名',
+    'l_pclose': '入出库_l_保护关闭_宏名',
+    'l_checkmodep': '入出库_l_检查模式保护_宏名',
+    'l_getc': '入出库_l_获取c_宏名',
+    'l_lockfile': '入出库_l_加锁文件_宏名',
+    'l_unlockfile': '入出库_l_解锁文件_宏名',
+    'l_fseek': '入出库_l_文件寻求_宏名',
+    'l_ftell': '入出库_l_文件告知_宏名',
+    'l_seeknum': '入出库_l_寻求数目_宏名',
+    'IO_PREFIX': '入出库_入出_前缀_宏名',
+    'IOPREF_LEN': '入出库_入出前缀_长度_宏名',
+    'IO_INPUT': '入出库_入出_输入_宏名',
+    'IO_OUTPUT': '入出库_入出_输出_宏名',
+    'tolstream': '入出库_到l流_宏名',
+    'isclosed': '入出库_是否已关闭_宏名',
+    'MAXARGLINE': '入出库_最大实参行_宏名',
+    'L_MAXLENNUM': '入出库_L_最大长度数目_宏名'
+}
+
+{
+    'vmdispatch': '跳转表_虚机调度_宏名',
+    'vmcase': '跳转表_虚机情况_宏名',
+    'vmbreak': '跳转表_虚机破断_宏名'
+}
+
+{
+    'llex_c': '值',
+    
+    'next': '词法_下一个_宏名',
+    'currIsNewline': '词法_当前是否换行_宏名',
+    'save_and_next': '词法_保存_与_下一个_宏名',
+    'FIRST_RESERVED': '词法_第一个_保留字_宏名',
+    'LUA_ENV': '词法_月亮_环境_宏名',
+    'NUM_RESERVED': '词法_数目_保留字_宏名'
+}
+
+{
+    'MAX_SIZET': '限制_最大_大小T_宏名',
+    'MAX_SIZE': '限制_最大_大小_宏名',
+    'MAX_LUMEM': '限制_最大_LU内存_宏名',
+    'MAX_LMEM': '限制_最大_L内存_宏名',
+    'MAX_INT': '限制_最大_整型_宏名',
+    'log2maxs': '限制_2为底对数最大值_宏名',
+    'ispow2': '限制_是否2的幂次方_宏名',
+    'L_P2I': '限制_L_指针到整数_宏名',
+    'point2uint': '限制_指针到无符整型_宏名',
+    'lua_assert': '限制_月亮_断言_宏名',
+    'check_exp': '限制_检查_表达式_宏名',
+    'lua_longassert': '限制_月亮_长断言_宏名',
+    'luai_apicheck': '限制_月亮i_应程接检查_宏名',
+    'api_check': '限制_应程接_检查_宏名',
+    'UNUSED': '限制_未使用_宏名'
+    'cast': '限制_类型转换_宏名',
+    'cast_void': '限制_类型转换_空的_宏名',
+    'cast_voidp': '限制_类型转换_空的指针_宏名',
+    'cast_num': '限制_类型转换_数目_宏名',
+    'cast_int': '限制_类型转换_整型_宏名',
+    'cast_uint': '限制_类型转换_无符整型_宏名',
+    'cast_byte': '限制_类型转换_字节_宏名',
+    'cast_uchar': '限制_类型转换_无符印刻_宏名',
+    'cast_char': '限制_类型转换_印刻_宏名',
+    'cast_charp': '限制_类型转换_印刻指针_宏名',
+    'cast_sizet': '限制_类型转换_大小t_宏名',
+    'l_castS2U': '限制_l_类型转换符到无符_宏名',
+    'l_castU2S': '限制_l_类型转换无符到符_宏名',
+    'l_noret': '限制_l_无返回值_宏名',
+    'l_inline': '限制_l_内联_宏名',
+    'LUAI_MAXSHORTLEN': '限制_月亮I_最大短型长度_宏名',
+    'MINSTRTABSIZE': '限制_最小串表大小_宏名',
+    'STRCACHE_N': '限制_串缓存_N_宏名',
+    'STRCACHE_M': '限制_串缓存_M_宏名',
+    'LUA_MINBUFFER': '限制_月亮_最小缓冲区_宏名',
+    'LUAI_MAXCCALLS': '限制_月亮I_最大C调用们_宏名'
+    'lua_lock': '限制_月亮_锁_宏名',
+    'lua_unlock': '限制_月亮_解锁_宏名',
+    'luai_threadyield': '限制_月亮i_线程让步_宏名',
+    'luai_userstateopen': '限制_月亮i_用户状态打开_宏名',
+    'luai_userstateclose': '限制_月亮i_用户状态关闭_宏名',
+    'luai_userstatethread': '限制_月亮i_用户状态线程_宏名',
+    'luai_userstatefree': '限制_月亮i_用户状态释放_宏名',
+    'luai_userstateresume': '限制_月亮i_用户状态恢复_宏名',
+    'luai_userstateyield': '限制_月亮i_用户状态让步_宏名',
+    'luai_numidiv': '限制_月亮i_数目整数除法_宏名',
+    'luai_numdiv': '限制_月亮i_数目除法_宏名',
+    'luai_nummod': '限制_月亮i_数目取模_宏名',
+    'luai_numpow': '限制_月亮i_数目幂_宏名',
+    'luai_numadd': '限制_月亮i_数目加法_宏名',
+    'luai_numsub': '限制_月亮i_数目减法_宏名',
+    'luai_nummul': '限制_月亮i_数目乘法_宏名',
+    'luai_numunm': '限制_月亮i_数目取负_宏名',
+    'luai_numeq': '限制_月亮i_数目相等_宏名',
+    'luai_numlt': '限制_月亮i_数目小于_宏名',
+    'luai_numle': '限制_月亮i_数目小等_宏名',
+    'luai_numgt': '限制_月亮i_数目大于_宏名',
+    'luai_numge': '限制_月亮i_数目大等_宏名',
+    'luai_numisnan': '限制_月亮i_数目是否nan_宏名',
+    'condmovestack': '限制_条件移动栈_宏名',
+    'condchangemem': '限制_条件改变内存_宏名'
+}
+
+{
+    'lmathlib_c': '值',
+    
+
+    'FIGS': '数学库_浮点数位数_宏名',
+    'trim64': '数学库_截取64位_宏名',
+    'shift64_FIG': '数学库_移位64位_浮点数位数_宏名',
+    'scaleFIG': '数学库_比例浮点数位数_宏名',
+    'trim32': '数学库_截取32位_宏名',
+    'shiftLOW': '数学库_移位低位_宏名',
+    'shiftHI': '数学库_移位高位_宏名'
+}
+
+{
+    'lmem_c': '值',
+    
+    'callfrealloc': '内存_调用释放分配_宏名',
+    'cantryagain': '内存_能再次尝试_宏名',
+    'firsttry': '内存_首次尝试_宏名',
+    'MINSIZEARRAY': '内存_最小数组大小_宏名',
+
+    'luaM_error': '内存_月亮M_错误_宏名',
+    'luaM_testsize': '内存_月亮M_测试大小_宏名',
+    'luaM_checksize': '内存_月亮M_检查大小_宏名',
+    'luaM_limitN': '内存_月亮M_限制N_宏名',
+    'luaM_reallocvchar': '内存_月亮M_重新分配v印刻_宏名',
+    'luaM_freemem': '内存_月亮M_释放内存_宏名',
+    'luaM_free': '内存_月亮M_释放_宏名',
+    'luaM_freearray': '内存_月亮M_释放数组_宏名',
+    'luaM_new': '内存_月亮M_新_宏名',
+    'luaM_newvector': '内存_月亮M_新向量_宏名',
+    'luaM_newvectorchecked': '内存_月亮M_新向量已检查_宏名',
+    'luaM_newobject': '内存_月亮M_新对象_宏名',
+    'luaM_growvector': '内存_月亮M_增长向量_宏名',
+    'luaM_reallocvector': '内存_月亮M_重新分配向量_宏名',
+    'luaM_shrinkvector': '内存_月亮M_缩放向量_宏名'
+}
+
+{
+    'loadlib_c': '值',
+    
+    'LUA_IGMARK': '载入库_月亮_忽略掩码_宏名',
+    'LUA_CSUBSEP': '载入库_月亮_C子分隔符_宏名',
+    'LUA_LSUBSEP': '载入库_月亮_L子分隔符_宏名',
+    'LUA_POF': '载入库_月亮_形参偏移_宏名',
+    'LUA_OFSEP': '载入库_月亮_偏移分隔符_宏名',
+    'LIB_FAIL': '载入库_库_失败_宏名',
+    'cast_func': '载入库_类型转换_函_宏名',
+    'LUA_LLE_FLAGS': '载入库_月亮_库扩展_标志_宏名',
+    'DLMSG': '载入库_动态链接消息_宏名',
+    'LUA_PATH_VAR': '载入库_月亮_路径_变量_宏名',
+    'LUA_CPATH_VAR': '载入库_月亮_C路径_变量_宏名',
+    'ERRLIB': '载入库_错误库_宏名',
+    'ERRFUNC': '载入库_错误函_宏名'
+}
+
+{
+    'lobject_c': '值',
+    
+    'MAXSIGDIG': '对象_最大有效数字_宏名',
+    'L_MAXLENNUM': '对象_L_最大长度数目_宏名',
+    'MAXBY10': '对象_最大除以十_宏名',
+    'MAXLASTD': '对象_最大最后数字_宏名',
+    'MAXNUMBER2STR': '对象_最大数目到串_宏名',
+    'BUFVFS': '对象_缓冲VFS_宏名',
+    'RETS': '对象_返回值_宏名',
+    'PRE': '对象_前缀_宏名',
+    'POS': '对象_后缀_宏名',
+    'addsize': '对象_添加大小_宏名',
+
+    'LUA_TUPVAL': '对象_月亮_T上值_宏名',
+    'LUA_TPROTO': '对象_月亮_T原型_宏名',
+    'LUA_TDEADKEY': '对象_月亮_T死键_宏名',
+    'LUA_TOTALTYPES': '对象_月亮_总共类型们_宏名',
+    'makevariant': '对象_制作变体_宏名',
+    'TValuefields': '对象_T值字段_宏名',
+    'val_': '对象_值__宏名',
+    'valraw': '对象_原始值_宏名',
+    'rawtt': '对象_原始tt_宏名',
+    'novariant': '对象_无变体_宏名',
+    'withvariant': '对象_带有变体_宏名',
+    'ttypetag': '对象_t类型标签_宏名'
+    'ttype': '对象_t类型_宏名',
+    'checktag': '对象_检查标签_宏名',
+    'checktype': '对象_检查类型_宏名',
+    'righttt': '对象_正确tt_宏名',
+    'checkliveness': '对象_检查存活性_宏名',
+    'settt_': '对象_设置tt__宏名',
+    'setobj': '对象_设置对象_宏名',
+    'setobjs2s': '对象_设置对象s到s_宏名',
+    'setobj2s': '对象_设置对象到s_宏名',
+    'setobjt2t': '对象_设置对象t到t_宏名',
+    'setobj2n': '对象_设置对象到n_宏名',
+    'setobj2t': '对象_设置对象到t_宏名',
+    's2v': '对象_s到v_宏名',
+    'LUA_VNIL': '对象_月亮_V空值_宏名',
+    'LUA_VEMPTY': '对象_月亮_V空容器_宏名',
+    'LUA_VABSTKEY': '对象_月亮_V抽象键_宏名',
+    'ttisnil': '对象_tt是否空值_宏名',
+    'ttisstrictnil': '对象_tt是否严格空值_宏名',
+    'setnilvalue': '对象_设置空值的值_宏名',
+    'isabstkey': '对象_是否抽象键_宏名',
+    'isnonstrictnil': '对象_是否无严格空值_宏名',
+    'isempty': '对象_是否空容器_宏名',
+    'ABSTKEYCONSTANT': '对象_抽象键常量_宏名'
+    'setempty': '对象_设置空容器_宏名',
+    'LUA_VFALSE': '对象_月亮_V假_宏名',
+    'LUA_VTRUE': '对象_月亮_V真_宏名',
+    'ttisboolean': '对象_tt是否布尔_宏名',
+    'ttisfalse': '对象_tt是否假_宏名',
+    'ttistrue': '对象_tt是否真_宏名',
+    'l_isfalse': '对象_l_是否假_宏名',
+    'setbfvalue': '对象_设置布尔假值_宏名',
+    'setbtvalue': '对象_设置布尔真值_宏名',
+    'LUA_VTHREAD': '对象_月亮_V线程_宏名',
+    'ttisthread': '对象_tt是否线程_宏名',
+    'thvalue': '对象_线程值_宏名',
+    'setthvalue': '对象_设置线程值_宏名',
+    'setthvalue2s': '对象_设置线程值到s_宏名',
+    'CommonHeader': '对象_公共头部_宏名',
+    'BIT_ISCOLLECTABLE': '对象_位_是否可收集_宏名',
+    'iscollectable': '对象_是否可收集_宏名',
+    'ctb': '对象_印刻到字节_宏名'
+    'gcvalue': '对象_垃圾回收值_宏名',
+    'gcvalueraw': '对象_垃圾回收原始值_宏名',
+    'setgcovalue': '对象_设置垃圾回收o值_宏名',
+    'LUA_VNUMINT': '对象_月亮_V数目整型_宏名',
+    'LUA_VNUMFLT': '对象_月亮_V数目浮点_宏名',
+    'ttisnumber': '对象_tt是否数目_宏名',
+    'ttisfloat': '对象_tt是否浮点_宏名',
+    'ttisinteger': '对象_tt是否整数_宏名',
+    'nvalue': '对象_数目值_宏名',
+    'fltvalue': '对象_浮点值_宏名',
+    'ivalue': '对象_整数值_宏名',
+    'fltvalueraw': '对象_浮点原始值_宏名',
+    'ivalueraw': '对象_整数原始值_宏名',
+    'setfltvalue': '对象_设置浮点值_宏名',
+    'chgfltvalue': '对象_改变浮点值_宏名',
+    'setivalue': '对象_设置整数值_宏名',
+    'chgivalue': '对象_改变整数值_宏名',
+    'LUA_VSHRSTR': '对象_月亮_V短型串_宏名',
+    'LUA_VLNGSTR': '对象_月亮_V长型串_宏名',
+    'ttisstring': '对象_tt是否字符串_宏名',
+    'ttisshrstring': '对象_tt是否短型字符串_宏名',
+    'ttislngstring': '对象_tt是否长型字符串_宏名',
+    'tsvalueraw': '对象_ts原始值_宏名',
+    'tsvalue': '对象_ts值_宏名',
+    'setsvalue': '对象_设置ts值_宏名',
+    'setsvalue2s': '对象_设置ts值到s_宏名',
+    'setsvalue2n': '对象_设置ts值到n_宏名'
+    'getstr': '对象_获取串_宏名',
+    'svalue': '对象_s值_宏名',
+    'tsslen': '对象_tss长度_宏名',
+    'vslen': '对象_vs长度_宏名',
+    'LUA_VLIGHTUSERDATA': '对象_月亮_V轻量用户数据_宏名',
+    'LUA_VUSERDATA': '对象_月亮_V用户数据_宏名',
+    'ttislightuserdata': '对象_tt是否轻量用户数据_宏名',
+    'ttisfulluserdata': '对象_tt是否完全用户数据_宏名',
+    'pvalue': '对象_p值_宏名',
+    'uvalue': '对象_u值_宏名',
+    'pvalueraw': '对象_p原始值_宏名',
+    'setpvalue': '对象_设置p值_宏名',
+    'setuvalue': '对象_设置u值_宏名',
+    'udatamemoffset': '对象_用户数据内存偏移_宏名',
+    'getudatamem': '对象_获取用户数据内存_宏名',
+    'sizeudata': '对象_用户数据大小_宏名',
+    'LUA_VPROTO': '对象_月亮_V原型_宏名',
+    'LUA_VUPVAL': '对象_月亮_V上值_宏名',
+    'LUA_VLCL': '对象_月亮_VL闭包L_宏名',
+    'LUA_VLCF': '对象_月亮_VL闭包函_宏名',
+    'LUA_VCCL': '对象_月亮_VC闭包L_宏名'
+    'ttisfunction': '对象_tt是否函数_宏名',
+    'ttisLclosure': '对象_tt是否L闭包_宏名',
+    'ttislcf': '对象_tt是否L闭包函_宏名',
+    'ttisCclosure': '对象_tt是否C闭包_宏名',
+    'ttisclosure': '对象_tt是否闭包_宏名',
+    'isLfunction': '对象_是否L函数_宏名',
+    'clvalue': '对象_闭包值_宏名',
+    'clLvalue': '对象_闭包L值_宏名',
+    'fvalue': '对象_函值_宏名',
+    'clCvalue': '对象_闭包C值_宏名',
+    'fvalueraw': '对象_函原始值_宏名',
+    'setclLvalue': '对象_设置闭包L值_宏名',
+    'setclLvalue2s': '对象_设置闭包L值到s_宏名',
+    'setfvalue': '对象_设置函值_宏名',
+    'setclCvalue': '对象_设置闭包C值_宏名',
+    'ClosureHeader': '对象_闭包头部_宏名',
+    'getproto': '对象_获取原型_宏名',
+    'LUA_VTABLE': '对象_月亮_V表_宏名',
+    'ttistable': '对象_tt是否表_宏名',
+    'hvalue': '对象_哈希值_宏名',
+    'sethvalue': '对象_设置哈希值_宏名',
+    'sethvalue2s': '对象_设置哈希值到s_宏名',
+    'setnodekey': '对象_设置节点键_宏名',
+    'getnodekey': '对象_获取节点键_宏名',
+    'BITRAS': '对象_位保留已分配密封_宏名',
+    'isrealasize': '对象_是否真实数组大小_宏名'
+    'setrealasize': '对象_设置真实数组大小_宏名',
+    'setnorealasize': '对象_设置无真实数组大小_宏名',
+    'keytt': '对象_键tt_宏名',
+    'keyval': '对象_键值_宏名',
+    'keyisnil': '对象_键是否空值_宏名',
+    'keyisinteger': '对象_键是否整数_宏名',
+    'keyival': '对象_键整数值_宏名',
+    'keyisshrstr': '对象_键是否短型串_宏名',
+    'keystrval': '对象_键串值_宏名',
+    'setnilkey': '对象_设置空值键_宏名',
+    'keyiscollectable': '对象_键是否可回收_宏名',
+    'gckey': '对象_垃圾回收键_宏名',
+    'gckeyN': '对象_垃圾回收键N_宏名',
+    'setdeadkey': '对象_设置死键_宏名',
+    'keyisdead': '对象_键是否死_宏名',
+    'lmod': '对象_月取模_宏名',
+    'twoto': '对象_二到N次方_宏名',
+    'sizenode': '对象_节点大小_宏名',
+    'UTF8BUFFSZ': '对象_UTF8缓冲大小_宏名'
+}
+
+{
+    'lopcodes_c': '值',
+    
+
+    'SIZE_C': '操作码_大小_C_宏名',
+    'SIZE_B': '操作码_大小_B_宏名',
+    'SIZE_Bx': '操作码_大小_Bx_宏名',
+    'SIZE_A': '操作码_大小_A_宏名',
+    'SIZE_Ax': '操作码_大小_Ax_宏名',
+    'SIZE_sJ': '操作码_大小_sJ_宏名',
+    'SIZE_OP': '操作码_大小_OP_宏名',
+    'POS_OP': '操作码_位置_OP_宏名',
+    'POS_A': '操作码_位置_A_宏名',
+    'POS_k': '操作码_位置_k_宏名',
+    'POS_B': '操作码_位置_B_宏名',
+    'POS_C': '操作码_位置_C_宏名',
+    'POS_Bx': '操作码_位置_Bx_宏名',
+    'POS_Ax': '操作码_位置_Ax_宏名',
+    'POS_sJ': '操作码_位置_sJ_宏名',
+    'L_INTHASBITS': '操作码_L_整型有多少位_宏名',
+    'MAXARG_Bx': '操作码_最大实参_Bx_宏名',
+    'OFFSET_sBx': '操作码_偏移_sBx_宏名',
+    'MAXARG_Ax': '操作码_最大实参_Ax_宏名',
+    'MAXARG_sJ': '操作码_最大实参_sJ_宏名',
+    'OFFSET_sJ': '操作码_偏移_sJ_宏名',
+    'MAXARG_A': '操作码_最大实参_A_宏名',
+    'MAXARG_B': '操作码_最大实参_B_宏名',
+    'MAXARG_C': '操作码_最大实参_C_宏名'
+    'OFFSET_sC': '操作码_偏移_sC_宏名',
+    'int2sC': '操作码_整型到sC_宏名',
+    'sC2int': '操作码_sC到整型_宏名',
+    'MASK1': '操作码_掩码1_宏名',
+    'MASK0': '操作码_掩码0_宏名',
+    'GET_OPCODE': '操作码_获取_操作码_宏名',
+    'SET_OPCODE': '操作码_设置_操作码_宏名',
+    'checkopm': '操作码_检查操作m_宏名',
+    'getarg': '操作码_获取实参_宏名',
+    'setarg': '操作码_设置实参_宏名'
+    'GETARG_A': '操作码_获取实参_A_宏名',
+    'SETARG_A': '操作码_设置实参_A_宏名',
+    'GETARG_B': '操作码_获取实参_B_宏名',
+    'GETARG_sB': '操作码_获取实参_sB_宏名',
+    'SETARG_B': '操作码_设置实参_B_宏名',
+    'GETARG_C': '操作码_获取实参_C_宏名',
+    'GETARG_sC': '操作码_获取实参_sC_宏名',
+    'SETARG_C': '操作码_设置实参_C_宏名',
+    'TESTARG_k': '操作码_测试实参_k_宏名',
+    'GETARG_k': '操作码_获取实参_k_宏名',
+    'SETARG_k': '操作码_设置实参_k_宏名',
+    'GETARG_Bx': '操作码_获取实参_Bx_宏名',
+    'SETARG_Bx': '操作码_设置实参_Bx_宏名',
+    'GETARG_Ax': '操作码_获取实参_Ax_宏名',
+    'SETARG_Ax': '操作码_设置实参_Ax_宏名',
+    'GETARG_sBx': '操作码_获取实参_sBx_宏名',
+    'SETARG_sBx': '操作码_设置实参_sBx_宏名',
+    'GETARG_sJ': '操作码_获取实参_sJ_宏名',
+    'SETARG_sJ': '操作码_设置实参_sJ_宏名',
+    'CREATE_ABCk': '操作码_创建_ABCk_宏名',
+    'CREATE_ABx': '操作码_创建_ABx_宏名',
+    'CREATE_Ax': '操作码_创建_Ax_宏名',
+    'CREATE_sJ': '操作码_创建_sJ_宏名'
+    'MAXINDEXRK': '操作码_最大索引RK_宏名',
+    'NO_REG': '操作码_无_寄存器_宏名',
+    'NUM_OPCODES': '操作码_数目_操作码_宏名',
+    'getOpMode': '操作码_获取操作模式_宏名',
+    'testAMode': '操作码_测试A模式_宏名',
+    'testTMode': '操作码_测试T模式_宏名',
+    'testITMode': '操作码_测试IT模式_宏名',
+    'testOTMode': '操作码_测试OT模式_宏名',
+    'testMMMode': '操作码_测试MM模式_宏名',
+    'isOT': '操作码_是否OT_宏名',
+    'isIT': '操作码_是否IT_宏名',
+    'opmode': '操作码_操作模式_宏名',
+    'LFIELDS_PER_FLUSH': '操作码_字段_每次_刷新_宏名'
+}
+
+{
+    'lopnames_h': '值'
+}
+
+{
+    'loslib_c': '值',
+    
+    'LUA_STRFTIMEOPTIONS': '系统库_月亮_串F时间选项_宏名',
+    'l_timet': '系统库_l_时间t_宏名',
+    'l_pushtime': '系统库_l_推时间_宏名',
+    'l_gettime': '系统库_l_获取时间_宏名',
+    'l_gmtime': '系统库_l_gm时间_宏名',
+    'l_localtime': '系统库_l_本地时间_宏名',
+    'LUA_TMPNAMBUFSIZE': '系统库_月亮_临时名缓冲大小_宏名',
+    'LUA_TMPNAMTEMPLATE': '系统库_月亮_临时名模板_宏名',
+    'lua_tmpnam': '系统库_月亮_临时名_宏名',
+    'l_system': '系统库_l_系统_宏名',
+    'SIZETIMEFMT': '系统库_时间格式大小_宏名'
+}
+
+{
+    'lparser_c': '值',
+    
+    'MAXVARS': '解析器_最大变量_宏名',
+    'hasmultret': '解析器_有多个返回值_宏名',
+    'eqstr': '解析器_串相等_宏名',
+    'check_condition': '解析器_检查_条件_宏名',
+    'new_localvarliteral': '解析器_新_本地变量字面_宏名',
+    'enterlevel': '解析器_进入层级_宏名',
+    'leavelevel': '解析器_离开层级_宏名',
+    'UNARY_PRIORITY': '解析器_一元运算符_优先权_宏名',
+
+    'vkisvar': '解析器_变量种类是否变量_宏名',
+    'vkisindexed': '解析器_变量种类是否已索引_宏名',
+    'VDKREG': '解析器_变量D种类寄存器_宏名',
+    'RDKCONST': '解析器_寄存器D种类常量_宏名',
+    'RDKTOCLOSE': '解析器_寄存器D种类待关闭_宏名',
+    'RDKCTC': '解析器_寄存器D种类代码到常量_宏名'
+}
+
+{
+    'lprefix_h': '值',
+
+    '_XOPEN_SOURCE': '前缀__X打开_源码_宏名',
+    '_LARGEFILE_SOURCE': '前缀__大文件_源码_宏名',
+    '_FILE_OFFSET_BITS': '前缀__文件_偏移_位_宏名',
+    '_CRT_SECURE_NO_WARNINGS': '前缀__C运行时_安全_不_警告_宏名'
+}
+
+{
+    'lstate_c': '值',
+    
+    'fromstate': '状态机_来自状态机_宏名',
+    'addbuff': '状态机_添加缓冲_宏名',
+
+    'yieldable': '状态机_可让步_宏名',
+    'getCcalls': '状态机_获取C调用_宏名',
+    'incnny': '状态机_递增n不让步_宏名',
+    'decnny': '状态机_递减n不让步_宏名',
+    'nyci': '状态机_不让步调用信息_宏名',
+    'l_signalT': '状态机_l_信号T_宏名',
+    'EXTRA_STACK': '状态机_额外_栈_宏名',
+    'BASIC_STACK_SIZE': '状态机_基本_栈_大小_宏名',
+    'stacksize': '状态机_栈大小_宏名'
+    'KGC_INC': '状态机_K垃圾回收_递增_宏名',
+    'KGC_GEN': '状态机_K垃圾回收_生成_宏名',
+    'CIST_OAH': '状态机_调信状型_旧活动钩子_宏名',
+    'CIST_C': '状态机_调信状型_C_宏名',
+    'CIST_FRESH': '状态机_调信状型_新鲜_宏名',
+    'CIST_HOOKED': '状态机_调信状型_已钩子_宏名',
+    'CIST_YPCALL': '状态机_调信状型_让步保护调用_宏名',
+    'CIST_TAIL': '状态机_调信状型_尾部_宏名',
+    'CIST_HOOKYIELD': '状态机_调信状型_钩子让步_宏名',
+    'CIST_FIN': '状态机_调信状型_终结的_宏名',
+    'CIST_TRAN': '状态机_调信状型_传输_宏名',
+    'CIST_CLSRET': '状态机_调信状型_闭包返回_宏名',
+    'CIST_RECST': '状态机_调信状型_递归调用状型_宏名',
+    'CIST_LEQ': '状态机_调信状型_限制相等_宏名'
+    'getcistrecst': '状态机_获取调信状型递归调用状型_宏名',
+    'setcistrecst': '状态机_设置调信状型递归调用状型_宏名',
+    'isLua': '状态机_是否月亮_宏名',
+    'isLuacode': '状态机_是否月亮代码_宏名',
+    'setoah': '状态机_设置旧活动钩子_宏名',
+    'getoah': '状态机_获取旧活动钩子_宏名',
+
+    'completestate': '状态机_完成状态_宏名',
+    'cast_u': '状态机_类型转换_u_宏名',
+    'gco2ts': '状态机_垃圾回收对象到t串_宏名',
+    'gco2u': '状态机_垃圾回收对象到u_宏名',
+    'gco2lcl': '状态机_垃圾回收对象到l闭包_宏名',
+    'gco2ccl': '状态机_垃圾回收对象到c闭包_宏名',
+    'gco2cl': '状态机_垃圾回收对象到闭包_宏名',
+    'gco2t': '状态机_垃圾回收对象到t_宏名',
+    'gco2p': '状态机_垃圾回收对象到P_宏名',
+    'gco2th': '状态机_垃圾回收对象到th_宏名',
+    'gco2upv': '状态机_垃圾回收对象到上值_宏名',
+    'obj2gco': '状态机_对象到垃圾回收对象_宏名',
+    'gettotalbytes': '状态机_获取全部字节_宏名'
+}
+
+{
+    'lstring_c': '值',
+    
+
+    'MAXSTRTB': '字符串_最大串表_宏名',
+    'MEMERRMSG': '字符串_内存错误消息_宏名',
+    'sizelstring': '字符串_大写l字符串_宏名',
+    'luaS_newliteral': '字符串_月亮S_新字面_宏名',
+    'isreserved': '字符串_是否保留字_宏名',
+    'eqshrstr': '字符串_相等短型串_宏名',
+}
+
+{
+    'lstrlib_c': '值',
+    
+    'LUA_MAXCAPTURES': '串库_月亮_最大捕获_宏名',
+    'MAX_SIZET': '串库_最大_大小T_宏名',
+    'MAXSIZE': '串库_最大大小_宏名',
+    'CAP_UNFINISHED': '串库_捕_未结束_宏名',
+    'CAP_POSITION': '串库_捕_位置_宏名',
+    'MAXCCALLS': '串库_最大C调用_宏名',
+    'L_ESC': '串库_月_转义_宏名',
+    'SPECIALS': '串库_特殊的_宏名',
+    'SIZELENMOD': '串库_大小与长度修饰符_宏名',
+    'L_NBFD': '串库_月_非阻塞文件描述符_宏名',
+    'MAX_ITEMF': '串库_最大_项F_宏名',
+    'MAX_ITEM': '串库_最大_项_宏名'
+    'L_FMTFLAGSF': '串库_月_格式化标志F_宏名',
+    'L_FMTFLAGSX': '串库_月_格式化标志X_宏名',
+    'L_FMTFLAGSI': '串库_月_格式化标志I_宏名',
+    'L_FMTFLAGSU': '串库_月_格式化标志U_宏名',
+    'L_FMTFLAGSC': '串库_月_格式化标志C_宏名',
+    'MAX_FORMAT': '串库_最大_格式_宏名',
+    'LUAL_PACKPADBYTE': '串库_月亮L_打包衬垫字节_宏名',
+    'MAXINTSIZE': '串库_最大整型大小_宏名',
+    'SZINT': '串库_大小整型_宏名'
+}
+
+{
+    'ltable_c': '值',
+
+    'MAXABITS': '表_最大A位数_宏名',
+    'MAXASIZE': '表_最大A大小_宏名',
+    'MAXHBITS': '表_最大哈希位数_宏名',
+    'MAXHSIZE': '表_最大哈希大小_宏名',
+    'hashpow2': '表_哈希二次方幂_宏名',
+    'hashmod': '表_哈希取模_宏名',
+    'hashstr': '表_哈希串_宏名',
+    'hashboolean': '表_哈希布尔_宏名',
+    'hashpointer': '表_哈希指针_宏名',
+    'dummynode': '表_虚假节点_宏名',
+    'limitequalsasize': '表_限制相等圆池分配大小_宏名',
+    'limitasasize': '表_限制圆池分配大小_宏名'
+    'gnode': '表_全局节点_宏名',
+    'gval': '表_全局值_宏名',
+    'gnext': '表_全局下一个_宏名',
+    'invalidateTMcache': '表_废弃标签方法缓存_宏名',
+    'isdummy': '表_是否虚假_宏名',
+    'allocsizenode': '表_分配节点大小_宏名',
+    'nodefromval': '表_节点来自值_宏名',
+    'TAB_R': '表_表_读_宏名',
+    'TAB_W': '表_表_写_宏名',
+    'TAB_L': '表_表_长度_宏名',
+    'TAB_RW': '表_表_读写_宏名',
+    'aux_getn': '表_辅助_获取n_宏名',
+    'sof': '表_栈溢出_宏名',
+    'RANLIMIT': '表_随机数生成限制_宏名'
+}
+
+{
+    'ltm_c': '值',
+    
+
+    'maskflags': '标签方法_掩码标志_宏名',
+    'notm': '标签方法_无标方_宏名',
+    'gfasttm': '标签方法_全局快速标方_宏名',
+    'fasttm': '标签方法_快速标方_宏名',
+    'ttypename': '标签方法_t类型名称_宏名'
+}
+
+{
+    'lua_c': '值',
+
+    'LUA_PROGNAME': '解释器_月亮_程序名_宏名',
+    'LUA_INIT_VAR': '解释器_月亮_初始_变量_宏名',
+    'LUA_INITVARVERSION': '解释器_月亮_初始变量版本_宏名',
+    'setsignal': '解释器_设置信号_宏名',
+    'has_error': '解释器_有_错误_宏名',
+    'has_i': '解释器_有_i_宏名',
+    'has_v': '解释器_有_v_宏名',
+    'has_e': '解释器_有_e_宏名',
+    'has_E': '解释器_有_E_宏名',
+    'LUA_PROMPT': '解释器_月亮_提示符_宏名',
+    'LUA_PROMPT2': '解释器_月亮_提示符2_宏名',
+    'LUA_MAXINPUT': '解释器_月亮_最大输入_宏名',
+    'lua_stdin_is_tty': '解释器_月亮_标准_是否_tty_宏名',
+    'lua_initreadline': '解释器_月亮_初始读行_宏名',
+    'lua_readline': '解释器_月亮_读行_宏名',
+    'lua_saveline': '解释器_月亮_保存行_宏名',
+    'lua_freeline': '解释器_月亮_释放行_宏名',
+    'EOFMARK': '解释器_EOF记号_宏名',
+    'marklen': '解释器_记号长度_宏名'
+}
+
+{
+    'lua_h': '值',
+
+    'LUA_VERSION_MAJOR': '月头_月亮_版本_主版_宏名',
+    'LUA_VERSION_MINOR': '月头_月亮_版本_副版_宏名',
+    'LUA_VERSION_RELEASE': '月头_月亮_版本_发布_宏名',
+    'LUA_VERSION_NUM': '月头_月亮_版本_数目_宏名',
+    'LUA_VERSION_RELEASE_NUM': '月头_月亮_版本_发布_数目_宏名',
+    'LUA_VERSION': '月头_月亮_版本_宏名',
+    'LUA_RELEASE': '月头_月亮_发布_宏名',
+    'LUA_COPYRIGHT': '月头_月亮_版权_宏名',
+    'LUA_AUTHORS': '月头_月亮_作者_宏名',
+    'LUA_SIGNATURE': '月头_月亮_签名_宏名',
+    'LUA_MULTRET': '月头_月亮_多返回_宏名',
+    'LUA_REGISTRYINDEX': '月头_月亮_注册表索引_宏名',
+    'lua_upvalueindex': '月头_月亮_上值索引_宏名',
+
+    'LUA_YIELD': '月头_月亮_让步_宏名',
+    'LUA_ERRRUN': '月头_月亮_运行错误_宏名',
+    'LUA_ERRSYNTAX': '月头_月亮_句法错误_宏名',
+    'LUA_ERRMEM': '月头_月亮_内存错误_宏名',
+    'LUA_ERRERR': '月头_月亮_错误中的错误_宏名',
+    'LUA_TNONE': '月头_月亮_T没有_宏名',
+    'LUA_TNIL': '月头_月亮_T空值_宏名',
+    'LUA_TBOOLEAN': '月头_月亮_T布尔_宏名',
+    'LUA_TLIGHTUSERDATA': '月头_月亮_T轻量用户数据_宏名',
+    'LUA_TNUMBER': '月头_月亮_T数目_宏名', 
+    'LUA_TSTRING': '月头_月亮_T字符串_宏名',
+    'LUA_TTABLE': '月头_月亮_T表_宏名',
+    'LUA_TFUNCTION': '月头_月亮_T函数_宏名',
+    'LUA_TUSERDATA': '月头_月亮_T用户数据_宏名',
+    'LUA_TTHREAD': '月头_月亮_T线程_宏名',
+    'LUA_NUMTYPES': '月头_月亮_数目类型_宏名',
+    'LUA_MINSTACK': '月头_月亮_最小栈_宏名'
+    'LUA_RIDX_MAINTHREAD': '月头_月亮_注册索引_主线程_宏名',
+    'LUA_RIDX_GLOBALS': '月头_月亮_注册索引_全局的_宏名',
+    'LUA_RIDX_LAST': '月头_月亮_注册索引_最后的_宏名',
+    'LUA_OPADD': '月头_月亮_操作加法_宏名',
+    'LUA_OPSUB': '月头_月亮_操作减法_宏名',
+    'LUA_OPMUL': '月头_月亮_操作乘法_宏名',
+    'LUA_OPMOD': '月头_月亮_操作取模_宏名',
+    'LUA_OPPOW': '月头_月亮_操作幂运算_宏名',
+    'LUA_OPDIV': '月头_月亮_操作除法_宏名',
+    'LUA_OPIDIV': '月头_月亮_操作整数除_宏名',
+    'LUA_OPBAND': '月头_月亮_操作按位与_宏名',
+    'LUA_OPBOR': '月头_月亮_操作按位或_宏名',
+    'LUA_OPBXOR': '月头_月亮_操作按位异或_宏名',
+    'LUA_OPSHL': '月头_月亮_操作左移_宏名',
+    'LUA_OPSHR': '月头_月亮_操作右移_宏名',
+    'LUA_OPUNM': '月头_月亮_操作负号_宏名',
+    'LUA_OPBNOT': '月头_月亮_操作按位非_宏名',
+    'LUA_OPEQ': '月头_月亮_操作等于_宏名',
+    'LUA_OPLT': '月头_月亮_操作小于_宏名',
+    'LUA_OPLE': '月头_月亮_操作小等_宏名'
+    'lua_call': '月头_月亮_调用_宏名',
+    'lua_pcall': '月头_月亮_保护调用_宏名',
+    'lua_yield': '月头_月亮_让步_宏名',
+    'LUA_GCSTOP': '月头_月亮_垃圾回收停止_宏名',
+    'LUA_GCRESTART': '月头_月亮_垃圾回收重启_宏名',
+    'LUA_GCCOLLECT': '月头_月亮_垃圾回收收集_宏名',
+    'LUA_GCCOUNT': '月头_月亮_垃圾回收计数_宏名',
+    'LUA_GCCOUNTB': '月头_月亮_垃圾回收计数B_宏名',
+    'LUA_GCSTEP': '月头_月亮_垃圾回收步进_宏名',
+    'LUA_GCSETPAUSE': '月头_月亮_垃圾回收设置暂停_宏名',
+    'LUA_GCSETSTEPMUL': '月头_月亮_垃圾回收设置步进乘法_宏名',
+    'LUA_GCISRUNNING': '月头_月亮_垃圾回收是否正在跑_宏名',
+    'LUA_GCGEN': '月头_月亮_垃圾回收生成_宏名',
+    'LUA_GCINC': '月头_月亮_垃圾回收递增_宏名',
+    'lua_getextraspace': '月头_月亮_获取额外空间_宏名',
+    'lua_tonumber': '月头_月亮_到数目_宏名',
+    'lua_tointeger': '月头_月亮_到整数_宏名',
+    'lua_pop': '月头_月亮_弹出_宏名',
+    'lua_newtable': '月头_月亮_新表_宏名',
+    'lua_register': '月头_月亮_寄存器_宏名',
+    'lua_pushcfunction': '月头_月亮_推C函数_宏名'
+    'lua_isfunction': '月头_月亮_是否函数_宏名',
+    'lua_istable': '月头_月亮_是否表_宏名',
+    'lua_islightuserdata': '月头_月亮_是否轻量用户数据_宏名',
+    'lua_isnil': '月头_月亮_是否空值_宏名',
+    'lua_isboolean': '月头_月亮_是否布尔值_宏名',
+    'lua_isthread': '月头_月亮_是否线程_宏名',
+    'lua_isnone': '月头_月亮_是否没有_宏名',
+    'lua_isnoneornil': '月头_月亮_是否没有或空值_宏名',
+    'lua_pushliteral': '月头_月亮_推字面_宏名',
+    'lua_pushglobaltable': '月头_月亮_推全局表_宏名',
+    'lua_tostring': '月头_月亮_到字符串_宏名',
+    'lua_insert': '月头_月亮_插入_宏名',
+    'lua_remove': '月头_月亮_移除_宏名',
+    'lua_replace': '月头_月亮_替换_宏名'
+    'lua_pushunsigned': '月头_月亮_推无符_宏名',
+    'lua_tounsignedx': '月头_月亮_到无符x_宏名',
+    'lua_tounsigned': '月头_月亮_到无符_宏名',
+    'lua_newuserdata': '月头_月亮_新用户数据_宏名',
+    'lua_getuservalue': '月头_月亮_获取用户值_宏名',
+    'lua_setuservalue': '月头_月亮_设置用户值_宏名',
+    'LUA_NUMTAGS': '月头_月亮_标签数目_宏名',
+    'LUA_HOOKCALL': '月头_月亮_钩子调用_宏名',
+    'LUA_HOOKRET': '月头_月亮_钩子返回_宏名',
+    'LUA_HOOKLINE': '月头_月亮_钩子行_宏名',
+    'LUA_HOOKCOUNT': '月头_月亮_钩子计数_宏名',
+    'LUA_HOOKTAILCALL': '月头_月亮_钩子尾调用_宏名',
+    'LUA_MASKCALL': '月头_月亮_掩码调用_宏名',
+    'LUA_MASKRET': '月头_月亮_掩码返回_宏名',
+    'LUA_MASKLINE': '月头_月亮_掩码行_宏名',
+    'LUA_MASKCOUNT': '月头_月亮_掩码计数_宏名'
+}
+
+{
+    'luac_c': '值',
+    
+    'luaU_print': '编译器_月亮U_打印_宏名',
+    'PROGNAME': '编译器_程序名_宏名',
+    'OUTPUT': '编译器_输出_宏名',
+    'FUNCTION': '编译器_函数_宏名',
+    'toproto': '编译器_到原型_宏名',
+    'UPVALNAME': '编译器_上值名_宏名',
+    'eventname': '编译器_事件名_宏名',
+    'COMMENT': '编译器_注释_宏名',
+    'EXTRAARG': '编译器_额外实参_宏名',
+    'EXTRAARGC': '编译器_额外实参计数_宏名',
+    'ISK': '编译器_是否K_宏名'
+
+}
+
+{
+    'luaconf_h': '值',
+    'LUA_USE_C89': '配置_月亮_用_C89_宏名',
+    'LUA_USE_WINDOWS': '配置_月亮_用_WINDOWS_宏名',
+    'LUA_DL_DLL': '配置_月亮_动链_动态链接库_宏名',
+    'LUA_USE_POSIX': '配置_月亮_用_POSIX_宏名',
+    'LUA_USE_DLOPEN': '配置_月亮_用_动链打开_宏名',
+    'LUAI_IS32INT': '配置_月亮I_是否32位整型_宏名',
+    'LUA_INT_INT': '配置_月亮_整型_整型_宏名',
+    'LUA_INT_LONG': '配置_月亮_整型_长型_宏名',
+    'LUA_INT_LONGLONG': '配置_月亮_整型_长型长型_宏名',
+    'LUA_FLOAT_FLOAT': '配置_月亮_浮点_浮点_宏名',
+    'LUA_FLOAT_DOUBLE': '配置_月亮_浮点_双浮_宏名',
+    'LUA_FLOAT_LONGDOUBLE': '配置_月亮_浮点_长型双浮_宏名',
+    'LUA_INT_DEFAULT': '配置_月亮_整型_默认_宏名',
+    'LUA_FLOAT_DEFAULT': '配置_月亮_浮点_默认_宏名',
+    'LUA_32BITS': '配置_月亮_32位_宏名',
+    'LUA_C89_NUMBERS': '配置_月亮_C89_数目_宏名',
+    'LUA_INT_TYPE': '配置_月亮_整型_类型_宏名'
+    'LUA_FLOAT_TYPE': '配置_月亮_浮点_类型_宏名'
+    'LUA_PATH_SEP': '配置_月亮_路径_分隔符_宏名',
+    'LUA_PATH_MARK': '配置_月亮_路径_记号_宏名',
+    'LUA_EXEC_DIR': '配置_月亮_执行_目录_宏名',
+    'LUA_VDIR': '配置_月亮_V目录_宏名',
+    'LUA_LDIR': '配置_月亮_L目录_宏名',
+    'LUA_CDIR': '配置_月亮_C目录_宏名',
+    'LUA_SHRDIR': '配置_月亮_共享目录_宏名',
+    'LUA_PATH_DEFAULT': '配置_月亮_路径_默认_宏名',
+    'LUA_CPATH_DEFAULT': '配置_月亮_C路径_默认_宏名',
+    'LUA_ROOT': '配置_月亮_根_宏名',
+    'LUA_DIRSEP': '配置_月亮_目录分隔符_宏名',
+    'LUA_API': '配置_月亮_应程接_宏名',
+    'LUALIB_API': '配置_月亮库_应程接_宏名',
+    'LUAMOD_API': '配置_月亮模块_应程接_宏名',
+    'LUAI_FUNC': '配置_月亮I_函_宏名',
+    'LUAI_DDEC': '配置_月亮I_D声明_宏名',
+    'LUAI_DDEF': '配置_月亮I_D定义_宏名',
+    'LUA_COMPAT_MATHLIB': '配置_月亮_兼容_数学库_宏名',
+    'LUA_COMPAT_APIINTCASTS': '配置_月亮_兼容_应程接整型转换_宏名',
+    'LUA_COMPAT_LT_LE': '配置_月亮_兼容_小于_小等_宏名'
+    'lua_strlen': '配置_月亮_串长度_宏名',
+    'lua_objlen': '配置_月亮_对象长度_宏名',
+    'lua_equal': '配置_月亮_相等_宏名',
+    'lua_lessthan': '配置_月亮_小于_宏名',
+    'l_floor': '配置_l_向下取整_宏名',
+    'lua_number2str': '配置_月亮_数目到串_宏名',
+    'lua_numbertointeger': '配置_月亮_数目到整数_宏名',
+    'LUA_NUMBER': '配置_月亮_数目_宏名',
+    'l_floatatt': '配置_l_浮点属性_宏名',
+    'LUAI_UACNUMBER': '配置_月亮I_UAC数目_宏名',
+    'LUA_NUMBER_FRMLEN': '配置_月亮_数目_形式长度_宏名',
+    'LUA_NUMBER_FMT': '配置_月亮_数目_格式_宏名',
+    'l_mathop': '配置_数学操作_宏名',
+    'lua_str2number': '配置_月亮_串到数目_宏名',
+    'LUA_INTEGER_FMT': '配置_月亮_整数_格式_宏名',
+    'LUAI_UACINT': '配置_月亮I_UAC整型_宏名',
+    'lua_integer2str': '配置_月亮_整数到串_宏名',
+    'LUA_UNSIGNED': '配置_月亮_无符号_宏名',
+    'LUA_INTEGER': '配置_月亮_整数_宏名',
+    'LUA_INTEGER_FRMLEN': '配置_月亮_整数_形式长度_宏名',
+    'LUA_MAXINTEGER': '配置_月亮_最大整数_宏名',
+    'LUA_MININTEGER': '配置_月亮_最小整数_宏名',
+    'LUA_MAXUNSIGNED': '配置_月亮_最大无符号_宏名'
+    'l_sprintf': '配置_l_s打印f_宏名',
+    'lua_strx2number': '配置_月亮_串x到数目_宏名',
+    'lua_pointer2str': '配置_月亮_指针到串_宏名',
+    'lua_number2strx': '配置_月亮_数目到串x_宏名',
+
+
+    'LUA_KCONTEXT': '配置_月亮_K上下文_宏名',
+    'lua_getlocaledecpoint': '配置_月亮_获取本地化小数点_宏名',
+    'LUA_NOBUILTIN': '配置_月亮_无内置_宏名',
+    'luai_likely': '配置_月亮i_可能性高_宏名',
+    'luai_unlikely': '配置_月亮i_可能性低_宏名',
+    'l_likely': '配置_l_可能性高_宏名',
+    'l_unlikely': '配置_l_可能性低_宏名',
+    'LUA_NOCVTN2S': '配置_月亮_不转化数目到串_宏名',
+    'LUA_NOCVTS2N': '配置_月亮_不转化串到数目_宏名',
+    'luai_apicheck': '配置_月亮i_应程接检查_宏名',
+    'LUAI_MAXSTACK': '配置_月亮I_最大栈_宏名',
+    'LUA_EXTRASPACE': '配置_月亮_额外空间_宏名',
+    'LUA_IDSIZE': '配置_月亮_身份大小_宏名',
+    'LUAL_BUFFERSIZE': '配置_月亮L_缓冲区大小_宏名',
+    'LUAI_MAXALIGN': '配置_月亮I_最大对齐_宏名'
+}
+
+{
+    'lualib_h': '值',
+    'LUA_VERSUFFIX': '库_月亮_版本后缀_宏名',
+    'LUA_COLIBNAME': '库_月亮_协程库名_宏名',
+    'LUA_TABLIBNAME': '库_月亮_表库名_宏名',
+    'LUA_IOLIBNAME': '库_月亮_入出库名_宏名',
+    'LUA_OSLIBNAME': '库_月亮_系统库名_宏名',
+    'LUA_STRLIBNAME': '库_月亮_串库名_宏名',
+    'LUA_UTF8LIBNAME': '库_月亮_UTF8库名_宏名',
+    'LUA_MATHLIBNAME': '库_月亮_数学库名_宏名',
+    'LUA_DBLIBNAME': '库_月亮_调试库名_宏名',
+    'LUA_LOADLIBNAME': '库_月亮_载入库名_宏名'
+}
+
+{
+    'lundump_c': '值',
+    
+    'luai_verifycode': '反转储_月亮i_校验码_宏名',
+    'loadVector': '反转储_载入向量_宏名',
+    'loadVar': '反转储_载入变量_宏名',
+    'checksize': '反转储_检查大小_宏名',
+
+    'LUAC_DATA': '反转储_月亮C_数据_宏名',
+    'LUAC_INT': '反转储_月亮C_整型_宏名',
+    'LUAC_NUM': '反转储_月亮C_数目_宏名',
+    'MYINT': '反转储_我的整型_宏名',
+    'LUAC_VERSION': '反转储_月亮C_版本_宏名',
+    'LUAC_FORMAT': '反转储_月亮C_格式_宏名'
+}
+
+{
+    'lutf8lib_c': '值',
+    
+    'MAXUNICODE': 'utf8库_最大Unicode值_宏名',
+    'MAXUTF': 'utf8库_最大UTF值_宏名',
+    'MSGInvalid': 'utf8库_消息无效_宏名',
+    'iscont': 'utf8库_是否继续_宏名',
+    'iscontp': 'utf8库_是否继续指针_宏名',
+    'UTF8PATT': 'utf8库_UTF8模式_宏名'
+}
+
+{
+    'lvm_c': '值',
+    
+    'LUA_USE_JUMPTABLE': '虚拟机_月亮_用_跳转表_宏名',
+    'MAXTAGLOOP': '虚拟机_最大标签环_宏名',
+    'MAXINTFITSF': '虚拟机_最大整型单浮点范围_宏名',
+    'l_intfitsf': '虚拟机_l_整型单浮点范围_宏名',
+    'tostring': '虚拟机_到字符串_宏名',
+    'isemptystr': '虚拟机_是否空串_宏名',
+    'NBITS': '虚拟机_位数_宏名',
+    'l_addi': '虚拟机_l_整数加法_宏名',
+    'l_subi': '虚拟机_l_整数减法_宏名',
+    'l_muli': '虚拟机_l_整数乘法_宏名',
+    'l_band': '虚拟机_l_按位与_宏名',
+    'l_bor': '虚拟机_l_按位或_宏名',
+    'l_bxor': '虚拟机_l_按位异或_宏名',
+    'l_lti': '虚拟机_l_整数小于_宏名',
+    'l_lei': '虚拟机_l_整数小等_宏名',
+    'l_gti': '虚拟机_l_整数大于_宏名',
+    'l_gei': '虚拟机_l_整数大等_宏名',
+    'op_arithI': '虚拟机_操作_整数算术_宏名',
+    'op_arithf_aux': '虚拟机_操作_浮点算术_辅助_宏名',
+    'op_arithf': '虚拟机_操作_浮点算术_宏名',
+    'op_arithfK': '虚拟机_操作_浮点常量算术_宏名',
+    'op_arith_aux': '虚拟机_操作_算术_辅助_宏名',
+    'op_arith': '虚拟机_操作_算术_宏名',
+    'op_arithK': '虚拟机_操作_常量算术_宏名',
+    'op_bitwiseK': '虚拟机_操作_常量位运算_宏名',
+    'op_bitwise': '虚拟机_操作_位运算_宏名',
+    'op_order': '虚拟机_操作_秩序_宏名',
+    'op_orderI': '虚拟机_操作_整数秩序_宏名'
+
+    'updatetrap': '虚拟机_更新陷阱_宏名',
+    'updatebase': '虚拟机_更新基址_宏名',
+    'updatestack': '虚拟机_更新栈_宏名',
+    'dojump': '虚拟机_做跳转_宏名',
+    'donextjump': '虚拟机_做下一个跳转_宏名',
+    'docondjump': '虚拟机_做条件跳转_宏名',
+    'savepc': '虚拟机_保存程序计数器_宏名',
+    'savestate': '虚拟机_保存状态_宏名',
+    'Protect': '虚拟机_保护_宏名',
+    'ProtectNT': '虚拟机_非线性保护_宏名',
+    'halfProtect': '虚拟机_半保护_宏名',
+    'checkGC': '虚拟机_检查垃圾回收_宏名',
+    'vmfetch': '虚拟机_虚机拾取_宏名',
+    'vmdispatch': '虚拟机_虚机调度_宏名',
+    'vmcase': '虚拟机_虚机情况_宏名',
+    'vmbreak': '虚拟机_虚机破断_宏名'
+}
+
+{
+    'lvm_h': '值',
+    'cvt2str': '虚机头_转化到串_宏名',
+    'cvt2num': '虚机头_转化到数目_宏名',
+    'LUA_FLOORN2I': '虚机头_月亮_向下取整数目到整数_宏名',
+    'tonumber': '虚机头_到数目_宏名',
+    'tonumberns': '虚机头_到数目非安全_宏名',
+    'tointeger': '虚机头_到整数_宏名',
+    'tointegerns': '虚机头_到整数非安全_宏名',
+    'intop': '虚机头_整型操作_宏名',
+    'luaV_rawequalobj': '虚机头_月亮V_原始相等对象_宏名',
+    'luaV_fastget': '虚机头_月亮V_快速获取_宏名',
+    'luaV_fastgeti': '虚机头_月亮V_快速获取索引_宏名',
+    'luaV_finishfastset': '虚机头_月亮V_结束快速设置_宏名',
+    'luaV_shiftr': '虚机头_月亮V_右移_宏名'
+}
+
+{
+    'lzio_c': '值',
+    
+
+    'zgetc': '入出流_流获取字符_宏名',
+    'luaZ_initbuffer': '入出流_月亮Z_初始的缓冲区_宏名',
+    'luaZ_buffer': '入出流_月亮Z_缓冲区_宏名',
+    'luaZ_sizebuffer': '入出流_月亮Z_缓冲区大小_宏名',
+    'luaZ_bufflen': '入出流_月亮Z_缓冲长度_宏名',
+    'luaZ_buffremove': '入出流_月亮Z_缓冲移除_宏名',
+    'luaZ_resetbuffer': '入出流_月亮Z_重置缓冲区_宏名',
+    'luaZ_resizebuffer': '入出流_月亮Z_调整缓冲区大小_宏名',
+    'luaZ_freebuffer': '入出流_月亮Z_释放缓冲区_宏名'
+}
+
+"
+
+"经过实践得知, 改宏常量名没用, 编译的时候错误百出, 找都找不到根因在哪里,
+编译器错误信息只是表面, 根本不会告诉你深层次问题在哪,
+遂放弃这一步, 回到上一步, 时间已经浪费太多, 不可在错误步骤停滞太久."
+
+
+"提取了变量名."
+{
+{
+    "lua_ident": "月亮_标识_变量",
+    "luaT_typenames_": "月亮T_类型名_变量",
+    "ci": "调信_缩变量",
+    "func": "函_短变量",
+    "res": "结果_短变量",
+    "io1": "入出1_变量",
+    "io2": "入出2_变量",
+    "old": "旧_变量",
+    "newtop": "新顶部_变量",
+    "level": "层级_变量",
+    "temp": "临时_变量",
+    "fr": "来自_短变量",
+    "to": "到_变量",
+    "o1": "操1_变量",
+    "o2": "操2_变量",
+    "sz": "大小_短变量",
+    "isnum": "是否数目_变量",
+    "io": "入出_变量",
+    "ts": "类s_变量",
+
+    "ret": "返回_短变量",
+    "cl": "闭包_短变量",
+    "slot": "插槽_变量",
+    "str": "串_变量",
+    "aux": "辅助_变量",
+    "val": "值_变量",
+    "obj": "对象_变量",
+    "mt": "元表_缩变量",
+    "status": "状态码_变量",
+    "gt": "全局表_缩变量",
+    "data": "数据_变量",
+    "debt": "负债_变量",
+    "oldstp": "旧栈指针_变量",
+    "minormul": "主乘数_变量",
+    "majormul": "副乘数_变量",
+    "pause": "暂停_变量",
+    "stepmul": "步进乘数_变量",
+    "stepsize": "步进大小_变量",
+    "errobj": "错误对象_变量",
+    "more": "更多_变量",
+    "nresults": "结果数目_变量",
+    "name": "名称_变量",
+    "owner": "所有者_变量",
+    "fi": "文信_缩变量",
+    "nullup": "空针上_变量",
+    "f1": "函1_短变量",
+    "up1": "上1_变量",
+    "up2": "上2_变量",
+    "top": "顶部_变量",
+    "ar": "活记_缩变量",
+    "li": "行信_缩变量",
+    "le": "行扩_缩变量",
+    "last": "最后_变量",
+    "limit2show": "限制到秀_变量",
+    "msg": "消息_缩变量",
+    "typearg": "类型实参_变量",
+    "en": "错误号_缩变量",
+    "what": "什么_变量",
+    "ud": "用数_缩变量",
+    "allocf": "分配函_短变量",
+    "box": "盒子_变量",
+    "boxmt": "盒子元表_缩变量",
+    "newsize": "新大小_变量",
+    "newbuff": "新缓冲_变量",
+    "len": "长度_短变量",
+    "ref": "引用_短变量",
+    "lf": "行函_缩变量",
+    "serr": "流错_变量",
+    "filename": "文件名_变量",
+    "readstatus": "读状态码_变量",
+    "fnameindex": "函名索引_变量",
+    "ls": "状列_缩变量",
+    "tt": "类标_缩变量",
+    "kind": "种类_变量",
+    "wild": "狂野_变量"
+}
+{
+    "neg": "负号_短变量",
+    "digit": "数字_变量",
+    "base": "基本_变量",
+    "opts": "选项_短变量",
+    "optsnum": "选项数目_短变量",
+    "step": "步进_变量",
+    "previous": "前一个_变量",
+    "fname": "函名_缩变量",
+    "mode": "模块_变量",
+    "env": "环境_短变量",
+    "chunkname": "大块名_变量",
+    "base_funcs": "基本_函_变量",
+    "luaP_opmodes": "月亮P_操作模式_变量",
+    "invalidinstruction": "无效指令_变量",
+    "pfrom": "保护来自_变量",
+    "pl": "保护行_变量",
+    "offset": "偏移_变量",
+    "jmp": "跳转_变量",
+    "list": "列表_变量",
+    "next": "下一个_变量",
+    "op": "操作_短变量",
+    "pi": "圆周率_变量",
+    "hr": "小时_缩变量",
+    "linedif": "行差_变量",
+    "pc": "程序计数_变量",
+    "newstack": "新栈_变量",
+    "r1": "寄1_变量",
+    "r2": "寄2_变量",
+    "idx": "索引_缩变量",
+    "oldsize": "旧大小_变量",
+    "ik": "内键_缩变量",
+    "nbm": "数目模式_缩变量",
+    "kv": "键值_缩变量",
+    "final": "最终_变量",
+    "p_f": "来自_位置_变量",
+    "p_t": "到_位置_变量",
+    "fj": "函跳_缩变量",
+    "info": "信息_短变量",
+    "ereg": "扩正则_缩变量",
+
+    "v1": "变1_缩变量",
+    "v2": "变2_缩变量",
+    "event": "事件_变量",
+    "i2": "索2_缩变量",
+    "flip": "折叠_变量",
+    "im": "图像_缩变量",
+    "isfloat": "是否浮点_变量",
+    "ef": "错标_缩变量",
+    "dummy": "虚假_变量",
+    "dummy2": "虚假2_变量",
+
+    "inst": "指令_短变量",
+    "rb": "寄b_变量",
+    "extra": "额外_变量",
+    "rc": "寄c_变量",
+    "count": "计数_变量",
+    "target": "目标_变量",
+    "co": "协程_短变量",
+    "nres": "结果数目_变量",
+    "stat": "状态_短变量",
+    "NL": "新行_缩变量",
+    "statname": "状态名_变量",
+    "ismain": "是否主_变量",
+    "co_funcs": "协程_函_变量",
+    "luai_ctype_": "月亮i_c类型_变量",
+    "HOOKKEY": "钩子键_变量",
+    "arg": "实参_短变量",
+
+    "options": "选项们_变量",
+    "nvar": "变量数目_缩变量",
+    "id": "身份_缩变量"
+}
+{
+    "nup": "数量上_短变量",
+    "n1": "数1_缩变量",
+    "n2": "数2_缩变量",
+    "hooknames": "钩子名_变量",
+    "mask": "掩码_变量",
+    "smask": "子掩码_变量",
+    "buff": "缓冲_变量",
+    "hook": "钩子_变量",
+    "buffer": "缓冲区_变量",
+    "limit": "限制_变量",
+    "dblib": "调试库_变量",
+    "basepc": "基本程计_变量",
+    "baseline": "基行_变量",
+    "nextra": "额外数目_变量",
+    "pos": "位置_缩变量",
+    "currentline": "当前行_变量",
+    "kvalue": "键值_缩变量",
+    "setreg": "设置寄存_变量",
+    "jmptarget": "跳目标_变量",
+    "change": "改变_变量",
+    "dest": "目的地_变量",
+    "tm": "标方_缩变量",
+    "reg": "寄存_短变量",
+    "t1": "临1_短变量",
+    "t2": "临2_短变量",
+    "errfunc": "错函_短变量",
+    "delta": "德尔塔_变量",
+    "lineinfo": "行信息_变量",
+    "counthook": "计数钩子_变量",
+    "oldpc": "旧程计_变量",
+    "npci": "新程计信_变量",
+    "newline": "新行_小变量",
+    "oldnCcalls": "旧数C调用_变量",
+    "lj": "轻跳_缩变量",
+    "up": "上_小变量",
+    "oldgcstop": "旧GC停_变量",
+    "size": "大小_变量",
+    "needed": "已需要_变量",
+    "lim": "限_短变量",
+    "inuse": "在用_变量",
+    "max": "最大_小变量",
+    "nsize": "新大小_变量",
+    "firstres": "首个果_变量",
+    "ftransfer": "函传输_变量",
+    "firstresult": "首个结果_变量",
+    "wanted": "已想要_变量",
+    "narg": "实参数_变量",
+    "fsize": "函大小_变量",
+    "nfixparams": "固定形参数_变量",
+    "firstArg": "首个实参_变量",
+    "pcl": "程计位_变量",
+    "old_ci": "旧_调信_变量",
+    "old_allowhooks": "旧_允许钩子_变量",
+    "uv": "上值_缩变量",
+
+    "vname": "变名_变量",
+    "upl": "上列_缩变量",
+    "tbc": "待关闭_缩变量",
+    "thread": "线程_变量",
+    "work": "工作_变量",
+    "hasclears": "有清除_变量",
+    "marked": "已记号_变量",
+    "hasww": "有ww_变量",
+    "asize": "数组大小_缩变量",
+    "weakkey": "弱键_变量",
+    "weakvalue": "弱值_变量",
+    "tot": "总类_缩变量",
+    "changed": "已更改_变量",
+    "dir": "目录_短变量",
+    "ow": "拥者_缩变量",
+    "white": "白色_变量"
+}
+{
+    "olddebt": "旧债务_变量",
+    "i_g": "信_全_变量",
+    "oldah": "旧组高_变量",
+    "oldgcstp": "旧垃回栈顶针_变量",
+    "curr": "当前_短变量",
+    "lastnext": "最后下个_变量",
+    "threshold": "阈值_变量",
+    "estimate": "估计_变量",
+    "th": "到钩_变量",
+    "nextage": "下个年龄_变量",
+    "psurvival": "保护存活_缩变量",
+    "numobjs": "对象数目_变量",
+    "newatomic": "新原子_变量",
+    "lastatomic": "最后原子_变量",
+    "majorbase": "主基本_变量",
+    "majorinc": "主递增_变量",
+    "origweak": "原始弱_变量",
+    "origall": "原始全部_变量",
+    "grayagain": "再次灰色_变量",
+    "loadedlibs": "已载入库_变量",
+    "lib": "库_短变量",
+    "cf": "闭函_缩变量",
+    "md": "元数_缩变量",
+    "toclose": "到关闭_变量",
+    "rn": "寄数_缩变量",
+    "hex": "十六进制_变量",
+    "decp": "十进制针_变量",
+    "nr": "数寄_缩变量",
+    "nargs": "实参数们_变量",
+    "success": "成功_变量",
+    "modenames": "现代名_变量",
+
+    "iolib": "入出库_变量",
+    "meth": "方法_短变量",
+    "metameth": "元方法_短变量",
+    "disptab": "调度表_短变量",
+    "luaX_tokens": "月亮X_牌们_变量",
+    "stv": "栈变_变量",
+    "expo": "指数_短变量",
+    "first": "首先_变量",
+    "line": "行_变量",
+    "sep": "分隔_变量",
+    "valid": "有效_变量",
+    "ip": "指令指针_缩变量",
+    "imin": "指令最小_变量",
+    "imax": "指令最大_变量",
+    "result": "结果_变量",
+    "low": "低_变量",
+    "state": "状态机_变量",
+    "rv": "寄变_变量",
+    "seed1": "种子1_变量",
+    "seed2": "种子2_变量",
+    "randfuncs": "随机函_变量",
+    "mathlib": "数学库_变量",
+    "newblock": "新块_变量",
+    "CLIBS": "C库_变量",
+
+    "error": "错误_小变量",
+    "dftmark": "默认记号_变量",
+    "nver": "版本数_变量",
+    "path": "路径_变量",
+    "plib": "保护库_变量",
+    "init": "初始的_变量",
+    "pathname": "路径名_变量",
+    "endpathname": "终路径名_变量",
+    "openfunc": "打开函_变量",
+    "mark": "记号_变量",
+    "pk_funcs": "保常_函_变量",
+    "ll_funcs": "行列_函_变量",
+    "searchers": "搜索器_变量",
+    "log_2": "对数2_变量"
+}
+{
+    "i1": "整1_缩变量",
+    "dot": "点_变量",
+    "sigdig": "符号数_缩变量",
+    "nosigdig": "无符号数_缩变量",
+    "hasdot": "有点_变量",
+    "exp1": "表达式1_变量",
+    "neg1": "负号1_变量",
+    "endptr": "终指针_变量",
+    "pmode": "保护模式_变量",
+    "pdot": "保护点_变量",
+    "empty": "空容器_变量",
+    "mfb": "基本元表_缩变量",
+    "bf": "基函_缩变量",
+    "numbuff": "数目缓冲_短变量",
+    "num": "数目_短变量",
+    "bufflen": "缓冲长_变量",
+    "nl": "换行_数变量",
+    "opnames": "操作名_变量",
+    "cmd": "命令_缩变量",
+    "fromname": "来自名_变量",
+    "toname": "到名称_变量",
+    "err": "错_短变量",
+    "option": "选项_变量",
+    "oplen": "操作长_缩变量",
+    "slen": "串长_缩变量",
+
+    "tmr": "元表注册_变量",
+    "stm": "分享元表_变量",
+    "cc": "类构造_变量",
+    "reslen": "结果长_变量",
+    "cat": "猫_变量",
+    "catnames": "猫名_变量",
+    "syslib": "系统库_变量",
+    "where": "哪儿_变量",
+    "fs": "字段静态_变量",
+    "dyd": "定你数_缩变量",
+    "var": "变_短变量",
+    "vd": "有效数据_变量",
+    "varname": "变量名称_变量",
+    "vardesc": "变量描述_变量",
+    "reglevel": "寄存层级_变量",
+    "vidx": "变索引_变量",
+    "prev": "前一_短变量",
+    "bl": "基本逻辑_变量",
+    "key": "键_小变量",
+    "gl": "全局逻辑_变量",
+    "needsclose": "需关闭_变量",
+    "ll": "本地逻辑_变量",
+    "hasclose": "有关闭_变量",
+    "stklevel": "栈层级_变量",
+    "clp": "类共财产_变量",
+    "tab": "表_短_变量",
+    "nparams": "形参数量_变量",
+    "isvararg": "是变量实参吗_变量",
+    "new_fs": "新_字静_变量",
+    "args": "实参们_短变量",
+    "priority": "优先度_变量",
+    "uop": "实或助_变量",
+    "nextop": "下个操作_变量",
+    "conflict": "冲突_变量",
+    "nv": "新版_缩变量",
+    "nexps": "表达式数目_变量",
+    "lblevel": "逻辑块层级_变量",
+    "whileinit": "一会儿初始_变量",
+    "condexit": "条件出口_变量",
+    "repeat_init": "重复_初始的_变量",
+    "bl1": "基逻1_变量",
+    "bl2": "基逻2_变量",
+    "exit": "出口_变量",
+    "forprep": "为预备_变量",
+    "forloop": "为环_变量"
+}
+{
+    "prep": "预备_变量",
+    "endfor": "终为_变量",
+    "nvars": "数变量们_变量",
+    "jf": "仅标志_变量",
+    "escapelist": "转义列表_变量",
+    "fvar": "函变量_变量",
+    "attr": "属_短变量",
+    "ismethod": "是方法吗_变量",
+    "nret": "返数_缩变量",
+    "lexstate": "词法状态机_变量",
+    "funcstate": "函状态机_变量",
+    "tb": "临时块_变量",
+    "next2": "下个2_变量",
+    "registry": "注册表_变量",
+    "wf": "工作函_变量",
+    "hnext": "哈希下个_变量",
+    "osize": "原始大小_变量",
+    "newvect": "新向量_变量",
+    "totalsize": "总大小_变量",
+    "start": "起始_变量",
+    "end": "终_变量",
+    "lsep": "列分隔_变量",
+    "totallen": "总长_变量",
+    "posi": "位置i_变量",
+    "pose": "位置e_变量",
+    "strip": "剥离_变量",
+    "stringmetamethods": "字符串元方法_变量",
+    "sig": "信号_短变量",
+    "cont": "继续_短变量",
+    "ep": "事件点_缩变量",
+    "cap": "容量_短变量",
+    "nlevels": "层级数_变量",
+    "upto": "上到_变量",
+    "lp": "长针_缩变量",
+
+    "ms": "毫秒_缩变量",
+
+    "anchor": "锚点_变量",
+    "gm": "全局管理_变量",
+    "src": "源_短变量",
+    "news": "新s_变量",
+    "srcl": "源长_变量",
+    "lastmatch": "最后匹配_变量",
+    "tr": "转过来_变量",
+    "max_s": "最大_s_变量",
+    "dd": "数定_缩变量",
+    "nb": "注意基_变量",
+    "point": "针点_变量",
+    "ppoint": "保护针点_变量",
+    "format": "格式_变量",
+    "spec": "规格_短变量",
+    "lm": "本地方法_缩变量",
+    "sfl": "sfl_变量",
+    "strfrmt": "串格_变量",
+    "strfrmt_end": "串格_终_变量",
+    "flags": "标志们_变量",
+    "form": "来自_变量",
+    "maxitem": "最大项_变量",
+    "nativeendian": "土著字节序_变量",
+    "opt": "输出_缩变量",
+    "maxalign": "最大对齐_变量",
+    "align": "对齐_变量",
+    "fmt": "格式_短变量",
+    "ntoalign": "到对齐数_变量",
+    "ld": "行目_缩变量",
+    "strlib": "串库_变量",
+    "dummynode_": "虚假节点_变量",
+    "absentkey": "缺失键_变量",
+    "ui": "用户界面_缩变量",
+    "ni": "未实现_缩变量",
+    "io_": "入出__变量"
+}
+
+{
+    "nx": "数量x_变量",
+    "twotoi": "二到i_变量",
+    "na": "数量a_变量",
+    "optimal": "最佳_变量",
+    "lg": "列全局_变量",
+    "ttlg": "tt列全局_变量",
+    "ause": "数组用_变量",
+    "totaluse": "总用_变量",
+    "lsize": "长大小_变量",
+    "lsizenode": "长大小节点_变量",
+    "node": "节点_变量",
+    "lastfree": "最后自由_变量",
+    "newt": "新t_变量",
+    "oldasize": "旧数组大小_变量",
+    "newarray": "新数组_变量",
+    "nums": "数目s_变量",
+    "mp": "消息针_变量",
+    "othern": "其他n_变量",
+    "ko": "击倒_变量",
+    "boundary": "边界_变量",
+    "rnd": "范围_缩变量",
+
+    "tab_funcs": "表_函_缩变量",
+    "udatatypename": "u数据类型名_变量",
+    "luaT_eventname": "月亮T_事件名_变量",
+
+    "actual": "实际上_变量",
+    "globalL": "全局L_变量",
+    "progname": "程序名_变量",
+
+    "modname": "模名_变量",
+    "lmsg": "l消息_变量",
+    "prmt": "提示_缩变量",
+    "retline": "返回行_变量",
+    "oldprogname": "旧程序名_变量",
+    "argc": "实参计数_变量",
+    "argv": "实参值_变量",
+    "script": "脚本_变量",
+    "optlim": "优化限制_变量",
+    "listing": "列表单_变量",
+    "dumping": "转储中_变量",
+    "stripping": "剥离中_变量",
+    "Output": "输出_大变量",
+    "output": "输出_变量",
+    "tmname": "标方名_变量",
+    "version": "版本_变量",
+    "code": "代码_变量",
+    "ax": "辅_变量",
+    "bx": "盒_变量",
+    "sb": "沙盒_变量",
+    "sc": "域_变量",
+    "sbx": "沙盒x_变量",
+    "isk": "是种类吗_变量",
+    "st": "状_变量",
+    "limits": "限制们_变量",
+    "posj": "位置j_变量",
+    "lax": "局辅_变量",
+    "funcs": "函们_变量",
+    "flim": "浮点限_变量",
+    "pinit": "形参初始_变量",
+    "plimit": "形参限_变量",
+    "pstep": "形参步进_变量",
+    "loop": "环_变量",
+    "lr": "学习率_变量",
+    "tl": "时间限_变量",
+    "ncl": "集群数_变量",
+    "total": "总数_变量",
+    "ra": "奖励_变量",
+    "trap": "陷阱_变量",
+    "upval": "上值_变量",
+    "imm": "立即_变量",
+    "iv1": "初始值1_变量",
+    "fimm": "浮点立即_变量",
+    "ic": "递增计数_变量",
+    "ib": "初始布尔_变量",
+    "cond": "条件_变量",
+    "ia": "索引累加_变量",
+    "fa": "标志累加_变量",
+    "fim": "最终不变_变量",
+    "isf": "是最终吗_变量",
+    "newci": "新调信_变量",
+    "nparams1": "形参数1_变量"
+}
+}
+
+"修改变量名是成功了的, 不过如下几个要改回去;
+本地逻辑_变量 (全改
+出口_变量     (改指定
+标方_缩变量   (改指定
+限制们_变量   (仅头文件
+入出_变量     (仅头文件
+"
+
+
+/*===============-------------------=============*/
+"在第二遍找标识符的过程中,
+我手动汉化了结构 联合 枚举内的标识符, 四百五十多行,用时4天多"
+
+{
+    "CallS": "安全调用_结",
+    "StkId": "栈身份_型",
+    "UBox": "用户盒子_结",
+    "bsize": "b大小_短",
+    "LoadF": "载函_结",
+    "BUFSIZ": "缓大小_大写",
+    "LoadS": "载串_结",
+    "luaL_Reg": "炉L_寄结",
+    "lua_CFunction": "炉_C函数半",
+    "lua_State": "炉_状态机结",
+    "LUAI_MAXALIGN": "炉I_最大对齐",
+    "LUAL_BUFFERSIZE": "炉L_缓冲区大小",
+    "luaL_Stream": "炉L_流结",
+    "closef": "关闭f_小写",
+    "lua_longjmp": "炉_长跳结",
+    "luai_jmpbuf": "炉i_跳缓缩",
+    "CloseP": "保护关闭_结",
+    "SParser": "安全解析_结",
+    "ZIO": "入出流_结",
+    "Mbuffer": "M缓冲区_结",
+    "Dyndata": "动态数据_结",
+    "lua_Writer": "炉_写器结",
+    "writer": "写器_小写",
+    "DumpState": "转储状态机_结",
+    "L_MAXLENNUM": "L_最大长度数大写",
+    "Token": "牌_结",
+    "token": "牌_小写",
+    "SemInfo": "语义信息_联",
+    "seminfo": "语义信息_小写",
+    "LexState": "词法状态机_结",
+    "current": "当前_圆",
+    "linenumber": "行数目_小写",
+    "lastline": "最后行_小写",
+    "lookahead": "看向前_小写",
+    "Table": "表_结",
+    "TString": "标签字符串_结",
+    "source": "源_圆",
+    "envn": "环境名_短",
+    "Rand64": "范围64_结",
+    "RanState": "范围状态机_结",
+    "BuffFS": "缓冲格串_结",
+    "pushed": "已推入_小写",
+    "blen": "b长_短",
+    "space": "空间_圆",
+    "TValue": "标签值_结",
+    "TValuefields": "标签值字段",
+    "GCObject": "垃回对象_结",
+    "CommonHeader": "共用头_驼峰",
+    "lu_byte": "路_字节型",
+    "shrlen": "短串长_小写",
+    "hash": "哈希_小写",
+    "lnglen": "长串长_短",
+    "contents": "内容_小写",
+    "Udata": "用户数据_结",
+    "nuvalue": "用户值数_缩",
+    "metatable": "元表_小写",
+    "gclist": "垃回列表_缩",
+    "Udata0": "用户数据0_结",
+    "bindata": "二元数据_联",
+    "Upvaldesc": "上值描述_结",
+    "instack": "栈内_小写",
+    "LocVar": "本地变量_结",
+    "startpc": "始程计_缩",
+    "endpc": "终程计_缩",
+    "AbsLineInfo": "绝对行信息_结",
+    "Proto": "原型_结",
+    "numparams": "形参数_小写",
+    "is_vararg": "是否_变量实参短",
+    "maxstacksize": "最大栈大小_小写",
+    "sizeupvalues": "上值大小_小写",
+    "sizek": "k大小_缩",
+    "sizecode": "代码大小_小写",
+    "sizelineinfo": "行信息大小_小写",
+    "sizep": "p大小_缩",
+    "sizelocvars": "本地变量大小_短",
+    "sizeabslineinfo": "绝对行信息大小_小写",
+    "linedefined": "已定义行_小写",
+    "lastlinedefined": "最后已定义行_小写",
+    "upvalues": "上值们_小写",
+    "abslineinfo": "绝对行信息_小写",
+    "locvars": "本地变量们_短",
+    "UpVal": "上值_结",
+    "open": "打开_圆",
+    "value": "值_圆",
+    "CClosure": "C闭包_结",
+    "ClosureHeader": "闭包头_驼峰",
+    "upvalue": "上值_圆",
+    "LClosure": "L闭包_结",
+    "upvals": "上值们_短",
+    "alimit": "数组限制_缩",
+    "array": "数组_圆",
+    "BlockCnt": "块继续_结",
+    "firstlabel": "首个标号_圆",
+    "firstgoto": "首个去到_圆",
+    "nactvar": "活动变量数_缩",
+    "isloop": "是环吗_圆",
+    "insidetbc": "内塞待关闭_缩",
+    "ConsControl": "构造控制_结",
+    "tostore": "到存储_小写",
+    "left": "左_圆",
+    "right": "右_圆",
+    "LHS_assign": "左手塞_赋值结",
+    "expdesc": "表达式描述_结",
+    "lua_Integer": "炉_整数型",
+    "lua_Number": "炉_数目型",
+    "ival": "i值_缩",
+    "nval": "n值_缩",
+    "strval": "串值_短",
+    "Labeldesc": "标号描述_结",
+    "close": "关闭_圆",
+    "Labellist": "标号列表_结",
+    "actvar": "活动变量_结",
+    "label": "标号_圆",
+    "FuncState": "函状态机_结",
+    "lasttarget": "最后目标_圆",
+    "previousline": "前个行_圆",
+    "nabslineinfo": "绝对行信息数_",
+    "firstlocal": "首个本地_圆",
+    "ndebugvars": "调试变量数_缩",
+    "nups": "上值数_短缩",
+    "freereg": "是否寄存_短",
+    "iwthabs": "指令与绝对行_短缩",
+    "needclose": "需要关闭_圆",
+    "extra_": "额外_",
+    "LUA_EXTRASPACE": "炉_额外空间",
+    "global_State": "全局_状态机结",
+    "stringtable": "字符串表_结",
+    "nuse": "使用数_缩",
+    "CallInfo": "调用信息_结",
+    "StkIdRel": "相对栈身份_联",
+    "savedpc": "已保存程计_缩",
+    "l_signalT": "l_型号T型",
+    "nextraargs": "额外实参数_缩",
+    "lua_KFunction": "炉_K函数型",
+    "old_errfunc": "旧_错函短",
+    "lua_KContext": "炉_K上下文型",
+    "funcidx": "函索引_短",
+    "nyield": "让步数_缩",
+    "ntransfer": "转移数_缩",
+    "transferinfo": "转移信息_结",
+    "callstatus": "调用状态码_圆",
+    "lua_Alloc": "炉_分配半",
+    "frealloc": "函重新分配_缩",
+    "l_mem": "l_内存缩",
+    "totalbytes": "总共字节们_圆",
+    "GCdebt": "垃回债_缩",
+    "GCestimate": "垃回估计_缩",
+    "strt": "串的表_缩",
+    "l_registry": "l_注册表半",
+    "nilvalue": "空值的值_圆",
+    "seed": "种籽_圆",
+    "currentwhite": "当前白色_圆",
+    "gcstate": "垃回状态机_缩小写",
+    "gckind": "垃回种类_缩小写",
+    "gcstopem": "垃回紧急停_缩",
+    "genminormul": "生成副乘法_缩",
+    "genmajormul": "生成主乘法_缩",
+    "gcstp": "垃回步进_短缩",
+    "gcemergency": "垃回紧急_缩圆",
+    "gcpause": "垃回暂停_缩圆",
+    "gcstepmul": "垃回步进乘法_短缩",
+    "gcstepsize": "垃回步进大小_缩圆",
+    "allgc": "全部垃回_圆缩",
+    "sweepgc": "扫除垃回_圆缩",
+    "finobj": "最终对象_缩",
+    "gray": "灰的色_圆",
+    "weak": "弱的_圆",
+    "ephemeron": "短命的_圆",
+    "allweak": "全部弱_圆",
+    "tobefnz": "待fnz_缩半",
+    "fixedgc": "固定垃回_圆缩",
+    "survival": "生存_圆",
+    "old1": "旧的1_小写",
+    "reallyold": "真的旧_圆",
+    "firstold1": "首先旧1_圆",
+    "finobjsur": "最终对象生存_短小写",
+    "finobjold1": "最终对象旧1_缩",
+    "finobjrold": "最终对象真的旧_缩",
+    "twups": "线程与上值_短缩",
+    "panic": "恐慌_圆",
+    "mainthread": "主线程_圆",
+    "memerrmsg": "内存错误消息_短",
+    "LUA_NUMTYPES": "炉_类型数们",
+    "strcache": "串缓存_短圆",
+    "STRCACHE_N": "串缓存_N大写",
+    "STRCACHE_M": "串缓存_M大写",
+    "lua_WarnFunction": "炉_警告函数型",
+    "warnf": "警函_短缩",
+    "ud_warn": "用h数j_警告缩",
+    "allowhook": "允许钩子_圆",
+    "nci": "调信数_全缩",
+    "stack_last": "栈_最后圆",
+    "stack": "栈_圆小",
+    "openupval": "打开上值_圆小",
+    "tbclist": "待关闭列表_结",
+    "errorJmp": "错误跳_圆缩",
+    "base_ci": "基本_调信圆缩",
+    "lua_Hook": "炉_钩子型",
+    "nCcalls": "C调用们数_缩圆",
+    "l_uint32": "l_无符整32型",
+    "basehookcount": "基本钩子计数_圆",
+    "hookcount": "钩子计数_圆",
+    "hookmask": "钩子掩码_圆",
+    "str_Writer": "串_写器结",
+    "luaL_Buffer": "炉L_缓冲区结",
+    "MatchState": "匹配状态机_结",
+    "src_init": "源_初始的短",
+    "src_end": "源_终短",
+    "p_end": "模式_终缩",
+    "matchdepth": "匹配深度_圆",
+    "capture": "捕获_结",
+    "LUA_MAXCAPTURES": "炉_最大捕获们",
+    "GMatchState": "全局匹配状态机_结",
+    "Header": "头部_结",
+    "islittle": "是小少的吗_圆",
+    "lua_Debug": "炉_调试结",
+    "namewhat": "什么名_圆",
+    "srclen": "源的长_短",
+    "istailcall": "是尾调用吗_圆",
+    "short_src": "短的_源小写",
+    "LUA_IDSIZE": "炉_身份大小",
+    "i_ci": "i_调信缩",
+    "LoadState": "载入状态机_结",
+    "buffsize": "缓冲大小_小写",
+    "Zio": "流入出_结",
+    "lua_Reader": "炉_读器型",
+    "reader": "读器_圆",
+    "Value": "值_联",
+    "StackValue": "栈值_联",
+    "UValue": "联值_联",
+    "Closure": "闭包_联",
+    "Node": "节点_联",
+    "NodeKey": "节点键_结",
+    "key_tt": "键_tt缩",
+    "key_val": "键_值短",
+    "i_val": "i_值缩",
+    "Vardesc": "变量描述_联",
+    "ridx": "寄索引_缩短",
+    "pidx": "原型索引_缩短",
+    "GCUnion": "垃回联合_联",
+    "gc": "垃回_小写缩",
+    "BinOpr": "二元操作者_枚举",
+    "OPR_ADD": "操作者_加法",
+    "OPR_SUB": "操作者_减法",
+    "OPR_MUL": "操作者_乘法",
+    "OPR_MOD": "操作者_取模",
+    "OPR_POW": "操作者_幂运算",
+    "OPR_DIV": "操作者_除法",
+    "OPR_IDIV": "操作者_整数除",
+    "OPR_BAND": "操作者_位与",
+    "OPR_BOR": "操作者_位或",
+    "OPR_BXOR": "操作者_位异或",
+    "OPR_SHL": "操作者_左移",
+    "OPR_SHR": "操作者_右移",
+    "OPR_CONCAT": "操作者_拼接",
+    "OPR_EQ": "操作者_相等",
+    "OPR_LT": "操作者_小于",
+    "OPR_LE": "操作者_小等",
+    "OPR_NE": "操作者_不等",
+    "OPR_GT": "操作者_大于",
+    "OPR_GE": "操作者_大等",
+    "OPR_AND": "操作者_与",
+    "OPR_OR": "操作者_或",
+    "OPR_NOBINOPR": "操作者_禁二元操作者",
+    "UnOpr": "一元操作者_枚举",
+    "OPR_MINUS": "操作者_减号",
+    "OPR_BNOT": "操作者_位非",
+    "OPR_NOT": "操作者_非",
+    "OPR_LEN": "操作者_长度",
+    "OPR_NOUNOPR": "操作者_禁一元操作者",
+    "RESERVED": "保留_枚举",
+    "TK_AND": "终结牌_与",
+    "FIRST_RESERVED": "首个_保留",
+    "TK_BREAK": "终结牌_破断",
+    "TK_DO": "终结牌_做",
+    "TK_ELSE": "终结牌_否则",
+    "TK_ELSEIF": "终结牌_否若",
+    "TK_END": "终结牌_终",
+    "TK_FALSE": "终结牌_假",
+    "TK_FOR": "终结牌_为",
+    "TK_FUNCTION": "终结牌_函数",
+    "TK_GOTO": "终结牌_去到",
+    "TK_IF": "终结牌_若",
+    "TK_IN": "终结牌_在内",
+    "TK_LOCAL": "终结牌_本地",
+    "TK_NIL": "终结牌_空值",
+    "TK_NOT": "终结牌_非",
+    "TK_OR": "终结牌_或",
+    "TK_REPEAT": "终结牌_重复",
+    "TK_RETURN": "终结牌_返回",
+    "TK_THEN": "终结牌_那么",
+    "TK_TRUE": "终结牌_真",
+    "TK_UNTIL": "终结牌_直到",
+    "TK_WHILE": "终结牌_一会儿",
+    "TK_IDIV": "终结牌_整数除",
+    "TK_CONCAT": "终结牌_拼接",
+    "TK_DOTS": "终结牌_省略",
+    "TK_EQ": "终结牌_相等",
+    "TK_GE": "终结牌_大于",
+    "TK_LE": "终结牌_小于",
+    "TK_NE": "终结牌_不等",
+    "TK_SHL": "终结牌_左移",
+    "TK_SHR": "终结牌_右移",
+    "TK_DBCOLON": "终结牌_双冒号",
+    "TK_EOS": "终结牌_流终",
+    "TK_FLT": "终结牌_浮点",
+    "TK_INT": "终结牌_整型",
+    "TK_NAME": "终结牌_名称",
+    "TK_STRING": "终结牌_字符串",
+    "OP_MOVE": "操作_移",
+    "OP_LOADI": "操作_载入整",
+    "OP_LOADF": "操作_载入浮",
+    "OP_LOADK": "操作_载入常",
+    "OP_LOADKX": "操作_载入常额外",
+    "OP_LOADFALSE": "操作_载入假",
+    "OP_LFALSESKIP": "操作_载入假跳过",
+    "OP_LOADTRUE": "操作_载入真",
+    "OP_LOADNIL": "操作_载入空值",
+    "OP_GETUPVAL": "操作_获取上值",
+    "OP_SETUPVAL": "操作_设置上值",
+    "OP_GETTABUP": "操作_获取表上值内",
+    "OP_GETTABLE": "操作_获取表",
+    "OP_GETI": "操作_获取整",
+    "OP_GETFIELD": "操作_获取字段",
+    "OP_SETTABUP": "操作_设置表上值内",
+    "OP_SETTABLE": "操作_设置表",
+    "OP_SETI": "操作_设置整",
+    "OP_SETFIELD": "操作_设置字段",
+    "OP_NEWTABLE": "操作_新表",
+    "OP_SELF": "操作_自身",
+    "OP_ADDI": "操作_加整",
+    "OP_ADDK": "操作_加常",
+    "OP_SUBK": "操作_减常",
+    "OP_MULK": "操作_乘常",
+    "OP_MODK": "操作_取模常",
+    "OP_POWK": "操作_幂运算常",
+    "OP_DIVK": "操作_除常",
+    "OP_IDIVK": "操作_整数除常",
+    "OP_BANDK": "操作_位与常",
+    "OP_BORK": "操作_位或常",
+    "OP_BXORK": "操作_位异或常",
+    "OP_SHRI": "操作_右移整",
+    "OP_SHLI": "操作_左移整",
+    "OP_ADD": "操作_加",
+    "OP_SUB": "操作_减",
+    "OP_MUL": "操作_乘",
+    "OP_MOD": "操作_取模",
+    "OP_POW": "操作_幂运算",
+    "OP_DIV": "操作_除",
+    "OP_IDIV": "操作_整数除",
+    "OP_BAND": "操作_位与",
+    "OP_BOR": "操作_位或",
+    "OP_BXOR": "操作_位异或",
+    "OP_SHL": "操作_左移",
+    "OP_SHR": "操作_右移",
+    "OP_MMBIN": "操作_元方法二元",
+    "OP_MMBINI": "操作_元方法二元整",
+    "OP_MMBINK": "操作_元方法二元常",
+    "OP_UNM": "操作_一元减号",
+    "OP_BNOT": "操作_位非",
+    "OP_NOT": "操作_非",
+    "OP_LEN": "操作_长度",
+    "OP_CONCAT": "操作_拼接",
+    "OP_CLOSE": "操作_关闭",
+    "OP_TBC": "操作_待关闭",
+    "OP_JMP": "操作_跳转",
+    "OP_EQ": "操作_相等",
+    "OP_LT": "操作_小于",
+    "OP_LE": "操作_小等",
+    "OP_EQK": "操作_相等常",
+    "OP_EQI": "操作_相等整",
+    "OP_LTI": "操作_小于整",
+    "OP_LEI": "操作_小等整",
+    "OP_GTI": "操作_大于整",
+    "OP_GEI": "操作_大等整",
+    "OP_TEST": "操作_测试",
+    "OP_TESTSET": "操作_测试设置",
+    "OP_CALL": "操作_调用",
+    "OP_TAILCALL": "操作_尾调用",
+    "OP_RETURN": "操作_返回",
+    "OP_RETURN0": "操作_返回0",
+    "OP_RETURN1": "操作_返回1",
+    "OP_FORLOOP": "操作_为环",
+    "OP_FORPREP": "操作_为预备",
+    "OP_TFORPREP": "操作_泛型为预备",
+    "OP_TFORCALL": "操作_泛型为调用",
+    "OP_TFORLOOP": "操作_泛型为环",
+    "OP_SETLIST": "操作_设置列表",
+    "OP_CLOSURE": "操作_闭包",
+    "OP_VARARG": "操作_变量实参",
+    "OP_VARARGPREP": "操作_变量实参预备",
+    "OP_EXTRAARG": "操作_额外实参",
+    "OpCode": "操作码_枚举",
+    "VVOID": "虚空的_种类",
+    "VNIL": "虚空值_种类",
+    "VTRUE": "虚真_种类",
+    "VFALSE": "虚假_种类",
+    "VK": "虚常_种类",
+    "VKFLT": "虚常浮点_种类",
+    "VKINT": "虚常整型_种类",
+    "VKSTR": "虚常串_种类",
+    "VNONRELOC": "虚没有重定位_种类",
+    "VLOCAL": "虚本地_种类",
+    "VUPVAL": "虚上值_种类",
+    "VCONST": "虚常字面_种类",
+    "VINDEXED": "虚已索引_种类",
+    "VINDEXUP": "虚索引上值_种类",
+    "VINDEXI": "虚索引整_种类",
+    "VINDEXSTR": "虚索引串_种类",
+    "VJMP": "虚跳转_种类",
+    "VRELOC": "虚重定位_种类",
+    "VCALL": "虚调用_种类",
+    "VVARARG": "虚变量实参_种类",
+    "expkind": "表达式种类_枚举",
+    "KOption": "常量选项_枚举",
+    "Kint": "常量整型_",
+    "Kuint": "常量无符整型_",
+    "Kfloat": "常量浮点_",
+    "Knumber": "常量数目_",
+    "Kdouble": "常量双浮_",
+    "Kchar": "常量印刻_",
+    "Kstring": "常量字符串_",
+    "Kzstr": "常量零串_",
+    "Kpadding": "常量衬垫_",
+    "Kpaddalign": "常量衬垫对齐_",
+    "Knop": "常量无操作_",
+    "TM_INDEX": "标方_索引大写",
+    "TM_NEWINDEX": "标方_新索引大写",
+    "TM_GC": "标方_垃回大写",
+    "TM_MODE": "标方_模式大写",
+    "TM_LEN": "标方_长度大写",
+    "TM_EQ": "标方_相等大写",
+    "TM_ADD": "标方_加大写",
+    "TM_SUB": "标方_减大写",
+    "TM_MUL": "标方_乘大写",
+    "TM_MOD": "标方_取模大写",
+    "TM_POW": "标方_幂运算大写",
+    "TM_DIV": "标方_除大写",
+    "TM_IDIV": "标方_整数除大写",
+    "TM_BAND": "标方_位与大写",
+    "TM_BOR": "标方_位或大写",
+    "TM_BXOR": "标方_位异或大写",
+    "TM_SHL": "标方_左移大写",
+    "TM_SHR": "标方_右移大写",
+    "TM_UNM": "标方_一元减号大写",
+    "TM_BNOT": "标方_位非大写",
+    "TM_LT": "标方_小于大写",
+    "TM_LE": "标方_小等大写",
+    "TM_CONCAT": "标方_拼接大写",
+    "TM_CALL": "标方_调用大写",
+    "TM_CLOSE": "标方_关闭大写",
+    "TM_N": "标方_数目大写",
+    "TMS": "标方符_枚举",
+    "F2Ieq": "浮到整相等_",
+    "F2Ifloor": "浮到整向下取整_",
+    "F2Iceil": "浮到整向上取整_",
+    "F2Imod": "浮到整模式_枚举",
+}
+
+"编译出现错误在两个地方, ljumptab.h 与 lauxlib.c:712行"
+"其中lauxlib里的标识符 缓大小_大写 要改回英文的.
+而 ljumptab 里的数组要全替换成修改后对应的中文标识符指令:"
+
+{
+&&L_操作_移,
+&&L_操作_载入整,
+&&L_操作_载入浮,
+&&L_操作_载入常,
+&&L_操作_载入常额外,
+&&L_操作_载入假,
+&&L_操作_载入假跳过,
+&&L_操作_载入真,
+&&L_操作_载入空值,
+&&L_操作_获取上值,
+&&L_操作_设置上值,
+&&L_操作_获取表上值内,
+&&L_操作_获取表,
+&&L_操作_获取整,
+&&L_操作_获取字段,
+&&L_操作_设置表上值内,
+&&L_操作_设置表,
+&&L_操作_设置整,
+&&L_操作_设置字段,
+&&L_操作_新表,
+&&L_操作_自身,
+&&L_操作_加整,
+&&L_操作_加常,
+&&L_操作_减常,
+&&L_操作_乘常,
+&&L_操作_取模常,
+&&L_操作_幂运算常,
+&&L_操作_除常,
+&&L_操作_整数除常,
+&&L_操作_位与常,
+&&L_操作_位或常,
+&&L_操作_位异或常,
+&&L_操作_右移整,
+&&L_操作_左移整,
+&&L_操作_加,
+&&L_操作_减,
+&&L_操作_乘,
+&&L_操作_取模,
+&&L_操作_幂运算,
+&&L_操作_除,
+&&L_操作_整数除,
+&&L_操作_位与,
+&&L_操作_位或,
+&&L_操作_位异或,
+&&L_操作_左移,
+&&L_操作_右移,
+&&L_操作_元方法二元,
+&&L_操作_元方法二元整,
+&&L_操作_元方法二元常,
+&&L_操作_一元减号,
+&&L_操作_位非,
+&&L_操作_非,
+&&L_操作_长度,
+&&L_操作_拼接,
+&&L_操作_关闭,
+&&L_操作_待关闭,
+&&L_操作_跳转,
+&&L_操作_相等,
+&&L_操作_小于,
+&&L_操作_小等,
+&&L_操作_相等常,
+&&L_操作_相等整,
+&&L_操作_小于整,
+&&L_操作_小等整,
+&&L_操作_大于整,
+&&L_操作_大等整,
+&&L_操作_测试,
+&&L_操作_测试设置,
+&&L_操作_调用,
+&&L_操作_尾调用,
+&&L_操作_返回,
+&&L_操作_返回0,
+&&L_操作_返回1,
+&&L_操作_为环,
+&&L_操作_为预备,
+&&L_操作_泛型为预备,
+&&L_操作_泛型为调用,
+&&L_操作_泛型为环,
+&&L_操作_设置列表,
+&&L_操作_闭包,
+&&L_操作_变量实参,
+&&L_操作_变量实参预备,
+&&L_操作_额外实参
+}
+
+"这两个问题修复后,就可以用clang编译通过了"
+"剩下的就是字符串没汉化了,就是所有原文件内双引号之间的字符串"
