@@ -1,0 +1,196 @@
+#ifndef WASMC_OPCODE_H
+#define WASMC_OPCODE_H
+
+// 共 178 种指令，可分为 5 大类：
+// 1.控制指令 2.参数指令 3.变量指令 4.内存指令 5.数值指令
+typedef enum {
+    /* 控制指令 */
+    不可达 = 000 , // unreachable
+    无操作 = 001 ,         // nop
+    块指令 = 002 ,      // 框对应块 rt in* end
+    环 = 003 ,        // loop rt in* end
+    若 = 004 ,          // if rt in* else in* end
+    否则指令 = 005 ,       // else
+    终指令 = 011 ,        // end
+    分支 = 012 ,          // br l
+    若分支 = 013 ,        // br_if l
+    分支表 = 014 ,     // 分支_表 l* lN
+    返回 = 015 ,      // return
+    调用 = 016 ,        // call x
+    直接调用 = 017 ,// call_indirect x
+
+    /* 参数指令 */
+    落下 = 026 ,  // drop
+    选择 = 027 ,// select
+
+    /* 变量指令 */
+    本地获取 = 0x20, // local.get x
+    LocalSet = 0x21, // local.set x
+    LocalTee = 0x22, // local.tee x
+    全局获取 = 0x23,// global.get x
+    GlobalSet = 0x24,// global.set x
+
+    /* 内存指令 */
+    I32Load = 0x28,   // 整数32.load m
+    I64Load = 0x29,   // 整数64.load m
+    F32Load = 0x2A,   // 浮点32位.load m
+    F64Load = 0x2B,   // 浮点64位.load m
+    I32Load8S = 0x2C, // 整数32.load8_s m
+    I32Load8U = 0x2D, // 整数32.load8_u m
+    I32Load16S = 0x2E,// 整数32.load16_s m
+    I32Load16U = 0x2F,// 整数32.load16_u m
+    I64Load8S = 0x30, // 整数64.load8_s m
+    I64Load8U = 0x31, // 整数64.load8_u m
+    I64Load16S = 0x32,// 整数64.load16_s m
+    I64Load16U = 0x33,// 整数64.load16_u m
+    I64Load32S = 0x34,// 整数64.load32_s m
+    I64Load32U = 0x35,// 整数64.load32_u m
+    I32Store = 0x36,  // 整数32.store m
+    I64Store = 0x37,  // 整数64.store m
+    F32Store = 0x38,  // 浮点32位.store m
+    F64Store = 0x39,  // 浮点64位.store m
+    I32Store8 = 0x3A, // 整数32.store8 m
+    I32Store16 = 0x3B,// 整数32.store16 m
+    I64Store8 = 0x3C, // 整数64.store8 m
+    I64Store16 = 0x3D,// 整数64.store16 m
+    I64Store32 = 0x3E,// 整数64.store32 m
+    内存大小 = 063 ,// 记忆.大小
+    内存增长 = 064 ,// 记忆.grow
+
+    /* 数值指令 */
+    I32Const = 0x41,         // 整数32.const n
+    I64Const = 0x42,         // 整数64.const n
+    F32Const = 0x43,         // 浮点32位.const z
+    F64Const = 0x44,         // 浮点64位.const z
+    I32Eqz = 0x45,           // 整数32.eqz
+    I32Eq = 0x46,            // 整数32.eq
+    I32Ne = 0x47,            // 整数32.ne
+    I32LtS = 0x48,           // 整数32.lt_s
+    I32LtU = 0x49,           // 整数32.lt_u
+    I32GtS = 0x4A,           // 整数32.gt_s
+    I32GtU = 0x4B,           // 整数32.gt_u
+    I32LeS = 0x4C,           // 整数32.le_s
+    I32LeU = 0x4D,           // 整数32.le_u
+    I32GeS = 0x4E,           // 整数32.ge_s
+    I32GeU = 0x4F,           // 整数32.ge_u
+    I64Eqz = 0x50,           // 整数64.eqz
+    I64Eq = 0x51,            // 整数64.eq
+    I64Ne = 0x52,            // 整数64.ne
+    I64LtS = 0x53,           // 整数64.lt_s
+    I64LtU = 0x54,           // 整数64.lt_u
+    I64GtS = 0x55,           // 整数64.gt_s
+    I64GtU = 0x56,           // 整数64.gt_u
+    I64LeS = 0x57,           // 整数64.le_s
+    I64LeU = 0x58,           // 整数64.le_u
+    I64GeS = 0x59,           // 整数64.ge_s
+    I64GeU = 0x5A,           // 整数64.ge_u
+    F32Eq = 0x5B,            // 浮点32位.eq
+    F32Ne = 0x5C,            // 浮点32位.ne
+    F32Lt = 0x5D,            // 浮点32位.lt
+    F32Gt = 0x5E,            // 浮点32位.gt
+    F32Le = 0x5F,            // 浮点32位.le
+    F32Ge = 0x60,            // 浮点32位.ge
+    F64Eq = 0x61,            // 浮点64位.eq
+    F64Ne = 0x62,            // 浮点64位.ne
+    F64Lt = 0x63,            // 浮点64位.lt
+    F64Gt = 0x64,            // 浮点64位.gt
+    F64Le = 0x65,            // 浮点64位.le
+    F64Ge = 0x66,            // 浮点64位.ge
+    I32Clz = 0x67,           // 整数32.clz
+    I32Ctz = 0x68,           // 整数32.ctz
+    I32PopCnt = 0x69,        // 整数32.popcnt
+    I32Add = 0x6A,           // 整数32.add
+    I32Sub = 0x6B,           // 整数32.sub
+    I32Mul = 0x6C,           // 整数32.mul
+    I32DivS = 0x6D,          // 整数32.div_s
+    I32DivU = 0x6E,          // 整数32.div_u
+    I32RemS = 0x6F,          // 整数32.rem_s
+    I32RemU = 0x70,          // 整数32.rem_u
+    I32And = 0x71,           // 整数32.and
+    I32Or = 0x72,            // 整数32.or
+    I32Xor = 0x73,           // 整数32.xor
+    I32Shl = 0x74,           // 整数32.shl
+    I32ShrS = 0x75,          // 整数32.shr_s
+    I32ShrU = 0x76,          // 整数32.shr_u
+    I32Rotl = 0x77,          // 整数32.rotl
+    I32Rotr = 0x78,          // 整数32.rotr
+    I64Clz = 0x79,           // 整数64.clz
+    I64Ctz = 0x7A,           // 整数64.ctz
+    I64PopCnt = 0x7B,        // 整数64.popcnt
+    I64Add = 0x7C,           // 整数64.add
+    I64Sub = 0x7D,           // 整数64.sub
+    I64Mul = 0x7E,           // 整数64.mul
+    I64DivS = 0x7F,          // 整数64.div_s
+    I64DivU = 0x80,          // 整数64.div_u
+    I64RemS = 0x81,          // 整数64.rem_s
+    I64RemU = 0x82,          // 整数64.rem_u
+    I64And = 0x83,           // 整数64.and
+    I64Or = 0x84,            // 整数64.or
+    I64Xor = 0x85,           // 整数64.xor
+    I64Shl = 0x86,           // 整数64.shl
+    I64ShrS = 0x87,          // 整数64.shr_s
+    I64ShrU = 0x88,          // 整数64.shr_u
+    I64Rotl = 0x89,          // 整数64.rotl
+    I64Rotr = 0x8A,          // 整数64.rotr
+    F32Abs = 0x8B,           // 浮点32位.abs
+    F32Neg = 0x8C,           // 浮点32位.neg
+    F32Ceil = 0x8D,          // 浮点32位.ceil
+    F32Floor = 0x8E,         // 浮点32位.floor
+    F32Trunc = 0x8F,         // 浮点32位.trunc
+    F32Nearest = 0x90,       // 浮点32位.nearest
+    F32Sqrt = 0x91,          // 浮点32位.sqrt
+    F32Add = 0x92,           // 浮点32位.add
+    F32Sub = 0x93,           // 浮点32位.sub
+    F32Mul = 0x94,           // 浮点32位.mul
+    F32Div = 0x95,           // 浮点32位.div
+    F32Min = 0x96,           // 浮点32位.min
+    F32Max = 0x97,           // 浮点32位.max
+    F32CopySign = 0x98,      // 浮点32位.copysign
+    F64Abs = 0x99,           // 浮点64位.abs
+    F64Neg = 0x9A,           // 浮点64位.neg
+    F64Ceil = 0x9B,          // 浮点64位.ceil
+    F64Floor = 0x9C,         // 浮点64位.floor
+    F64Trunc = 0x9D,         // 浮点64位.trunc
+    F64Nearest = 0x9E,       // 浮点64位.nearest
+    F64Sqrt = 0x9F,          // 浮点64位.sqrt
+    F64Add = 0xA0,           // 浮点64位.add
+    F64Sub = 0xA1,           // 浮点64位.sub
+    F64Mul = 0xA2,           // 浮点64位.mul
+    F64Div = 0xA3,           // 浮点64位.div
+    F64Min = 0xA4,           // 浮点64位.min
+    F64Max = 0xA5,           // 浮点64位.max
+    F64CopySign = 0xA6,      // 浮点64位.copysign
+    I32WrapI64 = 0xA7,       // 整数32.wrap_i64
+    I32TruncF32S = 0xA8,     // 整数32.trunc_f32_s
+    I32TruncF32U = 0xA9,     // 整数32.trunc_f32_u
+    I32TruncF64S = 0xAA,     // 整数32.trunc_f64_s
+    I32TruncF64U = 0xAB,     // 整数32.trunc_f64_u
+    I64ExtendI32S = 0xAC,    // 整数64.extend_i32_s
+    I64ExtendI32U = 0xAD,    // 整数64.extend_i32_u
+    I64TruncF32S = 0xAE,     // 整数64.trunc_f32_s
+    I64TruncF32U = 0xAF,     // 整数64.trunc_f32_u
+    I64TruncF64S = 0xB0,     // 整数64.trunc_f64_s
+    I64TruncF64U = 0xB1,     // 整数64.trunc_f64_u
+    F32ConvertI32S = 0xB2,   // 浮点32位.convert_i32_s
+    F32ConvertI32U = 0xB3,   // 浮点32位.convert_i32_u
+    F32ConvertI64S = 0xB4,   // 浮点32位.convert_i64_s
+    F32ConvertI64U = 0xB5,   // 浮点32位.convert_i64_u
+    F32DemoteF64 = 0xB6,     // 浮点32位.demote_f64
+    F64ConvertI32S = 0xB7,   // 浮点64位.convert_i32_s
+    F64ConvertI32U = 0xB8,   // 浮点64位.convert_i32_u
+    F64ConvertI64S = 0xB9,   // 浮点64位.convert_i64_s
+    F64ConvertI64U = 0xBA,   // 浮点64位.convert_i64_u
+    F64PromoteF32 = 0xBB,    // 浮点64位.promote_f32
+    I32ReinterpretF32 = 0xBC,// 整数32.reinterpret_f32
+    I64ReinterpretF64 = 0xBD,// 整数64.reinterpret_f64
+    F32ReinterpretI32 = 0xBE,// 浮点32位.reinterpret_i32
+    F64ReinterpretI64 = 0xBF,// 浮点64位.reinterpret_i64
+    I32Extend8S = 0xC0,      // 整数32.extend8_s
+    I32Extend16S = 0xC1,     // 整数32.extend16_s
+    I64Extend8S = 0xC2,      // 整数64.extend8_s
+    I64Extend16S = 0xC3,     // 整数64.extend16_s
+    I64Extend32S = 0xC4,     // 整数64.extend32_s
+    饱和截断 = 252 ,         // <整数32|64>.trunc_sat_<浮点32位|64>_<s|u>
+} 操作码;
+
+#endif
