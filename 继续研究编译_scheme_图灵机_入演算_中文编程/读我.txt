@@ -1,0 +1,148 @@
+# 小型LISP解释器在Python中
+
+#### 这不是Scheme
+
+这是一个简单且小型的LISP类解释器实现，用于lambda演算练习。它没有数据结构，所有东西都必须用lambda构建。
+
+## 教程
+
+可以通过执行`lis.py`文件来启动REPL，例如`python lis.py`，它接受多行输入并支持readline集成，包括历史记录等。你也可以将内容输入到一个文件中并像这样执行它`python lis.py < file.lispy`。扩展名无关紧要。
+
+关于语言，基本构造是一个lambda：
+
+```scheme
+(lambda (x) (+ 1 x))
+```
+
+由于这是一个严格语言，我们也有`if`，所以`not`函数可以这样定义：
+
+```scheme
+(lambda (x) (if x false true))
+```
+
+如你所见，我们有布尔值，基本值是布尔值、关键字（如`:foo`）和整数，如`1234`。
+
+关键字的行为类似于常量，你可以在需要测试某些东西是否相等时使用它们。我们还有`nil`来表示值的缺失。
+
+```scheme
+(= :foo :foo) ;; 在REPL中打印True
+```
+
+你可以用`define`定义全局符号
+
+```scheme
+(define not (lambda (x) (if x false true)))
+```
+
+我们也有print，print返回`nil`。
+
+```scheme
+(print :hello-world)
+```
+
+还有算术、布尔和位运算符，按顺序是：`+`, `*`, `/`, `%`, `=`, `!=`, `>`, `<`, `>=`, `<=`, `&`, `|`：
+
+`even?`函数可以这样定义
+
+```
+(define even? (lambda (x) (= (% x 2) 0)))
+```
+
+我们有`prog`，它扮演块的角色，它求值所有参数并返回最后一个的结果。
+
+一个打印并返回其输入的trace函数可以这样定义
+
+```scheme
+(define trace (lambda (x)
+	(prog
+		(print x)
+		x)))
+```
+
+我们有`fix`来递归调用匿名函数，所以我们可以像这样调用匿名阶乘：
+
+```scheme
+(fix (lambda (x fact) (if (= x 0) 1 (* x (fact (- x 1) fact)))) 5)
+```
+
+上面的例子将在REPL中打印`120`。`fix`将接收一个函数并调用它，将自身作为最后一个参数传递。注意正常的递归也可以工作：
+
+```scheme
+(define fact (lambda (x)
+	(if (= x 0)
+		1
+		(* x (fact (- x 1))))))
+(fact 5)
+```
+
+注释用`;`完成，并延伸到行尾。
+
+```scheme
+; 这是一个注释
+```
+
+我们还有`assert`，它基本上是在Python中调用`assert`
+
+```scheme
+(assert (= 1 1)) ;; 不打印任何内容，返回nil
+(assert false) ;; 中止并抛出AssertionError
+```
+
+就是这样，恭喜你学会了_lis.py_! 查看`test.lispy`获取更多示例。
+
+我们有宏，这里是如何定义一个`let`宏
+
+```scheme
+(define-macro let (x e1 e2) ((lambda (x) e2) e1))
+
+(let x 1 (+ 1 x)) ;; 打印2
+```
+## 构造
+
+语言的基本构造
+
+* `(lambda (x) x)` : `lambda`关键字创建一个lambda
+* `(if true 1 0)` : `if`用于`if`表达式
+* `(fix (lambda (x k) (if (= x 0) x (k (- x 0)))) 2)`: `fix`用于递归，`fix`将接收一个lambda并调用它，将自身作为最后一个参数传递。`k`代表延续，在文献中使用_k_表示延续是很常见的。
+* `(define inc (lambda (x) (+ x 1)))`: `define`定义一个符号
+* `(define-macro let (x e1 e2) ((lambda (x) e2) e1))` : `define-macro`定义一个宏。宏通过替换工作，例如，假设`let`宏定义为`(define-macro let (x e1 e2) ((lambda (x) e2) e1))`，`(let y 1 (+ y y))`的求值通过替换`x -> y` `e1 -> 1`，`e2 -> (+ y y)`，在`((lambda (x) (e2)) e1)`中，替换后我们得到`(lambda (y) (+ y y) 1)`，然后进行求值。
+* `env`返回当前环境，这用于调试，因为返回的对象是一个字典，而_lispy_没有处理Python字典的方法
+* `; comment to the end of line` : 使用`;`进行注释
+
+## 常量和值
+
+* `nil`是`None`
+* `true`是`True`，`false`是`False`
+* 整数是整数，没有浮点数，抱歉
+* 以`:`开头的符号称为关键字，它们求值为自身。你可以将其视为常量
+* 我们没有字符串
+
+## 全局函数
+
+* `print`，打印其参数，返回`nil`
+* `+ - * / %`是算术运算，注意`/`在Python中是`//`或整除。此外，这些函数有两个参数，用三个或更多参数调用会给你一个错误
+* `= > < >= <= !=`是布尔比较
+* `| &`是位运算符
+* `(assert x)` : 在Python中调用`assert x`。
+* `(prog *args)` : 求值所有参数并返回最后一个。注意`((foo x) (bar y))`意味着_执行`(foo x)`，然后将结果应用于`(bar y)`_。如果你需要_执行`(foo x)`，忽略其结果然后执行`(bar y)`_，那么你需要写`(prog (foo x) (bar y))`。
+
+# REPL
+
+如果你执行`python3 lis.py`，它将启动REPL，你可以输入代码并按回车提交，如果你有不平衡的括号，它将显示提示"...>"。它使用`readline`库以获得更好的输入体验，你应该可以免费获得历史记录，它创建了`~/.lispy_history`文件，如果你想删除这个文件是安全的。
+
+# 跑文件
+
+如果你将输入重定向到`lis.py`，它将把整个内容解释为一个字符串并执行代码。它不会打印中间结果，所以你可能需要使用print来查看结果。
+
+# 动机
+
+1. 我想要一些容易调整的东西来练习lambda演算，这就是为什么我们没有其他数据类型，除了lambda，你必须用lambda来构造其他东西：），这是函数式编程的本质。
+2. 我想尝试一些逻辑完全是语义的东西，在解析方面仅有括号与字。
+
+# 常见错误：
+
+* `Dunno what to do with (k ...` 当执行递归函数时，你可能忘记使用fix调用它。
+
+# 示例
+
+你可以检查`test.lispy`文件获取示例。你可以通过`python3 lis.py < test.lispy`跑示例。
