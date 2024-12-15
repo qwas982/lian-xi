@@ -1,0 +1,171 @@
+设计一个能识别全部Unicode的lisp的BNF, 理解 -> 拆解 -> 思考 -> 分析 -> 推理.
+BNF文法;
+<程序> ::= <表达式>*
+<表达式> ::= <符号> | <数字> | <布尔值> | <字符串> | <列表>
+<列表> ::= "(" <表达式>* ")"
+<符号> ::= <Unicode字符>+
+<数字> ::= <数字字符>+ | <数字字符>+ "." <数字字符>*
+<数字字符> ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"
+<布尔值> ::= "#t" | "#f"
+<字符串> ::= '"' <Unicode字符串> '"'
+<Unicode字符> ::= 任意Unicode字符
+<Unicode字符串> ::= <Unicode字符>+
+<空白符> ::= " " | "\t" | "\n" | "\r"
+<注释> ::= ";" <Unicode字符串> <换行符>
+
+根据BNF文法, 设计一个扫描器, 理解 -> 拆解 -> 思考 -> 分析 -> 推理.
+扫描器;
+读取输入到列表,
+peek() — 返回下一个字符 , 但是不会将其从流中删除。
+next() — 返回下一个字符 , 同时将其从流中删除。
+eof() — 当且仅当流中没有更多字符时返回true。
+异常(消息) — 抛出新错误.
+
+根据BNF文法, 设计一个token器, 假设已经有一个扫描器在前, 理解 -> 拆解 -> 思考 -> 分析 -> 推理.
+token器;
+首先 , 跳过所有的空格。
+如果输入流已到结尾 , 即eof()为真，返回空值null。
+如果遇到井号";" , 则跳过注释（注释所在行结束后，重新开始上面的流程）。
+如果是引号"'" , 则读取字符串。
+如果是数字字符 , 则连续读取得到一个数字。
+如果是一个符号或字符串 , 则读取一个标识符（identifier）或者关键字（keyword）。
+如果是一种标点符号字符 , 则返回标点符号token。
+如果是一种操作符 , 则返回操作符token。
+如果上面的情况都不符合 , 则抛出一个异常(消息)。
+
+根据BNF文法, 设计一个语法分析器, 假设已完成词法分析, 理解 -> 拆解 -> 思考 -> 分析 -> 推理.
+解析器;
+设计树节点, 设计符号表.
+设计访问器, 为之后遍历使用.
+读取token.
+根据BNF文法, 生成CST.
+遍历CST, 生成AST, 
+遍历AST, 解析语义.
+
+根据BNF文法, 设计一个元循环求值器, 假设已经完成语法分析, 得到了AST. 理解 -> 拆解 -> 思考 -> 分析 -> 推理.
+元循环求值器;
+设计一个环境, 设计一个垃圾回收器.
+添加lisp常用原语.
+设计一个eval,
+设计一个appy.
+读取AST, 在eval与appy之间, 循环求值与应用.
+实现尾调用优化, 实现lisp常用的特殊形式.
+添加模块功能为特殊形式之一.
+实现一个call/cc, 实现一个卫生宏.
+
+写一个REPL, 假设我已完成了词法 语法分析, 已完成元循环求值器. 理解 -> 拆解 -> 思考 -> 分析 -> 推理.
+从命令行读取文件.
+要求使用.decode() 与 .encode()处理输入输出的编解码问题,
+默认外部环境都是UTF8.
+写一个用法与帮助, 默认是repl, 不同选项进入不同的功能.
+
+________________________________
+
+# 函数1: 将UTF-8字节序列转换为Unicode字符
+def utf8转unicode(utf8字节序列):
+    unicode字符串 = ''
+    i = 0
+    while i < len(utf8字节序列):
+        字节1 = utf8字节序列[i]
+        if (字节1 & 128) == 0:
+            # 1-byte character
+            unicode字符串 += chr(字节1)
+            i += 1
+        elif (字节1 & 224) == 192:
+            # 2-byte character
+            字节2 = utf8字节序列[i + 1]
+            unicode字符串 += chr(((字节1 & 31) << 6) | (字节2 & 63))
+            i += 2
+        elif (字节1 & 240) == 224:
+            # 3-byte character
+            字节2 = utf8字节序列[i + 1]
+            字节3 = utf8字节序列[i + 2]
+            unicode字符串 += chr(((字节1 & 15) << 12) | ((字节2 & 63) << 6) | (字节3 & 63))
+            i += 3
+        elif (字节1 & 248) == 240:
+            # 4-byte character
+            字节2 = utf8字节序列[i + 1]
+            字节3 = utf8字节序列[i + 2]
+            字节4 = utf8字节序列[i + 3]
+            unicode字符串 += chr(((字节1 & 7) << 18) | ((字节2 & 63) << 12) | ((字节3 & 63) << 6) | (字节4 & 63))
+            i += 4
+    return unicode字符串
+
+# 函数2: 将Unicode字符转换为UTF-8字节序列
+def unicode转utf8(unicode字符串):
+    utf8字节序列 = []
+    for 字符 in unicode字符串:
+        码点 = ord(字符)
+        if 码点 <= 127:
+            # 1-byte character
+            utf8字节序列.append(码点)
+        elif 码点 <= 2047:
+            # 2-byte character
+            utf8字节序列.append(192 | (码点 >> 6))
+            utf8字节序列.append(128 | (码点 & 63))
+        elif 码点 <= 65535:
+            # 3-byte character
+            utf8字节序列.append(224 | (码点 >> 12))
+            utf8字节序列.append(128 | ((码点 >> 6) & 63))
+            utf8字节序列.append(128 | (码点 & 63))
+        elif 码点 <= 1114111:
+            # 4-byte character
+            utf8字节序列.append(240 | (码点 >> 18))
+            utf8字节序列.append(128 | ((码点 >> 12) & 63))
+            utf8字节序列.append(128 | ((码点 >> 6) & 63))
+            utf8字节序列.append(128 | (码点 & 63))
+    return utf8字节序列
+
+# 示例用法
+utf8序列 = [228, 184, 150]  # UTF-8编码的“中”
+unicode字符 = utf8转unicode(utf8序列)
+print(f"UTF-8 转 Unicode: {unicode字符}")
+
+unicode字符串 = "中"
+utf8序列转换后 = unicode转utf8(unicode字符串)
+print(f"Unicode 转 UTF-8: {utf8序列转换后}")
+
+
+
+
+
+
+def utf8_转_unicode(utf8_字节序列):
+    """
+    将UTF-8字节序列转换为Unicode字符。
+
+    :param utf8_字节序列: bytes, UTF-8编码的字节序列
+    :return: str, 对应的Unicode字符
+    """
+    return utf8_字节序列.decode('utf-8')
+
+def unicode_转_utf8(unicode_字符):
+    """
+    将Unicode字符转换为UTF-8字节序列。
+
+    :param unicode_字符: str, Unicode字符
+    :return: bytes, 对应的UTF-8编码的字节序列
+    """
+    return unicode_字符.encode('utf-8')
+
+# 示例用法
+utf8_字节序列 = b'\xe4\xb8\xad\xe6\x96\x87'  # 这是UTF-8编码的"中文"
+unicode_字符 = utf8_转_unicode(utf8_字节序列)
+print(f"UTF-8 转 Unicode: {unicode_字符}")  # 输出: 中文
+
+unicode_字符 = "中文"
+utf8_字节序列 = unicode_转_utf8(unicode_字符)
+print(f"Unicode 转 UTF-8: {utf8_字节序列}")  # 输出: b'\xe4\xb8\xad\xe6\x96\x87'
+
+def 读取文件(文件路径):
+    try:
+        # 打开文件并读取内容
+        with open(文件路径, 'r', encoding='utf-8') as 文件:
+            内容列表 = 文件.readlines()
+        return 内容列表
+    except FileNotFoundError:
+        print(f"文件 {文件路径} 未找到。")
+        return None
+    except IOError as 错误:
+        print(f"读取文件时发生错误: {错误}")
+        return None
