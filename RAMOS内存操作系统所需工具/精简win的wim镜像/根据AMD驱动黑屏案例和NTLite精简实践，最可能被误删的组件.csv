@@ -1,0 +1,19 @@
+﻿被移除组件,为什么导致黑屏,风险等级
+.NET Framework 3.5/4.8,AMD安装程序是.NET应用，缺失会导致安装中途崩溃，显卡驱动未完全注册 9,⚠️⚠️⚠️ 极高
+Windows Imaging Component (WIC),驱动安装时需处理图像资源，缺失导致显示初始化失败,⚠️⚠️⚠️ 极高
+Media Foundation,Vega/Polaris架构依赖MF进行视频解码，缺失导致显示管道断裂,⚠️⚠️ 高
+DirectX相关组件,驱动需要DirectX运行时初始化3D加速，缺失导致回退失败,⚠️⚠️ 高
+Windows Management Instrumentation (WMI),驱动安装需通过WMI查询硬件，缺失导致配置错误,⚠️⚠️ 中
+Display PnP服务,禁用后系统无法正确切换显示模式,⚠️⚠️ 中
+
+
+关键真相：AMD驱动安装时会临时禁用Microsoft Basic Display Adapter，切换到专用驱动。如果驱动初始化失败（因依赖组件缺失），系统既无法回退到基础显示，也无法完成新驱动加载 → 永久黑屏
+
+
+组件类别,具体项目,说明
+.NET Framework,.NET Framework 3.5 + .NET Framework 4.8,AMD安装程序强制依赖 9
+Media Features,Windows Media Player + Media Foundation,Vega/Polaris视频解码必需
+Imaging,Windows Imaging Component,驱动资源加载必需
+DirectX,DirectX 全部子项,3D加速初始化必需
+System Services,Windows Management Instrumentation,硬件查询服务
+Display,Desktop Experience,桌面合成器依赖

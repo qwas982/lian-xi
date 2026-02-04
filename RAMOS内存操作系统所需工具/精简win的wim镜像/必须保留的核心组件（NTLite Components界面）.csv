@@ -1,0 +1,7 @@
+﻿组件类别,具体项目,说明
+.NET Framework,.NET Framework 3.5 + .NET Framework 4.8,AMD安装程序强制依赖 9
+Media Features,Windows Media Player + Media Foundation,Vega/Polaris视频解码必需
+Imaging,Windows Imaging Component,驱动资源加载必需
+DirectX,DirectX 全部子项,3D加速初始化必需
+System Services,Windows Management Instrumentation,硬件查询服务
+Display,Desktop Experience,桌面合成器依赖

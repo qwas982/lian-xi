@@ -1,0 +1,3442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Preset xmlns="urn:schemas-nliteos-com:pn.v1">
+	<Date>02/03/2026 14:35:40</Date>
+	<AppInfo>
+		<Version>2025.8.10552</Version>
+		<Licensed>Yes</Licensed>
+		<Protections>Yes</Protections>
+		<Host>Windows 10 Professional 21H2 x64 - 10.0.19044.1679 (zh-CN)</Host>
+	</AppInfo>
+	<ImageInfo>
+		<Version mode="offline">Windows 10 Professional 21H2 x64 - 10.0.19044.1679 (zh-CN)</Version>
+		<GUID>{FEB9BD31-96ED-4EF0-A80F-DB6E42821888}</GUID>
+	</ImageInfo>
+	<RemoveComponents AppRemovalMode="DISM">
+		<c>1527c705-839a-4832-9118-54d4bd6a0c89</c>
+		<c>3daudio '空间音效 (3D Audio)'</c>
+		<c>aarsvc 'Agent Activation Runtime(代理激活运行时)'</c>
+		<c>accounthealth 'Account Health'</c>
+		<c>adamclient 'Active Directory 轻型目录服务 (AD LDS)'</c>
+		<c>alljoyn 'AllJoyn Router Service'</c>
+		<c>anytimeupgrade 'Windows Anytime Upgrade(用于 Windows 低级版本升级到高级版版)'</c>
+		<c>applicationlauncher 'Application Launcher(应用程序启动器)'</c>
+		<c>apptargetedfeaturedb 'Application Targeted Feature Database(目标应用程序特征数据库)'</c>
+		<c>appv '应用程序虚拟化(App-V)'</c>
+		<c>apxunit 'APX 扬声器和麦克风驱动'</c>
+		<c>asimov 'Telemetry Client (遥测)'</c>
+		<c>assembly.net '.NET assembly 缓存'</c>
+		<c>assignedaccess 'Assigned Access(指定访问)'</c>
+		<c>audiospatializer '音频声场调整 DSP (APO)'</c>
+		<c>autofstx 'Boot-time FsTx update recovery utility (AutoFsTx)'</c>
+		<c>autoworkplacejoin '工作区合并(Workplace Join)'</c>
+		<c>azurearcsetup 'Azure Arc 设置'</c>
+		<c>backup '备份与恢复'</c>
+		<c>bfs 'Brokering File System'</c>
+		<c>bingsearch 'Bing Search (InboxApp)'</c>
+		<c>biometric 'Windows 生物识别服务 - 售后服务'</c>
+		<c>biometricservice 'Windows 生物识别服务 - 服务'</c>
+		<c>bootmanagerpxe 'Boot Manager(引导管理器) (PXE)'</c>
+		<c>branchcacheclient 'BranchCache Client(分支缓存客户端)'</c>
+		<c>briefcase '公文包'</c>
+		<c>c5e2524a-ea46-4f67-841f-6a9465d9d515</c>
+		<c>calculator 'Calculator'</c>
+		<c>cameranative '微软相机后端(Microsoft Camera backend)'</c>
+		<c>cardspace 'Windows Cardspace'</c>
+		<c>ceip 'Windows客户体验改善计划 CEIP (SQM)'</c>
+		<c>clouddesktop '云桌面'</c>
+		<c>clouddownload 'Windows Recovery(WinRE) - 云下载'</c>
+		<c>containers '容器(Container) (Application Guard)'</c>
+		<c>copilotpwa 'Windows Copilot (InboxApp)'</c>
+		<c>datacenterbridging 'Data Center Bridging (DCB)数据中心桥接'</c>
+		<c>dcsvc '已声明的配置(DC)服务（Declared Configuration (DC) service）'</c>
+		<c>desktopimgdownldr '桌面图片下载器'</c>
+		<c>desktoptile '“桌面” 磁贴'</c>
+		<c>deviceregionmaintenance 'Device Region Maintenance'</c>
+		<c>dialogfilter 'Dialog Filter(筛选器对话框)'</c>
+		<c>diskusage '磁盘使用工具'</c>
+		<c>dnsclient32 'DNS 客户端 - 32-位'</c>
+		<c>dolbyatmos '杜比全景声编解码包'</c>
+		<c>driver_c_barcodescanner.inf</c>
+		<c>driver_c_cashdrawer.inf</c>
+		<c>driver_c_linedisplay.inf</c>
+		<c>driver_c_magneticstripereader.inf</c>
+		<c>driver_c_receiptprinter.inf</c>
+		<c>driver_hidscanner.inf</c>
+		<c>driver_idtsec.inf</c>
+		<c>driver_image.inf</c>
+		<c>driver_mdm3com.inf</c>
+		<c>driver_mdm5674a.inf</c>
+		<c>driver_mdmadc.inf</c>
+		<c>driver_mdmagm64.inf</c>
+		<c>driver_mdmags64.inf</c>
+		<c>driver_mdmairte.inf</c>
+		<c>driver_mdmaiwa.inf</c>
+		<c>driver_mdmaiwa3.inf</c>
+		<c>driver_mdmaiwa4.inf</c>
+		<c>driver_mdmaiwa5.inf</c>
+		<c>driver_mdmaiwat.inf</c>
+		<c>driver_mdmar1.inf</c>
+		<c>driver_mdmarch.inf</c>
+		<c>driver_mdmarn.inf</c>
+		<c>driver_mdmati.inf</c>
+		<c>driver_mdmatm2k.inf</c>
+		<c>driver_mdmaus.inf</c>
+		<c>driver_mdmboca.inf</c>
+		<c>driver_mdmbsb.inf</c>
+		<c>driver_mdmbug3.inf</c>
+		<c>driver_mdmbw561.inf</c>
+		<c>driver_mdmc26a.inf</c>
+		<c>driver_mdmcdp.inf</c>
+		<c>driver_mdmcm28.inf</c>
+		<c>driver_mdmcodex.inf</c>
+		<c>driver_mdmcom1.inf</c>
+		<c>driver_mdmcommu.inf</c>
+		<c>driver_mdmcomp.inf</c>
+		<c>driver_mdmcpq.inf</c>
+		<c>driver_mdmcpq2.inf</c>
+		<c>driver_mdmcpv.inf</c>
+		<c>driver_mdmcrtix.inf</c>
+		<c>driver_mdmcxhv6.inf</c>
+		<c>driver_mdmcxpv6.inf</c>
+		<c>driver_mdmdcm5.inf</c>
+		<c>driver_mdmdcm6.inf</c>
+		<c>driver_mdmdf56f.inf</c>
+		<c>driver_mdmdgitn.inf</c>
+		<c>driver_mdmdp2.inf</c>
+		<c>driver_mdmdsi.inf</c>
+		<c>driver_mdmdyna.inf</c>
+		<c>driver_mdmeiger.inf</c>
+		<c>driver_mdmelsa.inf</c>
+		<c>driver_mdmeric.inf</c>
+		<c>driver_mdmeric2.inf</c>
+		<c>driver_mdmetech.inf</c>
+		<c>driver_mdmfj2.inf</c>
+		<c>driver_mdmgatew.inf</c>
+		<c>driver_mdmgcs.inf</c>
+		<c>driver_mdmgen.inf</c>
+		<c>driver_mdmgl001.inf</c>
+		<c>driver_mdmgl002.inf</c>
+		<c>driver_mdmgl003.inf</c>
+		<c>driver_mdmgl004.inf</c>
+		<c>driver_mdmgl005.inf</c>
+		<c>driver_mdmgl006.inf</c>
+		<c>driver_mdmgl007.inf</c>
+		<c>driver_mdmgl008.inf</c>
+		<c>driver_mdmgl009.inf</c>
+		<c>driver_mdmgl010.inf</c>
+		<c>driver_mdmgsm.inf</c>
+		<c>driver_mdmhaeu.inf</c>
+		<c>driver_mdmhandy.inf</c>
+		<c>driver_mdmhay2.inf</c>
+		<c>driver_mdmhayes.inf</c>
+		<c>driver_mdminfot.inf</c>
+		<c>driver_mdmiodat.inf</c>
+		<c>driver_mdmirmdm.inf</c>
+		<c>driver_mdmisdn.inf</c>
+		<c>driver_mdmjf56e.inf</c>
+		<c>driver_mdmke.inf</c>
+		<c>driver_mdmkortx.inf</c>
+		<c>driver_mdmlasat.inf</c>
+		<c>driver_mdmlasno.inf</c>
+		<c>driver_mdmlucnt.inf</c>
+		<c>driver_mdmmc288.inf</c>
+		<c>driver_mdmmcd.inf</c>
+		<c>driver_mdmmcom.inf</c>
+		<c>driver_mdmmct.inf</c>
+		<c>driver_mdmmega.inf</c>
+		<c>driver_mdmmetri.inf</c>
+		<c>driver_mdmmhrtz.inf</c>
+		<c>driver_mdmmhzel.inf</c>
+		<c>driver_mdmminij.inf</c>
+		<c>driver_mdmmod.inf</c>
+		<c>driver_mdmmot64.inf</c>
+		<c>driver_mdmmoto1.inf</c>
+		<c>driver_mdmmotou.inf</c>
+		<c>driver_mdmmts.inf</c>
+		<c>driver_mdmneuhs.inf</c>
+		<c>driver_mdmnis1u.inf</c>
+		<c>driver_mdmnis2u.inf</c>
+		<c>driver_mdmnis3t.inf</c>
+		<c>driver_mdmnis5t.inf</c>
+		<c>driver_mdmnokia.inf</c>
+		<c>driver_mdmnova.inf</c>
+		<c>driver_mdmntt1.inf</c>
+		<c>driver_mdmnttd2.inf</c>
+		<c>driver_mdmnttd6.inf</c>
+		<c>driver_mdmnttme.inf</c>
+		<c>driver_mdmnttp.inf</c>
+		<c>driver_mdmnttp2.inf</c>
+		<c>driver_mdmnttte.inf</c>
+		<c>driver_mdmolic.inf</c>
+		<c>driver_mdmomrn3.inf</c>
+		<c>driver_mdmoptn.inf</c>
+		<c>driver_mdmosi.inf</c>
+		<c>driver_mdmpace.inf</c>
+		<c>driver_mdmpenr.inf</c>
+		<c>driver_mdmpin.inf</c>
+		<c>driver_mdmpn1.inf</c>
+		<c>driver_mdmpp.inf</c>
+		<c>driver_mdmpsion.inf</c>
+		<c>driver_mdmracal.inf</c>
+		<c>driver_mdmrock.inf</c>
+		<c>driver_mdmrock3.inf</c>
+		<c>driver_mdmrock4.inf</c>
+		<c>driver_mdmrock5.inf</c>
+		<c>driver_mdmsier.inf</c>
+		<c>driver_mdmsii64.inf</c>
+		<c>driver_mdmsmart.inf</c>
+		<c>driver_mdmsonyu.inf</c>
+		<c>driver_mdmsun1.inf</c>
+		<c>driver_mdmsun2.inf</c>
+		<c>driver_mdmsupr3.inf</c>
+		<c>driver_mdmsupra.inf</c>
+		<c>driver_mdmsuprv.inf</c>
+		<c>driver_mdmtdk.inf</c>
+		<c>driver_mdmtdkj2.inf</c>
+		<c>driver_mdmtdkj3.inf</c>
+		<c>driver_mdmtdkj4.inf</c>
+		<c>driver_mdmtdkj5.inf</c>
+		<c>driver_mdmtdkj6.inf</c>
+		<c>driver_mdmtdkj7.inf</c>
+		<c>driver_mdmtexas.inf</c>
+		<c>driver_mdmti.inf</c>
+		<c>driver_mdmtkr.inf</c>
+		<c>driver_mdmtron.inf</c>
+		<c>driver_mdmusrf.inf</c>
+		<c>driver_mdmusrg.inf</c>
+		<c>driver_mdmusrgl.inf</c>
+		<c>driver_mdmusrk1.inf</c>
+		<c>driver_mdmusrsp.inf</c>
+		<c>driver_mdmvdot.inf</c>
+		<c>driver_mdmvv.inf</c>
+		<c>driver_mdmwhql0.inf</c>
+		<c>driver_mdmx5560.inf</c>
+		<c>driver_mdmzoom.inf</c>
+		<c>driver_mdmzyp.inf</c>
+		<c>driver_mdmzyxel.inf</c>
+		<c>driver_mdmzyxlg.inf</c>
+		<c>driver_mgtdyn.inf</c>
+		<c>driver_msdv.inf</c>
+		<c>driver_remoteposdrv.inf</c>
+		<c>dvdmaker 'DVD Maker'</c>
+		<c>e2a4f912-2574-4a75-9bb0-0d023378592b</c>
+		<c>edgeupdate 'Microsoft Edge Update'</c>
+		<c>edgewebview 'Microsoft Edge WebView'</c>
+		<c>edgewebviewlegacy 'WebView2 Runtime (Legacy)'</c>
+		<c>eefcontainer 'Windows Embedded Features(Windows 嵌入式的功能)'</c>
+		<c>embeddedexperience '设备锁定 (Embedded Experience-嵌入式体验)'</c>
+		<c>embeddedmode 'Embedded Mode(嵌入模式)'</c>
+		<c>enterpriseclientsync '工作文件夹客户端(Work Folders Client)'</c>
+		<c>eosnotify '服务结束通知 (EOSNotify)'</c>
+		<c>errorreporting 'Windows 错误报告'</c>
+		<c>f46d4000-fd22-4db4-ac8e-4e1ddde828fe</c>
+		<c>facerecognition '面部识别'</c>
+		<c>fciclient '文件服务器资源管理器(File Server Resource Manager)'</c>
+		<c>fclip 'Client License Platform(客户端许可证平台) - 柔性的 (fclip)'</c>
+		<c>filemanager '文件管理器 (OneDrive &amp; Photos)'</c>
+		<c>flashactivex 'Internet Explorer Adobe Flash 插件'</c>
+		<c>flashactivex32 'Internet Explorer Adobe Flash 插件 - 32-位'</c>
+		<c>flipgridpwa 'Flipgrid PWA (InboxApp)'</c>
+		<c>font_holomd2</c>
+		<c>font_microsoftjhengheibold</c>
+		<c>font_microsoftjhengheilight</c>
+		<c>font_mingliub</c>
+		<c>font_simsunextg 'Simsun-ExtG'</c>
+		<c>font_yugothic</c>
+		<c>font_yugothicbold</c>
+		<c>font_yugothiclight</c>
+		<c>font_yugothicmedium</c>
+		<c>gadgets '小工具'</c>
+		<c>gameexplorer '游戏资源管理器'</c>
+		<c>gameinputsvc 'GameInput Service(游戏输入服务)'</c>
+		<c>games '游戏'</c>
+		<c>gamesmultiplayer '多人游戏'</c>
+		<c>gamespremium '高级游戏'</c>
+		<c>gesturefilter 'Gesture Filter(手势筛选器)'</c>
+		<c>guardedhost '受保护的主机'</c>
+		<c>hotpatch 'Windows Hotpatching'</c>
+		<c>hwreqchk '硬件需求检测库'</c>
+		<c>hwsupport_agp 'AGP'</c>
+		<c>hwsupport_modemsettings 'Shared modem settings (mdmgl*.inf)(共享调制解调器)'</c>
+		<c>hwsupport_tv 'TV Tuner 编码与支持'</c>
+		<c>hyperv 'Hyper-V'</c>
+		<c>iis 'Internet Information Server (IIS)(Internet 信息服务)'</c>
+		<c>iismmc 'Internet Information Server (IIS)(Internet 信息服务) (管理控制台)'</c>
+		<c>iismmc32 'Internet Information Server (IIS)(Internet 信息服务) (管理控制台) - 32-位'</c>
+		<c>indeo 'Intel Indeo 编码器'</c>
+		<c>inputviewexperience 'Input View Experience(输入视图体验)'</c>
+		<c>journal 'Windows 日记本'</c>
+		<c>jscript9legacy 'JScript9 - Legacy'</c>
+		<c>kerneldebug '内核调试'</c>
+		<c>keyboardfiltershim 'Keyboard Filter AppShim(应用键盘过滤'</c>
+		<c>killbits 'ActiveX Compatibility Flags (Killbits)'</c>
+		<c>kl-00000401</c>
+		<c>kl-00000402</c>
+		<c>kl-00000405</c>
+		<c>kl-00000406</c>
+		<c>kl-00000407</c>
+		<c>kl-00000408</c>
+		<c>kl-0000040a</c>
+		<c>kl-0000040b</c>
+		<c>kl-0000040c</c>
+		<c>kl-0000040d</c>
+		<c>kl-0000040e</c>
+		<c>kl-0000040f</c>
+		<c>kl-00000410</c>
+		<c>kl-00000412</c>
+		<c>kl-00000413</c>
+		<c>kl-00000414</c>
+		<c>kl-00000415</c>
+		<c>kl-00000416</c>
+		<c>kl-00000418</c>
+		<c>kl-00000419</c>
+		<c>kl-0000041a</c>
+		<c>kl-0000041b</c>
+		<c>kl-0000041c</c>
+		<c>kl-0000041d</c>
+		<c>kl-0000041e</c>
+		<c>kl-0000041f</c>
+		<c>kl-00000420</c>
+		<c>kl-00000422</c>
+		<c>kl-00000423</c>
+		<c>kl-00000424</c>
+		<c>kl-00000425</c>
+		<c>kl-00000426</c>
+		<c>kl-00000427</c>
+		<c>kl-00000428</c>
+		<c>kl-00000429</c>
+		<c>kl-0000042a</c>
+		<c>kl-0000042b</c>
+		<c>kl-0000042c</c>
+		<c>kl-0000042e</c>
+		<c>kl-0000042f</c>
+		<c>kl-00000432</c>
+		<c>kl-00000437</c>
+		<c>kl-00000438</c>
+		<c>kl-00000439</c>
+		<c>kl-0000043a</c>
+		<c>kl-0000043b</c>
+		<c>kl-0000043f</c>
+		<c>kl-00000440</c>
+		<c>kl-00000442</c>
+		<c>kl-00000444</c>
+		<c>kl-00000445</c>
+		<c>kl-00000446</c>
+		<c>kl-00000447</c>
+		<c>kl-00000448</c>
+		<c>kl-00000449</c>
+		<c>kl-0000044a</c>
+		<c>kl-0000044b</c>
+		<c>kl-0000044c</c>
+		<c>kl-0000044d</c>
+		<c>kl-0000044e</c>
+		<c>kl-00000450</c>
+		<c>kl-00000451</c>
+		<c>kl-00000452</c>
+		<c>kl-00000453</c>
+		<c>kl-00000454</c>
+		<c>kl-0000045a</c>
+		<c>kl-0000045b</c>
+		<c>kl-0000045c</c>
+		<c>kl-00000461</c>
+		<c>kl-00000463</c>
+		<c>kl-00000465</c>
+		<c>kl-00000468</c>
+		<c>kl-0000046a</c>
+		<c>kl-0000046c</c>
+		<c>kl-0000046d</c>
+		<c>kl-0000046e</c>
+		<c>kl-0000046f</c>
+		<c>kl-00000470</c>
+		<c>kl-00000474</c>
+		<c>kl-00000475</c>
+		<c>kl-00000480</c>
+		<c>kl-00000481</c>
+		<c>kl-00000485</c>
+		<c>kl-00000488</c>
+		<c>kl-00000492</c>
+		<c>kl-00000807</c>
+		<c>kl-00000809</c>
+		<c>kl-0000080a</c>
+		<c>kl-0000080c</c>
+		<c>kl-00000813</c>
+		<c>kl-00000816</c>
+		<c>kl-0000081a</c>
+		<c>kl-0000082c</c>
+		<c>kl-0000083b</c>
+		<c>kl-00000843</c>
+		<c>kl-00000850</c>
+		<c>kl-0000085d</c>
+		<c>kl-0000085f</c>
+		<c>kl-00000c0c</c>
+		<c>kl-00000c1a</c>
+		<c>kl-00000c51</c>
+		<c>kl-00001009</c>
+		<c>kl-0000100c</c>
+		<c>kl-0000105f</c>
+		<c>kl-00001809</c>
+		<c>kl-0000201a</c>
+		<c>kl-00004009</c>
+		<c>kl-00010401</c>
+		<c>kl-00010402</c>
+		<c>kl-00010405</c>
+		<c>kl-00010407</c>
+		<c>kl-00010408</c>
+		<c>kl-00010409</c>
+		<c>kl-0001040a</c>
+		<c>kl-0001040e</c>
+		<c>kl-00010410</c>
+		<c>kl-00010415</c>
+		<c>kl-00010416</c>
+		<c>kl-00010418</c>
+		<c>kl-00010419</c>
+		<c>kl-0001041b</c>
+		<c>kl-0001041e</c>
+		<c>kl-0001041f</c>
+		<c>kl-00010426</c>
+		<c>kl-00010427</c>
+		<c>kl-0001042b</c>
+		<c>kl-0001042c</c>
+		<c>kl-0001042e</c>
+		<c>kl-0001042f</c>
+		<c>kl-00010437</c>
+		<c>kl-00010439</c>
+		<c>kl-0001043a</c>
+		<c>kl-0001043b</c>
+		<c>kl-00010444</c>
+		<c>kl-00010445</c>
+		<c>kl-00010451</c>
+		<c>kl-00010453</c>
+		<c>kl-0001045a</c>
+		<c>kl-0001045b</c>
+		<c>kl-0001045c</c>
+		<c>kl-0001045d</c>
+		<c>kl-00010465</c>
+		<c>kl-00010480</c>
+		<c>kl-0001080c</c>
+		<c>kl-0001083b</c>
+		<c>kl-00010850</c>
+		<c>kl-00010c00</c>
+		<c>kl-00011009</c>
+		<c>kl-0001105f</c>
+		<c>kl-00011809</c>
+		<c>kl-00020401</c>
+		<c>kl-00020402</c>
+		<c>kl-00020405</c>
+		<c>kl-00020408</c>
+		<c>kl-00020409</c>
+		<c>kl-0002040d</c>
+		<c>kl-00020418</c>
+		<c>kl-00020419</c>
+		<c>kl-0002041e</c>
+		<c>kl-00020422</c>
+		<c>kl-00020426</c>
+		<c>kl-00020427</c>
+		<c>kl-0002042b</c>
+		<c>kl-0002042e</c>
+		<c>kl-00020437</c>
+		<c>kl-00020445</c>
+		<c>kl-00020449</c>
+		<c>kl-0002045d 'Inuktitut - Nattilik'</c>
+		<c>kl-0002083b</c>
+		<c>kl-00020850 'Traditional Mongolian (MNS)'</c>
+		<c>kl-00020c00</c>
+		<c>kl-00030402</c>
+		<c>kl-00030408</c>
+		<c>kl-0003041e</c>
+		<c>kl-0003042b</c>
+		<c>kl-00030437</c>
+		<c>kl-00030449 'Tamil Anjal'</c>
+		<c>kl-00030c00</c>
+		<c>kl-00040402</c>
+		<c>kl-00040408</c>
+		<c>kl-00040437</c>
+		<c>kl-00040c00</c>
+		<c>kl-00050408</c>
+		<c>kl-00050429</c>
+		<c>kl-00060408</c>
+		<c>kl-00070c00</c>
+		<c>kl-00080c00</c>
+		<c>kl-00090c00</c>
+		<c>kl-000a0c00</c>
+		<c>kl-000b0c00</c>
+		<c>kl-000c0c00</c>
+		<c>kl-000d0c00</c>
+		<c>kl-000e0c00</c>
+		<c>kl-000f0c00</c>
+		<c>kl-00100c00</c>
+		<c>kl-00110c00</c>
+		<c>kl-00120c00</c>
+		<c>kl-00130c00</c>
+		<c>kl-00140c00</c>
+		<c>kl-00150c00</c>
+		<c>la57 '57-bit Linear Addressing (57 位线性地址标志)'</c>
+		<c>langafrikaans '南非语'</c>
+		<c>langalbanian '阿尔巴尼亚语'</c>
+		<c>langarmenian '亚美尼亚语'</c>
+		<c>langassamese '阿萨姆语'</c>
+		<c>langazerbaijani '阿塞拜疆语'</c>
+		<c>langbasque '巴斯克语'</c>
+		<c>langbelarusian '白俄罗斯语'</c>
+		<c>langbengali_bangladesh '孟加拉语 (孟加拉)'</c>
+		<c>langbengali_india '孟加拉语 (印度)'</c>
+		<c>langbosnian '波斯尼亚语'</c>
+		<c>langbulgarian '保加利亚语'</c>
+		<c>langcatalan '加泰罗尼亚语'</c>
+		<c>langcherokee '切罗基语'</c>
+		<c>langcroatian '克罗地亚语'</c>
+		<c>langczech '捷克语'</c>
+		<c>langdanish '丹麦语'</c>
+		<c>langdutch '荷兰语'</c>
+		<c>langenglishgb '英语 (GB)'</c>
+		<c>langestonian '爱沙尼亚语'</c>
+		<c>langfilipino '菲律宾语'</c>
+		<c>langfinnish '芬兰语'</c>
+		<c>langfrench '法语'</c>
+		<c>langfrenchcanadian '法语(加拿大)'</c>
+		<c>langgalician '加利西亚语'</c>
+		<c>langgeorgian '格鲁吉亚语'</c>
+		<c>langgerman '德语'</c>
+		<c>langgreek '希腊语'</c>
+		<c>langgujarati '古吉拉特语'</c>
+		<c>langhebrew '希伯来语'</c>
+		<c>langhindi '北印度语'</c>
+		<c>langhungarian '匈牙利语'</c>
+		<c>langicelandic '冰岛语'</c>
+		<c>langimesc '简体中文 (IME)'</c>
+		<c>langindonesian '印度尼西亚语'</c>
+		<c>langirish '爱尔兰语'</c>
+		<c>langitalian '意大利语'</c>
+		<c>langkannada '卡纳达语'</c>
+		<c>langkazakh '哈萨克语'</c>
+		<c>langkhmer '高棉语'</c>
+		<c>langkonkani '孔卡尼语'</c>
+		<c>langlao '老挝语'</c>
+		<c>langlatvian '拉脱维亚语'</c>
+		<c>langlithuanian '立陶宛语'</c>
+		<c>langluxembourgish '卢森堡语'</c>
+		<c>langmacedonian '马其顿语'</c>
+		<c>langmalay_brunei '马来语 (文莱)'</c>
+		<c>langmalay_malaysia '马来语 (马来西亚)'</c>
+		<c>langmalayalam '马拉雅拉姆语'</c>
+		<c>langmaltese '马耳他语'</c>
+		<c>langmaori '毛利语'</c>
+		<c>langmarathi '马拉地语'</c>
+		<c>langnepali '尼泊尔语'</c>
+		<c>langnorwegian '挪威语'</c>
+		<c>langodia '奥里亚语'</c>
+		<c>langpanel '语言面板'</c>
+		<c>langpersian '波斯语'</c>
+		<c>langpolish '波兰语'</c>
+		<c>langportuguesebr '葡萄牙语(巴西)'</c>
+		<c>langportuguesept '葡萄牙语'</c>
+		<c>langpunjabi '旁遮普语'</c>
+		<c>langquechua '克丘亚语'</c>
+		<c>langromanian '罗马尼亚语'</c>
+		<c>langrussian '俄语'</c>
+		<c>langscottish '苏格兰语'</c>
+		<c>langserbian '塞尔维亚语'</c>
+		<c>langslovak '斯洛伐克语'</c>
+		<c>langslovenian '斯洛文尼亚语'</c>
+		<c>langspanish '西班牙语'</c>
+		<c>langswedish '瑞典语'</c>
+		<c>langtamil</c>
+		<c>langtatar '鞑靼语'</c>
+		<c>langtelugu '泰卢固语'</c>
+		<c>langthai '泰语'</c>
+		<c>langturkish '土耳其语'</c>
+		<c>langukrainian '乌克兰语'</c>
+		<c>langurdu '乌尔都语'</c>
+		<c>languyghur '维吾尔语'</c>
+		<c>languzbek '乌兹别克语'</c>
+		<c>langvalencian '巴伦西亚语'</c>
+		<c>langvietnamese '越南语'</c>
+		<c>langwelsh '威尔士语'</c>
+		<c>laps 'Windows Local Administrator Password Solution(本地管理员密码解决方案LAPS)'</c>
+		<c>lcu '累积更新缓存 (LCU)'</c>
+		<c>legacylangsupport 'Legacy Language Support'</c>
+		<c>livecaptions '实时字幕'</c>
+		<c>lockdownmanager 'Embedded Lockdown Manager(嵌入式锁定管理器)'</c>
+		<c>lxss '适用于 Linux 的 Windows 子系统'</c>
+		<c>manifestbackup 'Manifest 备份 (WinSxS\Backup)'</c>
+		<c>manifests</c>
+		<c>mapcontrol '地图控制'</c>
+		<c>marketthemes 'Market Themes(商业主题)'</c>
+		<c>mcmsvc 'Mobile Connectivity Management'</c>
+		<c>mediacenter 'Media Center(媒体中心)'</c>
+		<c>mediaserveradmin 'Windows Media Services Remote Server Administration Tools(Windows 媒体服务远程服务器管理工具)'</c>
+		<c>mediaviewer 'Media Viewer(媒体查看器)'</c>
+		<c>memorydiagnostic '内存调试'</c>
+		<c>microsoft.549981c3f5f10</c>
+		<c>microsoft.asynctextservice</c>
+		<c>microsoft.bioenrollment</c>
+		<c>microsoft.creddialoghost</c>
+		<c>microsoft.ecapp</c>
+		<c>microsoft.getstarted '提示(Win10 1607之前叫“入门”)'</c>
+		<c>microsoft.lockapp</c>
+		<c>microsoft.microsoftedge.stable 'Microsoft Edge (Chromium)'</c>
+		<c>microsoft.microsoftedgedevtoolsclient</c>
+		<c>microsoft.sechealthui 'Windows Defender'</c>
+		<c>microsoft.services.store.engagement</c>
+		<c>microsoft.win32webviewhost</c>
+		<c>microsoft.windows.apprep.chxapp</c>
+		<c>microsoft.windows.assignedaccesslockapp</c>
+		<c>microsoft.windows.callingshellapp</c>
+		<c>microsoft.windows.cloudexperiencehost '(OOBE)'</c>
+		<c>microsoft.windows.contentdeliverymanager</c>
+		<c>microsoft.windows.narratorquickstart</c>
+		<c>microsoft.windows.oobenetworkcaptiveportal</c>
+		<c>microsoft.windows.oobenetworkconnectionflow</c>
+		<c>microsoft.windows.parentalcontrols '家长控制'</c>
+		<c>microsoft.windows.peopleexperiencehost</c>
+		<c>microsoft.windows.pinningconfirmationdialog</c>
+		<c>microsoft.windows.sechealthui</c>
+		<c>microsoft.windows.secureassessmentbrowser</c>
+		<c>microsoft.windows.xgpuejectdialog</c>
+		<c>microsoft.xboxgamecallableui</c>
+		<c>microsoftwindows.client.aix 'Windows Copilot (Windows 功能体验包)'</c>
+		<c>microsoftwindows.client.coreai 'Windows 功能体验包 - CoreAI'</c>
+		<c>midi 'Microsoft GS 波表合成器 (MIDI)'</c>
+		<c>migwiz '轻松传送'</c>
+		<c>mixedreality 'Windows Mixed Reality(混合现实)'</c>
+		<c>mmga 'MMGA MAPI'</c>
+		<c>mobilepc_networkprojection '网络投影仪'</c>
+		<c>mobilepc_sideshow 'SideShow(辅助显示)'</c>
+		<c>mpe 'Microsoft 隐私引擎'</c>
+		<c>mpeg2splitter 'MPEG-2 分离器'</c>
+		<c>mptf 'Microsoft Platform Thermal Framework (MPTF)'</c>
+		<c>msmq 'Microsoft 消息队列 (MSMQ)'</c>
+		<c>multipointconnector 'MultiPoint Connector'</c>
+		<c>naturallanguage '自然语言'</c>
+		<c>naturallanguage32 '自然语言 - 32-位'</c>
+		<c>networkaccessprotection '网络访问保护-NAP (Network Access Protection)'</c>
+		<c>nfsclient 'NFS 管理工具'</c>
+		<c>notificationintelligenceplatform '通知智能平台'</c>
+		<c>offlinefiles '脱机文件'</c>
+		<c>onedrive 'OneDrive(微软云盘)'</c>
+		<c>onesyncsvclangs '同步主机 - 附加语言'</c>
+		<c>oobefodsetup 'Out-of-box Experience (OOBE) - FOD Setup'</c>
+		<c>openssh 'OpenSSH'</c>
+		<c>oskthemes '触摸键盘 (Windows 个性化主题)'</c>
+		<c>outlookpwa 'Outlook PWA (InboxApp)'</c>
+		<c>payments '支付'</c>
+		<c>pdfreader 'Windows Reader (PDF)'</c>
+		<c>peertopeer 'Peer Networking(对等网络)'</c>
+		<c>penservice '笔服务'</c>
+		<c>phonesvc 'Phone Service(电话服务)'</c>
+		<c>picturepassword '图片密码'</c>
+		<c>pktmon '数据包监视器(PktMon)'</c>
+		<c>playready 'PlayReady'</c>
+		<c>pluton 'Microsoft Pluton 安全处理器'</c>
+		<c>pos 'Point of Service(服务点，POS机相关)'</c>
+		<c>projfs '投影文件系统 (ProjFS)'</c>
+		<c>pwdless 'Intelligent Passwordless task(智能无密码任务)'</c>
+		<c>rasauto '远程访问自动拨号管理器(RasAuto服务)'</c>
+		<c>rascmak 'RAS Connection Manager Administration Kit (CMAK)(RAS 连接管理器管理工具包)'</c>
+		<c>rdc '远程差分压缩 (RDC)'</c>
+		<c>remoteassistance '远程协助'</c>
+		<c>remoteregistry '远程注册表'</c>
+		<c>retaildemo '零售演示内容'</c>
+		<c>rightsmanagement '权限管理支持'</c>
+		<c>ruxim 'Reusable UX Interaction Manager (RUXIM)'</c>
+		<c>samplemedia '媒体示例'</c>
+		<c>screensavers '屏保'</c>
+		<c>securebootencodeuefi 'SecureBoot Encode UEFI 任务'</c>
+		<c>securitycenter '安全中心'</c>
+		<c>setupcache.net '.NET 4.x 安装缓存'</c>
+		<c>sharedpc 'Shared PC 模式'</c>
+		<c>sharemediacpl 'Share Media Control Panel(共享媒体控制面板)'</c>
+		<c>sharetargets '共享目标'</c>
+		<c>shellappruntime 'Shell App 运行时'</c>
+		<c>sidebar 'Windows 边栏'</c>
+		<c>simpletcp '简单 TCP/IP 服务'</c>
+		<c>skypeortc 'Skype ORTC'</c>
+		<c>sleepstudy '睡眠学习'</c>
+		<c>smartactionplatform '智能操作平台'</c>
+		<c>smartscreen 'SmartScreen'</c>
+		<c>smartworkflows '智能工作流'</c>
+		<c>soundrec '录音机'</c>
+		<c>speechcommon '语音识别'</c>
+		<c>speechtts '语音 TTS'</c>
+		<c>startexperiencesapp 'Start Experiences (InboxApp)'</c>
+		<c>staticfontcache '静态字体缓存'</c>
+		<c>stepsrecorder '步骤记录器'</c>
+		<c>stickynotes '便利贴 (Sticky Notes)'</c>
+		<c>storagemanagement '存储管理'</c>
+		<c>storagemanagement32 '存储管理 - 32-位'</c>
+		<c>sua '基于 UNIX 的应用程序子系统'</c>
+		<c>sudo 'Sudo'</c>
+		<c>sustainabilityservice '可持续发展服务（Sustainability Service）'</c>
+		<c>synccenter '同步中心'</c>
+		<c>systemrestore '系统恢复'</c>
+		<c>targetedcontent32 'Targeted Content service(定向内容服务) - 32-位'</c>
+		<c>telnetclient 'Telnet 客户端'</c>
+		<c>telnetserver 'Telnet 服务器'</c>
+		<c>tempcache '缓存与临时文件'</c>
+		<c>tftpclient 'TFTP 客户端'</c>
+		<c>timetraveldebugger 'Time Travel Debugger (时间旅行调试TTD)'</c>
+		<c>toastnotificationfilter 'Toast Notification Filter(Toast通知筛选器)'</c>
+		<c>troubleshootingsvc 'Recommended Troubleshooting service(推荐疑难解答)'</c>
+		<c>uev '用户体验虚拟化(UE-V)'</c>
+		<c>ui0detect 'Interactive Services Detection(交互服务侦测)'</c>
+		<c>unexpectedcodepath '未预期的代码路径'</c>
+		<c>universalprintsvc '通用打印管理服务'</c>
+		<c>usbfilter 'USB Filter(USB 筛选器)'</c>
+		<c>userchoiceprotection '用户选择保护'</c>
+		<c>userguidepdf 'Lenovo user guide (UserGuidePDF)'</c>
+		<c>vcmcodecs '视频压缩管理器(VCM)编码器'</c>
+		<c>virtualpc '虚拟 PC 授权与 USB 驱动'</c>
+		<c>virtualpcapp '虚拟 PC'</c>
+		<c>voiceaccess '语音访问'</c>
+		<c>voiceclarityapo 'Voice Clarity(语音清晰) (APO)'</c>
+		<c>wallet '钱包服务'</c>
+		<c>webcamexperience 'Webcam Experience(网络摄像头体验)'</c>
+		<c>webthreatdefense 'Web Threat Defense Service'</c>
+		<c>webview2core 'WebView2 Runtime (核心)'</c>
+		<c>whesvc 'Windows Health and Optimized Experiences'</c>
+		<c>widgetsplatformruntimeapp 'Widgets Platform Runtime (InboxApp)'</c>
+		<c>winai 'Windows AI 机器学习'</c>
+		<c>windows.cbspreview</c>
+		<c>windows.old '上一版本的Windows系统残留 (Windows.old)'</c>
+		<c>wini3c '增强型内部集成电路（I3C）'</c>
+		<c>winocr 'Windows TIFF IFilter(光学字符识别 OCR )'</c>
+		<c>winresume '从休眠中恢复'</c>
+		<c>winrewim 'Windows Recovery(WinRE) - winre.wim'</c>
+		<c>winrm 'Windows 远程管理 (WS-Management)'</c>
+		<c>winsat 'Windows 系统评估工具 (WinSAT)'</c>
+		<c>winsxs 'Windows 组件池 (WinSxS)'</c>
+		<c>wordpad '写字板'</c>
+		<c>wordpad32 '写字板 - 32-位'</c>
+		<c>ztdns '零信任 DNS'</c>
+	</RemoveComponents>
+	<Compatibility protectHidden="true">
+		<ComponentFeatures>
+			<Feature enabled="yes">OOBE</Feature>
+			<Feature enabled="yes">Battle.net</Feature>
+			<Feature enabled="no">CapFrameX</Feature>
+			<Feature enabled="yes">Discord</Feature>
+			<Feature enabled="yes">EAC</Feature>
+			<Feature enabled="no">iCloud</Feature>
+			<Feature enabled="no">Kaspersky</Feature>
+			<Feature enabled="yes">OfficeSupport</Feature>
+			<Feature enabled="yes">AppxSupport</Feature>
+			<Feature enabled="yes">NvidiaSetup</Feature>
+			<Feature enabled="no">SamsungSwitch</Feature>
+			<Feature enabled="yes">ShellSearchSupport</Feature>
+			<Feature enabled="yes">Spotify</Feature>
+			<Feature enabled="yes">TeamViewer</Feature>
+			<Feature enabled="no">USBModem</Feature>
+			<Feature enabled="yes">USB</Feature>
+			<Feature enabled="yes">VisualStudio</Feature>
+			<Feature enabled="no">VPN</Feature>
+			<Feature enabled="yes">WindowsStore</Feature>
+			<Feature enabled="yes">WinSetup</Feature>
+			<Feature enabled="yes">Activation</Feature>
+			<Feature enabled="no">YubiKey</Feature>
+			<Feature enabled="yes">WLAN</Feature>
+			<Feature enabled="no">VSS</Feature>
+			<Feature enabled="yes">NightLight</Feature>
+			<Feature enabled="no">SnippingTool</Feature>
+			<Feature enabled="yes">Printing</Feature>
+			<Feature enabled="yes">Scanning</Feature>
+			<Feature enabled="yes">Recommended-All</Feature>
+			<Feature enabled="yes">FileSharing</Feature>
+			<Feature enabled="yes">USBCamera</Feature>
+			<Feature enabled="yes">DefaultFonts</Feature>
+			<Feature enabled="yes">SFC</Feature>
+			<Feature enabled="no">NetworkDiscovery</Feature>
+			<Feature enabled="no">Bluetooth</Feature>
+			<Feature enabled="yes">VideoPlayback</Feature>
+			<Feature enabled="no">Recommended-Tablet</Feature>
+			<Feature enabled="no">RDPServer</Feature>
+		</ComponentFeatures>
+		<MachineDrivers>
+			<Machine enabled="no">Hyper-V VM</Machine>
+			<Machine enabled="no">Parallels VM</Machine>
+			<Machine enabled="no">Virtual Box VM</Machine>
+			<Machine enabled="no">VMware VM</Machine>
+			<Machine enabled="yes">HostMachine</Machine>
+		</MachineDrivers>
+	</Compatibility>
+	<Features>
+		<Feature name="NetFX3~~~~">false</Feature>
+		<Feature name="NetFx4-AdvSrvs">true</Feature>
+		<Feature name="Accessibility.Braille~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~af-za~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~af-za~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~sq-al~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~sq-al~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~ar-sa~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Arab~~~und-Arab~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ar-sa~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~hy-am~0.0.1.0">false</Feature>
+		<Feature name="NetFx4Extended-ASPNET45">false</Feature>
+		<Feature name="Language.Basic~~~as-in~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~az-latn-az~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~bn-bd~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~bn-in~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Beng~~~und-Beng~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ba-ru~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~eu-es~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~eu-es~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~be-by~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~bs-latn-ba~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~bs-latn-ba~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~bs-latn-ba~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~bg-bg~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~bg-bg~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Cans~~~und-Cans~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~ca-es~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ca-es~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Cher~~~und-Cher~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~zh-hk~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~zh-hk~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~zh-hk~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~zh-cn~0.0.1.0">true</Feature>
+		<Feature name="Language.OCR~~~zh-cn~0.0.1.0">true</Feature>
+		<Feature name="Language.Basic~~~zh-cn~0.0.1.0">true</Feature>
+		<Feature name="Language.Fonts.Hans~~~und-Hans~0.0.1.0">true</Feature>
+		<Feature name="Language.Handwriting~~~zh-tw~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~zh-tw~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~zh-tw~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Hant~~~und-Hant~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~hr-hr~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~hr-hr~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~hr-hr~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~cs-cz~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~cs-cz~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~cs-cz~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~da-dk~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~da-dk~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~da-dk~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Deva~~~und-Deva~0.0.1.0">false</Feature>
+		<Feature name="DirectPlay">true</Feature>
+		<Feature name="DirectX.Configuration.Database~~~~0.0.1.0">true</Feature>
+		<Feature name="Language.Handwriting~~~nl-nl~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~nl-nl~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~nl-nl~0.0.1.0">false</Feature>
+		<Feature name="Windows.Desktop.EMS-SAC.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~en-au~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~en-ca~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~en-gb~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~en-gb~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~en-gb~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~en-in~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~en-us~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~en-us~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~en-us~0.0.1.0">false</Feature>
+		<Feature name="Print.EnterpriseCloudPrint~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~et-ee~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Ethi~~~und-Ethi~0.0.1.0">false</Feature>
+		<Feature name="OneCoreUAP.OneSync~~~~0.0.1.0">true</Feature>
+		<Feature name="Language.Basic~~~fil-ph~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~fi-fi~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~fi-fi~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~fi-fi~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~fr-be~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~fr-ca~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~fr-ca~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~fr-fr~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~fr-fr~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~fr-fr~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~fr-ch~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~gl-es~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~gl-es~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ka-ge~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~de-ch~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~de-de~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~de-de~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~de-de~0.0.1.0">false</Feature>
+		<Feature name="Tools.Graphics.DirectX~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~el-gr~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~el-gr~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~el-gr~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~kl-gl~0.0.1.0">false</Feature>
+		<Feature name="HostGuardian">false</Feature>
+		<Feature name="Language.Basic~~~gu-in~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Gujr~~~und-Gujr~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Guru~~~und-Guru~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ha-latn-ng~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~haw-us~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Hebr~~~und-Hebr~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~he-il~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~hi-in~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~hi-in~0.0.1.0">false</Feature>
+		<Feature name="WCF-HTTP-Activation">false</Feature>
+		<Feature name="WCF-HTTP-Activation45">false</Feature>
+		<Feature name="Language.OCR~~~hu-hu~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~hu-hu~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~is-is~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ig-ng~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~id-id~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~id-id~0.0.1.0">false</Feature>
+		<Feature name="Browser.InternetExplorer~~~~0.0.11.0">true</Feature>
+		<Feature name="Internet-Explorer-Optional-amd64">true</Feature>
+		<Feature name="Printing-Foundation-InternetPrinting-Client">true</Feature>
+		<Feature name="Network.Irda~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~ga-ie~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ga-ie~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~xh-za~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~zu-za~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~zu-za~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~it-it~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~it-it~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~it-it~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~ja-jp~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~ja-jp~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Jpan~~~und-Jpan~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ja-jp~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~kn-in~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Knda~~~und-Knda~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~kk-kz~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Khmr~~~und-Khmr~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~rw-rw~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~rw-rw~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~sw-ke~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~sw-ke~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~kok-deva-in~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~ko-kr~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~ko-kr~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Kore~~~und-Kore~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ko-kr~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ky-kg~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Laoo~~~und-Laoo~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~lv-lv~0.0.1.0">false</Feature>
+		<Feature name="LegacyComponents">true</Feature>
+		<Feature name="Language.Basic~~~lt-lt~0.0.1.0">false</Feature>
+		<Feature name="Printing-Foundation-LPDPrintService">false</Feature>
+		<Feature name="Printing-Foundation-LPRPortMonitor">false</Feature>
+		<Feature name="Language.Basic~~~lb-lu~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~lb-lu~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~mk-mk~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~ms-bn~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ms-bn~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~ms-my~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ms-my~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Mlym~~~und-Mlym~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ml-in~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~mt-mt~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~mi-nz~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~mi-nz~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~mr-in~0.0.1.0">false</Feature>
+		<Feature name="MathRecognizer~~~~0.0.1.0">true</Feature>
+		<Feature name="Media.MediaFeaturePack~~~~0.0.1.0">false</Feature>
+		<Feature name="MediaPlayback">true</Feature>
+		<Feature name="WCF-MSMQ-Activation45">false</Feature>
+		<Feature name="Microsoft.Onecore.StorageManagement~~~~0.0.1.0">false</Feature>
+		<Feature name="Microsoft.Windows.MSPaint~~~~0.0.1.0">true</Feature>
+		<Feature name="Printing-PrintToPDFServices-Features">true</Feature>
+		<Feature name="Microsoft.WebDriver~~~~0.0.1.0">false</Feature>
+		<Feature name="ServerCore.AppCompatibility~~~~0.0.1.0">false</Feature>
+		<Feature name="Printing-XPSServices-Features">true</Feature>
+		<Feature name="Language.Basic~~~mn-mn~0.0.1.0">false</Feature>
+		<Feature name="Print.MopriaCloudService~~~~0.0.1.0">false</Feature>
+		<Feature name="Msix.PackagingTool.Driver~~~~0.0.1.0">false</Feature>
+		<Feature name="WCF-Pipe-Activation45">false</Feature>
+		<Feature name="Language.Basic~~~ne-np~0.0.1.0">false</Feature>
+		<Feature name="WCF-NonHTTP-Activation">false</Feature>
+		<Feature name="Language.Handwriting~~~nb-no~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~nb-no~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~nb-no~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~nn-no~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~nn-no~0.0.1.0">false</Feature>
+		<Feature name="Microsoft.Windows.Notepad~~~~0.0.1.0">true</Feature>
+		<Feature name="Language.Basic~~~or-in~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Orya~~~und-Orya~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.PanEuropeanSupplementalFonts~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ps-af~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~fa-ir~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~pl-pl~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~pl-pl~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~pl-pl~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~pt-br~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~pt-br~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~pt-br~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~pt-pt~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~pt-pt~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~pt-pt~0.0.1.0">false</Feature>
+		<Feature name="Printing-Foundation-Features">true</Feature>
+		<Feature name="Print.Management.Console~~~~0.0.1.0">true</Feature>
+		<Feature name="Language.Basic~~~pa-in~0.0.1.0">false</Feature>
+		<Feature name="RasCMAK.Client~~~~0.0.1.0">false</Feature>
+		<Feature name="RIP.Listener~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~ro-ro~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~ro-ro~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ro-ro~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~rm-ch~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~rm-ch~0.0.1.0">false</Feature>
+		<Feature name="Rsat.CertificateServices.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.BitLocker.Recovery.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.LLDP.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.DHCP.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.Dns.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.FailoverCluster.Management.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.FileServices.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.GroupPolicy.Management.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.IPAM.Client.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.NetworkController.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.NetworkLoadBalancing.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.RemoteAccess.Management.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.RemoteDesktop.Services.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.ServerManager.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.Shielded.VM.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.StorageMigrationService.Management.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.StorageReplica.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.SystemInsights.Management.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.VolumeActivation.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Rsat.WSUS.Tools~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~ru-ru~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~ru-ru~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ru-ru~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~sah-ru~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~gd-gb~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~gd-gb~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~sr-cyrl-rs~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~sr-cyrl-rs~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~sr-cyrl-rs~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~sr-latn-rs~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~sr-latn-rs~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~sr-latn-rs~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~nso-za~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~nso-za~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~tn-za~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~tn-za~0.0.1.0">false</Feature>
+		<Feature name="SNMP.Client~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~si-lk~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Sinh~~~und-Sinh~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~sk-sk~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~sk-sk~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~sk-sk~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~sl-si~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~sl-si~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~sl-si~0.0.1.0">false</Feature>
+		<Feature name="SMB1Protocol-Deprecation">true</Feature>
+		<Feature name="SMB1Protocol-Client">true</Feature>
+		<Feature name="SMB1Protocol">true</Feature>
+		<Feature name="SMB1Protocol-Server">true</Feature>
+		<Feature name="SmbDirect">true</Feature>
+		<Feature name="Kernel.Soft.Reboot~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~es-mx~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~es-mx~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~es-mx~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~es-es~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~es-es~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~es-es~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~es-us~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~sv-se~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~sv-se~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~sv-se~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Syrc~~~und-Syrc~0.0.1.0">false</Feature>
+		<Feature name="Language.LocaleData~~~zh-tw~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~tg-cyrl-tj~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Taml~~~und-Taml~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ta-in~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~tt-ru~0.0.1.0">false</Feature>
+		<Feature name="WCF-TCP-Activation45">false</Feature>
+		<Feature name="WCF-TCP-PortSharing45">true</Feature>
+		<Feature name="Language.Fonts.Telu~~~und-Telu~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~te-in~0.0.1.0">false</Feature>
+		<Feature name="Microsoft.Composition.Test~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Fonts.Thai~~~und-Thai~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~th-th~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~tr-tr~0.0.1.0">false</Feature>
+		<Feature name="Language.OCR~~~tr-tr~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~tr-tr~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~tk-tm~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~uk-ua~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ur-pk~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~ug-cn~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~uz-latn-uz~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~vi-vn~0.0.1.0">false</Feature>
+		<Feature name="WCF-Services45">true</Feature>
+		<Feature name="Language.Handwriting~~~cy-gb~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~cy-gb~0.0.1.0">false</Feature>
+		<Feature name="Tools.DeveloperMode.Core~~~~0.0.1.0">false</Feature>
+		<Feature name="Print.Fax.Scan~~~~0.0.1.0">true</Feature>
+		<Feature name="Windows.Client.ShellComponents~~~~0.0.1.0">true</Feature>
+		<Feature name="Windows-Identity-Foundation">false</Feature>
+		<Feature name="Media.WindowsMediaPlayer~~~~0.0.12.0">true</Feature>
+		<Feature name="WindowsMediaPlayer">true</Feature>
+		<Feature name="MicrosoftWindowsPowerShellV2">true</Feature>
+		<Feature name="MicrosoftWindowsPowerShellV2Root">true</Feature>
+		<Feature name="Microsoft.Windows.PowerShell.ISE~~~~0.0.1.0">true</Feature>
+		<Feature name="SearchEngine-Client-Package">true</Feature>
+		<Feature name="Microsoft.Windows.StorageManagement~~~~0.0.1.0">false</Feature>
+		<Feature name="App.WirelessDisplay.Connect~~~~0.0.1.0">false</Feature>
+		<Feature name="WMI-SNMP-Provider.Client~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~wo-sn~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~wo-sn~0.0.1.0">false</Feature>
+		<Feature name="Language.Handwriting~~~xh-za~0.0.1.0">false</Feature>
+		<Feature name="XPS.Viewer~~~~0.0.1.0">false</Feature>
+		<Feature name="Language.Basic~~~yo-ng~0.0.1.0">false</Feature>
+	</Features>
+	<Packages>
+		<Options>
+			<CleanHotfixedLeftovers>0</CleanHotfixedLeftovers>
+			<OptimizeAppX>false</OptimizeAppX>
+			<UpdateBootManager>false</UpdateBootManager>
+		</Options>
+	</Packages>
+	<Commands>
+		<PostUpdates>
+			<!--<Command>cmd /c echo Example from [MOUNTDIR]\Windows &amp; pause</Command>-->
+			<!--<Command>dism /image:[MOUNTDIR] /get-intl</Command>-->
+		</PostUpdates>
+	</Commands>
+	<Drivers>
+		<Options>
+			<ReuseDriverCache>false</ReuseDriverCache>
+			<ShowHidden>true</ShowHidden>
+		</Options>
+	</Drivers>
+	<Unattended mode="0">
+		<AnswerFileLocationPanther>false</AnswerFileLocationPanther>
+		<AnswerFileLocationBoot>false</AnswerFileLocationBoot>
+		<SaveBothArch>false</SaveBothArch>
+		<EditionPrompt>false</EditionPrompt>
+		<settings pass="windowsPE">
+			<component name="Microsoft-Windows-Setup">
+				<DynamicUpdate>
+					<WillShowUI>OnError</WillShowUI>
+				</DynamicUpdate>
+				<ImageInstall>
+					<OSImage>
+						<WillShowUI>OnError</WillShowUI>
+						<InstallFrom>
+							<MetaData>
+								<Key>/IMAGE/INDEX</Key>
+								<Value>1</Value>
+							</MetaData>
+						</InstallFrom>
+					</OSImage>
+				</ImageInstall>
+				<UserData>
+					<ProductKey>
+						<Key></Key>
+					</ProductKey>
+				</UserData>
+			</component>
+		</settings>
+	</Unattended>
+	<Tweaks>
+		<Settings>
+			<TweakGroup name="AutoLogger">
+				<Tweak name="AutoLogger-Diagtrack-Listener\Start">0</Tweak>
+				<Tweak name="Circular Kernel Context Logger\Start">1</Tweak>
+				<Tweak name="CloudExperienceHostOobe\Start">1</Tweak>
+				<Tweak name="DataMarket\Start">0</Tweak>
+				<Tweak name="DiagLog\Start">1</Tweak>
+				<Tweak name="LwtNetLog\Start">1</Tweak>
+				<Tweak name="Mellanox-Kernel\Start">0</Tweak>
+				<Tweak name="Microsoft-Windows-Rdp-Graphics-RdpIdd-Trace\Start">1</Tweak>
+				<Tweak name="Microsoft-Windows-Setup\Start">1</Tweak>
+				<Tweak name="NBSMBLOGGER\Start">0</Tweak>
+				<Tweak name="NetCore\Start">1</Tweak>
+				<Tweak name="NtfsLog\Start">1</Tweak>
+				<Tweak name="PEAuthLog\Start">0</Tweak>
+				<Tweak name="RadioMgr\Start">1</Tweak>
+				<Tweak name="RdrLog\Start">0</Tweak>
+				<Tweak name="ReadyBoot\Start">1</Tweak>
+				<Tweak name="SetupPlatform\Start">0</Tweak>
+				<Tweak name="SetupPlatformTel\Start">0</Tweak>
+				<Tweak name="SpoolerLogger\Start">1</Tweak>
+				<Tweak name="TCPIPLOGGER\Start">0</Tweak>
+				<Tweak name="TileStore\Start">0</Tweak>
+				<Tweak name="UBPM\Start">1</Tweak>
+				<Tweak name="WdiContextLog\Start">1</Tweak>
+				<Tweak name="WFP-IPsec Trace\Start">0</Tweak>
+				<Tweak name="WiFiDriverIHVSessionRepro\Start">0</Tweak>
+				<Tweak name="WiFiSession\Start">1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="TCPIPSettings">
+				<Tweak name="parameters\EnableICMPRedirect">-1</Tweak>
+				<Tweak name="parameters\PerformRouterDiscovery">-1</Tweak>
+				<Tweak name="parameters\DisableReverseAddressRegistrations">-1</Tweak>
+				<Tweak name="parameters\DisableDynamicUpdate">-1</Tweak>
+				<Tweak name="parameters\DeadGWDetectDefault">-1</Tweak>
+				<Tweak name="parameters\IGMPLevel">-1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="WindowsUpdate">
+				<Tweak name="AU\AUOptions">1</Tweak>
+				<Tweak name="WindowsStore\AutoDownload">-1</Tweak>
+				<Tweak name="AU\NoAutoUpdate">1</Tweak>
+				<Tweak name="WindowsUpdate\ExcludeWUDriversInQualityUpdate">1</Tweak>
+				<Tweak name="DeliveryOptimization\DODownloadMode">-1</Tweak>
+				<Tweak name="WindowsUpdate\DisableWUfBSafeguards">-1</Tweak>
+				<Tweak name="MRT\DontOfferThroughWUAU">1</Tweak>
+				<Tweak name="ContentDeliveryManager\SubscribedContent-310093Enabled">-1</Tweak>
+				<Tweak name="Settings\RestartNotificationsAllowed2">0</Tweak>
+				<Tweak name="7971f918-a847-4430-9279-4a52d1efe18d\RegisterWithAU">-1</Tweak>
+				<Tweak name="Settings\IsExpedited">0</Tweak>
+				<Tweak name="Settings\HideMCTLink">1</Tweak>
+				<Tweak name="WindowsUpdate\TargetReleaseVersionInfo">21H2</Tweak>
+				<Tweak name="DriverSearching\SearchOrderConfig">0</Tweak>
+				<Tweak name="Preferences\ModelDownloadAllowed">0</Tweak>
+				<Tweak name="Settings\AllowAutoWindowsUpdateDownloadOverMeteredNetwork">0</Tweak>
+				<Tweak name="Device Metadata\PreventDeviceMetadataFromNetwork">1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="EventLogs">
+				<Tweak name="Intel-iaLPSS-GPIO\Analytic\Enabled">0</Tweak>
+				<Tweak name="Intel-iaLPSS-I2C\Analytic\Enabled">0</Tweak>
+				<Tweak name="Intel-iaLPSS2-GPIO2\Debug\Enabled">0</Tweak>
+				<Tweak name="Intel-iaLPSS2-GPIO2\Performance\Enabled">0</Tweak>
+				<Tweak name="Intel-iaLPSS2-I2C\Debug\Enabled">0</Tweak>
+				<Tweak name="Intel-iaLPSS2-I2C\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LSA\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LSA\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LSA\Performance\Enabled">0</Tweak>
+				<Tweak name="AMSI\Debug\Enabled">0</Tweak>
+				<Tweak name="Uac\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Client-Licensing-Platform\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Client-Licensing-Platform\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Client-Licensing-Platform\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-JSDumpHeap\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-IE\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-WebPlatStorage-Server\Enabled">0</Tweak>
+				<Tweak name="Microsoft-IEFRAME\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-OneCore-Setup\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-PerfTrack-IEFRAME\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-PerfTrack-MSHTML\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Windows Networking Vpn Plugin Platform\Operational\Enabled">0</Tweak>
+				<Tweak name="Windows Networking Vpn Plugin Platform\OperationalVerbose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AAD\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AAD\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-ActionQueue\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ADSI\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-All-User-Install-Agent\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppHost\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppHost\ApplicationTracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppHost\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppHost\Internal\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppID\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-ApplicabilityEngine\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ApplicabilityEngine\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Application Server-Applications\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Application Server-Applications\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Application Server-Applications\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Application Server-Applications\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Application-Experience\Compatibility-Infrastructure-Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Application-Experience\Program-Compatibility-Assistant\Enabled">1</Tweak>
+				<Tweak name="Program-Compatibility-Assistant\Analytic\Enabled">0</Tweak>
+				<Tweak name="Program-Compatibility-Assistant\Trace\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Application-Experience\Program-Compatibility-Troubleshooter\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Application-Experience\Program-Inventory\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Application-Experience\Program-Telemetry\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Application-Experience\Steps-Recorder\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-ApphelpCache\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-ApphelpCache\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-ApphelpCache\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppLocker\EXE and DLL\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppLocker\MSI and Script\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppLocker\Packaged app-Deployment\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppLocker\Packaged app-Execution\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppModel-Runtime\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppModel-Runtime\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppModel-Runtime\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppModel-Runtime\Diagnostics\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppModel-State\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppModel-State\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppReadiness\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppReadiness\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppReadiness\Operational\Enabled">1</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-AppSruProv\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppXDeploymentServer\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppXDeploymentServer\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppXDeploymentServer\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppXDeploymentServer\Restricted\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppXDeployment\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppXDeployment\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppxPackaging\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AppxPackaging\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AppxPackaging\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ASN1\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AssignedAccessBroker\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-AssignedAccessBroker\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AsynchronousCausality\Causality\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-ATAPort\Admin\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-ATAPort\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-ATAPort\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-ATAPort\Diagnose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ATAPort\General\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-ATAPort\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ATAPort\SATA-LPM\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Audio\CaptureMonitor\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Audio\GlitchDetection\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Audio\Informational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Audio\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Audio\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Audio\PlaybackManager\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Audit\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Authentication\AuthenticationPolicyFailures-DomainController\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Authentication\ProtectedUser-Client\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Authentication\ProtectedUserFailures-DomainController\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Authentication\ProtectedUserSuccesses-DomainController\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-AxInstallService\Log\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-BackgroundTransfer-ContentPrefetcher\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Base-Filtering-Engine-Connections\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Base-Filtering-Engine-Resource-Flows\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Battery\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-BitLocker\BitLocker Management\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-BitLocker\BitLocker Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-BitLocker\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-BitLocker-DrivePreparationTool\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-BitLocker-DrivePreparationTool\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-BitLocker-Driver-Performance\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Bits-Client\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Bits-Client\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Bluetooth-BthLEPrepairing\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Bluetooth-Bthmini\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Bluetooth-MTPEnum\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Bluetooth-Policy\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-BackgroundTaskInfrastructure\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-BackgroundTaskInfrastructure\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-BTH-BTHPORT\HCI\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-BTH-BTHPORT\L2CAP\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-BTH-BTHUSB\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-BTH-BTHUSB\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Regsvr32\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-CAPI2\Catalog Database Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CAPI2\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CDROM\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CertificateServicesClient-CredentialRoaming\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CertificateServicesClient-Lifecycle-System\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-CertificateServicesClient-Lifecycle-User\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-CertPoleEng\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Cleanmgr\Diagnostic\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-ClearTypeTextTuner\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CloudStore\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CloudStore\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-CmiSetup\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CodeIntegrity\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-CodeIntegrity\Verbose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COM\ApartmentInitialize\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COM\ApartmentUninitialize\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COM\Call\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COM\CreateInstance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime\CreateInstance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COM\ExtensionCatalog\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COM\FreeUnusedLibrary\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COM\RundownInstrumentation\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COM\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ComDlg32\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ComDlg32\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COMRuntime\Activations\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COMRuntime\MessageProcessing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-COMRuntime\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Containers-BindFlt\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Containers-BindFlt\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Containers-Wcifs\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Containers-Wcifs\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Containers-Wcnfs\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Containers-Wcnfs\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-CoreSystem-SmsRouter-Events\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CoreSystem-SmsRouter-Events\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-CoreWindow\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CoreWindow\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CorruptedFileRecovery-Client\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-CorruptedFileRecovery-Server\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Crashdump\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CredUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Crypto-BCRYPT\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Crypto-CNG\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Crypto-DPAPI\BackUpKeySvc\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Crypto-DPAPI\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Crypto-DPAPI\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Crypto-DSSEnh\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Crypto-NCrypt\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Crypto-RNG\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Crypto-RSAEnh\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-D3D10Level9\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-D3D10Level9\PerfTiming\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Direct3D9\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DAL-Provider\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DAL-Provider\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DataIntegrityScan\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DataIntegrityScan\CrashRecovery\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DateTimeControlPanel\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DateTimeControlPanel\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DateTimeControlPanel\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DCLocator\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DDisplay\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DDisplay\Logging\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Defrag-Core\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Deplorch\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DesktopActivityModerator\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DesktopWindowManager-Diag\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceAssociationService\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceConfidence\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceGuard\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceGuard\Verbose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Devices-Background\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceSetupManager\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceSetupManager\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceSetupManager\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceSetupManager\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceSync\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceSync\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceUpdateAgent\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceUx\Informational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DeviceUx\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dhcp-Client\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Dhcp-Client\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dhcpv6-Client\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Dhcpv6-Client\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DiagCpl\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-AdvancedTaskManager\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-DPS\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-DPS\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-DPS\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-MSDE\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-PCW\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-PCW\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-PCW\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-Perfhost\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-PLA\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-PLA\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-Scheduled\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-Scripted\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-Scripted\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-Scripted\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-Scripted\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-ScriptedDiagnosticsProvider\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-WDC\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnosis-WDI\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnostics-Networking\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnostics-Networking\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnostics-Performance\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Diagnostic\Loopback\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnostics-Performance\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnostics-PerfTrack-Counters\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Diagnostics-PerfTrack\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Direct3D10\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Direct3D10_1\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Direct3D11\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Direct3D11\Logging\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Direct3D11\PerfTiming\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Direct3D12\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Direct3D12\Logging\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Direct3D12\PerfTiming\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Direct3DShaderCache\Default\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DAMM\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DirectComposition\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DirectManipulation\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\DirectShowFilterGraph\Enabled">0</Tweak>
+				<Tweak name="Channels\DirectShowPluginControl\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DirectShow-KernelSupport\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DirectSound\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Disk\Admin\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Disk\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Disk\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Disk\Diagnose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Disk\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Disk\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DiskDiagnostic\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DiskDiagnosticDataCollector\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DiskDiagnosticResolver\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Dism-Api\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dism-Api\ExternalAnalytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dism-Api\InternalAnalytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dism-Cli\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DisplayColorCalibration\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DisplayColorCalibration\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DisplaySwitch\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DLNA-Namespace\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DNS-Client\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Documents\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dot3MM\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DriverFrameworks-UserMode\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DSC\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DSC\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DSC\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DSC\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DucUpdateAgent\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DUSER\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\Navigator\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dwm-API\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dwm-Core\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dwm-Dwm\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dwm-Redir\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Dwm-Udwm\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DXGI\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DXGI\Logging\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DxgKrnl\Contention\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DxgKrnl\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-DxgKrnl-Admin\Enabled">1</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-DxgKrnl-Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-DxgKrnl\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DxgKrnl\Power\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DXP\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-DxpTaskSyncProvider\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-EapHost\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-EapHost\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-EapHost\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-EapMethods-RasChap\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-EapMethods-RasTls\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-EapMethods-Sim\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-EapMethods-Ttls\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-EaseOfAccess\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-EDP-Application-Learning\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-EDP-Audit-Regular\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-EDP-Audit-TCB\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-EFS\Debug\Enabled">0</Tweak>
+				<Tweak name="Els_Hyphenation\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Energy-Estimation-Engine\EventLog\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Energy-Estimation-Engine\Trace\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PowerEfficiencyDiagnostics\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-EnhancedStorage-EhStorTcgDrv\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Policy\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Policy\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-ESE\IODiagnose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ESE\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-EventCollector\Debug\Enabled">0</Tweak>
+				<Tweak name="Channels\ForwardedEvents\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-EventCollector\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-EventLog-WMIProvider\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-EventLog\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-EventLog\Debug\Enabled">0</Tweak>
+				<Tweak name="Channels\Setup\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-FailoverClustering-Client\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Fault-Tolerant-Heap\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-FeatureConfiguration\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FeatureConfiguration\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-Catalog\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-Catalog\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-ConfigManager\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-ConfigManager\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-Core\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-Core\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-Core\WHC\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-Engine\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-Engine\BackupLog\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-Engine\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-EventListener\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-EventListener\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-Service\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-Service\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-UI-Events\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileHistory-UI-Events\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FileInfoMinifilter\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Firewall-CPL\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\FirstUXPerf-Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FMS\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FMS\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-FMS\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Folder Redirection\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Forwarding\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Forwarding\Operational\Enabled">1</Tweak>
+				<Tweak name="Channels\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-GenericRoaming\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-GPIO-ClassExtension\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-GroupPolicy\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-HAL\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-HealthCenter\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-HealthCenter\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-HealthCenterCPL\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-HelloForBusiness\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Help\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-HomeGroup Control Panel Performance\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-HomeGroup Control Panel\Operational\Enabled">1</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-HomeGroup-ListenerService\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-HomeGroup Listener Service\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-HomeGroup Provider Service Performance\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-HomeGroup Provider Service\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-HotspotAuth\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-HotspotAuth\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-HttpService\Log\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-HttpService\Trace\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Hyper-V-Guest-Drivers\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Hyper-V-Guest-Drivers\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Hyper-V-Guest-Drivers\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Hyper-V-Guest-Drivers\Diagnose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Hyper-V-Guest-Drivers\Operational\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-Hyper-V-Hypervisor-Admin\Enabled">1</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-Hyper-V-Hypervisor-Analytic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-Hyper-V-Hypervisor-Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Hyper-V-NETVSC\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-Hyper-V-VID-Admin\Enabled">1</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-Hyper-V-VID-Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IdCtrls\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IdCtrls\Operational\Enabled">1</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-IE-SmartScreen\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-Broker\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-CandidateUI\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-CustomerFeedbackManager\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-CustomerFeedbackManagerUI\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-JPAPI\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-JPLMP\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-JPPRED\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-JPSetting\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-JPTIP\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-KRAPI\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-KRTIP\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-OEDCompiler\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-TCCORE\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-TCTIP\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IME-TIP\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CoreApplication\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TWinAPI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-CoreApplication\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-CoreApplication\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TWinUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TWinUI\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-IndirectDisplays-ClassExtension-Events\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-Input-HIDCLASS-Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-InputSwitch\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-International-RegionalOptionsControlPanel\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Iphlpsvc\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Iphlpsvc\Trace\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Iphlpsvc\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-IPNAT\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IPSEC-SRV\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IPxlatCfg\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IPxlatCfg\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-KdsSvc\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Acpi\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-AppCompat\General\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-AppCompat\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Boot\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Boot\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-BootDiagnostics\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Disk\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-EventTracing\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-EventTracing\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-File\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Interrupt-Steering\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-IO\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-IoTrace\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-LiveDump\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-LiveDump\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Memory\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Network\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Pep\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-PnP\Boot Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-PnP\Configuration\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-PnP\Configuration Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-PnP\Device Enumeration Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-PnP\Driver Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-PnP\Driver Watchdog\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Power\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Power\Thermal-Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Power\Thermal-Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Prefetch\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Process\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Processor-Power\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Registry\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Registry\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-ShimEngine\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-ShimEngine\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-ShimEngine\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-StoreMgr\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-StoreMgr\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-WDI\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-WDI\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-WDI\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-WHEA\Errors\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-WHEA\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-XDV\Analytic\Enabled">0</Tweak>
+				<Tweak name="Channels\WINDOWS_KS_CHANNEL\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-Known Folders API Service\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-L2NA\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LanguagePackSetup\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LanguagePackSetup\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LanguagePackSetup\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-LDAP-Client\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LimitsManagement\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LinkLayerDiscoveryProtocol\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LinkLayerDiscoveryProtocol\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LiveId\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-LiveId\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-LUA-ConsentUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Media-Streaming\DMC\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Media-Streaming\DMR\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Media-Streaming\MDE\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationMediaEngine\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MediaFoundation-MFCaptureEngine\MFCaptureEngine\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MediaFoundation-MFReadWrite\SinkWriter\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MediaFoundation-MFReadWrite\SourceReader\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MediaFoundation-MFReadWrite\Transform\Enabled">0</Tweak>
+				<Tweak name="Channels\MedaFoundationVideoProc\Enabled">0</Tweak>
+				<Tweak name="Channels\MedaFoundationVideoProcD3D\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationPerformanceCore\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationPerformance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MediaFoundation-Performance\SARStreamResource\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationDeviceProxy\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationPlatform\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MediaFoundation-PlayAPI\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MemoryDiagnostics-Results\Debug\Enabled">1</Tweak>
+				<Tweak name="Channels\MF_MediaFoundationFrameServer\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationAsyncWrapper\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationContentProtection\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationDS\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationMP4\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationPipeline\Enabled">0</Tweak>
+				<Tweak name="Channels\MediaFoundationSrcPrefetch\Enabled">0</Tweak>
+				<Tweak name="Channels\MF_MediaFoundationDeviceMFT\Enabled">0</Tweak>
+				<Tweak name="Channels\MF_MediaFoundationDeviceProxy\Enabled">0</Tweak>
+				<Tweak name="Channels\WINDOWS_MFH264Enc_CHANNEL\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Minstore\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Minstore\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Mobile-Broadband-Experience-Api-Internal\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Mobile-Broadband-Experience-Api\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Mobile-Broadband-Experience-Parser-Task\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Mobile-Broadband-Experience-SmsApi\Analytic\Enabled">0</Tweak>
+				<Tweak name="Channels\SMSApi\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-MobilityCenter\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ModernDeployment-Diagnostics-Provider\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-ModernDeployment-Diagnostics-Provider\Autopilot\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-ModernDeployment-Diagnostics-Provider\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ModernDeployment-Diagnostics-Provider\ManagementService\Enabled">1</Tweak>
+				<Tweak name="Channels\WINDOWS_MP4SDECD_CHANNEL\Enabled">0</Tweak>
+				<Tweak name="Channels\muxencode\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Mprddm\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-MPS-CLNT\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MPS-DRV\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MPS-SRV\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MSFTEDIT\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\WINDOWS_MSMPEG2ADEC_CHANNEL\Enabled">0</Tweak>
+				<Tweak name="Channels\WINDOWS_MSMPEG2VDEC_CHANNEL\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-MPEG2-Video-Encoder-MFT_Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MSPaint\Admin\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MSPaint\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MSPaint\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MUI\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-MUI\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MUI\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-MUI\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Narrator\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Ncasvc\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NcdAutoSetup\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NcdAutoSetup\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-NCSI\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NCSI\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-NDF-HelperClassDiscovery\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NDIS-PacketCapture\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NDIS\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NDIS\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NdisImPlatform\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Ndu\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NetShell\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Network-and-Sharing-Center\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-Network-Connection-Broker\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Network-DataUsage\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Network-Setup\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NetworkBridge\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Networking-Correlation\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Networking-RealTimeCommunication\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NetworkProfile\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NetworkProfile\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-NetworkProvider\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-NetworkProvisioning\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NetworkProvisioning\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-NetworkSecurity\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NetworkStatus\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NlaSvc\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NlaSvc\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Ntfs\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Ntfs\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Ntfs\WHC\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-NTLM\Operational\Enabled">1</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-ntshrui\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-ntshrui-perf\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-NWiFi\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OcpUpdateAgent\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-OLE\Clipboard-Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OLEACC\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OLEACC\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OneBackup\Debug\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-OneX\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OneX\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OOBE-FirstLogonAnim\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OOBE-Machine-Core\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OOBE-Machine-DUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OOBE-Machine-DUI\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-OOBE-Machine-Plugins-Wireless\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OobeLdr\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-osk\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-OtpCredentialProvider\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PackageStateRoaming\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PackageStateRoaming\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PackageStateRoaming\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Partition\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Partition\Diagnostic\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PCI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kernel-Pdc\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PerceptionRuntime\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PerceptionSensorDataService\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PersistentMemory-Nvdimm\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PersistentMemory-Nvdimm\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PersistentMemory-Nvdimm\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PersistentMemory-PmemDisk\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PersistentMemory-PmemDisk\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PersistentMemory-PmemDisk\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PersistentMemory-ScmBus\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PersistentMemory-ScmBus\Certification\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PersistentMemory-ScmBus\Diagnose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PersistentMemory-ScmBus\Operational\Enabled">1</Tweak>
+				<Tweak name="Channels\WINDOWS_WMPHOTO_CHANNEL\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PhotoAcq\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PlayToManager\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PortableDeviceStatusProvider\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PortableDeviceSyncProvider\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Power-Meter-Polling\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PowerCfg\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PowerCpl\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PowerShell-DesiredStateConfiguration-FileDownloadManager\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PowerShell-DesiredStateConfiguration-FileDownloadManager\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PowerShell-DesiredStateConfiguration-FileDownloadManager\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PowerShell\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PowerShell\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PowerShell\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PowerShell\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-NetworkLocationWizard\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PrimaryNetworkIcon\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PrintBRM\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PrintService-USBMon\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PrintService\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PrintService\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PrintService\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Privacy-Auditing\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-ProcessStateManager\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Program-Compatibility-Assistant\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Program-Compatibility-Assistant\CompatAfterUpgrade\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Provisioning-Diagnostics-Provider\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Provisioning-Diagnostics-Provider\AutoPilot\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Provisioning-Diagnostics-Provider\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Provisioning-Diagnostics-Provider\ManagementService\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Proximity-Common\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Proximity-Common\Informational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Proximity-Common\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PushNotification-Developer\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PushNotification-InProc\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PushNotification-Platform\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-PushNotification-Platform\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-PushNotification-Platform\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-QoS-Pacer\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-QoS-qWAVE\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RadioManager\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RasAgileVpn\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RasAgileVpn\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Ras-NdisWanPacketCapture\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ReadyBoost\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ReadyBoost\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-ReadyBoostDriver\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ReadyBoostDriver\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-ReFS\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-RemoteApp and Desktop Connections\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-RemoteApp and Desktop Connections\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-RemoteDesktopServices-RdpCoreTS\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-RemoteDesktopServices-RdpCoreTS\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RemoteDesktopServices-RdpCoreTS\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-RemoteDesktopServices-RemoteFX-Synth3dvsc\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-RemoteDesktopServices-RemoteFX-VM-Kernel-Mode-Transport\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RemoteDesktopServices-RemoteFX-VM-User-Mode-Transport\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RemoteDesktopServices-SessionServices\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Remotefs-Rdbss\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Remotefs-Rdbss\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ResetEng-Trace\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Resource-Exhaustion-Detector\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Resource-Exhaustion-Resolver\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-ResourcePublication\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RestartManager\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-RPC-Proxy\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RPC\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RPC\EEInfo\Enabled">0</Tweak>
+				<Tweak name="Channels\EndpointMapper\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RRAS\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-RRAS\Operational\Enabled">0</Tweak>
+				<Tweak name="Channels\RTWorkQueueExtended\Enabled">0</Tweak>
+				<Tweak name="Channels\RTWorkQueueTheading\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime-Graphics\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime-Windows-Media\WinRTAdaptiveMediaSource\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime-Windows-Media\WinRTCaptureEngine\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime-Windows-Media\WinRTMediaStreamSource\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime-Windows-Media\WinRTTranscode\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime-Networking-BackgroundTransfer\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime-Networking\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime-Web-Http\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime-WebAPI\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Schannel-Events\Perf\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Sdbus\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Sdbus\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Sdstor\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Search-Core\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Search-ProtocolHandlers\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Security-Adminless\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Security-Audit-Configuration-Client\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Security-Audit-Configuration-Client\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Security-EnterpriseData-FileRevocationManager\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Security-ExchangeActiveSyncProvisioning\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Security-ExchangeActiveSyncProvisioning\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Security-IdentityListener\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Security-IdentityStore\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Kerberos\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Security-LessPrivilegedAppContainer\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Security-Mitigations\KernelMode\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Security-Mitigations\UserMode\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Security-Netlogon\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Security-SPP-UX-GC\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Security-SPP-UX-GenuineCenter-Logging\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Security-SPP-UX-Notifications\ActionCenter\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Security-SPP-UX\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Security-SPP\Perf\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Security-UserConsentVerifier\Audit\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Security-Vault\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SecurityMitigationsBroker\Admin\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SecurityMitigationsBroker\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SecurityMitigationsBroker\Perf\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SendTo\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Sens\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Sensors\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Sensors\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Serial-ClassExtension-V2\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Serial-ClassExtension\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ServiceReportingApi\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Services-Svchost\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Services\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Servicing\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SettingSync-Azure\Debug\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SettingSync-Azure\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SettingSync-OneDrive\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SettingSync-OneDrive\Debug\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SettingSync-OneDrive\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SettingSync\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SettingSync\Debug\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SettingSync\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SettingSync\VerboseDebug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Setup\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SetupCl\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SetupPlatform\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SetupQueue\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SetupUGC\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-AppWizCpl\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-AuthUI-BootAnim\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-AuthUI-Common\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-AuthUI-CredentialProviderUser\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-AuthUI-CredUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-AuthUI-Logon\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-AuthUI-LogonUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-AuthUI-Shutdown\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Authentication User Interface\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-ConnectedAccountState\ActionCenter\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-Core\ActionCenter\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-Core\AppDefaults\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-Core\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-Core\LogonTasksChannel\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-Core\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-DefaultPrograms\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-LockScreenContent\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-OpenWith\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-Shell-Shwebsvc\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Shell-ZipFolder\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ShellCommon-StartLayoutPopulation\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ShellCommon-StartLayoutPopulation\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Shsvcs\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SleepStudy\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SmartCard-Audit\Authentication\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SmartCard-DeviceEnum\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SmartCard-TPM-VCard-Module\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SmartCard-TPM-VCard-Module\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SMBClient\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SmbClient\Audit\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SmbClient\Connectivity\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SmbClient\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SMBClient\HelperClassDiagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SMBClient\ObjectStateDiagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SMBClient\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SmbClient\Security\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SMBDirect\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SMBDirect\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SMBDirect\Netmon\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SMBServer\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SMBServer\Audit\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SMBServer\Connectivity\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SMBServer\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SMBServer\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SMBServer\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SMBServer\Security\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SMBWitnessClient\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SMBWitnessClient\Informational\Enabled">1</Tweak>
+				<Tweak name="Channels\SmbWmiAnalytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SPB-ClassExtension\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SPB-HIDI2C\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Spell-Checking\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SpellChecker\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Spellchecking-Host\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SruMon\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-SrumTelemetry\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-StateRepository\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-StateRepository\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-StateRepository\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-StateRepository\Restricted\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-stobject\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Tiering-IoHeat\Heat\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Tiering\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-StorageManagement\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-StorageManagement\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-StorageSettings\Diagnostic\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-StorageSpaces-Driver\Diagnostic\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-StorageSpaces-Driver\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-StorageSpaces-Driver\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-StorageSpaces-ManagementAgent\WHC\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-StorageSpaces-SpaceManager\Diagnostic\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-StorageSpaces-SpaceManager\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-ClassPnP\Admin\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-ClassPnP\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-ClassPnP\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-ClassPnP\Diagnose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-ClassPnP\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-StorDiag\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Store\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Storport\Admin\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Storport\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Storport\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Storport\Diagnose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Storport\Health\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Storage-Storport\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-StorPort\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Storsvc\Diagnostic\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Subsys-Csr\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Subsys-SMSS\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Superfetch\Main\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Superfetch\PfApLog\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Superfetch\StoreLog\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Sysprep\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-System-Profile-HardwareId\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\SystemEventsBroker\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SystemSettingsHandlers\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SystemSettingsThreshold\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SystemSettingsThreshold\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SystemSettingsThreshold\Operational\Enabled">1</Tweak>
+				<Tweak name="TabletPC_InputPanel_Channel\IHM\Enabled">0</Tweak>
+				<Tweak name="Channels\IHM_DebugChannel\Enabled">0</Tweak>
+				<Tweak name="Channels\OSK_SoftKeyboard_Channel\Enabled">0</Tweak>
+				<Tweak name="Channels\Physical_Keyboard_Manager_Channel\Enabled">0</Tweak>
+				<Tweak name="Channels\TabletPC_InputPanel_Channel\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TaskbarCPL\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TaskScheduler\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TaskScheduler\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TaskScheduler\Maintenance\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TaskScheduler\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TCPIP\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TCPIP\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TenantRestrictions\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-RDPClient\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-RDPClient\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-RDPClient\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-ClientUSBDevices\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-ClientUSBDevices\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-ClientUSBDevices\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-ClientUSBDevices\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-LocalSessionManager\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-LocalSessionManager\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-LocalSessionManager\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-LocalSessionManager\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-MediaRedirection\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-PnPDevices\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-PnPDevices\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-PnPDevices\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-PnPDevices\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-Printers\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-Printers\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-Printers\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-Printers\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-RdpSoundDriver\Capture\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-RdpSoundDriver\Playback\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-RemoteConnectionManager\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-RemoteConnectionManager\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-RemoteConnectionManager\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-RemoteConnectionManager\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-ServerUSBDevices\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-ServerUSBDevices\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-ServerUSBDevices\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TerminalServices-ServerUSBDevices\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Tethering-Manager\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Tethering-Station\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ThemeCPL\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-ThemeUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Threat-Intelligence\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Time-Service-PTP-Provider\PTP-Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Time-Service\Operational\Enabled">1</Tweak>
+				<Tweak name="Channels\TimeBroker\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TSF-msctf\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TSF-msctf\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TSF-msutb\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TSF-msutb\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\UIManager_Channel\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-TunnelDriver\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TZSync\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-TZSync\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-TZUtil\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-UAC-FileVirtualization\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-UAC\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-SearchUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-SearchUI\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-UI-Shell\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UIAnimation\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UIAutomationCore\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UIAutomationCore\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UIAutomationCore\Perf\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UIRibbon\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WinURLMon\Analytic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-USB-MAUSBHOST-Analytic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-USB-UCX-Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-USB-USBHUB\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-USB-USBHUB3-Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-USB-USBPORT\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-USB-USBXHCI-Analytic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-USB-USBXHCI-Trustlet-Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-User Device Registration\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-User Device Registration\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-User Profile Service\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-User Profile Service\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-User Control Panel Performance\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-User Control Panel Usage\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-User Control Panel\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-User Control Panel\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-User-Loader\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-User-Loader\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-UserAccountControl\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UserModePowerService\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UserPnp\ActionCenter\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-UserPnp\DeviceInstall\Enabled">1</Tweak>
+				<Tweak name="DeviceMetadata\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UserPnp\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UserPnp\SchedulerOperations\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UxInit\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-UxTheme\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-VAN\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-VDRVROOT\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-VerifyHardwareSecurity\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-VerifyHardwareSecurity\Operational\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-VHDMP-Analytic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-VHDMP-Operational\Enabled">1</Tweak>
+				<Tweak name="Channels\Microsoft-Windows-VIRTDISK-Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Volume\Diagnostic\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-VolumeControl\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-VolumeSnapshot-Driver\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-VolumeSnapshot-Driver\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-VPN-Client\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-VWiFi\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WABSyncProvider\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Wcmsvc\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Wcmsvc\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WCN-Config-Registrar\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WCNWiz\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WebAuth\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WebAuthN\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WebIO-NDF\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WebIO\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WebServices\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Websocket-Protocol-Component\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WEPHOSTSVC\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WFP\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IKEDBG\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-IKE\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-VPN\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WFP\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WiFiDisplay\Analytic\Enabled">0</Tweak>
+				<Tweak name="Channels\Microsoft-WindowsPhone-Connectivity-WiFiConnSvc-Channel\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Win32k\Concurrency\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Win32k\Contention\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Win32k\Messages\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Win32k\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Win32k\Power\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Win32k\Render\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Win32k\Tracing\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Win32k\UIPI\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Windeploy\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Windows Firewall With Advanced Security\ConnectionSecurity\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Windows Firewall With Advanced Security\ConnectionSecurityVerbose\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Windows Firewall With Advanced Security\Firewall\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Windows Firewall With Advanced Security\FirewallDiagnostics\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Windows Firewall With Advanced Security\FirewallVerbose\Enabled">0</Tweak>
+				<Tweak name="Channels\Network Isolation Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WindowsColorSystem\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WindowsColorSystem\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WindowsUIImmersive\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WindowsUIImmersive\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WindowsUpdateClient\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WindowsUpdateClient\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WinHTTP-NDF\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WinHttp\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WinINet-Capture\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WinINet-Config\ProxyConfigChanged\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WinINet\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WinINet\UsageLog\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WinINet\WebSocket\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Wininit\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Winlogon\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Winlogon\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WinMDE\MDE\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WinML\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WinNat\Oper\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WinNat\Trace\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Runtime\Error\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Winsock-AFD\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Winsock-NameResolution\Operational\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Winsock-WS2HELP\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-Winsrv\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Wired-AutoConfig\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Wired-AutoConfig\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WLAN-Autoconfig\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WLAN-AutoConfig\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WLAN-Driver\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WLAN-MediaManager\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WLANConnectionFlow\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WlanDlg\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-wmbclass\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-wmbclass\Trace\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WMI-Activity\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WMI-Activity\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WMI-Activity\Trace\Enabled">0</Tweak>
+				<Tweak name="Channels\WMPSetup\Enabled">0</Tweak>
+				<Tweak name="Channels\WMPSyncEngine\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WMPDMCUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WMPNSS-PublicAPI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WMPNSS-Service\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WMPNSS-Service\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WMPNSSUI\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Channels\WINDOWS_wmvdecod_CHANNEL\Enabled">0</Tweak>
+				<Tweak name="Channels\WINDOWS_VC1ENC_CHANNEL\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-Workplace Join\Admin\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WPD-API\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WPD-CompositeClassDriver\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WPD-CompositeClassDriver\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WPD-MTPBT\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WPD-MTPClassDriver\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WPD-MTPClassDriver\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WPD-MTPIP\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WPD-MTPUS\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WPD-ClassInstaller\Analytic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WPD-ClassInstaller\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-WUSA\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WWAN-CFE\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WWAN-MediaManager\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WWAN-MM-Events\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WWAN-NDISUIO-EVENTS\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WWAN-SVC-Events\Diagnostic\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-WWAN-SVC-Events\Operational\Enabled">1</Tweak>
+				<Tweak name="Microsoft-Windows-XAML-Diagnostics\Default\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-XAML\Default\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-XAudio2\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-Windows-XAudio2\Performance\Enabled">0</Tweak>
+				<Tweak name="Microsoft-WindowsPhone-LocationServiceProvider\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-WindowsPhone-Net-Cellcore-CellManager\Debug\Enabled">0</Tweak>
+				<Tweak name="Microsoft-WindowsPhone-Net-Cellcore-CellularAPI\Debug\Enabled">0</Tweak>
+			</TweakGroup>
+			<TweakGroup name="CrashControl">
+				<Tweak name="CrashControl\EnableLogFile">1</Tweak>
+				<Tweak name="CrashControl\CrashDumpEnabled">7</Tweak>
+				<Tweak name="CrashControl\LogEvent">1</Tweak>
+				<Tweak name="CrashControl\AutoReboot">1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="StartTweaks">
+				<Tweak name="Start\HideAppList">-1</Tweak>
+				<Tweak name="Start\HideFrequentlyUsedApps">-1</Tweak>
+				<Tweak name="Explorer\HideRecentlyAddedApps">-1</Tweak>
+				<Tweak name="Start\AllowPinnedFolderDownloads">-1</Tweak>
+				<Tweak name="Start\AllowPinnedFolderPersonalFolder">-1</Tweak>
+				<Tweak name="Start\AllowPinnedFolderPictures">-1</Tweak>
+				<Tweak name="Start\AllowPinnedFolderHomeGroup">-1</Tweak>
+				<Tweak name="Start\AllowPinnedFolderFileExplorer">-1</Tweak>
+				<Tweak name="Start\AllowPinnedFolderDocuments">-1</Tweak>
+				<Tweak name="Start\AllowPinnedFolderNetwork">-1</Tweak>
+				<Tweak name="Start\AllowPinnedFolderVideos">-1</Tweak>
+				<Tweak name="Start\AllowPinnedFolderSettings">-1</Tweak>
+				<Tweak name="Start\AllowPinnedFolderMusic">-1</Tweak>
+				<Tweak name="Start\HideUserTile">-1</Tweak>
+				<Tweak name="Start\HideSwitchAccount">-1</Tweak>
+				<Tweak name="Start\HideSignOut">-1</Tweak>
+				<Tweak name="Start\HideLock">-1</Tweak>
+				<Tweak name="Start\HidePowerButton">-1</Tweak>
+				<Tweak name="Start\HideHibernate">-1</Tweak>
+				<Tweak name="Start\HideShutDown">-1</Tweak>
+				<Tweak name="Start\HideSleep">-1</Tweak>
+				<Tweak name="Start\HideRestart">-1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="DesktopTweaks">
+				<Tweak name="Explorer\AltTabSettings">-1</Tweak>
+				<Tweak name="Explorer\HideSCAMeetNow">-1</Tweak>
+				<Tweak name="Desktop\TileWallpaper">0</Tweak>
+				<Tweak name="Personalize\SystemUsesLightTheme">-1</Tweak>
+				<Tweak name="Personalize\AppsUseLightTheme">-1</Tweak>
+				<Tweak name="Accent\AccentColorMenu">-1</Tweak>
+				<Tweak name="Accent\StartColorMenu">-1</Tweak>
+				<Tweak name="Advanced\TaskbarGlomLevel">2</Tweak>
+				<Tweak name="Advanced\MMTaskbarEnabled">-1</Tweak>
+				<Tweak name="Advanced\TaskbarSmallIcons">-1</Tweak>
+				<Tweak name="Keyboard\PrintScreenKeyForSnippingEnabled">-1</Tweak>
+				<Tweak name="Explorer\NoPinningStoreToTaskbar">-1</Tweak>
+				<Tweak name="QuietHours\Enable">-1</Tweak>
+				<Tweak name="Desktop\ForegroundLockTimeout">200000</Tweak>
+				<Tweak name="Winlogon\EnableGoodbye">-1</Tweak>
+				<Tweak name="WindowMetrics\MinAnimate">0</Tweak>
+				<Tweak name="Start\NoPinningToTaskbar">-1</Tweak>
+				<Tweak name="Personalize\ColorPrevalence">0</Tweak>
+				<Tweak name="Desktop\ScreenSaverIsSecure"></Tweak>
+				<Tweak name="DWM\ColorPrevalence">-1</Tweak>
+				<Tweak name="Mouse\MouseSensitivity">10</Tweak>
+				<Tweak name="Mouse\MouseSpeed">1</Tweak>
+				<Tweak name="Search\SearchboxTaskbarMode">0</Tweak>
+				<Tweak name="NewStartPanel\{645FF040-5081-101B-9F08-00AA002F954E}">-1</Tweak>
+				<Tweak name="NewStartPanel\{5399E694-6CE5-4D6C-8FCE-1D8870FDCBA0}">0</Tweak>
+				<Tweak name="NewStartPanel\{59031a47-3f72-44a7-89c5-5595fe6b30ee}">-1</Tweak>
+				<Tweak name="NewStartPanel\{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}">-1</Tweak>
+				<Tweak name="NewStartPanel\{20D04FE0-3AEA-1069-A2D8-08002B30309D}">0</Tweak>
+				<Tweak name="Desktop\IconSize">-1</Tweak>
+				<Tweak name="System\DisableLogonBackgroundImage">-1</Tweak>
+				<Tweak name="Feeds\ShellFeedsTaskbarViewMode">2</Tweak>
+				<Tweak name="Start\HideRecentJumplists">-1</Tweak>
+				<Tweak name="Desktop\WallpaperStyle">10</Tweak>
+				<Tweak name="Advanced\DisablePreviewDesktop">-1</Tweak>
+				<Tweak name="Explorer\DisableNotificationCenter">-1</Tweak>
+				<Tweak name="PushNotifications\NoCloudApplicationNotification">-1</Tweak>
+				<Tweak name="DWM\AccentColorInactive">-1</Tweak>
+				<Tweak name="Desktop\MenuShowDelay">400</Tweak>
+			</TweakGroup>
+			<TweakGroup name="UAC">
+				<Tweak name="System\EnableInstallerDetection">1</Tweak>
+				<Tweak name="PointAndPrint\RestrictDriverInstallationToAdministrators">0</Tweak>
+				<Tweak name="System\ConsentPromptBehaviorUser">3</Tweak>
+				<Tweak name="System\ConsentPromptBehaviorAdmin">0</Tweak>
+				<Tweak name="System\EnableSecureUIAPaths">1</Tweak>
+				<Tweak name="System\EnableUIADesktopToggle">0</Tweak>
+				<Tweak name="System\ValidateAdminCodeSignatures">0</Tweak>
+				<Tweak name="System\FilterAdministratorToken">-1</Tweak>
+				<Tweak name="System\EnableLUA">1</Tweak>
+				<Tweak name="System\PromptOnSecureDesktop">0</Tweak>
+				<Tweak name="System\EnableVirtualization">1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="PowerAndShutdown">
+				<Tweak name="Power\HibernateEnabledDefault">-1</Tweak>
+				<Tweak name="Power\HiberFileSizePercent">0</Tweak>
+				<Tweak name="System\ShutdownWithoutLogon">1</Tweak>
+				<Tweak name="FlyoutMenuSettings\ShowHibernateOption">0</Tweak>
+				<Tweak name="FlyoutMenuSettings\ShowSleepOption">0</Tweak>
+				<Tweak name="FlyoutMenuSettings\ShowLockOption">-1</Tweak>
+				<Tweak name="Power\HiberbootEnabled">0</Tweak>
+			</TweakGroup>
+			<TweakGroup name="System">
+				<Tweak name="Windows\DisableATMFD">-1</Tweak>
+				<Tweak name="Configuration\DisableResetbase">1</Tweak>
+				<Tweak name="System\EnableLinkedConnections">-1</Tweak>
+				<Tweak name="System\NoConnectedUser">-1</Tweak>
+				<Tweak name="OneDrive\DisableFileSyncNGSC">0</Tweak>
+				<Tweak name="EMDMgmt\GroupPolicyDisallowCaches">-1</Tweak>
+				<Tweak name="FileSystem\LongPathsEnabled">0</Tweak>
+				<Tweak name="Installer\MaxPatchCacheSize">-1</Tweak>
+				<Tweak name="WinRE\UninstallWindowsRE">0</Tweak>
+				<Tweak name="Environment\TEMP">%USERPROFILE%\AppData\Local\Temp</Tweak>
+				<Tweak name=".NETFramework\OnlyUseLatestCLR">-1</Tweak>
+				<Tweak name="ReserveManager\ShippedWithReserves">0</Tweak>
+				<Tweak name="GameBar\UseNexusForGameBarEnabled">-1</Tweak>
+				<Tweak name="GameConfigStore\GameDVR_FSEBehavior">-1</Tweak>
+				<Tweak name="3\1806">-1</Tweak>
+				<Tweak name="UserGpuPreferences\DirectXUserGlobalSettings"></Tweak>
+				<Tweak name="DeviceGuard\EnableVirtualizationBasedSecurity">-1</Tweak>
+				<Tweak name="StoragePolicy\01">-1</Tweak>
+				<Tweak name="StoragePolicy\04">-1</Tweak>
+				<Tweak name="StoragePolicy\512">-1</Tweak>
+				<Tweak name="StoragePolicy\256">-1</Tweak>
+				<Tweak name="StoragePolicy\2048">-1</Tweak>
+				<Tweak name="Appx\AllowAutomaticAppArchiving">-1</Tweak>
+				<Tweak name="Winlogon\RestartApps">0</Tweak>
+				<Tweak name="Device\DevicePasswordLessBuildVersion">0</Tweak>
+				<Tweak name="System\HideFastUserSwitching">-1</Tweak>
+				<Tweak name="Personalization\NoLockScreen">-1</Tweak>
+				<Tweak name="System\DisableAutomaticRestartSignOn">1</Tweak>
+				<Tweak name="GraphicsDrivers\HwSchMode">-1</Tweak>
+				<Tweak name="DiskQuota\Enable">-1</Tweak>
+				<Tweak name="StickyKeys\Flags">510</Tweak>
+				<Tweak name="Activation\Manual">0</Tweak>
+				<Tweak name="BitLocker\PreventDeviceEncryption">-1</Tweak>
+				<Tweak name="System\VerboseStatus">-1</Tweak>
+				<Tweak name="Terminal Server\fDenyTSConnections">1</Tweak>
+				<Tweak name="RDP-Tcp\UserAuthentication">1</Tweak>
+				<Tweak name="RDP-Tcp\PortNumber">3389</Tweak>
+				<Tweak name="Memory Management\PagingFiles1">?:\pagefile.sys</Tweak>
+				<Tweak name="System\EnableFirstLogonAnimation">-1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="Network">
+				<Tweak name="DNSClient\DisableSmartNameResolution">-1</Tweak>
+				<Tweak name="Parameters\DisableParallelAandAAAA">-1</Tweak>
+				<Tweak name="Parameters\DisableBandwidthThrottling">-1</Tweak>
+				<Tweak name="Parameters\RequireSecuritySignature">0</Tweak>
+				<Tweak name="Parameters\IRPStackSize">-1</Tweak>
+				<Tweak name="Parameters\DisableCompression">-1</Tweak>
+				<Tweak name="LanmanWorkstation\AllowInsecureGuestAuth">-1</Tweak>
+				<Tweak name="Main\Isolation"></Tweak>
+				<Tweak name="NewNetworkWindowOff\NewNetworkWindowOff">0</Tweak>
+				<Tweak name="DNSClient\EnableMulticast">-1</Tweak>
+				<Tweak name="NetworkConnectivityStatusIndicator\NoActiveProbe">-1</Tweak>
+				<Tweak name="System\LocalAccountTokenFilterPolicy">-1</Tweak>
+				<Tweak name="Main\Isolation64Bit">-1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="Explorer">
+				<Tweak name="Explorer\NoCDBurning">-1</Tweak>
+				<Tweak name="Explorer\DisableEdgeDesktopShortcutCreation">1</Tweak>
+				<Tweak name="Advanced\ShowInfoTip">1</Tweak>
+				<Tweak name="Explorer\EnableAutoTray">0</Tweak>
+				<Tweak name="Explorer\NoTrayItemsDisplay">-1</Tweak>
+				<Tweak name="Advanced\SharingWizardOn">-1</Tweak>
+				<Tweak name="Advanced\AutoCheckSelect">0</Tweak>
+				<Tweak name="Explorer\NoRecentDocsHistory">-1</Tweak>
+				<Tweak name="Explorer\ConfirmFileDelete">-1</Tweak>
+				<Tweak name="Advanced\SeparateProcess">1</Tweak>
+				<Tweak name="Advanced\DontUsePowerShellOnWinX">-1</Tweak>
+				<Tweak name="cmd\HideBasedOnVelocityId">-1</Tweak>
+				<Tweak name="Advanced\FolderContentsInfoTip">-1</Tweak>
+				<Tweak name="Explorer\DisableThumbnailsOnNetworkFolders">-1</Tweak>
+				<Tweak name="{031E4825-7B94-4dc3-B131-E946B44C8DD5}\System.IsPinnedToNameSpaceTree">-1</Tweak>
+				<Tweak name="Advanced\NavPaneShowAllFolders">-1</Tweak>
+				<Tweak name="{F02C1A0D-BE21-4350-88B0-7367FC96EF3C}\ShellFolder\Attributes">-1341915036</Tweak>
+				<Tweak name="Advanced\NavPaneExpandToCurrentFolder">-1</Tweak>
+				<Tweak name="Explorer\HubMode">-1</Tweak>
+				<Tweak name=".jpg\PhotoViewer.FileAssoc.Tiff"></Tweak>
+				<Tweak name="Advanced\LaunchTo">1</Tweak>
+				<Tweak name="ControlPanel\AllItemsIconView">-1</Tweak>
+				<Tweak name="ControlPanel\StartupPage">-1</Tweak>
+				<Tweak name="OperationStatusManager\EnthusiastMode">-1</Tweak>
+				<Tweak name="Explorer\NoNetConnectDisconnect">-1</Tweak>
+				<Tweak name="Advanced\ShowTaskViewButton">0</Tweak>
+				<Tweak name="Advanced\ShowSyncProviderNotifications">-1</Tweak>
+				<Tweak name="Explorer\DisableThumbnails">-1</Tweak>
+				<Tweak name="Explorer\HideClock">-1</Tweak>
+				<Tweak name="Explorer\ShowDriveLettersFirst">-1</Tweak>
+				<Tweak name="Advanced\ShowSuperHidden">0</Tweak>
+				<Tweak name="Advanced\HideFileExt">0</Tweak>
+				<Tweak name="Advanced\HideDrivesWithNoMedia">-1</Tweak>
+				<Tweak name="Advanced\Hidden">1</Tweak>
+				<Tweak name="Explorer\EnableLegacyBalloonNotifications">-1</Tweak>
+				<Tweak name="Explorer\NoThumbnailCache">-1</Tweak>
+				<Tweak name="AutoplayHandlers\DisableAutoplay">1</Tweak>
+				<Tweak name="Explorer\ClearRecentDocsOnExit">-1</Tweak>
+				<Tweak name="Advanced\HideMergeConflicts">-1</Tweak>
+				<Tweak name="Explorer\NoReadingPane">-1</Tweak>
+			</TweakGroup>
+			<TweakGroup name="Privacy">
+				<Tweak name="Shell\BagMRU Size">-1</Tweak>
+				<Tweak name="WindowsCopilot\TurnOffWindowsCopilot">-1</Tweak>
+				<Tweak name="CloudContent\DisableWindowsSpotlightFeatures">-1</Tweak>
+				<Tweak name="CloudContent\DisableCloudOptimizedContent">-1</Tweak>
+				<Tweak name="AnqpCache\OsuRegistrationStatus">0</Tweak>
+				<Tweak name="FlipAhead\FPEnabled">0</Tweak>
+				<Tweak name="ContentDeliveryManager\SystemPaneSuggestionsEnabled">-1</Tweak>
+				<Tweak name="System\EnableActivityFeed">0</Tweak>
+				<Tweak name="Advanced\Start_TrackProgs">1</Tweak>
+				<Tweak name="System\AllowLocation">0</Tweak>
+				<Tweak name="System\AllowExperimentation">0</Tweak>
+				<Tweak name="AdvertisingInfo\Enabled">0</Tweak>
+				<Tweak name="BackgroundAccessApplications\GlobalUserDisabled">1</Tweak>
+				<Tweak name="email\Value"></Tweak>
+				<Tweak name="LooselyCoupled\Value"></Tweak>
+				<Tweak name="userDataTasks\Value"></Tweak>
+				<Tweak name="picturesLibrary\Value"></Tweak>
+				<Tweak name="broadFileSystemAccess\Value"></Tweak>
+				<Tweak name="documentsLibrary\Value"></Tweak>
+				<Tweak name="radios\Value"></Tweak>
+				<Tweak name="chat\Value"></Tweak>
+				<Tweak name="userAccountInformation\Value"></Tweak>
+				<Tweak name="phoneCall\Value"></Tweak>
+				<Tweak name="webcam\Value"></Tweak>
+				<Tweak name="appointments\Value"></Tweak>
+				<Tweak name="contacts\Value"></Tweak>
+				<Tweak name="videosLibrary\Value"></Tweak>
+				<Tweak name="appDiagnostics\Value"></Tweak>
+				<Tweak name="userNotificationListener\Value"></Tweak>
+				<Tweak name="phoneCallHistory\Value"></Tweak>
+				<Tweak name="microphone\Value"></Tweak>
+				<Tweak name="SmartGlass\BluetoothPolicy">-1</Tweak>
+				<Tweak name="SmartGlass\UserAuthPolicy">-1</Tweak>
+				<Tweak name="User Profile\HttpAcceptLanguageOptOut">-1</Tweak>
+				<Tweak name="DataCollection\AllowTelemetry">4</Tweak>
+				<Tweak name="System\EnableCdp">-1</Tweak>
+				<Tweak name="System\AllowClipboardHistory">0</Tweak>
+				<Tweak name="Rules\NumberOfSIUFInPeriod">0</Tweak>
+				<Tweak name="Privacy\TailoredExperiencesWithDiagnosticDataEnabled">0</Tweak>
+				<Tweak name="TIPC\Enabled">0</Tweak>
+				<Tweak name="Client\OptInOrOutPreference">0</Tweak>
+				<Tweak name="Explorer\ShowFrequent">0</Tweak>
+				<Tweak name="Explorer\ShowRecent">0</Tweak>
+				<Tweak name="AccountNotifications\EnableAccountNotifications">-1</Tweak>
+				<Tweak name="Advanced\Start_TrackDocs">-1</Tweak>
+				<Tweak name="System\DontDisplayLockedUserId">-1</Tweak>
+				<Tweak name="InputPersonalization\AllowInputPersonalization">0</Tweak>
+				<Tweak name="ContentDeliveryManager\SubscribedContent-338393Enabled">-1</Tweak>
+				<Tweak name="Explorer\DisableSearchBoxSuggestions">-1</Tweak>
+				<Tweak name="System\DontDisplayLastUserName">-1</Tweak>
+				<Tweak name="UserProfileEngagement\ScoobeSystemSettingEnabled">0</Tweak>
+				<Tweak name="AppCompat\DisablePCA">-1</Tweak>
+				<Tweak name="AppCompat\RequireIntegrityActivationAuthenticationLevel">-1</Tweak>
+				<Tweak name="Windows Search\AllowCloudSearch">-1</Tweak>
+				<Tweak name="Search\BingSearchEnabled">0</Tweak>
+				<Tweak name="SystemIndex\EnableFindMyFiles">-1</Tweak>
+				<Tweak name="InputPersonalization\RestrictImplicitInkCollection">1</Tweak>
+				<Tweak name="AppCompat\DisableInventory">-1</Tweak>
+				<Tweak name="TrainedDataStore\HarvestContacts">0</Tweak>
+				<Tweak name="InputPersonalization\RestrictImplicitTextCollection">1</Tweak>
+				<Tweak name="SearchSettings\IsDeviceSearchHistoryEnabled">-1</Tweak>
+				<Tweak name="Packages\InstallLocation">-1</Tweak>
+				<Tweak name="1.7\EnableSpellchecking">-1</Tweak>
+				<Tweak name="ContentDeliveryManager\SilentInstalledAppsEnabled">0</Tweak>
+				<Tweak name="CloudContent\DisableWindowsConsumerFeatures">1</Tweak>
+				<Tweak name="1.7\EnableAutocorrection">-1</Tweak>
+				<Tweak name="features\PaidWifi">0</Tweak>
+				<Tweak name="features\WiFiSenseOpen">0</Tweak>
+				<Tweak name="AppSettings\Skype-UserConsentAccepted">0</Tweak>
+				<Tweak name="Settings\AcceptedPrivacyPolicy">0</Tweak>
+				<Tweak name="Settings\InsightsEnabled">0</Tweak>
+				<Tweak name="ContentDeliveryManager\OemPreInstalledAppsEnabled">0</Tweak>
+				<Tweak name="ContentDeliveryManager\PreInstalledAppsEnabled">0</Tweak>
+			</TweakGroup>
+		</Settings>
+		<Services>
+			<TweakGroup name="services">
+				<Tweak name="AxInstSV\AxInstSV">4</Tweak>
+				<Tweak name="AppReadiness\AppReadiness">3</Tweak>
+				<Tweak name="AppIDSvc\AppIDSvc">3</Tweak>
+				<Tweak name="Appinfo\Appinfo">3</Tweak>
+				<Tweak name="ALG\ALG">4</Tweak>
+				<Tweak name="AppMgmt\AppMgmt">4</Tweak>
+				<Tweak name="AppXSvc\AppXSvc">3</Tweak>
+				<Tweak name="BthAvctpSvc\BthAvctpSvc">3</Tweak>
+				<Tweak name="BITS\BITS">3</Tweak>
+				<Tweak name="BrokerInfrastructure\BrokerInfrastructure">2</Tweak>
+				<Tweak name="BFE\BFE">2</Tweak>
+				<Tweak name="BDESVC\BDESVC">3</Tweak>
+				<Tweak name="CaptureService\CaptureService">3</Tweak>
+				<Tweak name="CertPropSvc\CertPropSvc">4</Tweak>
+				<Tweak name="ClipSVC\ClipSVC">3</Tweak>
+				<Tweak name="KeyIso\KeyIso">3</Tweak>
+				<Tweak name="EventSystem\EventSystem">2</Tweak>
+				<Tweak name="COMSysApp\COMSysApp">4</Tweak>
+				<Tweak name="Browser\Browser">3</Tweak>
+				<Tweak name="ConsentUxUserSvc\ConsentUxUserSvc">3</Tweak>
+				<Tweak name="PimIndexMaintenanceSvc\PimIndexMaintenanceSvc">4</Tweak>
+				<Tweak name="CoreMessagingRegistrar\CoreMessagingRegistrar">2</Tweak>
+				<Tweak name="VaultSvc\VaultSvc">3</Tweak>
+				<Tweak name="CryptSvc\CryptSvc">2</Tweak>
+				<Tweak name="DsSvc\DsSvc">4</Tweak>
+				<Tweak name="DcomLaunch\DcomLaunch">2</Tweak>
+				<Tweak name="DoSvc\DoSvc">3</Tweak>
+				<Tweak name="DeviceAssociationService\DeviceAssociationService">3</Tweak>
+				<Tweak name="DeviceInstall\DeviceInstall">3</Tweak>
+				<Tweak name="DsmSvc\DsmSvc">3</Tweak>
+				<Tweak name="DeviceAssociationBrokerSvc\DeviceAssociationBrokerSvc">3</Tweak>
+				<Tweak name="DevicePickerUserSvc\DevicePickerUserSvc">3</Tweak>
+				<Tweak name="DevicesFlowUserSvc\DevicesFlowUserSvc">3</Tweak>
+				<Tweak name="DevQueryBroker\DevQueryBroker">3</Tweak>
+				<Tweak name="Dhcp\Dhcp">2</Tweak>
+				<Tweak name="diagsvc\diagsvc">4</Tweak>
+				<Tweak name="DPS\DPS">4</Tweak>
+				<Tweak name="WdiServiceHost\WdiServiceHost">4</Tweak>
+				<Tweak name="WdiSystemHost\WdiSystemHost">4</Tweak>
+				<Tweak name="TrkWks\TrkWks">3</Tweak>
+				<Tweak name="MSDTC\MSDTC">4</Tweak>
+				<Tweak name="Dnscache\Dnscache">2</Tweak>
+				<Tweak name="EFS\EFS">2</Tweak>
+				<Tweak name="EntAppSvc\EntAppSvc">3</Tweak>
+				<Tweak name="Eaphost\Eaphost">3</Tweak>
+				<Tweak name="Fax\Fax">4</Tweak>
+				<Tweak name="fhsvc\fhsvc">4</Tweak>
+				<Tweak name="fdPHost\fdPHost">3</Tweak>
+				<Tweak name="FDResPub\FDResPub">3</Tweak>
+				<Tweak name="BcastDVRUserService\BcastDVRUserService">3</Tweak>
+				<Tweak name="lfsvc\lfsvc">3</Tweak>
+				<Tweak name="GraphicsPerfSvc\GraphicsPerfSvc">4</Tweak>
+				<Tweak name="gpsvc\gpsvc">2</Tweak>
+				<Tweak name="hidserv\hidserv">3</Tweak>
+				<Tweak name="HvHost\HvHost">3</Tweak>
+				<Tweak name="vmickvpexchange\vmickvpexchange">3</Tweak>
+				<Tweak name="vmicguestinterface\vmicguestinterface">3</Tweak>
+				<Tweak name="vmicshutdown\vmicshutdown">3</Tweak>
+				<Tweak name="vmicheartbeat\vmicheartbeat">3</Tweak>
+				<Tweak name="vmicvmsession\vmicvmsession">3</Tweak>
+				<Tweak name="vmictimesync\vmictimesync">3</Tweak>
+				<Tweak name="vmicvss\vmicvss">3</Tweak>
+				<Tweak name="vmicrdv\vmicrdv">3</Tweak>
+				<Tweak name="IKEEXT\IKEEXT">3</Tweak>
+				<Tweak name="SharedAccess\SharedAccess">4</Tweak>
+				<Tweak name="iphlpsvc\iphlpsvc">4</Tweak>
+				<Tweak name="IpxlatCfgSvc\IpxlatCfgSvc">3</Tweak>
+				<Tweak name="PolicyAgent\PolicyAgent">3</Tweak>
+				<Tweak name="KtmRm\KtmRm">3</Tweak>
+				<Tweak name="lltdsvc\lltdsvc">3</Tweak>
+				<Tweak name="LSM\LSM">2</Tweak>
+				<Tweak name="MessagingService\MessagingService">3</Tweak>
+				<Tweak name="diagnosticshub.standardcollector.service\diagnosticshub.standardcollector.service">4</Tweak>
+				<Tweak name="wlidsvc\wlidsvc">3</Tweak>
+				<Tweak name="MSiSCSI\MSiSCSI">3</Tweak>
+				<Tweak name="NgcSvc\NgcSvc">3</Tweak>
+				<Tweak name="NgcCtnrSvc\NgcCtnrSvc">3</Tweak>
+				<Tweak name="swprv\swprv">3</Tweak>
+				<Tweak name="smphost\smphost">3</Tweak>
+				<Tweak name="InstallService\InstallService">3</Tweak>
+				<Tweak name="SmsRouter\SmsRouter">4</Tweak>
+				<Tweak name="cloudidsvc\cloudidsvc">3</Tweak>
+				<Tweak name="NetTcpPortSharing\NetTcpPortSharing">4</Tweak>
+				<Tweak name="Netlogon\Netlogon">3</Tweak>
+				<Tweak name="NcdAutoSetup\NcdAutoSetup">3</Tweak>
+				<Tweak name="NcbService\NcbService">3</Tweak>
+				<Tweak name="Netman\Netman">3</Tweak>
+				<Tweak name="NcaSvc\NcaSvc">3</Tweak>
+				<Tweak name="netprofm\netprofm">3</Tweak>
+				<Tweak name="NlaSvc\NlaSvc">2</Tweak>
+				<Tweak name="NetSetupSvc\NetSetupSvc">2</Tweak>
+				<Tweak name="nsi\nsi">2</Tweak>
+				<Tweak name="defragsvc\defragsvc">3</Tweak>
+				<Tweak name="PerfHost\PerfHost">3</Tweak>
+				<Tweak name="pla\pla">3</Tweak>
+				<Tweak name="PlugPlay\PlugPlay">3</Tweak>
+				<Tweak name="WPDBusEnum\WPDBusEnum">3</Tweak>
+				<Tweak name="Power\Power">2</Tweak>
+				<Tweak name="Spooler\Spooler">2</Tweak>
+				<Tweak name="PrintWorkflowUserSvc\PrintWorkflowUserSvc">3</Tweak>
+				<Tweak name="PcaSvc\PcaSvc">4</Tweak>
+				<Tweak name="QWAVE\QWAVE">3</Tweak>
+				<Tweak name="RasMan\RasMan">3</Tweak>
+				<Tweak name="SessionEnv\SessionEnv">3</Tweak>
+				<Tweak name="TermService\TermService">3</Tweak>
+				<Tweak name="UmRdpService\UmRdpService">3</Tweak>
+				<Tweak name="RpcSs\RpcSs">2</Tweak>
+				<Tweak name="RpcLocator\RpcLocator">3</Tweak>
+				<Tweak name="RemoteAccess\RemoteAccess">4</Tweak>
+				<Tweak name="RpcEptMapper\RpcEptMapper">2</Tweak>
+				<Tweak name="seclogon\seclogon">3</Tweak>
+				<Tweak name="SstpSvc\SstpSvc">3</Tweak>
+				<Tweak name="SamSs\SamSs">2</Tweak>
+				<Tweak name="SensorDataService\SensorDataService">3</Tweak>
+				<Tweak name="SensrSvc\SensrSvc">3</Tweak>
+				<Tweak name="SensorService\SensorService">3</Tweak>
+				<Tweak name="LanmanServer\LanmanServer">2</Tweak>
+				<Tweak name="ShellHWDetection\ShellHWDetection">2</Tweak>
+				<Tweak name="SCardSvr\SCardSvr">3</Tweak>
+				<Tweak name="ScDeviceEnum\ScDeviceEnum">3</Tweak>
+				<Tweak name="SCPolicySvc\SCPolicySvc">4</Tweak>
+				<Tweak name="SNMPTRAP\SNMPTRAP">4</Tweak>
+				<Tweak name="sppsvc\sppsvc">2</Tweak>
+				<Tweak name="svsvc\svsvc">3</Tweak>
+				<Tweak name="SSDPSRV\SSDPSRV">3</Tweak>
+				<Tweak name="StateRepository\StateRepository">3</Tweak>
+				<Tweak name="WiaRpc\WiaRpc">3</Tweak>
+				<Tweak name="StorSvc\StorSvc">2</Tweak>
+				<Tweak name="TieringEngineService\TieringEngineService">3</Tweak>
+				<Tweak name="SysMain\SysMain">4</Tweak>
+				<Tweak name="SENS\SENS">4</Tweak>
+				<Tweak name="SystemEventsBroker\SystemEventsBroker">2</Tweak>
+				<Tweak name="SgrmBroker\SgrmBroker">4</Tweak>
+				<Tweak name="Schedule\Schedule">2</Tweak>
+				<Tweak name="lmhosts\lmhosts">3</Tweak>
+				<Tweak name="TapiSrv\TapiSrv">3</Tweak>
+				<Tweak name="Themes\Themes">2</Tweak>
+				<Tweak name="TimeBrokerSvc\TimeBrokerSvc">3</Tweak>
+				<Tweak name="TabletInputService\TabletInputService">3</Tweak>
+				<Tweak name="UdkUserSvc\UdkUserSvc">3</Tweak>
+				<Tweak name="upnphost\upnphost">3</Tweak>
+				<Tweak name="UserDataSvc\UserDataSvc">3</Tweak>
+				<Tweak name="UnistoreSvc\UnistoreSvc">3</Tweak>
+				<Tweak name="UserManager\UserManager">2</Tweak>
+				<Tweak name="ProfSvc\ProfSvc">2</Tweak>
+				<Tweak name="vds\vds">3</Tweak>
+				<Tweak name="VSS\VSS">3</Tweak>
+				<Tweak name="WarpJITSvc\WarpJITSvc">3</Tweak>
+				<Tweak name="TokenBroker\TokenBroker">3</Tweak>
+				<Tweak name="WebClient\WebClient">4</Tweak>
+				<Tweak name="Audiosrv\Audiosrv">2</Tweak>
+				<Tweak name="AudioEndpointBuilder\AudioEndpointBuilder">2</Tweak>
+				<Tweak name="FrameServer\FrameServer">3</Tweak>
+				<Tweak name="wcncsvc\wcncsvc">3</Tweak>
+				<Tweak name="Wcmsvc\Wcmsvc">2</Tweak>
+				<Tweak name="mpssvc\mpssvc">2</Tweak>
+				<Tweak name="WEPHOSTSVC\WEPHOSTSVC">3</Tweak>
+				<Tweak name="Wecsvc\Wecsvc">4</Tweak>
+				<Tweak name="EventLog\EventLog">2</Tweak>
+				<Tweak name="FontCache\FontCache">2</Tweak>
+				<Tweak name="stisvc\stisvc">3</Tweak>
+				<Tweak name="msiserver\msiserver">3</Tweak>
+				<Tweak name="Winmgmt\Winmgmt">2</Tweak>
+				<Tweak name="TrustedInstaller\TrustedInstaller">2</Tweak>
+				<Tweak name="FontCache3.0.0.0\FontCache3.0.0.0">3</Tweak>
+				<Tweak name="WpnUserService\WpnUserService">2</Tweak>
+				<Tweak name="PushToInstall\PushToInstall">3</Tweak>
+				<Tweak name="WSearch\WSearch">2</Tweak>
+				<Tweak name="W32Time\W32Time">3</Tweak>
+				<Tweak name="wuauserv\wuauserv">3</Tweak>
+				<Tweak name="WpnService\WpnService">2</Tweak>
+				<Tweak name="WaaSMedicSvc\WaaSMedicSvc">4</Tweak>
+				<Tweak name="icssvc\icssvc">3</Tweak>
+				<Tweak name="WManSvc\WManSvc">3</Tweak>
+				<Tweak name="LicenseManager\LicenseManager">3</Tweak>
+				<Tweak name="wisvc\wisvc">4</Tweak>
+				<Tweak name="WinHttpAutoProxySvc\WinHttpAutoProxySvc">3</Tweak>
+				<Tweak name="dot3svc\dot3svc">3</Tweak>
+				<Tweak name="WlanSvc\WlanSvc">3</Tweak>
+				<Tweak name="WFDSConMgrSvc\WFDSConMgrSvc">3</Tweak>
+				<Tweak name="wmiApSrv\wmiApSrv">3</Tweak>
+				<Tweak name="WMPNetworkSvc\WMPNetworkSvc">3</Tweak>
+				<Tweak name="LanmanWorkstation\LanmanWorkstation">2</Tweak>
+				<Tweak name="WwanSvc\WwanSvc">3</Tweak>
+				<Tweak name="XboxGipSvc\XboxGipSvc">4</Tweak>
+				<Tweak name="XblGameSave\XblGameSave">3</Tweak>
+				<Tweak name="XboxNetApiSvc\XboxNetApiSvc">3</Tweak>
+				<Tweak name="XblAuthManager\XblAuthManager">3</Tweak>
+				<Tweak name="SEMgrSvc\SEMgrSvc">3</Tweak>
+				<Tweak name="cbdhsvc\cbdhsvc">3</Tweak>
+				<Tweak name="camsvc\camsvc">3</Tweak>
+				<Tweak name="OneSyncSvc\OneSyncSvc">3</Tweak>
+				<Tweak name="autotimesvc\autotimesvc">3</Tweak>
+				<Tweak name="DusmSvc\DusmSvc">4</Tweak>
+				<Tweak name="RmSvc\RmSvc">3</Tweak>
+				<Tweak name="DisplayEnhancementService\DisplayEnhancementService">3</Tweak>
+				<Tweak name="DispBrokerDesktopSvc\DispBrokerDesktopSvc">2</Tweak>
+				<Tweak name="UsoSvc\UsoSvc">3</Tweak>
+				<Tweak name="wlpasvc\wlpasvc">3</Tweak>
+				<Tweak name="tzautoupdate\tzautoupdate">4</Tweak>
+				<Tweak name="NaturalAuthentication\NaturalAuthentication">3</Tweak>
+				<Tweak name="bthserv\bthserv">3</Tweak>
+				<Tweak name="BluetoothUserService\BluetoothUserService">3</Tweak>
+				<Tweak name="BTAGService\BTAGService">3</Tweak>
+				<Tweak name="dmwappushservice\dmwappushservice">3</Tweak>
+				<Tweak name="DmEnrollmentSvc\DmEnrollmentSvc">3</Tweak>
+				<Tweak name="LxpSvc\LxpSvc">3</Tweak>
+				<Tweak name="CDPSvc\CDPSvc">2</Tweak>
+				<Tweak name="CDPUserSvc\CDPUserSvc">2</Tweak>
+			</TweakGroup>
+		</Services>
+		<ExtraServices>
+			<TweakGroup name="drivers">
+				<Tweak name="1394ohci\1394ohci">3</Tweak>
+				<Tweak name="3ware\3ware">0</Tweak>
+				<Tweak name="AcpiDev\AcpiDev">3</Tweak>
+				<Tweak name="AcpiPmi\AcpiPmi">3</Tweak>
+				<Tweak name="acpipagr\acpipagr">3</Tweak>
+				<Tweak name="acpitime\acpitime">3</Tweak>
+				<Tweak name="Acx01000\Acx01000">3</Tweak>
+				<Tweak name="arcsas\arcsas">0</Tweak>
+				<Tweak name="ADP80XX\ADP80XX">0</Tweak>
+				<Tweak name="afunix\afunix">1</Tweak>
+				<Tweak name="amdgpio2\amdgpio2">3</Tweak>
+				<Tweak name="amdi2c\amdi2c">3</Tweak>
+				<Tweak name="AmdK8\AmdK8">3</Tweak>
+				<Tweak name="AmdPPM\AmdPPM">3</Tweak>
+				<Tweak name="amdsata\amdsata">0</Tweak>
+				<Tweak name="amdsbs\amdsbs">0</Tweak>
+				<Tweak name="amdxata\amdxata">0</Tweak>
+				<Tweak name="AFD\AFD">1</Tweak>
+				<Tweak name="AppID\AppID">3</Tweak>
+				<Tweak name="ahcache\ahcache">1</Tweak>
+				<Tweak name="bam\bam">1</Tweak>
+				<Tweak name="BasicDisplay\BasicDisplay">1</Tweak>
+				<Tweak name="BasicRender\BasicRender">1</Tweak>
+				<Tweak name="bcmfn2\bcmfn2">3</Tweak>
+				<Tweak name="Beep\Beep">1</Tweak>
+				<Tweak name="fvevol\fvevol">0</Tweak>
+				<Tweak name="RFCOMM\RFCOMM">3</Tweak>
+				<Tweak name="BthEnum\BthEnum">3</Tweak>
+				<Tweak name="BthLEEnum\BthLEEnum">3</Tweak>
+				<Tweak name="BTHMODEM\BTHMODEM">3</Tweak>
+				<Tweak name="BTHPORT\BTHPORT">3</Tweak>
+				<Tweak name="BthMini\BthMini">3</Tweak>
+				<Tweak name="BTHUSB\BTHUSB">3</Tweak>
+				<Tweak name="cdrom\cdrom">1</Tweak>
+				<Tweak name="cdfs\cdfs">4</Tweak>
+				<Tweak name="CAD\CAD">3</Tweak>
+				<Tweak name="cht4vbd\cht4vbd">3</Tweak>
+				<Tweak name="UrsChipidea\UrsChipidea">3</Tweak>
+				<Tweak name="cht4iscsi\cht4iscsi">0</Tweak>
+				<Tweak name="CimFS\CimFS">1</Tweak>
+				<Tweak name="CNG\CNG">0</Tweak>
+				<Tweak name="cnghwassist\cnghwassist">0</Tweak>
+				<Tweak name="msgpiowin32\msgpiowin32">3</Tweak>
+				<Tweak name="hidinterrupt\hidinterrupt">3</Tweak>
+				<Tweak name="CLFS\CLFS">0</Tweak>
+				<Tweak name="CompositeBus\CompositeBus">3</Tweak>
+				<Tweak name="condrv\condrv">3</Tweak>
+				<Tweak name="circlass\circlass">3</Tweak>
+				<Tweak name="CredentialEnrollmentManagerUserSvc\CredentialEnrollmentManagerUserSvc">3</Tweak>
+				<Tweak name="dam\dam">1</Tweak>
+				<Tweak name="Dfsc\Dfsc">1</Tweak>
+				<Tweak name="dmvsc\dmvsc">3</Tweak>
+				<Tweak name="volmgrx\volmgrx">0</Tweak>
+				<Tweak name="usbcir\usbcir">3</Tweak>
+				<Tweak name="EhStorClass\EhStorClass">0</Tweak>
+				<Tweak name="exfat\exfat">3</Tweak>
+				<Tweak name="fastfat\fastfat">3</Tweak>
+				<Tweak name="FileInfo\FileInfo">0</Tweak>
+				<Tweak name="FsDepends\FsDepends">3</Tweak>
+				<Tweak name="FileCrypt\FileCrypt">1</Tweak>
+				<Tweak name="Filetrace\Filetrace">3</Tweak>
+				<Tweak name="fdc\fdc">3</Tweak>
+				<Tweak name="flpydisk\flpydisk">3</Tweak>
+				<Tweak name="FltMgr\FltMgr">0</Tweak>
+				<Tweak name="Fs_Rec\Fs_Rec">0</Tweak>
+				<Tweak name="genericusbfn\genericusbfn">3</Tweak>
+				<Tweak name="GpuEnergyDrv\GpuEnergyDrv">1</Tweak>
+				<Tweak name="hwpolicy\hwpolicy">0</Tweak>
+				<Tweak name="HidBatt\HidBatt">3</Tweak>
+				<Tweak name="sfloppy\sfloppy">3</Tweak>
+				<Tweak name="HpSAMD\HpSAMD">0</Tweak>
+				<Tweak name="HTTP\HTTP">3</Tweak>
+				<Tweak name="hvcrash\hvcrash">4</Tweak>
+				<Tweak name="hyperkbd\hyperkbd">3</Tweak>
+				<Tweak name="HyperVideo\HyperVideo">3</Tweak>
+				<Tweak name="hvservice\hvservice">3</Tweak>
+				<Tweak name="i8042prt\i8042prt">3</Tweak>
+				<Tweak name="atapi\atapi">0</Tweak>
+				<Tweak name="IndirectKmd\IndirectKmd">3</Tweak>
+				<Tweak name="iaStorAVC\iaStorAVC">0</Tweak>
+				<Tweak name="intelppm\intelppm">3</Tweak>
+				<Tweak name="iaStorV\iaStorV">0</Tweak>
+				<Tweak name="iagpio\iagpio">3</Tweak>
+				<Tweak name="intelpmax\intelpmax">3</Tweak>
+				<Tweak name="intelpep\intelpep">0</Tweak>
+				<Tweak name="iaLPSSi_GPIO\iaLPSSi_GPIO">3</Tweak>
+				<Tweak name="iaLPSS2i_GPIO2\iaLPSS2i_GPIO2">3</Tweak>
+				<Tweak name="iaLPSS2i_GPIO2_BXT_P\iaLPSS2i_GPIO2_BXT_P">3</Tweak>
+				<Tweak name="iaLPSS2i_GPIO2_CNL\iaLPSS2i_GPIO2_CNL">3</Tweak>
+				<Tweak name="iaLPSS2i_GPIO2_GLK\iaLPSS2i_GPIO2_GLK">3</Tweak>
+				<Tweak name="iaLPSSi_I2C\iaLPSSi_I2C">3</Tweak>
+				<Tweak name="iaLPSS2i_I2C\iaLPSS2i_I2C">3</Tweak>
+				<Tweak name="iaLPSS2i_I2C_BXT_P\iaLPSS2i_I2C_BXT_P">3</Tweak>
+				<Tweak name="iaLPSS2i_I2C_CNL\iaLPSS2i_I2C_CNL">3</Tweak>
+				<Tweak name="iaLPSS2i_I2C_GLK\iaLPSS2i_I2C_GLK">3</Tweak>
+				<Tweak name="iai2c\iai2c">3</Tweak>
+				<Tweak name="Telemetry\Telemetry">0</Tweak>
+				<Tweak name="intelide\intelide">0</Tweak>
+				<Tweak name="IPNAT\IPNAT">3</Tweak>
+				<Tweak name="IpFilterDriver\IpFilterDriver">3</Tweak>
+				<Tweak name="IPMIDRV\IPMIDRV">3</Tweak>
+				<Tweak name="IPT\IPT">2</Tweak>
+				<Tweak name="isapnp\isapnp">0</Tweak>
+				<Tweak name="iScsiPrt\iScsiPrt">3</Tweak>
+				<Tweak name="ItSas35i\ItSas35i">0</Tweak>
+				<Tweak name="Wdf01000\Wdf01000">0</Tweak>
+				<Tweak name="ksthunk\ksthunk">3</Tweak>
+				<Tweak name="kbdclass\kbdclass">3</Tweak>
+				<Tweak name="kbdhid\kbdhid">3</Tweak>
+				<Tweak name="KSecDD\KSecDD">0</Tweak>
+				<Tweak name="KSecPkg\KSecPkg">0</Tweak>
+				<Tweak name="DXGKrnl\DXGKrnl">1</Tweak>
+				<Tweak name="LSI_SAS\LSI_SAS">0</Tweak>
+				<Tweak name="LSI_SAS2i\LSI_SAS2i">0</Tweak>
+				<Tweak name="LSI_SAS3i\LSI_SAS3i">0</Tweak>
+				<Tweak name="LSI_SSS\LSI_SSS">0</Tweak>
+				<Tweak name="mausbhost\mausbhost">3</Tweak>
+				<Tweak name="mausbip\mausbip">3</Tweak>
+				<Tweak name="MbbCx\MbbCx">3</Tweak>
+				<Tweak name="megasas\megasas">0</Tweak>
+				<Tweak name="megasas2i\megasas2i">0</Tweak>
+				<Tweak name="megasas35i\megasas35i">0</Tweak>
+				<Tweak name="megasr\megasr">0</Tweak>
+				<Tweak name="mlx4_bus\mlx4_bus">3</Tweak>
+				<Tweak name="ibbus\ibbus">3</Tweak>
+				<Tweak name="HdAudAddService\HdAudAddService">3</Tweak>
+				<Tweak name="CmBatt\CmBatt">3</Tweak>
+				<Tweak name="ACPI\ACPI">0</Tweak>
+				<Tweak name="acpiex\acpiex">0</Tweak>
+				<Tweak name="BthA2dp\BthA2dp">3</Tweak>
+				<Tweak name="Microsoft_Bluetooth_AvrcpTransport\Microsoft_Bluetooth_AvrcpTransport">3</Tweak>
+				<Tweak name="BthHFEnum\BthHFEnum">3</Tweak>
+				<Tweak name="HidBth\HidBth">3</Tweak>
+				<Tweak name="EhStorTcgDrv\EhStorTcgDrv">0</Tweak>
+				<Tweak name="GPIOClx0101\GPIOClx0101">3</Tweak>
+				<Tweak name="ErrDev\ErrDev">3</Tweak>
+				<Tweak name="HwNClx0101\HwNClx0101">3</Tweak>
+				<Tweak name="HidUsb\HidUsb">3</Tweak>
+				<Tweak name="gencounter\gencounter">3</Tweak>
+				<Tweak name="vmgid\vmgid">3</Tweak>
+				<Tweak name="storflt\storflt">0</Tweak>
+				<Tweak name="bttflt\bttflt">0</Tweak>
+				<Tweak name="vpci\vpci">0</Tweak>
+				<Tweak name="hidi2c\hidi2c">3</Tweak>
+				<Tweak name="HidIr\HidIr">3</Tweak>
+				<Tweak name="MTConfig\MTConfig">3</Tweak>
+				<Tweak name="Tcpip6\Tcpip6">3</Tweak>
+				<Tweak name="MsBridge\MsBridge">3</Tweak>
+				<Tweak name="PNPMEM\PNPMEM">3</Tweak>
+				<Tweak name="monitor\monitor">3</Tweak>
+				<Tweak name="NdisCap\NdisCap">1</Tweak>
+				<Tweak name="nvdimm\nvdimm">0</Tweak>
+				<Tweak name="pmem\pmem">0</Tweak>
+				<Tweak name="terminpt\terminpt">3</Tweak>
+				<Tweak name="hidspi\hidspi">3</Tweak>
+				<Tweak name="stornvme\stornvme">0</Tweak>
+				<Tweak name="storahci\storahci">0</Tweak>
+				<Tweak name="scmbus\scmbus">0</Tweak>
+				<Tweak name="MSPCLOCK\MSPCLOCK">3</Tweak>
+				<Tweak name="MSPQM\MSPQM">3</Tweak>
+				<Tweak name="MSKSSRV\MSKSSRV">3</Tweak>
+				<Tweak name="MSTEE\MSTEE">3</Tweak>
+				<Tweak name="mssmbios\mssmbios">1</Tweak>
+				<Tweak name="drmkaud\drmkaud">3</Tweak>
+				<Tweak name="tunnel\tunnel">3</Tweak>
+				<Tweak name="HDAudBus\HDAudBus">3</Tweak>
+				<Tweak name="UEFI\UEFI">3</Tweak>
+				<Tweak name="UmPass\UmPass">3</Tweak>
+				<Tweak name="storufs\storufs">0</Tweak>
+				<Tweak name="usbehci\usbehci">3</Tweak>
+				<Tweak name="usbccgp\usbccgp">3</Tweak>
+				<Tweak name="usbohci\usbohci">3</Tweak>
+				<Tweak name="usbprint\usbprint">3</Tweak>
+				<Tweak name="usbuhci\usbuhci">3</Tweak>
+				<Tweak name="usbhub\usbhub">3</Tweak>
+				<Tweak name="vdrvroot\vdrvroot">0</Tweak>
+				<Tweak name="WmiAcpi\WmiAcpi">3</Tweak>
+				<Tweak name="WindowsTrustedRTProxy\WindowsTrustedRTProxy">0</Tweak>
+				<Tweak name="WFPLWFS\WFPLWFS">0</Tweak>
+				<Tweak name="NdisImPlatform\NdisImPlatform">3</Tweak>
+				<Tweak name="NdisVirtualBus\NdisVirtualBus">3</Tweak>
+				<Tweak name="MsLldp\MsLldp">2</Tweak>
+				<Tweak name="Modem\Modem">3</Tweak>
+				<Tweak name="mountmgr\mountmgr">0</Tweak>
+				<Tweak name="mouclass\mouclass">3</Tweak>
+				<Tweak name="mouhid\mouhid">3</Tweak>
+				<Tweak name="Msfs\Msfs">1</Tweak>
+				<Tweak name="msisadrv\msisadrv">0</Tweak>
+				<Tweak name="MsQuic\MsQuic">3</Tweak>
+				<Tweak name="MsRPC\MsRPC">3</Tweak>
+				<Tweak name="MMCSS\MMCSS">2</Tweak>
+				<Tweak name="Mup\Mup">0</Tweak>
+				<Tweak name="mvumis\mvumis">0</Tweak>
+				<Tweak name="npsvctrig\npsvctrig">1</Tweak>
+				<Tweak name="NativeWifiP\NativeWifiP">3</Tweak>
+				<Tweak name="ndproxy\ndproxy">3</Tweak>
+				<Tweak name="NDIS\NDIS">0</Tweak>
+				<Tweak name="Ndisuio\Ndisuio">3</Tweak>
+				<Tweak name="NDKPing\NDKPing">3</Tweak>
+				<Tweak name="NetBIOS\NetBIOS">1</Tweak>
+				<Tweak name="NetBT\NetBT">1</Tweak>
+				<Tweak name="tdx\tdx">1</Tweak>
+				<Tweak name="netvsc\netvsc">3</Tweak>
+				<Tweak name="NetAdapterCx\NetAdapterCx">3</Tweak>
+				<Tweak name="ndfltr\ndfltr">3</Tweak>
+				<Tweak name="Npfs\Npfs">1</Tweak>
+				<Tweak name="nsiproxy\nsiproxy">1</Tweak>
+				<Tweak name="Ntfs\Ntfs">3</Tweak>
+				<Tweak name="Null\Null">1</Tweak>
+				<Tweak name="nvraid\nvraid">0</Tweak>
+				<Tweak name="nvstor\nvstor">0</Tweak>
+				<Tweak name="Parport\Parport">3</Tweak>
+				<Tweak name="partmgr\partmgr">0</Tweak>
+				<Tweak name="mshidkmdf\mshidkmdf">3</Tweak>
+				<Tweak name="mshidumdf\mshidumdf">3</Tweak>
+				<Tweak name="pci\pci">0</Tweak>
+				<Tweak name="pciide\pciide">0</Tweak>
+				<Tweak name="pcmcia\pcmcia">0</Tweak>
+				<Tweak name="pdc\pdc">0</Tweak>
+				<Tweak name="PEAUTH\PEAUTH">2</Tweak>
+				<Tweak name="percsas2i\percsas2i">0</Tweak>
+				<Tweak name="percsas3i\percsas3i">0</Tweak>
+				<Tweak name="pcw\pcw">0</Tweak>
+				<Tweak name="portcfg\portcfg">3</Tweak>
+				<Tweak name="Processor\Processor">3</Tweak>
+				<Tweak name="ebdrv\ebdrv">0</Tweak>
+				<Tweak name="b06bdrv\b06bdrv">0</Tweak>
+				<Tweak name="Psched\Psched">1</Tweak>
+				<Tweak name="QWAVEdrv\QWAVEdrv">3</Tweak>
+				<Tweak name="AsyncMac\AsyncMac">3</Tweak>
+				<Tweak name="rdyboost\rdyboost">0</Tweak>
+				<Tweak name="rdbss\rdbss">1</Tweak>
+				<Tweak name="ReFS\ReFS">3</Tweak>
+				<Tweak name="ReFSv1\ReFSv1">3</Tweak>
+				<Tweak name="rdpbus\rdpbus">3</Tweak>
+				<Tweak name="RDPDR\RDPDR">3</Tweak>
+				<Tweak name="TsUsbGD\TsUsbGD">3</Tweak>
+				<Tweak name="tsusbhub\tsusbhub">3</Tweak>
+				<Tweak name="TsUsbFlt\TsUsbFlt">3</Tweak>
+				<Tweak name="RdpVideoMiniport\RdpVideoMiniport">3</Tweak>
+				<Tweak name="rhproxy\rhproxy">3</Tweak>
+				<Tweak name="s3cap\s3cap">3</Tweak>
+				<Tweak name="sbp2port\sbp2port">0</Tweak>
+				<Tweak name="sdstor\sdstor">3</Tweak>
+				<Tweak name="sdbus\sdbus">3</Tweak>
+				<Tweak name="SDFRd\SDFRd">3</Tweak>
+				<Tweak name="Serenum\Serenum">3</Tweak>
+				<Tweak name="sermouse\sermouse">3</Tweak>
+				<Tweak name="Serial\Serial">3</Tweak>
+				<Tweak name="SerCx\SerCx">3</Tweak>
+				<Tweak name="SerCx2\SerCx2">3</Tweak>
+				<Tweak name="srv\srv">2</Tweak>
+				<Tweak name="srv2\srv2">3</Tweak>
+				<Tweak name="buttonconverter\buttonconverter">3</Tweak>
+				<Tweak name="SpbCx\SpbCx">3</Tweak>
+				<Tweak name="SiSRaid2\SiSRaid2">0</Tweak>
+				<Tweak name="SiSRaid4\SiSRaid4">0</Tweak>
+				<Tweak name="scfilter\scfilter">3</Tweak>
+				<Tweak name="applockerfltr\applockerfltr">3</Tweak>
+				<Tweak name="SmartSAMD\SmartSAMD">0</Tweak>
+				<Tweak name="mrxsmb10\mrxsmb10">2</Tweak>
+				<Tweak name="mrxsmb20\mrxsmb20">3</Tweak>
+				<Tweak name="mrxsmb\mrxsmb">3</Tweak>
+				<Tweak name="smbdirect\smbdirect">3</Tweak>
+				<Tweak name="swenum\swenum">3</Tweak>
+				<Tweak name="spaceparser\spaceparser">3</Tweak>
+				<Tweak name="srvnet\srvnet">3</Tweak>
+				<Tweak name="stexstor\stexstor">0</Tweak>
+				<Tweak name="storqosflt\storqosflt">2</Tweak>
+				<Tweak name="spaceport\spaceport">0</Tweak>
+				<Tweak name="storvsc\storvsc">0</Tweak>
+				<Tweak name="USBHUB3\USBHUB3">3</Tweak>
+				<Tweak name="UrsSynopsys\UrsSynopsys">3</Tweak>
+				<Tweak name="Synth3dVsc\Synth3dVsc">3</Tweak>
+				<Tweak name="SgrmAgent\SgrmAgent">0</Tweak>
+				<Tweak name="Tcpip\Tcpip">0</Tweak>
+				<Tweak name="tcpipreg\tcpipreg">2</Tweak>
+				<Tweak name="TPM\TPM">3</Tweak>
+				<Tweak name="luafv\luafv">2</Tweak>
+				<Tweak name="UcmTcpciCx0101\UcmTcpciCx0101">3</Tweak>
+				<Tweak name="UcmUcsiAcpiClient\UcmUcsiAcpiClient">3</Tweak>
+				<Tweak name="UcmUcsiCx0101\UcmUcsiCx0101">3</Tweak>
+				<Tweak name="udfs\udfs">4</Tweak>
+				<Tweak name="umbus\umbus">3</Tweak>
+				<Tweak name="UASPStor\UASPStor">3</Tweak>
+				<Tweak name="usbaudio2\usbaudio2">3</Tweak>
+				<Tweak name="usbaudio\usbaudio">3</Tweak>
+				<Tweak name="UfxChipidea\UfxChipidea">3</Tweak>
+				<Tweak name="UcmCx0101\UcmCx0101">3</Tweak>
+				<Tweak name="UdeCx\UdeCx">3</Tweak>
+				<Tweak name="Ufx01000\Ufx01000">3</Tweak>
+				<Tweak name="Ucx01000\Ucx01000">3</Tweak>
+				<Tweak name="USBSTOR\USBSTOR">3</Tweak>
+				<Tweak name="UrsCx01000\UrsCx01000">3</Tweak>
+				<Tweak name="ufxsynopsys\ufxsynopsys">3</Tweak>
+				<Tweak name="USBXHCI\USBXHCI">3</Tweak>
+				<Tweak name="WudfPf\WudfPf">3</Tweak>
+				<Tweak name="vhdmp\vhdmp">3</Tweak>
+				<Tweak name="VSTXRAID\VSTXRAID">0</Tweak>
+				<Tweak name="Vid\Vid">1</Tweak>
+				<Tweak name="vhf\vhf">3</Tweak>
+				<Tweak name="vmbus\vmbus">0</Tweak>
+				<Tweak name="vwififlt\vwififlt">1</Tweak>
+				<Tweak name="vwifibus\vwifibus">3</Tweak>
+				<Tweak name="VirtualRender\VirtualRender">3</Tweak>
+				<Tweak name="VMBusHID\VMBusHID">3</Tweak>
+				<Tweak name="volume\volume">0</Tweak>
+				<Tweak name="volmgr\volmgr">0</Tweak>
+				<Tweak name="vsmraid\vsmraid">0</Tweak>
+				<Tweak name="WacomPen\WacomPen">3</Tweak>
+				<Tweak name="RasAgileVpn\RasAgileVpn">3</Tweak>
+				<Tweak name="Rasl2tp\Rasl2tp">3</Tweak>
+				<Tweak name="PptpMiniport\PptpMiniport">3</Tweak>
+				<Tweak name="RasSstp\RasSstp">3</Tweak>
+				<Tweak name="wdiwifi\wdiwifi">3</Tweak>
+				<Tweak name="WdmCompanionFilter\WdmCompanionFilter">3</Tweak>
+				<Tweak name="MRxDAV\MRxDAV">3</Tweak>
+				<Tweak name="WIMMount\WIMMount">3</Tweak>
+				<Tweak name="bindflt\bindflt">2</Tweak>
+				<Tweak name="CldFlt\CldFlt">2</Tweak>
+				<Tweak name="wcifs\wcifs">2</Tweak>
+				<Tweak name="wcnfs\wcnfs">3</Tweak>
+				<Tweak name="mpsdrv\mpsdrv">3</Tweak>
+				<Tweak name="WUDFRd\WUDFRd">3</Tweak>
+				<Tweak name="WinNat\WinNat">3</Tweak>
+				<Tweak name="Ndu\Ndu">2</Tweak>
+				<Tweak name="Wof\Wof">0</Tweak>
+				<Tweak name="Ramdisk\Ramdisk">0</Tweak>
+				<Tweak name="WindowsTrustedRT\WindowsTrustedRT">0</Tweak>
+				<Tweak name="WinMad\WinMad">3</Tweak>
+				<Tweak name="ws2ifsl\ws2ifsl">4</Tweak>
+				<Tweak name="WINUSB\WINUSB">3</Tweak>
+				<Tweak name="WinVerbs\WinVerbs">3</Tweak>
+				<Tweak name="WpdUpFltr\WpdUpFltr">3</Tweak>
+				<Tweak name="xboxgip\xboxgip">3</Tweak>
+				<Tweak name="xinputhid\xinputhid">3</Tweak>
+				<Tweak name="volsnap\volsnap">0</Tweak>
+				<Tweak name="bowser\bowser">3</Tweak>
+				<Tweak name="iorate\iorate">0</Tweak>
+				<Tweak name="disk\disk">0</Tweak>
+				<Tweak name="wanarp\wanarp">3</Tweak>
+				<Tweak name="wanarpv6\wanarpv6">3</Tweak>
+				<Tweak name="NdisTapi\NdisTapi">3</Tweak>
+				<Tweak name="NdisWan\NdisWan">3</Tweak>
+				<Tweak name="RasPppoe\RasPppoe">3</Tweak>
+				<Tweak name="ndiswanlegacy\ndiswanlegacy">3</Tweak>
+				<Tweak name="rspndr\rspndr">2</Tweak>
+				<Tweak name="lltdio\lltdio">2</Tweak>
+				<Tweak name="VerifierExt\VerifierExt">4</Tweak>
+			</TweakGroup>
+		</ExtraServices>
+		<ScheduledTasks>
+			<TweakGroup name="Tree\Microsoft\Windows\.NET Framework">
+				<Tweak name=".NET Framework NGEN v4.0.30319\.NET Framework NGEN v4.0.30319"></Tweak>
+				<Tweak name=".NET Framework NGEN v4.0.30319 64\.NET Framework NGEN v4.0.30319 64"></Tweak>
+				<Tweak name=".NET Framework NGEN v4.0.30319 64 Critical\.NET Framework NGEN v4.0.30319 64 Critical"></Tweak>
+				<Tweak name=".NET Framework NGEN v4.0.30319 Critical\.NET Framework NGEN v4.0.30319 Critical"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Active Directory Rights Management Services Client">
+				<Tweak name="AD RMS Rights Policy Template Management (Automated)\AD RMS Rights Policy Template Management (Automated)"></Tweak>
+				<Tweak name="AD RMS Rights Policy Template Management (Manual)\AD RMS Rights Policy Template Management (Manual)"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\AppID">
+				<Tweak name="EDP Policy Manager\EDP Policy Manager"></Tweak>
+				<Tweak name="PolicyConverter\PolicyConverter"></Tweak>
+				<Tweak name="VerifiedPublisherCertStoreCheck\VerifiedPublisherCertStoreCheck"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Application Experience">
+				<Tweak name="AitAgent\AitAgent"></Tweak>
+				<Tweak name="Microsoft Compatibility Appraiser\Microsoft Compatibility Appraiser"></Tweak>
+				<Tweak name="StartupAppTask\StartupAppTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\ApplicationData">
+				<Tweak name="appuriverifierdaily\appuriverifierdaily"></Tweak>
+				<Tweak name="appuriverifierinstall\appuriverifierinstall"></Tweak>
+				<Tweak name="CleanupTemporaryState\CleanupTemporaryState"></Tweak>
+				<Tweak name="DsSvcCleanup\DsSvcCleanup"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\AppListBackup">
+				<Tweak name="Backup\Backup"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\AppxDeploymentClient">
+				<Tweak name="Pre-staged app cleanup\Pre-staged app cleanup"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Autochk">
+				<Tweak name="Proxy\Proxy"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\BitLocker">
+				<Tweak name="BitLocker Encrypt All Drives\BitLocker Encrypt All Drives"></Tweak>
+				<Tweak name="BitLocker MDM policy Refresh\BitLocker MDM policy Refresh"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Bluetooth">
+				<Tweak name="UninstallDeviceTask\UninstallDeviceTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\BrokerInfrastructure">
+				<Tweak name="BgTaskRegistrationMaintenanceTask\BgTaskRegistrationMaintenanceTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\CertificateServicesClient">
+				<Tweak name="AikCertEnrollTask\AikCertEnrollTask"></Tweak>
+				<Tweak name="CryptoPolicyTask\CryptoPolicyTask"></Tweak>
+				<Tweak name="KeyPreGenTask\KeyPreGenTask"></Tweak>
+				<Tweak name="SystemTask\SystemTask"></Tweak>
+				<Tweak name="UserTask\UserTask"></Tweak>
+				<Tweak name="UserTask-Roam\UserTask-Roam"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Chkdsk">
+				<Tweak name="ProactiveScan\ProactiveScan"></Tweak>
+				<Tweak name="SyspartRepair\SyspartRepair"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Clip">
+				<Tweak name="License Validation\License Validation"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\CloudExperienceHost">
+				<Tweak name="CreateObjectTask\CreateObjectTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Data Integrity Scan">
+				<Tweak name="Data Integrity Check And Scan\Data Integrity Check And Scan"></Tweak>
+				<Tweak name="Data Integrity Scan\Data Integrity Scan"></Tweak>
+				<Tweak name="Data Integrity Scan for Crash Recovery\Data Integrity Scan for Crash Recovery"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Defrag">
+				<Tweak name="ScheduledDefrag\ScheduledDefrag"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Device Setup">
+				<Tweak name="Metadata Refresh\Metadata Refresh"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\DeviceDirectoryClient">
+				<Tweak name="HandleCommand\HandleCommand"></Tweak>
+				<Tweak name="HandleWnsCommand\HandleWnsCommand"></Tweak>
+				<Tweak name="IntegrityCheck\IntegrityCheck"></Tweak>
+				<Tweak name="LocateCommandUserSession\LocateCommandUserSession"></Tweak>
+				<Tweak name="RegisterDeviceAccountChange\RegisterDeviceAccountChange"></Tweak>
+				<Tweak name="RegisterDeviceLocationRightsChange\RegisterDeviceLocationRightsChange"></Tweak>
+				<Tweak name="RegisterDevicePeriodic24\RegisterDevicePeriodic24"></Tweak>
+				<Tweak name="RegisterDevicePolicyChange\RegisterDevicePolicyChange"></Tweak>
+				<Tweak name="RegisterDeviceProtectionStateChanged\RegisterDeviceProtectionStateChanged"></Tweak>
+				<Tweak name="RegisterDeviceSettingChange\RegisterDeviceSettingChange"></Tweak>
+				<Tweak name="RegisterUserDevice\RegisterUserDevice"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Diagnosis">
+				<Tweak name="Scheduled\Scheduled"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\OneCore\DirectX">
+				<Tweak name="DirectXDatabaseUpdater\DirectXDatabaseUpdater"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\DirectX">
+				<Tweak name="DirectXDatabaseUpdater\DirectXDatabaseUpdater"></Tweak>
+				<Tweak name="DXGIAdapterCache\DXGIAdapterCache"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\DiskCleanup">
+				<Tweak name="SilentCleanup\SilentCleanup"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\DiskDiagnostic">
+				<Tweak name="Microsoft-Windows-DiskDiagnosticDataCollector\Microsoft-Windows-DiskDiagnosticDataCollector"></Tweak>
+				<Tweak name="Microsoft-Windows-DiskDiagnosticResolver\Microsoft-Windows-DiskDiagnosticResolver"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\DiskFootprint">
+				<Tweak name="Diagnostics\Diagnostics"></Tweak>
+				<Tweak name="StorageSense\StorageSense"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\DUSM">
+				<Tweak name="dusmtask\dusmtask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\EDP">
+				<Tweak name="EDP App Launch Task\EDP App Launch Task"></Tweak>
+				<Tweak name="EDP Auth Task\EDP Auth Task"></Tweak>
+				<Tweak name="EDP Inaccessible Credentials Task\EDP Inaccessible Credentials Task"></Tweak>
+				<Tweak name="StorageCardEncryption Task\StorageCardEncryption Task"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\EnterpriseMgmt">
+				<Tweak name="MDMMaintenenceTask\MDMMaintenenceTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Flighting\FeatureConfig">
+				<Tweak name="ReconcileFeatures\ReconcileFeatures"></Tweak>
+				<Tweak name="UsageDataFlushing\UsageDataFlushing"></Tweak>
+				<Tweak name="UsageDataReporting\UsageDataReporting"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\FileHistory">
+				<Tweak name="File History (maintenance mode)\File History (maintenance mode)"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\InstallService">
+				<Tweak name="ScanForUpdates\ScanForUpdates"></Tweak>
+				<Tweak name="ScanForUpdatesAsUser\ScanForUpdatesAsUser"></Tweak>
+				<Tweak name="SmartRetry\SmartRetry"></Tweak>
+				<Tweak name="WakeUpAndContinueUpdates\WakeUpAndContinueUpdates"></Tweak>
+				<Tweak name="WakeUpAndScanForUpdates\WakeUpAndScanForUpdates"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\International">
+				<Tweak name="Synchronize Language Settings\Synchronize Language Settings"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\LanguageComponentsInstaller">
+				<Tweak name="Installation\Installation"></Tweak>
+				<Tweak name="ReconcileLanguageResources\ReconcileLanguageResources"></Tweak>
+				<Tweak name="Uninstallation\Uninstallation"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\License Manager">
+				<Tweak name="TempSignedLicenseExchange\TempSignedLicenseExchange"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Location">
+				<Tweak name="Notifications\Notifications"></Tweak>
+				<Tweak name="WindowsActionDialog\WindowsActionDialog"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Mobile Broadband Accounts">
+				<Tweak name="MNO Metadata Parser\MNO Metadata Parser"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\MUI">
+				<Tweak name="LPRemove\LPRemove"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Multimedia">
+				<Tweak name="SystemSoundsService\SystemSoundsService"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\NetTrace">
+				<Tweak name="GatherNetworkInfo\GatherNetworkInfo"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\NlaSvc">
+				<Tweak name="WiFiTask\WiFiTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Flighting\OneSettings">
+				<Tweak name="RefreshCache\RefreshCache"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\PI">
+				<Tweak name="Secure-Boot-Update\Secure-Boot-Update"></Tweak>
+				<Tweak name="Sqm-Tasks\Sqm-Tasks"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Plug and Play">
+				<Tweak name="Device Install Group Policy\Device Install Group Policy"></Tweak>
+				<Tweak name="Device Install Reboot Required\Device Install Reboot Required"></Tweak>
+				<Tweak name="Sysprep Generalize Drivers\Sysprep Generalize Drivers"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Power Efficiency Diagnostics">
+				<Tweak name="AnalyzeSystem\AnalyzeSystem"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Printing">
+				<Tweak name="EduPrintProv\EduPrintProv"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Management\Provisioning">
+				<Tweak name="Cellular\Cellular"></Tweak>
+				<Tweak name="Logon\Logon"></Tweak>
+				<Tweak name="PostResetBoot\PostResetBoot"></Tweak>
+				<Tweak name="Retry\Retry"></Tweak>
+				<Tweak name="RunOnReboot\RunOnReboot"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\PushToInstall">
+				<Tweak name="LoginCheck\LoginCheck"></Tweak>
+				<Tweak name="Registration\Registration"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Ras">
+				<Tweak name="MobilityManager\MobilityManager"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\RecoveryEnvironment">
+				<Tweak name="VerifyWinRE\VerifyWinRE"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Registry">
+				<Tweak name="RegIdleBackup\RegIdleBackup"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Live\Roaming">
+				<Tweak name="MaintenanceTask\MaintenanceTask"></Tweak>
+				<Tweak name="SynchronizeWithStorage\SynchronizeWithStorage"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Servicing">
+				<Tweak name="StartComponentCleanup\StartComponentCleanup"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\SettingSync">
+				<Tweak name="BackgroundUploadTask\BackgroundUploadTask"></Tweak>
+				<Tweak name="BackupTask\BackupTask"></Tweak>
+				<Tweak name="NetworkStateChangeTask\NetworkStateChangeTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Setup">
+				<Tweak name="EM\EM"></Tweak>
+				<Tweak name="SetupCleanupTask\SetupCleanupTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Shell">
+				<Tweak name="CrawlStartPages\CrawlStartPages"></Tweak>
+				<Tweak name="CreateObjectTask\CreateObjectTask"></Tweak>
+				<Tweak name="IndexerAutomaticMaintenance\IndexerAutomaticMaintenance"></Tweak>
+				<Tweak name="UpdateUserPictureTask\UpdateUserPictureTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\SMB">
+				<Tweak name="UninstallSMB1ClientTask\UninstallSMB1ClientTask"></Tweak>
+				<Tweak name="UninstallSMB1ServerTask\UninstallSMB1ServerTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\SoftwareProtectionPlatform">
+				<Tweak name="SvcRestartTask\SvcRestartTask"></Tweak>
+				<Tweak name="SvcRestartTaskLogon\SvcRestartTaskLogon"></Tweak>
+				<Tweak name="SvcRestartTaskNetwork\SvcRestartTaskNetwork"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\SpacePort">
+				<Tweak name="SpaceAgentTask\SpaceAgentTask"></Tweak>
+				<Tweak name="SpaceManagerTask\SpaceManagerTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\StateRepository">
+				<Tweak name="MaintenanceTasks\MaintenanceTasks"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Storage Tiers Management">
+				<Tweak name="Storage Tiers Management Initialization\Storage Tiers Management Initialization"></Tweak>
+				<Tweak name="Storage Tiers Optimization\Storage Tiers Optimization"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Subscription">
+				<Tweak name="EnableLicenseAcquisition\EnableLicenseAcquisition"></Tweak>
+				<Tweak name="LicenseAcquisition\LicenseAcquisition"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Sysmain">
+				<Tweak name="HybridDriveCachePrepopulate\HybridDriveCachePrepopulate"></Tweak>
+				<Tweak name="HybridDriveCacheRebalance\HybridDriveCacheRebalance"></Tweak>
+				<Tweak name="ResPriStaticDbSync\ResPriStaticDbSync"></Tweak>
+				<Tweak name="WsSwapAssessmentTask\WsSwapAssessmentTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\PLA\System">
+				<Tweak name="ConvertLogEntries\ConvertLogEntries"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Task Manager">
+				<Tweak name="Interactive\Interactive"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\TaskScheduler">
+				<Tweak name="Idle Maintenance\Idle Maintenance"></Tweak>
+				<Tweak name="Maintenance Configurator\Maintenance Configurator"></Tweak>
+				<Tweak name="Manual Maintenance\Manual Maintenance"></Tweak>
+				<Tweak name="Regular Maintenance\Regular Maintenance"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\TextServicesFramework">
+				<Tweak name="MsCtfMonitor\MsCtfMonitor"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Time Synchronization">
+				<Tweak name="ForceSynchronizeTime\ForceSynchronizeTime"></Tweak>
+				<Tweak name="SynchronizeTime\SynchronizeTime"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Time Zone">
+				<Tweak name="SynchronizeTimeZone\SynchronizeTimeZone"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\TPM">
+				<Tweak name="Tpm-HASCertRetr\Tpm-HASCertRetr"></Tweak>
+				<Tweak name="Tpm-Maintenance\Tpm-Maintenance"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\UNP">
+				<Tweak name="RunUpdateNotificationMgr\RunUpdateNotificationMgr"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\UpdateOrchestrator">
+				<Tweak name="Report policies\Report policies"></Tweak>
+				<Tweak name="Schedule Scan Static Task\Schedule Scan Static Task"></Tweak>
+				<Tweak name="UpdateModelTask\UpdateModelTask"></Tweak>
+				<Tweak name="USO_UxBroker\USO_UxBroker"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\UPnP">
+				<Tweak name="UPnPHostConfig\UPnPHostConfig"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\USB">
+				<Tweak name="Usb-Notifications\Usb-Notifications"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\User Profile Service">
+				<Tweak name="HiveUploadTask\HiveUploadTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\WaaSMedic">
+				<Tweak name="PerformRemediation\PerformRemediation"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\WCM">
+				<Tweak name="WiFiTask\WiFiTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\WDI">
+				<Tweak name="ResolutionHost\ResolutionHost"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Windows Activation Technologies">
+				<Tweak name="ValidationTask\ValidationTask"></Tweak>
+				<Tweak name="ValidationTaskDeadline\ValidationTaskDeadline"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Windows Filtering Platform">
+				<Tweak name="BfeOnServiceStartTypeChange\BfeOnServiceStartTypeChange"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Windows Media Sharing">
+				<Tweak name="UpdateLibrary\UpdateLibrary"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Windows Subsystem For Linux">
+				<Tweak name="AptPackageIndexUpdate\AptPackageIndexUpdate"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\WindowsColorSystem">
+				<Tweak name="Calibration Loader\Calibration Loader"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\WindowsUpdate">
+				<Tweak name="Automatic App Update\Automatic App Update"></Tweak>
+				<Tweak name="Scheduled Start\Scheduled Start"></Tweak>
+				<Tweak name="sihboot\sihboot"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Wininet">
+				<Tweak name="CacheTask\CacheTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\WlanSvc">
+				<Tweak name="CDSSync\CDSSync"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\WOF">
+				<Tweak name="WIM-Hash-Management\WIM-Hash-Management"></Tweak>
+				<Tweak name="WIM-Hash-Validation\WIM-Hash-Validation"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\Workplace Join">
+				<Tweak name="Automatic-Device-Join\Automatic-Device-Join"></Tweak>
+				<Tweak name="Device-Sync\Device-Sync"></Tweak>
+				<Tweak name="Recovery-Check\Recovery-Check"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\WS">
+				<Tweak name="Badge Update\Badge Update"></Tweak>
+				<Tweak name="License Validation\License Validation"></Tweak>
+				<Tweak name="Sync Licenses\Sync Licenses"></Tweak>
+				<Tweak name="WSRefreshBannedAppsListTask\WSRefreshBannedAppsListTask"></Tweak>
+				<Tweak name="WSTask\WSTask"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\Windows\WwanSvc">
+				<Tweak name="NotificationTask\NotificationTask"></Tweak>
+				<Tweak name="OobeDiscovery\OobeDiscovery"></Tweak>
+			</TweakGroup>
+			<TweakGroup name="Tree\Microsoft\XblGameSave">
+				<Tweak name="XblGameSaveTask\XblGameSaveTask"></Tweak>
+			</TweakGroup>
+		</ScheduledTasks>
+	</Tweaks>
+	<ApplyOptions>
+		<ImageTasks>
+			<Task>imageSaveRebuild</Task>
+			<Task>imageFormatWim</Task>
+		</ImageTasks>
+		<AutoIsoFile>NTLite.iso</AutoIsoFile>
+		<AutoIsoLabel>NTLite</AutoIsoLabel>
+		<AutoSplitSize>4000</AutoSplitSize>
+	</ApplyOptions>
+	<Execution BeforeLogonMode="0">
+		<Remove></Remove>
+		<Change></Change>
+		<Add></Add>
+	</Execution>
+	<Registry></Registry>
+</Preset>

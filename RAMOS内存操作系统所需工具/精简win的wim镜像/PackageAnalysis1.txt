@@ -1,0 +1,217 @@
+﻿
+
+Z:\mount\Windows\WinSxS>tree /f
+卷 RAMDISK 的文件夹 PATH 列表
+卷序列号为 9F20-36F2
+Z:.
+├─amd64_microsoft-windows-s..cingstack.resources_31bf3856ad364e35_10.0.19041.1_zh-cn_a23132b31b4286e6
+│      poqexec.exe.mui
+│
+├─amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.19041.1677_none_7dfadea07c9b7349
+│      amd64_installed
+│      CbsCore.dll
+│      CbsMsg.dll
+│      cmiadapter.dll
+│      cmiaisupport.dll
+│      dpx.dll
+│      drupdate.dll
+│      drvstore.dll
+│      EdgeAI.dll
+│      GlobalInstallOrder.xml
+│      msdelta.dll
+│      mspatcha.dll
+│      poqexec.exe
+│      ReserveManager.dll
+│      smiengine.dll
+│      smipi.dll
+│      TiFileFetcher.exe
+│      TiWorker.exe
+│      turbostack.dll
+│      updateagent.dll
+│      WcmTypes.xsd
+│      wcp.dll
+│      wdscore.dll
+│      wrpint.dll
+│
+├─amd64_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9672_none_88e266cb2fac7c0d
+│      msvcm80.dll
+│      msvcp80.dll
+│      msvcr80.dll
+│
+├─amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9625_none_08e1c10da83fbc83
+│      msvcm90.dll
+│      msvcp90.dll
+│      msvcr90.dll
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1023_ar-sa_fa97b07c8be89613
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1023_zh-cn_eebdbe6a380cfa05
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_en-us_6144a36069349598
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_ja-jp_9014eb97267a94f8
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_ko-kr_337ec84c18eb5c0e
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_zh-tw_c4c74b244dc74c1a
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1023_ar-sa_e22186bcd99c5e74
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1023_ja-jp_a59172735be4e7b4
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1620_zh-cn_d647d82a85c07769
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_en-us_cb612d02732b0fd9
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_ko-kr_9d9b51ee22e1d64f
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_zh-tw_2ee3d4c657bdc65b
+│      comctl32.dll.mui
+│
+├─amd64_microsoft.windows.common-controls_6595b64144ccf1df_5.82.19041.1110_none_792d1c772443f647
+│      comctl32.dll
+│
+├─amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e
+│      comctl32.dll
+│
+├─amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.19041.1645_none_a25137843383be64
+│      GdiPlus.dll
+│
+├─amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.1645_none_91a2a668cc89980b
+│      GdiPlus.dll
+│
+├─Catalogs
+├─InstallTemp
+├─Manifests
+│      amd64_microsoft-windows-coreos-revision_31bf3856ad364e35_10.0.19041.1679_none_531c6a50c54ff428.manifest
+│      amd64_microsoft-windows-deployment_31bf3856ad364e35_10.0.19041.746_none_d9e841974c1d46e8.manifest
+│      amd64_microsoft-windows-explorer_31bf3856ad364e35_10.0.19041.1679_none_c64ff6da2f0d9ae6.manifest
+│      amd64_microsoft-windows-i..national-core-winpe_31bf3856ad364e35_10.0.19041.1_none_0e19b3cf3ed3230b.manifest
+│      amd64_microsoft-windows-international-core_31bf3856ad364e35_10.0.19041.1_none_9f9b720c791e86b1.manifest
+│      amd64_microsoft-windows-s..cingstack.resources_31bf3856ad364e35_10.0.19041.1_zh-cn_a23132b31b4286e6.manifest
+│      amd64_microsoft-windows-security-spp-ux_31bf3856ad364e35_10.0.19041.1503_none_d06145195420f687.manifest
+│      amd64_microsoft-windows-servicingstack_31bf3856ad364e35_10.0.19041.1677_none_7dfadea07c9b7349.manifest
+│      amd64_microsoft-windows-shell-setup_31bf3856ad364e35_10.0.19041.746_none_b0541d78486f7361.manifest
+│      amd64_microsoft-windows-unattendedjoin_31bf3856ad364e35_10.0.19041.1466_none_27c5184d22162c37.manifest
+│      amd64_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9672_none_88e266cb2fac7c0d.manifest
+│      amd64_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9625_none_08e1c10da83fbc83.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1023_ar-sa_fa97b07c8be89613.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1023_zh-cn_eebdbe6a380cfa05.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_en-us_6144a36069349598.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_ja-jp_9014eb97267a94f8.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_ko-kr_337ec84c18eb5c0e.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_zh-tw_c4c74b244dc74c1a.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1023_ar-sa_e22186bcd99c5e74.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1023_ja-jp_a59172735be4e7b4.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1620_zh-cn_d647d82a85c07769.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_en-us_cb612d02732b0fd9.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_ko-kr_9d9b51ee22e1d64f.manifest
+│      amd64_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_zh-tw_2ee3d4c657bdc65b.manifest
+│      amd64_microsoft.windows.common-controls_6595b64144ccf1df_5.82.19041.1110_none_792d1c772443f647.manifest
+│      amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e.manifest
+│      amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.19041.1645_none_a25137843383be64.manifest
+│      amd64_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.1645_none_91a2a668cc89980b.manifest
+│      amd64_microsoft.windows.i..utomation.proxystub_6595b64144ccf1df_1.0.19041.1_none_5f3561098cddf682.manifest
+│      amd64_microsoft.windows.isolationautomation_6595b64144ccf1df_1.0.19041.746_none_7b8e643649cc7ccc.manifest
+│      amd64_microsoft.windows.systemcompatible_6595b64144ccf1df_6.0.19041.1_none_bcf22701031bcbf3.manifest
+│      amd64_policy.8.0.microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9672_none_09c3178bfacaa156.manifest
+│      amd64_policy.9.0.microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9625_none_accf318de1dc62d1.manifest
+│      wow64_microsoft-windows-coreos-revision_31bf3856ad364e35_10.0.19041.1679_none_5d7114a2f9b0b623.manifest
+│      wow64_microsoft-windows-deployment_31bf3856ad364e35_10.0.19041.746_none_e43cebe9807e08e3.manifest
+│      wow64_microsoft-windows-explorer_31bf3856ad364e35_10.0.19041.1679_none_d0a4a12c636e5ce1.manifest
+│      wow64_microsoft-windows-i..national-core-winpe_31bf3856ad364e35_10.0.19041.1_none_186e5e217333e506.manifest
+│      wow64_microsoft-windows-international-core_31bf3856ad364e35_10.0.19041.1_none_a9f01c5ead7f48ac.manifest
+│      wow64_microsoft-windows-security-spp-ux_31bf3856ad364e35_10.0.19041.1503_none_dab5ef6b8881b882.manifest
+│      wow64_microsoft-windows-shell-setup_31bf3856ad364e35_10.0.19041.746_none_baa8c7ca7cd0355c.manifest
+│      x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9672_none_d08f9da24428a513.manifest
+│      x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9625_none_508ef7e4bcbbe589.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1023_ar-sa_4244e753a064bf19.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1023_zh-cn_366af5414c89230b.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_en-us_a8f1da377db0be9e.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_ja-jp_d7c2226e3af6bdfe.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_ko-kr_7b2bff232d678514.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_zh-tw_0c7481fb62437520.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1023_ar-sa_29cebd93ee18877a.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1023_ja-jp_ed3ea94a706110ba.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1620_zh-cn_1df50f019a3ca06f.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_en-us_130e63d987a738df.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_ko-kr_e54888c5375dff55.manifest
+│      x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_zh-tw_76910b9d6c39ef61.manifest
+│      x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.19041.1110_none_c0da534e38c01f4d.manifest
+│      x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_a8625c1886757984.manifest
+│      x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.19041.1645_none_e9fe6e5b47ffe76a.manifest
+│      x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.1645_none_d94fdd3fe105c111.manifest
+│      x86_microsoft.windows.i..utomation.proxystub_6595b64144ccf1df_1.0.19041.1_none_a6e297e0a15a1f88.manifest
+│      x86_microsoft.windows.isolationautomation_6595b64144ccf1df_1.0.19041.746_none_c33b9b0d5e48a5d2.manifest
+│      x86_microsoft.windows.systemcompatible_6595b64144ccf1df_6.0.19041.1_none_049f5dd81797f4f9.manifest
+│      x86_policy.8.0.microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9672_none_51704e630f46ca5c.manifest
+│      x86_policy.9.0.microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9625_none_f47c6864f6588bd7.manifest
+│
+├─x86_microsoft.vc80.crt_1fc8b3b9a1e18e3b_8.0.50727.9672_none_d08f9da24428a513
+│      msvcm80.dll
+│      msvcp80.dll
+│      msvcr80.dll
+│
+├─x86_microsoft.vc90.crt_1fc8b3b9a1e18e3b_9.0.30729.9625_none_508ef7e4bcbbe589
+│      msvcm90.dll
+│      msvcp90.dll
+│      msvcr90.dll
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1023_ar-sa_4244e753a064bf19
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1023_zh-cn_366af5414c89230b
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_en-us_a8f1da377db0be9e
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_ja-jp_d7c2226e3af6bdfe
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_ko-kr_7b2bff232d678514
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_5.82.19041.1_zh-tw_0c7481fb62437520
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1023_ar-sa_29cebd93ee18877a
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1023_ja-jp_ed3ea94a706110ba
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1620_zh-cn_1df50f019a3ca06f
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_en-us_130e63d987a738df
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_ko-kr_e54888c5375dff55
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.c..-controls.resources_6595b64144ccf1df_6.0.19041.1_zh-tw_76910b9d6c39ef61
+│      comctl32.dll.mui
+│
+├─x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.19041.1110_none_c0da534e38c01f4d
+│      comctl32.dll
+│
+├─x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_a8625c1886757984
+│      comctl32.dll
+│
+├─x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.0.19041.1645_none_e9fe6e5b47ffe76a
+│      GdiPlus.dll
+│
+└─x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.19041.1645_none_d94fdd3fe105c111
+        GdiPlus.dll

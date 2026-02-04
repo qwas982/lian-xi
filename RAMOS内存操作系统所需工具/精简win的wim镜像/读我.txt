@@ -1,0 +1,94 @@
+读我.
+
+为了配合RAMOS做母盘镜像,
+耗费两个多星期, 
+做了无数次测试, 测试程序, 测试数据.
+终于被我搞定.
+
+本脚本工具是, 针对winsxs组件库的专清工具,
+因为组件库成分复杂, 涉及到系统能否正常运行, 所以要特别对待.
+
+我采用三明治步骤, 对win10 wim镜像进行精简.
+第一步, 用NTlite对wim镜像进行主要精简.
+第二步, 用组件库专清脚本, 对wim镜像内的winsxs文件夹专门清理.
+第三步, 再次用NTlite打开wim镜像, 进行残余精简与收尾优化工作.
+
+随后, 可用DISM挂载wim镜像, 用 /StartComponentCleanup /ResetBase 进行更彻底优化, 用于减小空间.
+
+上面是预想的, 仅做测试用.
+现在是;
+导入.xml ,
+用NTlite精简两遍,
+用专清脚本,
+
+脚本最好在chcp 65001, 就是utf8下操作.
+终端我用的是PS7.5+ 
+我是在这些条件下成功的.
+
+另外, 我是在内存盘里操作这一切, 因为我不想消耗SSD的写入寿命.
+
+用到的一些命令行如下;
+
+winsxs_slimmer.py --wim-path Z:\\install.wim --auto-mount --auto-unmount --no-confirm --repack-wim --verbose
+
+DISM /Mount-Image /ImageFile:"Z:\install.wim" /Index:1 /MountDir:"Z:\mount"
+DISM /Unmount-Image /MountDir:"Z:\mount" /Discard
+
+dism /get-mountedwiminfo
+DISM /Image:"Y:\mount" /Get-Packages
+
+dism /get-wiminfo /wimfile:"Y:\install.wim"
+
+Dism /Image:Y:\mount /Get-Capabilities
+Dism /Image:Y:\mount /Get-Features
+
+DISM /Online /Cleanup-Image /StartComponentCleanup
+DISM /Online /Cleanup-Image /StartComponentCleanup /ResetBase
+
+DISM /Image:C:\Mount /Cleanup-Image /StartComponentCleanup
+DISM /Image:Z:\mount /Cleanup-Image /StartComponentCleanup /ResetBase
+# 保存更改并卸载
+DISM /Unmount-Image /MountDir:Z:\mount /Commit
+
+# 如不保存更改
+DISM /Unmount-Image /MountDir:C:\Mount /Discard
+
+# 查看组件存储状态（清理前）
+DISM /Online /Cleanup-Image /AnalyzeComponentStore
+
+----------------------------------------------------------------------------
+
+另外,
+我发现网页版大模型, web chat,
+在写代码的成熟度上, 
+已经可以写 类/高阶函数 级代码块了, 而 函数 基块 行序列 级代码块, 更是没问题.
+但是比 类 更大的模块级, 还是不行,
+把模块串起来成为程序更是缺斤少两.
+
+这部分, 还是得依靠代码代理agent.
+
+我与大模型讨论了这部分问题,
+总结如下;
+
+代理agent, 只是基模不完善的衍生品.
+若基模足够强, 比如能媲美人类的心智、意识, 那还要啥代理??
+我叫大模型自己生成一个代理, 再让他自己用这个生成的代理做事不就完了.
+而现在做不到, 只是因为基模不完善.
+
+若一个基模足够媲美人类的心智、意识, 也就是近乎AGI, 
+那么, 他能自己通过自己的编程、工程、数学能力, 设计一堆工具链. 
+随后, 用这堆工具链造出代理. 
+之后, 用代理造出更强的工具链, 如此递归. 根本用不着人类为他设计各种代理.
+为什么现在还没实现, 因为基模不够强!
+但是我看新闻说谷歌的双子星3.0, 已经能实现类似的初始能力, 
+当用户提出问题时, 双子星3经过思考后, 会自己通过对那个问题进行编程, 再用这个编程后的工具去解决那个问题.
+但是目前别的大模型都还无法做到这一点.
+
+本质, 还是工具. 这也是人类与其它地球动物的区别之一.
+人类能认识工具、创制工具、使用工具, 再用工具生工具.
+大模型想要实现AGI, 也要具备这个基本能力. 
+而代理, 不过是一种工具. 
+数字神经网络, 是通过编程实现. 数字化工具, 一样如此.
+而编程, 就是一种数字工具. 软件基础设施, 更不用说. 
+基模还根本认识不到这一点, 更无创制与使用的意识.
+
