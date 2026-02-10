@@ -1,0 +1,15 @@
+{
+  "alarms": [
+    {
+      "id": 1,
+      "time": "07:00",
+      "name": "起床闹钟",
+      "repeat": "仅一次",
+      "enabled": true
+    }
+  ],
+  "settings": {
+    "volume": 80,
+    "notification_enabled": true
+  }
+}
